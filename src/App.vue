@@ -12,7 +12,7 @@
           <div class="alert alert-info" v-if="show">This is some info</div>
           </transition>-->
           <div id="matcher">
-            <transition name="slide" type="animation">
+            <transition name="slide-up" type="animation">
               <div class="project alert alert-info" v-show="show">
                 <table>
                   <tr>
@@ -72,7 +72,7 @@
                 </table>
               </div>
             </transition>
-            <transition name="slidedown" type="animation">
+            <transition name="slide-down" type="animation">
               <div class="service alert alert-info" v-show="show">
                 <table>
                   <tr>
@@ -197,26 +197,26 @@ td {
   opacity: 0;
 }
 
-.slide-enter {
+.slide-up-enter {
   opacity: 0;
   /* transform: translateY(20px); */
 }
 
-.slide-enter-active {
-  animation: slide-in 0.125s ease-out forwards;
+.slide-up-enter-active {
+  animation: slide-up-in 0.125s ease-out forwards;
   transition: opacity 0.125s;
 }
 
-.slide-leave {
+.slide-up-leave {
 }
 
-.slide-leave-active {
-  animation: slide-out 0.125s ease-out forwards;
+.slide-up-leave-active {
+  animation: slide-up-out 0.125s ease-out forwards;
   transition: opacity 0.125s;
   opacity: 0;
 }
 
-@keyframes slide-in {
+@keyframes slide-up-in {
   from {
     transform: translateY(20px);
   }
@@ -225,7 +225,7 @@ td {
   }
 }
 
-@keyframes slide-out {
+@keyframes slide-up-out {
   from {
     transform: translateY(0);
   }
@@ -234,26 +234,26 @@ td {
   }
 }
 
-.slidedown-enter {
+.slide-down-enter {
   opacity: 0;
   /* transform: translateY(20px); */
 }
 
-.slidedown-enter-active {
-  animation: slidedown-in 0.125s ease-out forwards;
+.slide-down-enter-active {
+  animation: slide-down-in 0.125s ease-out forwards;
   transition: opacity 0.125s;
 }
 
-.slidedown-leave {
+.slide-down-leave {
 }
 
-.slidedown-leave-active {
-  animation: slidedown-out 0.125s ease-out forwards;
+.slide-down-leave-active {
+  animation: slide-down-out 0.125s ease-out forwards;
   transition: opacity 0.125s;
   opacity: 0;
 }
 
-@keyframes slidedown-in {
+@keyframes slide-down-in {
   from {
     transform: translateY(-20px);
   }
@@ -262,7 +262,7 @@ td {
   }
 }
 
-@keyframes slidedown-out {
+@keyframes slide-down-out {
   from {
     transform: translateY(0);
   }
