@@ -12,7 +12,7 @@
           <div class="alert alert-info" v-if="show">This is some info</div>
           </transition>-->
           <div id="matcher">
-            <transition name="slide-up" type="animation">
+            <transition name="slide-up" type="animation" appear>
               <div class="project alert alert-info" v-show="show">
                 <table>
                   <tr>
@@ -72,7 +72,7 @@
                 </table>
               </div>
             </transition>
-            <transition name="slide-down" type="animation">
+            <transition name="slide-down" type="animation" appear>
               <div class="service alert alert-info" v-show="show">
                 <table>
                   <tr>
@@ -143,7 +143,7 @@
 export default {
   data() {
     return {
-      show: false
+      show: true
     };
   },
   name: "app"
