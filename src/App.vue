@@ -3,9 +3,9 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-          <h1>Animations</h1>
+          <h1>ai Job Op<span style="font-size: 75%">$</span></h1>
           <hr />
-          <button class="btn btn-primary" @click="show = !show">Show Alert</button>
+          <button class="btn btn-primary" @click="show = !show">Job Deal</button>
           <br />
           <br />
           <!-- <transition name="fade">
@@ -25,8 +25,8 @@
                     <th>F</th>
                   </tr>
                   <tr>
-                    <td>1</td>
-                    <td>Lab</td>
+                    <td class="col0">1</td>
+                    <td>Job</td>
                     <td>name</td>
                     <td>...</td>
                     <td></td>
@@ -34,7 +34,7 @@
                     <td></td>
                   </tr>
                   <tr>
-                    <td>2</td>
+                    <td class="col0">2</td>
                     <td>Terms</td>
                     <td>def</td>
                     <td>...</td>
@@ -43,7 +43,7 @@
                     <td></td>
                   </tr>
                   <tr>
-                    <td>3</td>
+                    <td class="col0">3</td>
                     <td>In</td>
                     <td>create</td>
                     <td>...</td>
@@ -52,16 +52,16 @@
                     <td></td>
                   </tr>
                   <tr>
-                    <td>4</td>
+                    <td class="col0">4</td>
                     <td>Steps</td>
-                    <td></td>
+                    <td>min</td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                   </tr>
                   <tr>
-                    <td>5</td>
+                    <td class="col0">5</td>
                     <td>Out</td>
                     <td>checks</td>
                     <td>...</td>
@@ -85,7 +85,7 @@
                     <th>F</th>
                   </tr>
                   <tr>
-                    <td>1</td>
+                    <td class="col0">1</td>
                     <td>Ops</td>
                     <td>name</td>
                     <td>...</td>
@@ -94,7 +94,7 @@
                     <td></td>
                   </tr>
                   <tr>
-                    <td>2</td>
+                    <td class="col0">2</td>
                     <td>Terms</td>
                     <td>def</td>
                     <td>...</td>
@@ -103,7 +103,7 @@
                     <td></td>
                   </tr>
                   <tr>
-                    <td>3</td>
+                    <td class="col0">3</td>
                     <td>In</td>
                     <td>checks</td>
                     <td>...</td>
@@ -112,16 +112,16 @@
                     <td></td>
                   </tr>
                   <tr>
-                    <td>4</td>
+                    <td class="col0">4</td>
                     <td>Steps</td>
-                    <td></td>
+                    <td>3</td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                   </tr>
                   <tr>
-                    <td>5</td>
+                    <td class="col0">5</td>
                     <td>Out</td>
                     <td>create</td>
                     <td>...</td>
@@ -163,7 +163,14 @@ th {
 table,
 th,
 td {
+  padding: 0 .5rem;
   border: 1px solid grey;
+}
+
+.col0 {
+  text-align: center;
+  font-weight: bold;
+  background-color: whitesmoke;
 }
 
 #matcher {
