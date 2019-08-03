@@ -43,4 +43,20 @@ export default {
     transition: opacity 1s;
     opacity: 0;
   }
+
+  .slide-enter {
+
+  }
+
+  .slide-enter-active {
+
+  }
+
+  .slide-leave {
+
+  }
+
+  .slide-leave-active {
+    
+  }
 </style>
