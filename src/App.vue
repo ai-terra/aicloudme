@@ -52,7 +52,7 @@ export default {
   }
 
   .slide-enter-active {
-    animation: slide-in 1s ease-out forwards;
+    animation: slide-in .125s ease-out forwards;
   }
 
   .slide-leave {
@@ -60,7 +60,7 @@ export default {
   }
 
   .slide-leave-active {
-    animation: slide-out 1s ease-out forwards;
+    animation: slide-out .125s ease-out forwards;
   }
 
   @keyframes slide-in {
