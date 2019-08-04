@@ -27,7 +27,7 @@
                   <tr>
                     <td class="col0">1</td>
                     <td>Job</td>
-                    <td>name</td>
+                    <td>status</td>
                     <td>...</td>
                     <td></td>
                     <td></td>
@@ -35,6 +35,15 @@
                   </tr>
                   <tr>
                     <td class="col0">2</td>
+                    <td>Rate</td>
+                    <td>coins</td>
+                    <td>...</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="col0">3</td>
                     <td>Terms</td>
                     <td>def</td>
                     <td>...</td>
@@ -43,8 +52,17 @@
                     <td></td>
                   </tr>
                   <tr>
-                    <td class="col0">3</td>
-                    <td>In</td>
+                    <td class="col0">4</td>
+                    <td>Book</td>
+                    <td>done</td>
+                    <td>...</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="col0">5</td>
+                    <td>Input</td>
                     <td>create</td>
                     <td>...</td>
                     <td></td>
@@ -52,7 +70,7 @@
                     <td></td>
                   </tr>
                   <tr>
-                    <td class="col0">4</td>
+                    <td class="col0">6</td>
                     <td>Steps</td>
                     <td>min</td>
                     <td></td>
@@ -61,9 +79,18 @@
                     <td></td>
                   </tr>
                   <tr>
-                    <td class="col0">5</td>
-                    <td>Out</td>
+                    <td class="col0">7</td>
+                    <td>Output</td>
                     <td>checks</td>
+                    <td>...</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                  <td class="col0">8</td>
+                    <td>Paid</td>
+                    <td>value</td>
                     <td>...</td>
                     <td></td>
                     <td></td>
