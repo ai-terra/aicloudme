@@ -6,6 +6,7 @@
           <h1>ai job bank</h1>
           <hr />
           <button class="btn btn-primary" @click="show = !show">Job Deal</button>
+          <button class="btn btn-primary" @click="load = !load">Load / Remove Job/Ops Pair</button>
           <br />
           <br />
           <!-- <transition name="fade">
@@ -629,7 +630,8 @@
 export default {
   data() {
     return {
-      show: true
+      show: false,
+      load: true,
     };
   },
   name: "app"
@@ -637,6 +639,10 @@ export default {
 </script>
 
 <style>
+.btn {
+  margin-right: 10px;
+}
+
 table {
   width: 100%;
   background-color: white;
