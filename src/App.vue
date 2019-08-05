@@ -7,6 +7,7 @@
           <hr />
           <button class="btn btn-primary" @click="show = !show">Job Deal</button>
           <button class="btn btn-primary" @click="load = !load">Load / Remove Job/Ops Pair</button>
+          <button class="btn btn-primary" @click="step = step++">Next Step (M8 engine)</button>
           <br />
           <br />
           <!-- <transition name="fade">
