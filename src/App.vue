@@ -18,13 +18,7 @@
               <div class="project alert alert-info" v-show="show">
                 <table>
                   <tr>
-                    <th></th>
-                    <th>A</th>
-                    <th>B</th>
-                    <th>C</th>
-                    <th>D</th>
-                    <th>E</th>
-                    <th>F</th>
+                    <th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th>
                   </tr>
                   <tr>
                     <td class="col0">1</td>
@@ -36,7 +30,7 @@
                     <td></td>
                   </tr>
                   <tr>
-                    <td class="col0">a</td>
+                    <td class="col0-data">a</td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -45,7 +39,7 @@
                     <td></td>
                   </tr>
                   <tr>
-                    <td class="col0">b</td>
+                    <td class="col0-data">b</td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -54,7 +48,7 @@
                     <td></td>
                   </tr>
                   <tr>
-                    <td class="col0">c</td>
+                    <td class="col0-data">c</td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -632,7 +626,7 @@ export default {
   data() {
     return {
       show: false,
-      load: true,
+      load: true
     };
   },
   name: "app"
@@ -660,10 +654,14 @@ td {
   border: 1px solid grey;
 }
 
-.col0 {
+.col0,
+.col0-data {
   text-align: center;
-  font-weight: bold;
   background-color: whitesmoke;
+}
+
+.col0 {
+  font-weight: bold;
 }
 
 #matcher {
