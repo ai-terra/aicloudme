@@ -18,7 +18,13 @@
               <div class="project alert alert-info" v-show="show">
                 <table>
                   <tr>
-                    <th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th>
+                    <th></th>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>D</th>
+                    <th>E</th>
+                    <th>F</th>
                   </tr>
                   <tr>
                     <td class="col0">1</td>
@@ -625,7 +631,7 @@
 export default {
   data() {
     return {
-      show: false,
+      show: true,
       load: true
     };
   },
@@ -647,7 +653,6 @@ th {
   background-color: whitesmoke;
 }
 
-table,
 th,
 td {
   padding: 0 0.5rem;
@@ -666,15 +671,16 @@ td {
 
 #matcher {
   width: 100%;
+  display: inline-block;
 }
 
 .project {
-  width: 50%;
+  width: 49%;
   display: inline-block;
 }
 
 .service {
-  width: 50%;
+  width: 49%;
   display: inline-block;
 }
 
