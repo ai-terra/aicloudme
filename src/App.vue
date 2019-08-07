@@ -44,7 +44,7 @@
                   <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
                   <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 
-                  <tr><td class="col0-head">6</td><td>Steps</td><td>min</td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-head">6</td><td>Steps</td><td>min</td><td>...</td><td></td><td></td><td></td></tr>
                   <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
                   <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
                   <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
@@ -92,7 +92,7 @@
                   <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
                   <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 
-                  <tr><td class="col0-head">6</td><td>Steps</td><td>min</td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-head">6</td><td>Steps</td><td>min</td><td>...</td><td></td><td></td><td></td></tr>
                   <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
                   <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
                   <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
