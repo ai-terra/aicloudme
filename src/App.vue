@@ -7,7 +7,7 @@
           <hr />
           <button class="btn btn-primary" @click="show = !show">Job Deal</button>
           <button class="btn btn-primary" @click="load = !load">Load / Remove Job/Ops Pair</button>
-          <button class="btn btn-primary" @click="step = step++">Next Step (M8 engine)</button>
+          <button class="btn btn-primary" @click="addTableRow('progress-table', 1, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Step (M8 engine)</button>
           <br />
           <br />
           <!-- <transition name="fade">
@@ -16,8 +16,8 @@
           <div id="matcher">
 
             <transition name="slide-down" type="animation" appear>
-              <div class="progress" v-show="show">
-                <table>
+              <div id="progress" v-show="show">
+                <table id="progress-table">
                   <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr>
 
                   <tr><td class="col0-head">1</td><td>Progress</td><td>status</td><td>...</td><td></td><td></td><td></td></tr>
@@ -65,8 +65,8 @@
             </transition>
 
             <transition name="slide-up" type="animation" appear>
-              <div class="project" v-show="show">
-                <table>
+              <div id="project" v-show="show">
+                <table id="project-table">
                   <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr>
 
                   <tr><td class="col0-head">1</td><td>Job</td><td>status</td><td>...</td><td></td><td></td><td></td></tr>
@@ -113,8 +113,8 @@
             </transition>
 
             <transition name="slide-down" type="animation" appear>
-              <div class="service" v-show="show">
-                <table>
+              <div id="service" v-show="show">
+                <table id="service-table">
                   <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr>
 
                   <tr><td class="col0-head">1</td><td>Ops</td><td>status</td><td>...</td><td></td><td></td><td></td></tr>
@@ -170,13 +170,32 @@
 
 <script>
 export default {
+  name: "app",
   data() {
     return {
       show: true,
       load: true
     };
   },
-  name: "app"
+  // created: function() {
+  //   this.addTableRow('progress', 1, [1, 'type', 'value', 'name','value', 'name1', 'value1']);
+  // },
+  methods: {
+    addTableRow(tableId, contextId, array) {
+      let table = document.getElementById(tableId);
+      let row = table.insertRow(1);
+      // row.className = "c" + contextId + " " + "b" + branchId;
+      row.className = "t" + Date.now() + " "+ "c" + contextId;
+
+      let l = array.length;
+      let cell = [];
+
+      for (let i = 0; i < l; i++) {
+        cell[i] = row.insertCell(i);
+        cell[i].innerHTML = array[i];
+      }
+    }
+  }
 };
 </script>
 
@@ -216,9 +235,9 @@ td {
   display: inline-block;
 }
 
-.project,
-.service,
-.progress {
+#project,
+#service,
+#progress {
   width: 33%;
   height: 100%;
   margin: 0px;
