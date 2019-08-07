@@ -5,9 +5,14 @@
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
           <h1>ai mass progress</h1>
           <hr />
+
+          <button class="btn btn-primary" @click="addTableRow('progress-table', 1, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Progress Step by Step</button>
+
+
           <button class="btn btn-primary" @click="show = !show">Job Deal</button>
+
           <button class="btn btn-primary" @click="load = !load">Load / Remove Job/Ops Pair</button>
-          <button class="btn btn-primary" @click="addTableRow('progress-table', 1, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Step (M8 engine)</button>
+          
           <br />
           <br />
           <!-- <transition name="fade">
