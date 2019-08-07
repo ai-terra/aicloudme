@@ -17,75 +17,18 @@
             <transition name="slide-up" type="animation" appear>
               <div class="project alert alert-info" v-show="show">
                 <table>
-                  <tr>
-                    <th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th>
-                  </tr>
-                  <tr>
-                    <td class="col0">1</td><td>Job</td><td>status</td><td>...</td><td></td><td></td><td></td>
-                  </tr>
-                  <tr>
-                    <td class="col0-data">a</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="col0-data">b</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="col0-data">c</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="col0">2</td>
-                    <td>Rate</td>
-                    <td>coins</td>
-                    <td>...</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="col0">a</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="col0">b</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="col0">c</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
+                  <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr>
+
+                  <tr><td class="col0-head">1</td><td>Job</td><td>status</td><td>...</td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                  <tr><td class="col0">2</td><td>Rate</td><td>coins</td><td>...</td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  
                   <tr>
                     <td class="col0">3</td>
                     <td>Terms</td>
