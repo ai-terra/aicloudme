@@ -8,7 +8,6 @@
 
           <button class="btn btn-primary" @click="addTableRow('progress-table', 1, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Progress Step by Step</button>
 
-
           <button class="btn btn-primary" @click="show = !show">Job Deal</button>
 
           <button class="btn btn-primary" @click="load = !load">Load / Remove Job/Ops Pair</button>
