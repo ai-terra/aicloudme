@@ -15,8 +15,57 @@
           </transition>-->
           <div id="matcher">
 
+            <transition name="slide-down" type="animation" appear>
+              <div class="progress" v-show="show">
+                <table>
+                  <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr>
+
+                  <tr><td class="col0-head">1</td><td>Progress</td><td>status</td><td>...</td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                  <tr><td class="col0-head">2</td><td>Rate</td><td>coins</td><td>...</td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                  <tr><td class="col0-head">3</td><td>Terms</td><td>def</td><td>...</td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                  <tr><td class="col0-head">4</td><td>Book</td><td>done</td><td>...</td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                  <tr><td class="col0-head">5</td><td>Input</td><td>checks</td><td>...</td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                  <tr><td class="col0-head">6</td><td>Steps</td><td>min</td><td>...</td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                  <tr><td class="col0-head">7</td><td>Output</td><td>create</td><td>...</td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                  <tr><td class="col0-head">8</td><td>Paid</td><td>value</td><td>...</td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                </table>
+              </div>
+            </transition>
+
             <transition name="slide-up" type="animation" appear>
-              <div class="project alert alert-info" v-show="show">
+              <div class="project" v-show="show">
                 <table>
                   <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr>
 
@@ -64,60 +113,11 @@
             </transition>
 
             <transition name="slide-down" type="animation" appear>
-              <div class="service alert alert-info" v-show="show">
+              <div class="service" v-show="show">
                 <table>
                   <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr>
 
                   <tr><td class="col0-head">1</td><td>Ops</td><td>status</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">2</td><td>Rate</td><td>coins</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">3</td><td>Terms</td><td>def</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">4</td><td>Book</td><td>done</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">5</td><td>Input</td><td>checks</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">6</td><td>Steps</td><td>min</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">7</td><td>Output</td><td>create</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">8</td><td>Paid</td><td>value</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                </table>
-              </div>
-            </transition>
-
-            <transition name="slide-down" type="animation" appear>
-              <div class="progress alert alert-info" v-show="show">
-                <table>
-                  <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr>
-
-                  <tr><td class="col0-head">1</td><td>Progress</td><td>status</td><td>...</td><td></td><td></td><td></td></tr>
                   <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
                   <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
                   <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
@@ -212,21 +212,16 @@ td {
 
 #matcher {
   width: 100%;
+  height: 100%;
   display: inline-block;
 }
 
-.project {
-  width: 32%;
-  display: inline-block;
-}
-
-.service {
-  width: 32%;
-  display: inline-block;
-}
-
+.project,
+.service,
 .progress {
-  width: 30%;
+  width: 33%;
+  height: 100%;
+  margin: 0px;
   display: inline-block;
 }
 
