@@ -5,12 +5,164 @@
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
           <h1>ai mass progress</h1>
           <hr />
+          <div id="ai-protocol">
 
-          <button class="btn btn-primary" @click="addTableRow('progress-table', 1, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Progress Step by Step</button>
+            <div id="ai-prog">
+              <button class="btn btn-primary" @click="addTableRow('progress-table', 1, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Progress Step by Step</button>
+              <transition name="slide-down" type="animation" appear>
+                <div id="progress" v-show="show">
+                  <table id="progress-table">
+                    <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr>
 
-          <button class="btn btn-primary" @click="show = !show">Job Deal</button>
+                    <tr><td class="col0-head">1</td><td>Progress</td><td>status</td><td>...</td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 
-          <button class="btn btn-primary" @click="load = !load">Load / Remove Job/Ops Pair</button>
+                    <tr><td class="col0-head">2</td><td>Rate</td><td>coins</td><td>...</td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                    <tr><td class="col0-head">3</td><td>Terms</td><td>def</td><td>...</td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                    <tr><td class="col0-head">4</td><td>Book</td><td>done</td><td>...</td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                    <tr><td class="col0-head">5</td><td>Input</td><td>checks</td><td>...</td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                    <tr><td class="col0-head">6</td><td>Steps</td><td>min</td><td>...</td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                    <tr><td class="col0-head">7</td><td>Output</td><td>create</td><td>...</td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                    <tr><td class="col0-head">8</td><td>Paid</td><td>value</td><td>...</td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                  </table>
+                </div>
+              </transition>
+            </div>
+
+            <div id="ai-jobs">
+              <button class="btn btn-primary" @click="show = !show">Job Deal</button>
+              <transition name="slide-up" type="animation" appear>
+                <div id="project" v-show="show">
+                  <table id="project-table">
+                    <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr>
+
+                    <tr><td class="col0-head">1</td><td>Job</td><td>status</td><td>...</td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                    <tr><td class="col0-head">2</td><td>Rate</td><td>coins</td><td>...</td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                    <tr><td class="col0-head">3</td><td>Terms</td><td>def</td><td>...</td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                    <tr><td class="col0-head">4</td><td>Book</td><td>done</td><td>...</td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                    <tr><td class="col0-head">5</td><td>Input</td><td>create</td><td>...</td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                    <tr><td class="col0-head">6</td><td>Steps</td><td>min</td><td>...</td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                    <tr><td class="col0-head">7</td><td>Output</td><td>checks</td><td>...</td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                    <tr><td class="col0-head">8</td><td>Paid</td><td>value</td><td>...</td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                  </table>
+                </div>
+              </transition>
+            </div>
+
+            <div id="ai-ops">
+              <button class="btn btn-primary" @click="load = !load">Load / Remove Job/Ops Pair</button>
+              <transition name="slide-down" type="animation" appear>
+                <div id="service" v-show="show">
+                  <table id="service-table">
+                    <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr>
+
+                    <tr><td class="col0-head">1</td><td>Ops</td><td>status</td><td>...</td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                    <tr><td class="col0-head">2</td><td>Rate</td><td>coins</td><td>...</td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                    <tr><td class="col0-head">3</td><td>Terms</td><td>def</td><td>...</td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                    <tr><td class="col0-head">4</td><td>Book</td><td>done</td><td>...</td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                    <tr><td class="col0-head">5</td><td>Input</td><td>checks</td><td>...</td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                    <tr><td class="col0-head">6</td><td>Steps</td><td>min</td><td>...</td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                    <tr><td class="col0-head">7</td><td>Output</td><td>create</td><td>...</td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                    <tr><td class="col0-head">8</td><td>Paid</td><td>value</td><td>...</td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                  </table>
+                </div>
+              </transition>
+            </div>
+
+          </div>
           
           <br />
           <br />
@@ -19,153 +171,8 @@
           </transition>-->
           <div id="matcher">
 
-            <transition name="slide-down" type="animation" appear>
-              <div id="progress" v-show="show">
-                <table id="progress-table">
-                  <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr>
-
-                  <tr><td class="col0-head">1</td><td>Progress</td><td>status</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">2</td><td>Rate</td><td>coins</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">3</td><td>Terms</td><td>def</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">4</td><td>Book</td><td>done</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">5</td><td>Input</td><td>checks</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">6</td><td>Steps</td><td>min</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">7</td><td>Output</td><td>create</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">8</td><td>Paid</td><td>value</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                </table>
-              </div>
-            </transition>
-
-            <transition name="slide-up" type="animation" appear>
-              <div id="project" v-show="show">
-                <table id="project-table">
-                  <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr>
-
-                  <tr><td class="col0-head">1</td><td>Job</td><td>status</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">2</td><td>Rate</td><td>coins</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">3</td><td>Terms</td><td>def</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">4</td><td>Book</td><td>done</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">5</td><td>Input</td><td>create</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">6</td><td>Steps</td><td>min</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">7</td><td>Output</td><td>checks</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">8</td><td>Paid</td><td>value</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                </table>
-              </div>
-            </transition>
-
-            <transition name="slide-down" type="animation" appear>
-              <div id="service" v-show="show">
-                <table id="service-table">
-                  <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr>
-
-                  <tr><td class="col0-head">1</td><td>Ops</td><td>status</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">2</td><td>Rate</td><td>coins</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">3</td><td>Terms</td><td>def</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">4</td><td>Book</td><td>done</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">5</td><td>Input</td><td>checks</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">6</td><td>Steps</td><td>min</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">7</td><td>Output</td><td>create</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                  <tr><td class="col0-head">8</td><td>Paid</td><td>value</td><td>...</td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                  <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                </table>
-              </div>
-            </transition>
-
           </div>
+
         </div>
       </div>
     </div>
