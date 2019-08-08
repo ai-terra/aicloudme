@@ -2,7 +2,7 @@
   <div id="app">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+        <div class="col-xs-12 col-sm-12 col-md-12">
           <h1>ai mass progress</h1>
           <hr />
           <div id="ai-protocol">
@@ -274,8 +274,7 @@ td {
 #project,
 #service,
 #progress {
-  width: 33%;
-  height: 100%;
+  width: 100%;
   margin: 0px;
   display: inline-block;
 }
