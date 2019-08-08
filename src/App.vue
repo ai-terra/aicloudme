@@ -3,7 +3,11 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
-          <h1>ai mass progress</h1>
+          <div id="title-container">
+            <div class="title"><h1>ai mass progress</h1></div>
+            <div class="title"><button class="btn btn-warning" @click="show = !show">Next</button></div>
+            <div class="title"><button class="btn btn-danger" @click="show = !show">Auto</button></div>
+          </div>
           <hr />
           <div id="ai-protocol">
 
@@ -211,6 +215,18 @@ export default {
 </script>
 
 <style>
+#title-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+  margin: 0 10px;
+}
+
 #ai-protocol {
   width: 100%;
   display: flex;
@@ -261,6 +277,7 @@ td {
 .col0-head,
 .col0-data {
   text-align: center;
+  max-width: 1.5rem;
   background-color: whitesmoke;
 }
 
