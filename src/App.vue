@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
           <div id="title-container">
-            <div><h1>ai mass progress</h1></div>
+            <div><h1>AI Mass Progress</h1></div>
             <div class="title"><button class="btn btn-warning" @click="show = !show">Manual</button></div>
             <div class="title"><button class="btn btn-success" @click="show = !show">Auto</button></div>
           </div>
