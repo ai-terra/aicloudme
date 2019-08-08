@@ -15,7 +15,7 @@
               <button class="next btn btn-primary" @click="addTableRow('progress-table', 1, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Step</button>
               <transition name="slide-down" type="animation" appear>
                 <div id="progress" v-show="show">
-                  <table id="progress-table">
+                  <table id="progress-table" contenteditable="true">
                     <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr>
 
                     <tr><td class="col0-head">1</td><td>Progress</td><td>status</td><td>...</td><td></td><td></td><td></td></tr>
@@ -67,7 +67,7 @@
               <button class="next btn btn-primary" @click="show = !show">Next Job</button>
               <transition name="slide-up" type="animation" appear>
                 <div id="project" v-show="show">
-                  <table id="project-table">
+                  <table id="project-table" contenteditable="true">
                     <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr>
 
                     <tr><td class="col0-head">1</td><td>Job</td><td>status</td><td>...</td><td></td><td></td><td></td></tr>
@@ -118,7 +118,7 @@
               <button class="next btn btn-primary" @click="load = !load">Next Task</button>
               <transition name="slide-down" type="animation" appear>
                 <div id="service" v-show="show">
-                  <table id="service-table">
+                  <table id="service-table" contenteditable="true">
                     <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr>
 
                     <tr><td class="col0-head">1</td><td>Ops</td><td>status</td><td>...</td><td></td><td></td><td></td></tr>
