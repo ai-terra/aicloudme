@@ -296,6 +296,8 @@ td {
 #progress {
   width: 100%;
   margin: 0px;
+  overflow-x: auto;
+  overflow-y: auto;
   display: inline-block;
 }
 
