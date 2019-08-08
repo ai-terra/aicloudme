@@ -4,9 +4,9 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
           <div id="title-container">
-            <div class="title"><h1>ai mass progress</h1></div>
-            <div class="title"><button class="btn btn-warning" @click="show = !show">Next</button></div>
-            <div class="title"><button class="btn btn-danger" @click="show = !show">Auto</button></div>
+            <div><h1>ai mass progress</h1></div>
+            <div class="title"><button class="btn btn-warning" @click="show = !show">Manual</button></div>
+            <div class="title"><button class="btn btn-success" @click="show = !show">Auto</button></div>
           </div>
           <hr />
           <div id="ai-protocol">
@@ -223,8 +223,8 @@ export default {
 }
 
 .title {
-  font-weight: bold;
-  margin: 0 10px;
+  align-self: center;
+  margin: 15px 10px 0px;
 }
 
 #ai-protocol {
