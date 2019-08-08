@@ -8,7 +8,7 @@
           <div id="ai-protocol">
 
             <div id="ai-prog">
-              <button class="btn btn-primary" @click="addTableRow('progress-table', 1, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Progress Step by Step</button>
+              <button class="btn btn-primary" @click="addTableRow('progress-table', 1, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Step</button>
               <transition name="slide-down" type="animation" appear>
                 <div id="progress" v-show="show">
                   <table id="progress-table">
@@ -60,7 +60,7 @@
             </div>
 
             <div id="ai-jobs">
-              <button class="btn btn-primary" @click="show = !show">Job Deal</button>
+              <button class="btn btn-primary" @click="show = !show">Next Job</button>
               <transition name="slide-up" type="animation" appear>
                 <div id="project" v-show="show">
                   <table id="project-table">
@@ -111,7 +111,7 @@
             </div>
 
             <div id="ai-ops">
-              <button class="btn btn-primary" @click="load = !load">Load / Remove Job/Ops Pair</button>
+              <button class="btn btn-primary" @click="load = !load">Next Task</button>
               <transition name="slide-down" type="animation" appear>
                 <div id="service" v-show="show">
                   <table id="service-table">
@@ -211,6 +211,13 @@ export default {
 </script>
 
 <style>
+#ai-protocol {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
 .btn {
   margin-right: 10px;
 }
