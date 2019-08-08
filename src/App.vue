@@ -212,10 +212,28 @@ export default {
 
 <style>
 #ai-protocol {
+  width: 100%;
   display: flex;
   flex-direction: row;
 }
 
+#ai-prog {
+  width: 34%;
+  display: flex;
+  flex-direction: column;
+}
+
+#ai-jobs {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+
+#ai-ops {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
 
 
 .btn {
@@ -260,6 +278,14 @@ td {
   height: 100%;
   margin: 0px;
   display: inline-block;
+}
+
+#project-table,
+#service-table,
+#progress-table {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
 }
 
 .fade-enter {
