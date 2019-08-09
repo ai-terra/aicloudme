@@ -5,14 +5,14 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
           <div id="title-container">
             <div contenteditable="true"><h1>AI Mass Progress</h1></div>
-            <div class="title"><button class="btn btn-warning" @click="show = !show">Manual</button></div>
-            <div class="title"><button class="btn btn-success" @click="show = !show">Auto</button></div>
+            <div class="title" contenteditable="true"><button class="btn btn-warning" @click="show = !show">Manual</button></div>
+            <div class="title" contenteditable="true"><button class="btn btn-success" @click="show = !show">Auto</button></div>
           </div>
           <hr />
           <div id="ai-protocol">
 
             <div id="ai-prog">
-              <button class="next btn btn-primary" @click="addTableRow('progress-table', 1, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Step</button>
+              <button contenteditable="true" class="next btn btn-primary" @click="addTableRow('progress-table', 1, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Step</button>
               <transition name="slide-down" type="animation" appear>
                 <div id="progress" v-show="show">
                   <table id="progress-table" contenteditable="true">
@@ -64,7 +64,7 @@
             </div>
 
             <div id="ai-jobs">
-              <button class="next btn btn-primary" @click="show = !show">Next Job</button>
+              <button contenteditable="true" class="next btn btn-primary" @click="show = !show">Next Job</button>
               <transition name="slide-up" type="animation" appear>
                 <div id="project" v-show="show">
                   <table id="project-table" contenteditable="true">
@@ -115,7 +115,7 @@
             </div>
 
             <div id="ai-ops">
-              <button class="next btn btn-primary" @click="load = !load">Next Task</button>
+              <button contenteditable="true" class="next btn btn-primary" @click="load = !load">Next Task</button>
               <transition name="slide-down" type="animation" appear>
                 <div id="service" v-show="show">
                   <table id="service-table" contenteditable="true">
