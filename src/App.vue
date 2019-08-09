@@ -265,6 +265,7 @@ table {
 }
 
 th {
+  max-width: 1.5rem;
   background-color: whitesmoke;
 }
 
