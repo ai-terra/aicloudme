@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
           <div id="title-container">
-            <div contenteditable="true"><h1>AI Mass Progress</h1></div>
+            <div contenteditable="true"><h1>AI Mass Progress&nbsp;</h1></div>
             <div class="title" contenteditable="true"><button class="btn btn-warning" @click="show = !show">Manual</button></div>
             <div class="title" contenteditable="true"><button class="btn btn-success" @click="show = !show">Auto</button></div>
           </div>
