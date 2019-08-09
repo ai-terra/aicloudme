@@ -62,6 +62,9 @@
                   </table>
                 </div>
               </transition>
+              <div class="background-text">
+                <p>WIN</p>
+              </div>
             </div>
 
             <div id="ai-jobs">
@@ -113,6 +116,9 @@
                   </table>
                 </div>
               </transition>
+              <div class="background-text">
+                <p>JOB</p>
+              </div>
             </div>
 
             <div id="ai-ops">
@@ -166,7 +172,7 @@
                 </div>
               </transition>
               <div class="background-text">
-                <h1>RNA</h1>
+                <p>OPS</p>
               </div>
             </div>
 
@@ -319,20 +325,12 @@ td {
   margin: 0px;
 }
 
-#project-table {
-  background-image: url("./assets/DNA.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 50%;
-  position: relative;
-}
-
 .background-text {
   text-align: center;
   position: relative;
-
-  transform: translate(0, -40rem);
+  transform: translate(4rem, -39rem);
   color: lightgrey;
+  font-size: 18rem;
   z-index: -1;
 }
 
