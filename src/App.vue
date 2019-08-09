@@ -4,6 +4,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
           <div id="title-container">
+            <div ><img id="logo" src="./assets/amp-logo.png"></div>
             <div contenteditable="true"><h1>AI Mass Progress&nbsp;</h1></div>
             <div class="title" contenteditable="true"><button class="btn btn-warning" @click="show = !show">Manual</button></div>
             <div class="title" contenteditable="true"><button class="btn btn-success" @click="show = !show">Auto</button></div>
@@ -215,6 +216,12 @@ export default {
 </script>
 
 <style>
+#logo {
+  width: 4rem;
+  height: 4rem;
+  margin: 1rem 2rem 0 1rem;
+}
+
 #title-container {
   width: 100%;
   display: flex;
@@ -265,7 +272,7 @@ table {
 }
 
 th {
-  max-width: 1.5rem;
+  min-width: 2rem;
   background-color: whitesmoke;
 }
 
