@@ -9,7 +9,7 @@
             <div class="title" contenteditable="true"><button class="btn btn-warning" @click="show = !show">Manual</button></div>
             <div class="title" contenteditable="true"><button class="btn btn-success" @click="show = !show">Auto</button></div>
           </div>
-          <hr />
+
           <div id="ai-protocol">
 
             <div id="ai-prog">
