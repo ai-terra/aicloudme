@@ -180,15 +180,6 @@
             </div>
 
           </div>
-          
-          <br />
-          <br />
-          <!-- <transition name="fade">
-          <div class="alert alert-info" v-if="show">This is some info</div>
-          </transition>-->
-          <div id="matcher">
-
-          </div>
 
         </div>
       </div>
@@ -354,7 +345,6 @@ td:hover {
   position: relative;
   transform: translate(4rem, -39rem);
   color: lightgrey;
-  font-size: 18rem;
   z-index: -1;
 }
 
@@ -446,6 +436,18 @@ td:hover {
   }
   to {
     transform: translateY(20px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  div.background-text {
+    font-size: 18rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  div.background-text {
+    display: none;
   }
 }
 </style>
