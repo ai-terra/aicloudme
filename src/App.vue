@@ -6,7 +6,6 @@
           <div id="title-container">
             <div ><img id="logo" src="./assets/amp-logo.png"></div>
             <div contenteditable="true"><h1>AI Mass Progress&nbsp;</h1></div>
-            <div class="title" contenteditable="true"><button class="btn btn-warning" @click="show = !show">Manual</button></div>
             <div class="title" contenteditable="true"><button class="btn btn-success" @click="show = !show">Auto</button></div>
           </div>
 
@@ -71,7 +70,9 @@
             </div>
 
             <div id="ai-jobs">
-              <button contenteditable="true" class="next btn btn-primary" @click="show = !show">Next Job</button>
+              <div class="buttons">
+                <button contenteditable="true" class="next btn btn-primary" @click="show = !show">Next Job</button>
+              </div>
               <transition name="slide-up" type="animation" appear>
                 <div id="project" v-show="show">
                   <table id="project-table" contenteditable="true">
@@ -125,7 +126,9 @@
             </div>
 
             <div id="ai-ops">
-              <button contenteditable="true" class="next btn btn-primary" @click="load = !load">Next Ops</button>
+              <div class="buttons">
+                <button contenteditable="true" class="next btn btn-primary" @click="load = !load">Next Ops</button>
+              </div>
               <transition name="slide-down" type="animation" appear>
                 <div id="service" v-show="show">
                   <table id="service-table" contenteditable="true">
@@ -457,6 +460,10 @@ td:hover {
   #ai-jobs,
   #ai-ops {
     width: 50%;
+  }
+
+  div.buttons {
+    display: none;
   }
 
   div.background-text {
