@@ -5,8 +5,10 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
           <div id="title-container">
             <div ><img id="logo" src="./assets/amp-logo.png"></div>
-            <div contenteditable="true"><h1>AI Mass Progress&nbsp;</h1></div>
-            <div class="title" contenteditable="true"><button class="btn btn-success" @click="show = !show">Auto</button></div>
+            <div contenteditable="true">
+                <h1 class="title-long"> AI Mass Progress&nbsp;</h1><h1 class="title-short"> AMP&nbsp;</h1>
+            </div>
+            <div class="title" contenteditable="true"><button class="btn btn-success" @click="show = !show">></button></div>
           </div>
 
           <div id="ai-protocol">
@@ -448,7 +450,9 @@ td:hover {
 
 @media screen and (min-width: 1200px) {
 
-
+  h1.title-short {
+    display: none;
+  }
 
   div.background-text {
     font-size: 18rem;
@@ -456,6 +460,10 @@ td:hover {
 }
 
 @media screen and (max-width: 1200px) {
+
+  h1.title-long {
+    display: none;
+  }
 
   #ai-prog {
     display: none;
