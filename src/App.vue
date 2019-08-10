@@ -440,12 +440,25 @@ td:hover {
 }
 
 @media screen and (min-width: 1200px) {
+
+
+
   div.background-text {
     font-size: 18rem;
   }
 }
 
 @media screen and (max-width: 1200px) {
+
+  #ai-prog {
+    display: none;
+  }
+
+  #ai-jobs,
+  #ai-ops {
+    width: 50%;
+  }
+
   div.background-text {
     display: none;
   }
