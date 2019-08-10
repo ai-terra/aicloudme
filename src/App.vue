@@ -227,9 +227,9 @@ export default {
 
 <style>
 #logo {
-  width: 4rem;
-  height: 4rem;
-  margin: 1rem 2rem 0 1rem;
+  width: 2.7rem;
+  height: 2.7rem;
+  margin: .9rem 2rem 0 1rem;
 }
 
 #title-container {
