@@ -14,7 +14,7 @@
 
             <div id="ai-prog">
               <div class="buttons">
-                <button contenteditable="true" class="next btn btn-warning" @click="setCell('project-table', 1, 2, 'funding')">Process</button>
+                <button contenteditable="true" class="next btn btn-warning" @click="setCell('project-table', 1, 2, 'voting')">Process</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="addTableRow('progress-table', 1, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Pay</button>
               </div>
               <transition name="slide-down" type="animation" appear>
@@ -228,6 +228,7 @@ export default {
       let x = table.rows[row].cells;
 
       x[col].innerHTML = value;
+      x[col].classList.add('fade-on-change');
 }
   }
 };
@@ -297,6 +298,20 @@ th,
 td {
   padding: 0 0.5rem;
   border: 1px solid grey;
+}
+
+td:hover {
+  background-color: rgba(108, 167, 84, .5);
+}
+
+@keyframes fade-out {
+  from {background-color: rgba(108, 167, 84, .2);}
+  to {background-color: rgba(108, 167, 84, .4);}
+}
+
+.fade-on-change {
+  background-color: rgba(108, 167, 84, .2);
+  animation: fade-out .5s 1;
 }
 
 .col0-head,
