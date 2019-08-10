@@ -13,7 +13,10 @@
           <div id="ai-protocol">
 
             <div id="ai-prog">
-              <button contenteditable="true" class="next btn btn-primary" @click="addTableRow('progress-table', 1, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Pay</button>
+              <div class="buttons">
+                <button contenteditable="true" class="next btn btn-warning" @click="setCell('project-table', 1, 2, 'funding')">Process</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="addTableRow('progress-table', 1, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Pay</button>
+              </div>
               <transition name="slide-down" type="animation" appear>
                 <div id="progress" v-show="show">
                   <table id="progress-table" contenteditable="true">
@@ -209,8 +212,7 @@ export default {
     addTableRow(tableId, contextId, array) {
       let table = document.getElementById(tableId);
       let row = table.insertRow(1);
-      // row.className = "c" + contextId + " " + "b" + branchId;
-      row.className = "t" + Date.now() + " "+ "c" + contextId;
+      // row.className = "t" + Date.now() + " "+ "c" + contextId;
 
       let l = array.length;
       let cell = [];
@@ -219,7 +221,14 @@ export default {
         cell[i] = row.insertCell(i);
         cell[i].innerHTML = array[i];
       }
-    }
+    },
+    // TODO - check table/rows/cells length, etc
+    setCell(tableId, row, col, value) {
+      let table = document.getElementById(tableId);
+      let x = table.rows[row].cells;
+
+      x[col].innerHTML = value;
+}
   }
 };
 </script>
