@@ -229,6 +229,10 @@ export default {
 </script>
 
 <style>
+.container-fluid {
+  padding: 0px;
+}
+
 #logo {
   width: 2.7rem;
   height: 2.7rem;
