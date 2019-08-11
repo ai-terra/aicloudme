@@ -244,7 +244,11 @@
           </div>
 
           <div id="footer">
-
+            <div class="title-container">
+              <div contenteditable="true">
+                <h4 class="title-long">Ianta Labs | MIT License</h4>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -513,6 +517,10 @@ td:hover {
   }
 
   #editor {
+    transform: translate(0, -23rem);
+  }
+
+  #footer {
     transform: translate(0, -23rem);
   }
 }
