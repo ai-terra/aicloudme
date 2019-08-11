@@ -391,6 +391,10 @@ td:hover {
   z-index: -1;
 }
 
+#edit-title {
+  margin-left: 1rem;
+}
+
 .fade-enter {
   opacity: 0;
 }
@@ -490,6 +494,10 @@ td:hover {
 
   div.background-text {
     font-size: 18rem;
+  }
+
+  #edit {
+    transform: translate(0, -23rem);
   }
 }
 
