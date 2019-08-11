@@ -6,7 +6,7 @@
           <div id="title-container">
             <div ><img id="logo" src="./assets/amp-logo.png"></div>
             <div contenteditable="true">
-                <h1 class="title-long"> AI Mass Progress&nbsp;</h1><h1 class="title-short"> AMP&nbsp;</h1>
+                <h1 class="title-long"> AI Mass Protocol&nbsp;</h1><h1 class="title-short"> AMP&nbsp;</h1>
             </div>
             <div class="title" contenteditable="true"><button class="btn btn-success" @click="show = !show">></button></div>
           </div>
@@ -67,7 +67,7 @@
                 </div>
               </transition>
               <div class="background-text">
-                <p>WIN</p>
+                <p>AI</p>
               </div>
             </div>
 
@@ -123,7 +123,7 @@
                 </div>
               </transition>
               <div class="background-text">
-                <p>JOB</p>
+                <p>Dev</p>
               </div>
             </div>
 
@@ -180,7 +180,7 @@
                 </div>
               </transition>
               <div class="background-text">
-                <p>OPS</p>
+                <p>Ops</p>
               </div>
             </div>
 
