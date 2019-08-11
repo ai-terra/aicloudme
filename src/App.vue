@@ -123,7 +123,7 @@
                 </div>
               </transition>
               <div class="background-text">
-                <p>Dev</p>
+                <p>DEV</p>
               </div>
             </div>
 
@@ -180,7 +180,7 @@
                 </div>
               </transition>
               <div class="background-text">
-                <p>Ops</p>
+                <p>OPS</p>
               </div>
             </div>
 
