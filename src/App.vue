@@ -263,18 +263,8 @@ export default {
   margin-left: 1rem;
 }
 
-#ai-prog {
-  width: 33%;
-  display: flex;
-  flex-direction: column;
-}
-
-#ai-jobs {
-  width: 33%;
-  display: flex;
-  flex-direction: column;
-}
-
+#ai-prog,
+#ai-jobs,
 #ai-ops {
   width: 33%;
   display: flex;
