@@ -1,4 +1,4 @@
-# vue-animations
+# AMP Processor for AI DevOps 
 
 ## Project setup
 ```
