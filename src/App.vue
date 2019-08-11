@@ -259,6 +259,10 @@ export default {
   flex-direction: row;
 }
 
+.buttons {
+  margin-left: 1rem;
+}
+
 #ai-prog {
   width: 33%;
   display: flex;
