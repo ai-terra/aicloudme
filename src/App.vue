@@ -246,7 +246,9 @@
           <div id="footer">
             <div class="title-container">
               <div contenteditable="true">
-                <h4 class="title-long">Ianta Labs | MIT License</h4>
+                <h4 class="title-long">W3AI Meetups Toronto NYC Halifax</h4>
+                <h4 class="title-long">Fork AMP web processor @ github</h4>
+                <h4 class="title-long">© Ianta Labs | MIT License</h4>
               </div>
             </div>
           </div>
