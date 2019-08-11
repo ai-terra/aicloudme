@@ -246,8 +246,12 @@
           <div id="footer">
             <div class="title-container">
               <div contenteditable="true">
-                <h4 class="title-long">W3AI Meetups Toronto NYC Halifax</h4>
-                <h4 class="title-long">Fork AMP web processor @ github</h4>
+                <h4 class="title-long">W3AI Meetups 
+                  <a href="https://www.meetup.com/SocialAI/">Toronto</a> 
+                  <a href="https://www.meetup.com/Manhattan-AIR/">NYC</a> 
+                  <a href="https://www.meetup.com/HalifaxAIG/">Halifax</a>
+                </h4>
+                <h4 class="title-long"><a href="https://github.com/ai-dev-ops/amp-processor">Fork AMP web processor @ Github</a></h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
               </div>
             </div>
