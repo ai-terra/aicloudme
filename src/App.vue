@@ -187,9 +187,17 @@
           </div>
 
           <div id="editor">
-            <div id="edit-title">
-              <h2>Edit</h2>
+          <div class="title-container">
+            <div>
+                <h2 class="title-long">Edit</h2>
             </div>
+            <div class="title"><button class="btn btn-primary" @click="show = !show;">Interests</button></div>
+            <div class="title"><button class="btn btn-primary" @click="show = !show;">Teams</button></div>
+            <div class="title"><button class="btn btn-primary" @click="show = !show;">Rules</button></div>
+            <div class="title"><button class="btn btn-primary" @click="show = !show;">Project</button></div>
+            <div class="title"><button class="btn btn-warning" @click="show = !show;">Commit</button></div>
+            <div class="title"><button class="btn btn-success" @click="show = !show;">{{ run(show) }}</button></div>
+          </div>
             <table id="edit-table" contenteditable="true">
               <tr><th class="col0-head">|</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th><th>L</th><th>M</th><th>N</th><th>O</th><th>P</th><th>Q</th><th>R</th><th>S</th><th>T</th><th>U</th><th>V</th><th>W</th><th>X</th><th>Y</th><th>Z</th></tr>
 
@@ -292,7 +300,7 @@ export default {
 #logo {
   width: 2.7rem;
   height: 2.7rem;
-  margin: .9rem 2rem 0 1rem;
+  margin: .9rem 2rem 0 0rem;
 }
 
 .title-container {
@@ -300,6 +308,7 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-left: 1rem;
 }
 
 .title {
