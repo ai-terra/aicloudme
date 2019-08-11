@@ -8,7 +8,7 @@
             <div contenteditable="true">
                 <h1 class="title-long"> AI Mass Protocol&nbsp;</h1><h1 class="title-short"> AMP&nbsp;</h1>
             </div>
-            <div class="title" contenteditable="true"><button class="btn btn-success" @click="show = !show">></button></div>
+            <div class="title"><button class="btn btn-success" @click="show = !show;">{{ run(show) }}</button></div>
           </div>
 
           <div id="ai-protocol">
@@ -251,6 +251,9 @@ export default {
     };
   },
   methods: {
+    run() { // Toggle run button between play '>' and pause '||'
+      return this.show ? '| |' :  '>';
+    },
     addTableRow(tableId, contextId, array) {
       let table = document.getElementById(tableId);
       let row = table.insertRow(1);
