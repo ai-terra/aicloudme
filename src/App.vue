@@ -186,7 +186,7 @@
 
           </div>
 
-          <div id="edit">
+          <div id="editor">
             <div id="edit-title">
               <h2>Edit</h2>
             </div>
@@ -503,7 +503,7 @@ td:hover {
     font-size: 18rem;
   }
 
-  #edit {
+  #editor {
     transform: translate(0, -23rem);
   }
 }
@@ -530,5 +530,10 @@ td:hover {
   div.background-text {
     display: none;
   }
+
+  #editor {
+    display: none;
+  }
+
 }
 </style>
