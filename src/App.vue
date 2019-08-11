@@ -3,10 +3,10 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
-          <div id="title-container">
+          <div class="title-container">
             <div><img id="logo" src="./assets/amp-logo.png"></div>
             <div contenteditable="true">
-                <h1 class="title-long"> AI Mass Protocol&nbsp;</h1><h1 class="title-short"> AMP&nbsp;</h1>
+                <h1 class="title-long"> AI Mass Progress&nbsp;</h1><h1 class="title-short"> AMP&nbsp;</h1>
             </div>
             <div class="title"><button class="btn btn-success" @click="show = !show;">{{ run(show) }}</button></div>
           </div>
@@ -188,7 +188,7 @@
 
           <div id="edit">
             <div id="edit-title">
-              <h2>Project Editor</h2>
+              <h2>Edit</h2>
             </div>
             <table id="edit-table" contenteditable="true">
               <tr><th class="col0-head">|</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th><th>L</th><th>M</th><th>N</th><th>O</th><th>P</th><th>Q</th><th>R</th><th>S</th><th>T</th><th>U</th><th>V</th><th>W</th><th>X</th><th>Y</th><th>Z</th></tr>
@@ -233,6 +233,10 @@
               <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
               <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
             </table>
+          </div>
+
+          <div id="footer">
+
           </div>
 
         </div>
@@ -291,7 +295,7 @@ export default {
   margin: .9rem 2rem 0 1rem;
 }
 
-#title-container {
+.title-container {
   width: 100%;
   display: flex;
   flex-direction: row;
