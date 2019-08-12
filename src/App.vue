@@ -74,10 +74,11 @@
             <div id="ai-jobs">
               <div class="buttons">
                 <button contenteditable="true" class="next btn btn-primary" @click="show = !show">Next Job</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="addProject">Next Project</button>
               </div>
               <ul class="list-group">
-                <transition name="slide-up" type="animation" appear>
-
+                <transition-group name="slide-up" type="animation" appear>
+                  <li class="list-group-item" v-for="project in projects" v-bind:key="project">Project {{ project }}</li>
                   <!-- <div id="project" v-show="show">
                     <table id="project-table" contenteditable="true">
                       <tr><th class="col0-head">|</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th><th>L</th><th>M</th><th>N</th><th>O</th><th>P</th><th>Q</th><th>R</th><th>S</th><th>T</th><th>U</th><th>V</th><th>W</th><th>X</th><th>Y</th><th>Z</th></tr>
@@ -123,7 +124,7 @@
                       <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
                     </table>
                   </div> -->
-                </transition>
+                </transition-group>
               </ul>
               <div class="background-text">
                 <p>WEB</p>
@@ -133,10 +134,11 @@
             <div id="ai-ops">
               <div class="buttons">
                 <button contenteditable="true" class="next btn btn-primary" @click="load = !load">Next Ops</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="addService">Next Service</button>
               </div>
               <ul class="list-group">
-                <transition name="slide-down" type="animation" appear>
-
+                <transition-group name="slide-down" type="animation" appear>
+                  <li class="list-group-item" v-for="service in services" v-bind:key="service">Service {{ service }}</li>
                   <!-- <div id="service" v-show="show">
                     <table id="service-table" contenteditable="true">
                       <tr><th class="col0-head">|</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th><th>L</th><th>M</th><th>N</th><th>O</th><th>P</th><th>Q</th><th>R</th><th>S</th><th>T</th><th>U</th><th>V</th><th>W</th><th>X</th><th>Y</th><th>Z</th></tr>
@@ -183,7 +185,7 @@
 
                     </table>
                   </div> -->
-                </transition>
+                </transition-group>
               </ul>
               <div class="background-text">
                 <p>OPS</p>
@@ -276,13 +278,23 @@ export default {
     return {
       show: true,
       load: true,
-      projects: ['Project 0', 'Project 1', 'Project 2'],
-      services: ['Service 0', 'Service 1', 'Service 2', 'Service 3']
+      projects: [24],
+      services: [7]
     };
   },
   methods: {
     run() { // Toggle run button between play '>' and pause '||'
       return this.show ? '| |' :  '>';
+    },
+    addProject() {
+      // let projectsNo = this.projects.length;
+      this.projects.push(Math.floor(Math.random()*100)); // add project to end/bottom
+      this.projects.shift();  // removes the first project
+    },
+    addService() {
+      // let servicesNo = this.services.length;
+      this.services.unshift(Math.floor(Math.random()*100)); // add service to top
+      this.services.pop();  // removes the last service
     },
     addTableRow(tableId, contextId, array) {
       let table = document.getElementById(tableId);
@@ -357,7 +369,7 @@ export default {
 }
 
 .next {
-  max-width: 8rem;
+  max-width: 12rem;
 }
 
 table {
