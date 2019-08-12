@@ -183,6 +183,23 @@
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="service in services" v-bind:key="service">Service {{ service }}
+
+                    <hr>
+                    <table class="social">
+                      <ul class="list-group social">
+                        <li class="list-group-item" v-for="row in social" v-bind:key="row">
+                          <tr>
+                            <ul class="list-group row">
+                              <li class="list-group-item" v-for="col in row" v-bind:key="col">
+                                <td>{{ col }}</td>
+                              </li>
+                            </ul>
+                          </tr>
+                        </li>
+                      </ul>
+                    </table>
+                    <hr>
+                    
                     <table id="service-table" contenteditable="true">
                       <tr><th class="col0-head">|</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th><th>L</th><th>M</th><th>N</th><th>O</th><th>P</th><th>Q</th><th>R</th><th>S</th><th>T</th><th>U</th><th>V</th><th>W</th><th>X</th><th>Y</th><th>Z</th></tr>
 
@@ -368,7 +385,12 @@ export default {
       show: true,
       load: true,
       projects: [24],
-      services: [7]
+      services: [7],
+      social: [
+        ['a1','b1','c1','d1'],
+        ['a2','b2','c2','d2'],
+        ['a3','b3','c3','d3'],
+      ]
     };
   },
   methods: {
