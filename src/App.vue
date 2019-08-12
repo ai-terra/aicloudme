@@ -123,7 +123,7 @@
                 </div>
               </transition>
               <div class="background-text">
-                <p>DEV</p>
+                <p>WEB</p>
               </div>
             </div>
 
