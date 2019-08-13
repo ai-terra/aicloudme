@@ -171,7 +171,7 @@
                 </transition-group>
               </ul>
               <div class="background-text">
-                <p>WEB</p>
+                <p>DEV</p>
               </div>
             </div>
 
