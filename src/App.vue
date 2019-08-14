@@ -187,7 +187,7 @@
                     <hr>
                     
                       <ul class="matrix social">
-                        <li class="list-row list-group-item" v-for="(row, index) in social" v-bind:key="index">
+                        <li class="list-group-item list-row" v-for="(row, index) in social" v-bind:key="index">
                           
                             <ul class="row">
                               <li contenteditable="true" class="cell list-group-item" v-for="(col, index) in row" v-bind:key="index">
@@ -494,11 +494,16 @@ export default {
 }
 
 .list-row {
+  margin: 0px;
+  border: 0px;
   padding: 0px;
 }
 
 .cell {
-  padding: .5rem;
+  padding: 0 0.5rem;
+  min-width: 2rem;
+  max-width: 2rem;
+  overflow-wrap: normal;
 }
 
 .cell:hover {
