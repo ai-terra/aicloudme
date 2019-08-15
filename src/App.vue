@@ -184,11 +184,9 @@
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="service in services" v-bind:key="service">Service {{ service }}
-
-                    <hr>
                     
-                      <ul class="matrix social">
-                        <li class="list-group-item list-row" v-for="(row, index) in social" v-bind:key="index">
+                      <ul class="matrix">
+                        <li class="list-group-item list-row" v-for="(row, index) in mixops" v-bind:key="index">
                           
                             <ul class="row">
                               <li contenteditable="true" class="cell list-group-item" v-for="(col, index) in row" v-bind:key="index">
@@ -198,10 +196,8 @@
                           
                         </li>
                       </ul>
-                    
-                    <hr>
 
-                    <table id="service-table" contenteditable="true">
+                    <!-- <table id="service-table" contenteditable="true">
                       <tr><th class="col0-head">|</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th><th>L</th><th>M</th><th>N</th><th>O</th><th>P</th><th>Q</th><th>R</th><th>S</th><th>T</th><th>U</th><th>V</th><th>W</th><th>X</th><th>Y</th><th>Z</th></tr>
 
                       <tr><td class="col0-head">1</td><td>Social</td><td>ready</td><td>...</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
@@ -244,7 +240,7 @@
                       <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
                       <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 
-                    </table>  
+                    </table>   -->
                   </li>
                   <!-- <div id="service" v-show="show">
                     <table id="service-table" contenteditable="true">
@@ -391,6 +387,25 @@ export default {
         ['a1','b1','c1','d1'],
         ['a2','b2','c2','d2', 'e2'],
         ['a3','b3','c3','d3'],
+      ],
+      mixops: [
+        ['✦','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
+        ['1','SOCIAL','>','open','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['a','V','','','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['2','RATES','>','coins','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['a','V','','','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['3','TERMS','>','defs','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['a','V','','','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['4','BOOKED','>','done','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['a','V','','','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['5','INPUT','>','create','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['a','V','','','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['6','STEPS','>','mix','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['a','V','','','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['7','OUTPUT','>','checks','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['a','V','','','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['8','PAY','>','Paid','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['a','V','','','','','','','','','','','','','','','','','','','','','','','','','']
       ]
     };
   },
