@@ -6,9 +6,10 @@
           <div class="title-container">
             <div><img id="logo" src="./assets/amp-logo.png"></div>
             <div contenteditable="true">
-                <h1 class="title-long"> AI Multi-role Player&nbsp;✦✦✦</h1><h1 class="title-short"> AMP&nbsp;</h1>
+                <h1 class="title-long"> AI Multi-role Player&nbsp;</h1><h1 class="title-short"> AMP&nbsp;</h1>
             </div>
             <div class="title"><button class="btn btn-success" @click="show = !show;">{{ run(show) }}</button></div>
+            <div class="title chromosomes">✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
           </div>
 
           <div id="ai-protocol">
@@ -455,6 +456,15 @@ export default {
 .title {
   align-self: center;
   margin: 15px 10px 0px;
+}
+
+.chromosomes {
+  height: 3rem;
+  width: 23rem;
+  margin-top: 1.3rem;
+  line-height: 85%;
+  word-break: break-word; 
+  color: rgba(108, 167, 84, 1);
 }
 
 #ai-protocol {
