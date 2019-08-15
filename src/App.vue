@@ -4,9 +4,9 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
           <div class="title-container">
-            <div><img id="logo" src="./assets/amp-logo.png"></div>
+            <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
-                <h1 class="title-long"> AI Multi-role Player&nbsp;</h1><h1 class="title-short"> AMP&nbsp;</h1>
+                <h1 class="title-long"> AI Multi Player&nbsp;</h1><h1 class="title-short"> AMP&nbsp;</h1>
             </div>
             <div class="title"><button class="btn btn-success" @click="show = !show;">{{ run(show) }}</button></div>
             <div class="title chromosomes">✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
