@@ -461,8 +461,8 @@ export default {
 .chromosomes {
   height: 3rem;
   width: 23rem;
-  margin-top: 1.3rem;
-  line-height: 85%;
+  margin-top: 1.2rem;
+  line-height: 90%;
   word-break: break-word; 
   color: rgba(108, 167, 84, 1);
 }
