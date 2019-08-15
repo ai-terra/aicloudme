@@ -293,6 +293,7 @@ export default {
 #ai-ops {
   width: 33%;
   display: flex;
+  overflow-x: auto;
   flex-direction: column;
 }
 
@@ -335,8 +336,9 @@ export default {
 .cell {
   padding: 0 0.5rem;
   min-width: 2rem;
-  max-width: 2rem;
-  border: 1px solid gray;
+  max-width: 20rem;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
   overflow-wrap: normal;
 }
 
