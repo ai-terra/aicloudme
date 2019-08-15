@@ -407,7 +407,7 @@ td:hover {
 .background-text {
   text-align: center;
   position: relative;
-  transform: translate(4rem, -28rem);
+  transform: translate(4rem, -25rem);
   color: lightgrey;
   z-index: -1;
 }
