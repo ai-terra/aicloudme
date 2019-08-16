@@ -285,7 +285,7 @@ export default {
 #ai-prog,
 #ai-jobs,
 #ai-ops {
-  width: 33%;
+  width: 33.33%;
   display: flex;
   flex-direction: column;
 }
