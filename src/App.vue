@@ -16,7 +16,7 @@
 
             <div id="ai-prog">
               <div class="buttons">
-                <button contenteditable="true" class="next btn btn-warning" @click="setCell('project-table', 1, 2, 'voting')">Process</button>
+                <button contenteditable="true" class="next btn btn-warning" @click="setCell('project-table', 3, 5, 'votes')">Process</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="addTableRow('progress-table', 1, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Pay</button>
               </div>
               <ul class="list-group">
@@ -48,7 +48,7 @@
                 <transition-group name="slide-up" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">Project {{ project }}
 
-                    <table class="matrix">
+                    <table id="project-table" class="matrix">
                       <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
                         <td contenteditable="true" class="cell" v-for="(col, index) in row" v-bind:key="index">
                           {{ col }}
@@ -325,6 +325,7 @@ li.list-group-item {
 .list-group {
   margin: 0px;
   overflow-x: auto;
+  overflow-y: auto;
   border: 1px solid grey;
   background: transparent;
 }
@@ -423,7 +424,7 @@ td:hover {
 #service-table,
 #progress-table {
   width: 100%;
-  margin: 0px;
+  /* margin: 0px; */
 }
 
 .background-text {
