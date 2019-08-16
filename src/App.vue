@@ -23,15 +23,13 @@
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="blockchain in blockchains" v-bind:key="blockchain">AI Blockchain Tx {{ blockchain }}
 
-                    <ul class="matrix">
-                      <li class="list-group-item list-row" v-for="(row, index) in mixops" v-bind:key="index">                          
-                        <ul class="row">
-                          <li contenteditable="true" class="cell list-group-item" v-for="(col, index) in row" v-bind:key="index">
-                            {{ col }}
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
+                    <table class="matrix">
+                      <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
+                        <td contenteditable="true" class="cell" v-for="(col, index) in row" v-bind:key="index">
+                          {{ col }}
+                        </td>
+                      </tr>
+                    </table>
 
                   </li>
                 </transition-group>
@@ -50,15 +48,13 @@
                 <transition-group name="slide-up" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">Project {{ project }}
 
-                    <ul class="matrix">
-                      <li class="list-group-item list-row" v-for="(row, index) in mixops" v-bind:key="index">                          
-                        <ul class="row">
-                          <li contenteditable="true" class="cell list-group-item" v-for="(col, index) in row" v-bind:key="index">
-                            {{ col }}
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
+                    <table class="matrix">
+                      <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
+                        <td contenteditable="true" class="cell" v-for="(col, index) in row" v-bind:key="index">
+                          {{ col }}
+                        </td>
+                      </tr>
+                    </table>
 
                   </li>
                 </transition-group>
@@ -79,11 +75,9 @@
                     
                     <table class="matrix">
                       <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
-                        
-                          <td contenteditable="true" class="cell" v-for="(col, index) in row" v-bind:key="index">
-                            {{ col }}
-                          </td>
-                        
+                        <td contenteditable="true" class="cell" v-for="(col, index) in row" v-bind:key="index">
+                          {{ col }}
+                        </td>
                       </tr>
                     </table>
 
