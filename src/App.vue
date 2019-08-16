@@ -21,7 +21,7 @@
               </div>
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
-                  <li class="list-group-item" v-for="blockchain in blockchains" v-bind:key="blockchain">Blockchain {{ blockchain }}
+                  <li class="list-group-item" v-for="blockchain in blockchains" v-bind:key="blockchain">AI Blockchain Tx {{ blockchain }}
 
                     <ul class="matrix">
                       <li class="list-group-item list-row" v-for="(row, index) in mixops" v-bind:key="index">                          
@@ -183,7 +183,7 @@ export default {
       load: true,
       projects: [24],
       services: [7],
-      blockchains: [36],
+      blockchains: [365],
       mixops: [
         ['✦','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
         ['1','SOCIAL','>','open','','','','','','','','','','','','','','','','','','','','','','',''],
