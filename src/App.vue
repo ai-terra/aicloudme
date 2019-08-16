@@ -77,15 +77,15 @@
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="service in services" v-bind:key="service">Service {{ service }}
                     
-                    <ul class="matrix">
-                      <li class="list-group-item list-row" v-for="(row, index) in mixops" v-bind:key="index">                          
-                        <ul class="row">
-                          <li contenteditable="true" class="cell list-group-item" v-for="(col, index) in row" v-bind:key="index">
+                    <table class="matrix">
+                      <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
+                        
+                          <td contenteditable="true" class="cell" v-for="(col, index) in row" v-bind:key="index">
                             {{ col }}
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
+                          </td>
+                        
+                      </tr>
+                    </table>
 
                   </li>
                 </transition-group>
@@ -331,8 +331,7 @@ li.list-group-item {
   background: transparent;
 }
 
-li.cell.list-group-item:nth-child(odd) {
-  list-style-type: none;
+.cell:nth-child(even) {
   width: 6rem;
   overflow-x: auto; /* change to hidden if that's what you want */
   float: left;
@@ -346,7 +345,7 @@ li.cell.list-group-item:nth-child(odd) {
 
 .cell {
   padding: 0 0.5rem;
-  min-width: 6rem;
+  min-width: 2.5rem;
   max-width: 6rem;
   border-top: 1px solid gray;
   border-left: 1px solid gray;
