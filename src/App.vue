@@ -6,7 +6,7 @@
           <div class="title-container">
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
-                <h1 class="title-long"> AI Multi Player&nbsp;</h1><h1 class="title-short"> AMP&nbsp;</h1>
+                <h1 class="title-long"> AI Play Ops&nbsp;</h1><h1 class="title-short"> AMP&nbsp;</h1>
             </div>
             <div class="title"><button class="btn btn-success" @click="show = !show;">{{ run(show) }}</button></div>
             <div class="title chromosomes">✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
@@ -60,7 +60,7 @@
                 </transition-group>
               </ul>
               <div class="background-text">
-                <p>DEV</p>
+                <p>PLAY</p>
               </div>
             </div>
 
@@ -412,7 +412,7 @@ td:hover {
 .background-text {
   text-align: center;
   position: relative;
-  transform: translate(4rem, -25rem);
+  transform: translate(1rem, -25rem);
   color: lightgrey;
   z-index: -1;
 }
