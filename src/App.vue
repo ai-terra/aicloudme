@@ -293,7 +293,6 @@ export default {
 #ai-ops {
   width: 33%;
   display: flex;
-  overflow-x: auto;
   flex-direction: column;
 }
 
@@ -315,9 +314,14 @@ export default {
   padding: 0px;
 }
 
+li.list-group-item {
+  padding-bottom: 0px;
+}
+
 .list-group {
   margin: 0px;
-  border: 0px;
+  border: 1px solid grey; 
+  overflow-x: auto;
   background: transparent;
 }
 
@@ -325,6 +329,13 @@ export default {
   margin: 0px;
   border: 0px;
   background: transparent;
+}
+
+li.cell.list-group-item:nth-child(odd) {
+  list-style-type: none;
+  width: 10rem;
+  overflow-x: auto; /* change to hidden if that's what you want */
+  float: left;
 }
 
 .list-row {
@@ -336,7 +347,7 @@ export default {
 .cell {
   padding: 0 0.5rem;
   min-width: 2rem;
-  max-width: 20rem;
+  max-width: 10rem;
   border-top: 1px solid gray;
   border-left: 1px solid gray;
   overflow-wrap: normal;
