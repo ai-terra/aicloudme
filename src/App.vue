@@ -6,7 +6,7 @@
           <div class="title-container">
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
-                <h1 class="title-long"> AI Play Ops&nbsp;</h1><h1 class="title-short"> AMP&nbsp;</h1>
+                <h1 class="title-long"> AI Play Ops&nbsp;</h1><h1 class="title-short"> AI&nbsp;</h1>
             </div>
             <div class="title"><button class="btn btn-success" @click="show = !show;">{{ run(show) }}</button></div>
             <div class="title chromosomes">✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
@@ -156,7 +156,7 @@
                   <a href="https://www.meetup.com/Manhattan-AIR/">NYC</a> 
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax</a>
                 </h4>
-                <h4 class="title-long"><a href="https://github.com/ai-dev-ops/amp-processor">Fork AMP web processor @ Github</a></h4>
+                <h4 class="title-long"><a href="https://github.com/ai-dev-ops/amp-processor">Fork AI web processor @ Github</a></h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
               </div>
             </div>
