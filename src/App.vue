@@ -106,7 +106,7 @@
 
             <table class="matrix">
               <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
-                <td contenteditable="true" class="cell" v-for="(col, index) in row" v-bind:key="index">
+                <td contenteditable="true" class="cell-edit" v-for="(col, index) in row" v-bind:key="index">
                   {{ col }}
                 </td>
               </tr>
@@ -339,16 +339,21 @@ li.list-group-item {
   width: 6rem;
 }
 
+.cell-edit:nth-child(even) {
+  width: 10rem;
+}
+
 .list-row {
   margin: 0px;
   border: 0px;
   padding: 0px;
 }
 
-.cell {
+.cell,
+.cell-edit {
   padding: 0 0.5rem;
   min-width: 2rem;
-  max-width: 6rem;
+  max-width: 10rem;
   overflow-x: auto;
   overflow-wrap: normal;
 }
