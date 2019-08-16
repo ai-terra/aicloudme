@@ -17,13 +17,13 @@
             <div id="ai-prog">
               <div class="buttons">
                 <button contenteditable="true" class="next btn btn-warning" @click="setCell('project-table', 3, 5, 'votes')">Process</button>
-                <button contenteditable="true" class="next btn btn-primary" @click="addTableRow('progress-table', 1, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Pay</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="addTableRow('progress-table', 8, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Pay</button>
               </div>
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="blockchain in blockchains" v-bind:key="blockchain">AI Blockchain Tx {{ blockchain }}
 
-                    <table class="matrix">
+                    <table id="progress-table" class="matrix">
                       <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
                         <td contenteditable="true" class="cell" v-for="(col, index) in row" v-bind:key="index">
                           {{ col }}
@@ -192,7 +192,7 @@ export default {
         [' ','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
         ['1','SOCIAL','>','open','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','V','','','','','','','','','','','','','','','','','','','','','','','','',''],
-        ['2','RATES','>','coins','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['2','RATES','>','coins','&','votes','','','','','','','','','','','','','','','','','','','','',''],
         ['a','V','','','','','','','','','','','','','','','','','','','','','','','','',''],
         ['3','TERMS','>','defs','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','V','','','','','','','','','','','','','','','','','','','','','','','','',''],
@@ -284,8 +284,10 @@ export default {
 
 #ai-protocol {
   width: 100%;
+  height: 60rem;
   display: flex;
   flex-direction: row;
+  overflow-y: auto;
 }
 
 .buttons {
