@@ -185,7 +185,7 @@ export default {
       services: [7],
       blockchains: [365],
       mixops: [
-        ['✦','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
+        [' ','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
         ['1','SOCIAL','>','open','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','V','','','','','','','','','','','','','','','','','','','','','','','','',''],
         ['2','RATES','>','coins','','','','','','','','','','','','','','','','','','','','','','',''],
@@ -333,8 +333,6 @@ li.list-group-item {
 
 .cell:nth-child(even) {
   width: 6rem;
-  overflow-x: auto; /* change to hidden if that's what you want */
-  float: left;
 }
 
 .list-row {
@@ -345,10 +343,9 @@ li.list-group-item {
 
 .cell {
   padding: 0 0.5rem;
-  min-width: 2.5rem;
+  min-width: 2rem;
   max-width: 6rem;
-  border-top: 1px solid gray;
-  border-left: 1px solid gray;
+  overflow-x: auto;
   overflow-wrap: normal;
 }
 
@@ -369,7 +366,11 @@ th {
 th,
 td {
   padding: 0 0.5rem;
-  border: 1px solid grey;
+  border-left: 1px solid grey;
+}
+
+tr {
+  border-top: 1px solid grey;
 }
 
 td:hover {
