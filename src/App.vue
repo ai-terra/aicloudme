@@ -92,19 +92,28 @@
           </div>
 
           <div id="editor">
-          <div class="title-container">
-            <div>
-                <h2 class="title-long">Edit</h2>
+            <div class="title-container">
+              <div>
+                  <h2 class="title-long">Edit</h2>
+              </div>
+              <div class="title"><button class="btn btn-primary" @click="show = !show;">Interests</button></div>
+              <div class="title"><button class="btn btn-primary" @click="show = !show;">Teams</button></div>
+              <div class="title"><button class="btn btn-primary" @click="show = !show;">Rules</button></div>
+              <div class="title"><button class="btn btn-primary" @click="show = !show;">Project</button></div>
+              <div class="title"><button class="btn btn-warning" @click="show = !show;">Commit</button></div>
+              <div class="title"><button class="btn btn-success" @click="show = !show;">{{ run(show) }}</button></div>
             </div>
-            <div class="title"><button class="btn btn-primary" @click="show = !show;">Interests</button></div>
-            <div class="title"><button class="btn btn-primary" @click="show = !show;">Teams</button></div>
-            <div class="title"><button class="btn btn-primary" @click="show = !show;">Rules</button></div>
-            <div class="title"><button class="btn btn-primary" @click="show = !show;">Project</button></div>
-            <div class="title"><button class="btn btn-warning" @click="show = !show;">Commit</button></div>
-            <div class="title"><button class="btn btn-success" @click="show = !show;">{{ run(show) }}</button></div>
-          </div>
-            <table id="edit-table" contenteditable="true">
-              <tr><th class="col0-head">|</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th><th>L</th><th>M</th><th>N</th><th>O</th><th>P</th><th>Q</th><th>R</th><th>S</th><th>T</th><th>U</th><th>V</th><th>W</th><th>X</th><th>Y</th><th>Z</th></tr>
+
+            <table class="matrix">
+              <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
+                <td contenteditable="true" class="cell" v-for="(col, index) in row" v-bind:key="index">
+                  {{ col }}
+                </td>
+              </tr>
+            </table>
+
+            <!-- <table id="edit-table" contenteditable="true">
+              <tr><th class="col0-head"> </th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th><th>L</th><th>M</th><th>N</th><th>O</th><th>P</th><th>Q</th><th>R</th><th>S</th><th>T</th><th>U</th><th>V</th><th>W</th><th>X</th><th>Y</th><th>Z</th></tr>
 
               <tr><td class="col0-head">1</td><td>Social</td><td>funded</td><td>...</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
               <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
@@ -145,7 +154,8 @@
               <tr><td class="col0-data">a</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
               <tr><td class="col0-data">b</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
               <tr><td class="col0-data">c</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-            </table>
+            </table> -->
+
           </div>
 
           <div id="footer">
@@ -299,7 +309,7 @@ export default {
 }
 
 .matrix {
-  padding: 0px;
+  margin-left: 1.3rem;
 }
 
 .row {
@@ -309,13 +319,13 @@ export default {
 }
 
 li.list-group-item {
-  padding-bottom: 0px;
+  padding: 0px;
 }
 
 .list-group {
   margin: 0px;
-  border: 1px solid grey; 
   overflow-x: auto;
+  border: 1px solid grey;
   background: transparent;
 }
 
@@ -350,6 +360,8 @@ li.list-group-item {
 
 table {
   width: 100%;
+  overflow-x: auto;
+  border-bottom: 1px solid grey;
 }
 
 th {
