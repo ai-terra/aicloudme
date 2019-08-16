@@ -41,7 +41,7 @@
 
             <div id="ai-jobs">
               <div class="buttons">
-                <button contenteditable="true" class="next btn btn-primary" @click="show = !show">Next Job</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="show = !show">New Play</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="addProject">Next Project</button>
               </div>
               <ul class="list-group">
