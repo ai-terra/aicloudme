@@ -73,7 +73,7 @@
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="service in services" v-bind:key="service">Service {{ service }}
                     
-                    <table class="matrix">
+                    <table id="service-table" class="matrix">
                       <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
                         <td contenteditable="true" class="cell" v-for="(col, index) in row" v-bind:key="index">
                           {{ col }}
