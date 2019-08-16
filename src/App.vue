@@ -160,14 +160,14 @@
 
           <div id="footer">
             <div class="title-container">
-              <div contenteditable="true">
+              <div contenteditable="true" class="footer-items">
                 <h4 class="title-long">W3AI Meetups 
                   <a href="https://www.meetup.com/SocialAI/">Toronto</a> 
                   <a href="https://www.meetup.com/Manhattan-AIR/">NYC</a> 
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax</a>
                 </h4>
-                <h4 class="title-long"><a href="https://github.com/ai-dev-ops/amp-processor">Fork AI web processor @ Github</a></h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
+                <h4 class="title-long"><a href="https://github.com/ai-dev-ops/amp-processor">Fork AI web processor @ Github</a></h4>
               </div>
             </div>
           </div>
@@ -532,6 +532,15 @@ td:hover {
   }
 }
 
+.footer-items {
+  display: flex;
+  align-items: center;
+}
+
+h4 {
+  padding-right: 3rem;
+}
+
 @media screen and (min-width: 1200px) {
 
   h1.title-short {
@@ -548,6 +557,10 @@ td:hover {
 
   #footer {
     transform: translate(0, -23rem);
+  }
+
+  .footer-items {
+    flex-direction: row;
   }
 }
 
@@ -578,5 +591,8 @@ td:hover {
     display: none;
   }
 
+  .footer-items {
+      flex-direction: column;
+  }
 }
 </style>
