@@ -333,7 +333,7 @@ li.list-group-item {
 
 li.cell.list-group-item:nth-child(odd) {
   list-style-type: none;
-  width: 10rem;
+  width: 6rem;
   overflow-x: auto; /* change to hidden if that's what you want */
   float: left;
 }
@@ -346,8 +346,8 @@ li.cell.list-group-item:nth-child(odd) {
 
 .cell {
   padding: 0 0.5rem;
-  min-width: 2rem;
-  max-width: 10rem;
+  min-width: 6rem;
+  max-width: 6rem;
   border-top: 1px solid gray;
   border-left: 1px solid gray;
   overflow-wrap: normal;
