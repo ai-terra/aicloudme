@@ -17,11 +17,12 @@
             <div id="ai-prog">
               <div class="buttons">
                 <button contenteditable="true" class="next btn btn-warning" @click="setCell('project-table', 3, 5, 'votes')">Process</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="addProject">Next Branch</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="addTableRow('progress-table', 8, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Pay</button>
               </div>
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
-                  <li class="list-group-item" v-for="blockchain in blockchains" v-bind:key="blockchain">AI Blockchain Tx {{ blockchain }}
+                  <li class="list-group-item" v-for="project in projects" v-bind:key="project">Blockchain Project {{ project }} Branch 
 
                     <table id="progress-table" class="matrix">
                       <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
