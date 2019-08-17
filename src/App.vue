@@ -22,7 +22,7 @@
               </div>
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
-                  <li class="list-group-item" v-for="project in projects" v-bind:key="project">Blockchain Project {{ project }} Branch 
+                  <li class="list-group-item" v-for="project in projects" v-bind:key="project"><h3>&nbsp;&nbsp;&nbsp;Blockchain Project {{ project }} Branch XX</h3>
 
                     <table id="progress-table" class="matrix">
                       <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
@@ -36,7 +36,7 @@
                 </transition-group>
               </ul>
               <div class="background-text">
-                <p>RES =</p>
+                <p>RES=</p>
               </div>
             </div>
 
@@ -47,7 +47,7 @@
               </div>
               <ul class="list-group">
                 <transition-group name="slide-up" type="animation" appear>
-                  <li class="list-group-item" v-for="project in projects" v-bind:key="project">Project {{ project }}
+                  <li class="list-group-item" v-for="project in projects" v-bind:key="project"><h3>&nbsp;&nbsp;&nbsp;Project {{ project }}</h3>
 
                     <table id="project-table" class="matrix">
                       <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
@@ -72,7 +72,7 @@
               </div>
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
-                  <li class="list-group-item" v-for="service in services" v-bind:key="service">Service {{ service }}
+                  <li class="list-group-item" v-for="service in services" v-bind:key="service"><h3>&nbsp;&nbsp;&nbsp;Service {{ service }}</h3>
                     
                     <table id="service-table" class="matrix">
                       <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
@@ -187,6 +187,7 @@ export default {
       show: true,
       load: true,
       projects: [24],
+      branches: [360],
       services: [7],
       blockchains: [365],
       mixops: [
