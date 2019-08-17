@@ -291,7 +291,7 @@ export default {
 
 #ai-protocol {
   width: 100%;
-  height: 60rem;
+  height: 64rem;
   display: flex;
   flex-direction: row;
   overflow-y: auto;
