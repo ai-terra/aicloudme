@@ -35,7 +35,7 @@
                 </transition-group>
               </ul>
               <div class="background-text">
-                <p>AI</p>
+                <p>RES =</p>
               </div>
             </div>
 
@@ -60,7 +60,7 @@
                 </transition-group>
               </ul>
               <div class="background-text">
-                <p>PLAY</p>
+                <p>REQ</p>
               </div>
             </div>
 
@@ -85,7 +85,7 @@
                 </transition-group>
               </ul>
               <div class="background-text">
-                <p>OPS</p>
+                <p>﹡OPS</p>
               </div>
             </div>
 
