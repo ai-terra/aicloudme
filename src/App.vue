@@ -22,7 +22,7 @@
               </div>
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
-                  <li class="list-group-item" v-for="project in projects" v-bind:key="project"><h3>&nbsp;&nbsp;&nbsp;Blockchain Project {{ project }} Branch XX</h3>
+                  <li class="list-group-item" v-for="project in projects" v-bind:key="project"><h3>&nbsp;&nbsp;&nbsp;Blockchain Project {{ project }} Branch XXX !!! - ToDo!</h3>
 
                     <table id="progress-table" class="matrix">
                       <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
@@ -168,7 +168,7 @@
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax</a>
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
-                <h4 class="title-long"><a href="https://github.com/ai-dev-ops/amp-processor">Fork AI web processor @ Github</a></h4>
+                <h4 class="title-long"><a href="https://github.com/ai-dev-ops/amp-processor">Fork AI P2P Tx processor @ Github</a></h4>
               </div>
             </div>
           </div>
