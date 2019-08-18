@@ -18,12 +18,12 @@
             <div id="ai-prog">
               <div class="buttons">
                 <button contenteditable="true" class="next btn btn-warning" @click="setCell('project-table', 3, 5, 'votes')">Process</button>
-                <button contenteditable="true" class="next btn btn-primary" @click="addProject">Next Branch</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="nextBranch">Next Branch</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="addTableRow('progress-table', 8, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Pay</button>
               </div>
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
-                  <li class="list-group-item" v-for="project in projects" v-bind:key="project"><h3>&nbsp;&nbsp;&nbsp;Blockchain Project {{ project }} Branch XX/YY !!! - ToDo!</h3>
+                  <li class="list-group-item" v-for="project in projects" v-bind:key="project"><h3>&nbsp;&nbsp;&nbsp;Blockchain ( Job {{ project }}, Ops {{ services[0] }}, Branch {{ branch }}/{{ branches[0] }}, fastest)</h3>
 
                     <table id="progress-table" class="matrix">
                       <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
@@ -196,7 +196,9 @@ export default {
     return {
       show: true,
       load: true,
+      results: [8],
       projects: [24],
+      branch: 1,
       branches: [360],
       services: [7],
       blockchains: [365],
@@ -230,10 +232,17 @@ export default {
     run() { // Toggle run button between play '>' and pause '||'
       return this.show ? '| |' :  '>';
     },
+    nextBranch() {
+      this.branch++;
+    },
     addProject() {
       // let projectsNo = this.projects.length;
       this.projects.push(Math.floor(Math.random()*100)); // add project to end/bottom
       this.projects.shift();  // removes the first project
+      // ToDo: add branches and results structures to project data structure - Code below is just demo/dummy
+      this.branches.push(Math.floor(Math.random()*100));
+      this.branches.shift();
+      this.branch = 1;
     },
     addService() {
       // let servicesNo = this.services.length;
