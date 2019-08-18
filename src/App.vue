@@ -97,7 +97,9 @@
           </div>
 
           <div class="background-signs">
-            <p>RES = REQ ﹡ OPS</p>
+            <p>RES = REQ ﹡ OPS
+            <br><br>
+            AI &nbsp; Money &nbsp; Maker</p>
           </div>
 
           <div id="editor">
@@ -576,11 +578,11 @@ h4 {
   }
 
   #editor {
-    transform: translate(0, -47rem);
+    transform: translate(0, -92rem);
   }
 
   #footer {
-    transform: translate(0, -46rem);
+    transform: translate(0, -92rem);
   }
 
   .footer-items {
