@@ -6,7 +6,7 @@
           <div class="title-container">
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
-                <h1 class="title-long">AI P2P Tx Processor&nbsp;</h1><h1 class="title-short"> AI&nbsp;</h1>
+                <h1 class="title-long">AI Money Maker&nbsp;</h1><h1 class="title-short"> AIMM&nbsp;</h1>
             </div>
             <div class="title"><button class="btn btn-success" @click="play">{{ run(show) }}</button></div>
             <div class="title chromosomes">✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
@@ -168,7 +168,7 @@
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax</a>
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
-                <h4 class="title-long"><a href="https://github.com/ai-dev-ops/amp-processor">Fork AI P2P Tx Processor @ Github</a></h4>
+                <h4 class="title-long"><a href="https://github.com/ai-dev-ops/amp-processor">Fork AI Money Maker processor @ Github</a></h4>
               </div>
             </div>
           </div>
