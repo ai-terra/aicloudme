@@ -9,6 +9,7 @@
                 <h1 class="title-long">AI Money Maker&nbsp;</h1><h1 class="title-short"> AIMM&nbsp;</h1>
             </div>
             <div class="title"><button class="btn btn-success" @click="play">{{ run(show) }}</button></div>
+            <div class="title"><button class="btn btn-success" @click="play">++</button></div>
             <div class="title chromosomes">✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
           </div>
 
