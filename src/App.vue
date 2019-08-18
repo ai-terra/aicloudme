@@ -37,13 +37,14 @@
                 </transition-group>
               </ul>
               <div class="background-text">
-                <p>RES=</p>
+                <p>&nbsp;</p>
+                <!-- <p>RES</p> -->
               </div>
             </div>
 
             <div id="ai-jobs">
               <div class="buttons">
-                <button contenteditable="true" class="next btn btn-primary" @click="show = !show">New Play</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="show = !show">New Job</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="addProject">Next Project</button>
               </div>
               <ul class="list-group">
@@ -62,7 +63,8 @@
                 </transition-group>
               </ul>
               <div class="background-text">
-                <p>REQ</p>
+                <p>&nbsp;</p>
+                <!-- <p>REQ</p> -->
               </div>
             </div>
 
@@ -87,10 +89,15 @@
                 </transition-group>
               </ul>
               <div class="background-text">
-                <p>﹡OPS</p>
+                <p>&nbsp;</p>
+                <!-- <p>OPS</p> -->
               </div>
             </div>
 
+          </div>
+
+          <div class="background-signs">
+            <p>RES = REQ ﹡ OPS</p>
           </div>
 
           <div id="editor">
@@ -445,6 +452,15 @@ td:hover {
   z-index: -1;
 }
 
+.background-signs {
+  font-size: 18rem;
+  text-align: center;
+  position: relative;
+  transform: translate(1.9rem, -50rem);
+  color: lightgrey;
+  z-index: -1;
+}
+
 #edit-title {
   margin-left: 1rem;
 }
@@ -560,11 +576,11 @@ h4 {
   }
 
   #editor {
-    transform: translate(0, -23rem);
+    transform: translate(0, -47rem);
   }
 
   #footer {
-    transform: translate(0, -23rem);
+    transform: translate(0, -46rem);
   }
 
   .footer-items {
@@ -592,6 +608,10 @@ h4 {
   }
 
   div.background-text {
+    display: none;
+  }
+
+  div.background-signs {
     display: none;
   }
 
