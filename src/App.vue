@@ -47,8 +47,9 @@
 
             <div id="ai-jobs">
               <div class="buttons">
-                <button contenteditable="true" class="next btn btn-primary" @click="show = !show">New Job</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="nextProject">Next Project</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="show = !show">Job Request:</button>
+                <input type="text" class="input-add-new" name="new-job" value="eg. Snap Picture to AI Spreadsheet" size="40" maxlength="40">
               </div>
               <ul class="list-group">
                 <transition-group name="slide-up" type="animation" appear>
