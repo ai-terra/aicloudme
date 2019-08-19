@@ -20,6 +20,14 @@
                 <li>Social: Job ranking and priorities</li>
               </ul>
             </div>
+            <div class="title" contenteditable="true"><h1>New Skills:</h1></div>
+            <div class="title news-scroller">
+              <ul>
+                <li>Idea: Friendly community platform</li>
+                <li>Budgeted: Table scrapper</li>
+                <li>Social: Job ranking and priorities</li>
+              </ul>
+            </div>
           </div>
 
           <div id="ai-protocol">
@@ -328,7 +336,7 @@ export default {
 }
 
 .news-scroller {
-  width: 75rem;
+  width: 29rem;
   height: 5rem;
   border: 1px solid rgba(108, 167, 84, 1);
 }
