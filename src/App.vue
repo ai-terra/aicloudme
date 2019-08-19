@@ -6,8 +6,8 @@
           <div class="title-container">
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
-                <h1 class="title-long">AI Money Maker&nbsp;</h1><h1 class="title-short"> AIMM&nbsp;</h1>
-                <h5>next &nbsp; generation &nbsp; innovation &nbsp; processor</h5>
+                <h1 class="title-long">AI Money Makers&nbsp;</h1><h1 class="title-short"> AIMM&nbsp;</h1>
+                <h5>recombinant &nbsp; snap &nbsp; jobs &nbsp; innovators</h5>
             </div>
             <div class="title"><button class="btn btn-success" @click="play">{{ run(show) }}</button></div>
             <div class="title"><button class="btn btn-success" @click="play">++</button></div>
