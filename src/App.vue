@@ -71,7 +71,7 @@
 
             <div id="ai-ops">
               <div class="buttons">
-                <button contenteditable="true" class="next btn btn-primary" @click="load = !load">Next Ops</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="load = !load">New Ops</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="nextService">Next Service</button>
               </div>
               <ul class="list-group">
