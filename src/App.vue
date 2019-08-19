@@ -20,7 +20,9 @@
               <div class="buttons">
                 <button contenteditable="true" class="next btn btn-warning" @click="setCell('project-table', 3, 5, 'votes')">Process</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="nextBranch">Next Branch</button>
-                <button contenteditable="true" class="next btn btn-primary" @click="addTableRow('progress-table', 8, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Pay</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="newRule">New Rule:</button>
+                <input type="text" class="input-add-new" name="new-rule" value="add new rule: eg. cheapest" size="40" maxlength="40">
+                <!-- <button contenteditable="true" class="next btn btn-primary" @click="addTableRow('progress-table', 8, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Pay</button> -->
               </div>
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
@@ -100,7 +102,7 @@
           <div class="background-signs">
             <p>RES = REQ ﹡ OPS
             <br><br>
-            AI &nbsp; Money &nbsp; Maker</p>
+            AI &nbsp; Money &nbsp; Makers</p>
           </div>
 
           <div id="editor">
@@ -337,6 +339,12 @@ export default {
 
 .next {
   max-width: 12rem;
+}
+
+.input-add-new {
+  width: 26rem;
+  height: 3rem;
+  font-size: 1.5rem;
 }
 
 .matrix {
