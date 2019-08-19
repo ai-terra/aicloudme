@@ -46,7 +46,7 @@
             <div id="ai-jobs">
               <div class="buttons">
                 <button contenteditable="true" class="next btn btn-primary" @click="show = !show">New Job</button>
-                <button contenteditable="true" class="next btn btn-primary" @click="addProject">Next Project</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="nextProject">Next Project</button>
               </div>
               <ul class="list-group">
                 <transition-group name="slide-up" type="animation" appear>
@@ -72,7 +72,7 @@
             <div id="ai-ops">
               <div class="buttons">
                 <button contenteditable="true" class="next btn btn-primary" @click="load = !load">Next Ops</button>
-                <button contenteditable="true" class="next btn btn-primary" @click="addService">Next Service</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="nextService">Next Service</button>
               </div>
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
@@ -228,8 +228,8 @@ export default {
   methods: {
     play() {
       this.show = !this.show; // To change to pause
-      this.addProject();
-      this.addService();
+      this.nextProject();
+      this.nextService();
     },
     run() { // Toggle run button between play '>' and pause '||'
       return this.show ? '| |' :  '>';
@@ -237,7 +237,7 @@ export default {
     nextBranch() {
       this.branch++;
     },
-    addProject() {
+    nextProject() {
       // let projectsNo = this.projects.length;
       this.projects.push(Math.floor(Math.random()*100)); // add project to end/bottom
       this.projects.shift();  // removes the first project
@@ -246,11 +246,12 @@ export default {
       this.branches.shift();
       this.branch = 1;
     },
-    addService() {
+    nextService() {
       // let servicesNo = this.services.length;
       this.services.unshift(Math.floor(Math.random()*100)); // add service to top
       this.services.pop();  // removes the last service
     },
+    // ToDo - To include in Processor / Eval workflow
     addTableRow(tableId, contextId, array) {
       let table = document.getElementById(tableId);
       let row = table.insertRow(1);
