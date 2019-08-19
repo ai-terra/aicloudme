@@ -20,7 +20,7 @@
               <div class="buttons">
                 <button contenteditable="true" class="next btn btn-warning" @click="setCell('project-table', 3, 5, 'votes')">Process</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="nextBranch">Next Branch</button>
-                <button contenteditable="true" class="next btn btn-primary" @click="newRule">New Rule:</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="addNewRule">New Rule:</button>
                 <input type="text" class="input-add-new" name="new-rule" value="add new rule: eg. cheapest" size="40" maxlength="40">
                 <!-- <button contenteditable="true" class="next btn btn-primary" @click="addTableRow('progress-table', 8, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Pay</button> -->
               </div>
@@ -200,6 +200,7 @@ export default {
     return {
       show: true,
       load: true,
+      rules: ['fastest'],
       results: [8],
       projects: [24],
       branch: 1,
@@ -238,6 +239,9 @@ export default {
     },
     nextBranch() {
       this.branch++;
+    },
+    addNewRule() {
+      this.rules.push('new rule');
     },
     nextProject() {
       // let projectsNo = this.projects.length;
