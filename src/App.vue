@@ -12,6 +12,8 @@
             <div class="title"><button class="btn btn-success" @click="play">{{ run(show) }}</button></div>
             <div class="title"><button class="btn btn-success" @click="play">++</button></div>
             <div class="title chromosomes">✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
+            <div class="title" contenteditable="true"><h1>New Jobs:</h1></div>
+            <div class="title"></div>
           </div>
 
           <div id="ai-protocol">
