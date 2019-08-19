@@ -53,7 +53,7 @@
               </div>
               <ul class="list-group">
                 <transition-group name="slide-up" type="animation" appear>
-                  <li class="list-group-item" v-for="project in projects" v-bind:key="project"><h3>&nbsp;&nbsp;&nbsp;Project {{ project }}: Title[{{ project }}] - OwnerName[{{ project }}] - Job-{{ project }}</h3>
+                  <li class="list-group-item" v-for="project in projects" v-bind:key="project"><h3>&nbsp;&nbsp;&nbsp;Project {{ project }}: Title[{{ project }}] - Friend[{{ project }}] - [Interest] - Job-{{ project }}</h3>
 
                     <table id="project-table" class="matrix">
                       <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
@@ -80,7 +80,7 @@
               </div>
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
-                  <li class="list-group-item" v-for="service in services" v-bind:key="service"><h3>&nbsp;&nbsp;&nbsp;Service {{ service }}: Title[{{ service }}] - OwnerName[{{ service }}] - Ops-{{ service }}</h3>
+                  <li class="list-group-item" v-for="service in services" v-bind:key="service"><h3>&nbsp;&nbsp;&nbsp;Service {{ service }}: Title[{{ service }}] - Friend[{{ service }}] - [Interest] - Ops-{{ service }}</h3>
                     
                     <table id="service-table" class="matrix">
                       <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
