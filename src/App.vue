@@ -109,9 +109,10 @@
                   <h2 class="title-long">Edit</h2>
               </div>
               <div class="title"><button class="btn btn-primary" @click="show = !show;">Interests</button></div>
-              <div class="title"><button class="btn btn-primary" @click="show = !show;">Teams</button></div>
+              <div class="title"><button class="btn btn-primary" @click="show = !show;">Friends</button></div>
               <div class="title"><button class="btn btn-primary" @click="show = !show;">Rules</button></div>
-              <div class="title"><button class="btn btn-primary" @click="show = !show;">Project</button></div>
+              <div class="title"><button class="btn btn-primary" @click="show = !show;">+Project</button></div>
+              <div class="title"><button class="btn btn-primary" @click="show = !show;">+Service</button></div>
               <div class="title"><button class="btn btn-warning" @click="show = !show;">Commit</button></div>
               <div class="title"><button class="btn btn-success" @click="show = !show;">{{ run(show) }}</button></div>
             </div>
