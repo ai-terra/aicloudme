@@ -13,7 +13,13 @@
             <div class="title"><button class="btn btn-success" @click="play">++</button></div>
             <div class="title chromosomes">✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
             <div class="title" contenteditable="true"><h1>New Jobs:</h1></div>
-            <div class="title"></div>
+            <div class="title news-scroller">
+              <ul>
+                <li>Idea: Friendly community platform</li>
+                <li>Budgeted: Table scrapper</li>
+                <li>Social: Job ranking and priorities</li>
+              </ul>
+            </div>
           </div>
 
           <div id="ai-protocol">
@@ -319,6 +325,12 @@ export default {
   line-height: 90%;
   word-break: break-word; 
   color: rgba(108, 167, 84, 1);
+}
+
+.news-scroller {
+  width: 75rem;
+  height: 5rem;
+  border: 1px solid rgba(108, 167, 84, 1);
 }
 
 #ai-protocol {
