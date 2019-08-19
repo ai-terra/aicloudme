@@ -74,8 +74,9 @@
 
             <div id="ai-ops">
               <div class="buttons">
-                <button contenteditable="true" class="next btn btn-primary" @click="load = !load">New Ops</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="nextService">Next Service</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="load = !load">Ops Offer:</button>
+                <input type="text" class="input-add-new" name="new-ops" value="eg. Execute or book top required ops." size="40" maxlength="40">
               </div>
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
