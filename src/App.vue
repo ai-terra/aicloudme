@@ -351,6 +351,9 @@ export default {
 
 .buttons {
   margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  align-content: space-around;
 }
 
 #ai-prog,
@@ -367,9 +370,12 @@ export default {
 
 .next {
   max-width: 12rem;
+  margin-right: 1rem;
 }
 
 .input-add-new {
+  border-top: 5px;
+  padding-left: 5px;
   width: 26rem;
   height: 3rem;
   font-size: 1.5rem;
