@@ -120,7 +120,7 @@
           <div class="background-signs">
             <p>RES = REQ ﹡ OPS
             <br><br>
-            AI &nbsp; Money &nbsp; Makers</p>
+            W3AI &nbsp;Money &nbsp;Makers</p>
           </div>
 
           <div id="editor">
@@ -200,7 +200,7 @@
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax</a>
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
-                <h4 class="title-long"><a href="https://github.com/ai-dev-ops/amp-processor">Fork AI Money Maker processor @ Github</a></h4>
+                <h4 class="title-long"><a href="https://github.com/ai-dev-ops/amp-processor">Test AI Money Maker processor @ Github</a></h4>
               </div>
             </div>
           </div>
@@ -527,7 +527,7 @@ td:hover {
   font-size: 18rem;
   text-align: center;
   position: relative;
-  transform: translate(1.9rem, -50rem);
+  transform: translate(1.1rem, -51.5rem);
   color: lightgrey;
   z-index: -1;
 }
@@ -633,7 +633,7 @@ td:hover {
 }
 
 h4 {
-  padding-right: 3rem;
+  padding-right: 6.3rem;
 }
 
 @media screen and (min-width: 1200px) {
@@ -647,11 +647,11 @@ h4 {
   }
 
   #editor {
-    transform: translate(0, -92rem);
+    transform: translate(0, -93rem);
   }
 
   #footer {
-    transform: translate(0, -92rem);
+    transform: translate(0, -93rem);
   }
 
   .footer-items {
