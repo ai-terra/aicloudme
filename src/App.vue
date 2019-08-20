@@ -37,7 +37,7 @@
                 <button contenteditable="true" class="next btn btn-warning" @click="setCell('project-table', 3, 5, 'votes')">Process</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="nextBranch">Next Branch</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="addNewRule">New Rule:</button>
-                <input type="text" class="input-add-new" name="new-rule" value="add new rule: eg. cheapest" size="40" maxlength="40">
+                <input type="text" class="input-add-new" name="new-rule" value="eg: cheapest - use cheapest operations" size="40" maxlength="40">
                 <!-- <button contenteditable="true" class="next btn btn-primary" @click="addTableRow('progress-table', 8, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Pay</button> -->
               </div>
               <ul class="list-group">
@@ -92,7 +92,7 @@
               <div class="buttons">
                 <button contenteditable="true" class="next btn btn-primary" @click="nextService">Next Service</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="load = !load">Ops Offer:</button>
-                <input type="text" class="input-add-new" name="new-ops" value="eg. Execute or book top required ops." size="40" maxlength="40">
+                <input type="text" class="input-add-new" name="new-ops" value="eg: Execute or book top required ops." size="40" maxlength="40">
               </div>
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
