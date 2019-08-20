@@ -9,8 +9,8 @@
                 <h1 class="title-long">AI Money Makers&nbsp;</h1><h1 class="title-short"> AIMM&nbsp;</h1>
                 <h5>max speed progress & profit interest network</h5>
             </div>
-            <div class="title"><button class="btn btn-success" @click="play">{{ run(show) }}</button></div>
-            <div class="title"><button class="btn btn-success" @click="play">++</button></div>
+            <div class="title"><button class="player btn btn-success" @click="play">{{ run(show) }}</button></div>
+            <div class="title"><button class="player btn btn-success" @click="play">++</button></div>
             <div class="title chromosomes">✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
             <div class="title" contenteditable="true"><h1>New Jobs:</h1></div>
             <div class="title news-scroller">
@@ -134,7 +134,7 @@
               <div class="title"><button class="btn btn-primary" @click="show = !show;">+Project</button></div>
               <div class="title"><button class="btn btn-primary" @click="show = !show;">+Service</button></div>
               <div class="title"><button class="btn btn-warning" @click="show = !show;">Commit</button></div>
-              <div class="title"><button class="btn btn-success" @click="show = !show;">{{ run(show) }}</button></div>
+              <div class="title"><button class="player btn btn-success" @click="show = !show;">{{ run(show) }}</button></div>
             </div>
 
             <table class="matrix">
@@ -324,6 +324,10 @@ export default {
 .title {
   align-self: center;
   margin: 15px 10px 0px;
+}
+
+.player {
+  width: 3rem;
 }
 
 .chromosomes {
