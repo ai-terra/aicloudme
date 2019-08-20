@@ -193,7 +193,7 @@
 
           <div id="footer">
             <div class="title-container">
-              <div contenteditable="true" class="footer-items">
+              <div class="footer-items">
                 <h4 class="title-long">W3AI Meetups 
                   <a href="https://www.meetup.com/SocialAI/">Toronto</a> 
                   <a href="https://www.meetup.com/Manhattan-AIR/">NYC</a> 
