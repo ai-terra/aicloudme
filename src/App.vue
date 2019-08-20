@@ -11,8 +11,8 @@
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-success" @click="play">++</button></div>
-            <div class="title chromosomes">✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
-            <div class="title" contenteditable="true"><h1>New Jobs:</h1></div>
+            <div class="title chromosomes" contenteditable="true">✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
+            <div class="title" contenteditable="true"><h1>Jobs News:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>Idea: Friendly community platform</li>
@@ -20,7 +20,7 @@
                 <li>Social: Job ranking and priorities</li>
               </ul>
             </div>
-            <div class="title" contenteditable="true"><h1>New Skills:</h1></div>
+            <div class="title" contenteditable="true"><h1>Skill News:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>Idea: Friendly community platform</li>
@@ -342,11 +342,12 @@ export default {
 
 .chromosomes {
   height: 3rem;
-  width: 23rem;
+  width: 15rem;
   margin-top: 1.2rem;
   line-height: 90%;
   word-break: break-word; 
   color: rgba(108, 167, 84, 1);
+  overflow-y: auto;
 }
 
 .news-scroller {
