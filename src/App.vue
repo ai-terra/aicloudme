@@ -13,7 +13,7 @@
             <div class="title"><button class="player btn btn-success" @click="play">++</button></div>
             <div class="title chromosomes">✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
             <div class="title" contenteditable="true"><h1>New Jobs:</h1></div>
-            <div class="title news-scroller">
+            <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>Idea: Friendly community platform</li>
                 <li>Budgeted: Table scrapper</li>
@@ -21,7 +21,7 @@
               </ul>
             </div>
             <div class="title" contenteditable="true"><h1>New Skills:</h1></div>
-            <div class="title news-scroller">
+            <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>Idea: Friendly community platform</li>
                 <li>Budgeted: Table scrapper</li>
