@@ -9,7 +9,7 @@
                 <h1 class="title-long">AI Money Makers&nbsp;</h1><h1 class="title-short"> AIMM&nbsp;</h1>
                 <h5>max speed progress & profit interest network</h5>
             </div>
-            <div class="title"><button class="player btn btn-success" @click="!pause ? start(speed) : stop">{{ run(show) }}</button></div>
+            <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-success" @click="play">++</button></div>
             <div class="title chromosomes">✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
             <div class="title" contenteditable="true"><h1>New Jobs:</h1></div>
@@ -134,7 +134,7 @@
               <div class="title"><button class="btn btn-primary" @click="show = !show;">+Project</button></div>
               <div class="title"><button class="btn btn-primary" @click="show = !show;">+Service</button></div>
               <div class="title"><button class="btn btn-warning" @click="show = !show;">Commit</button></div>
-              <div class="title"><button class="player btn btn-success" @click="show = !show;">{{ run(show) }}</button></div>
+              <div class="title"><button class="player btn btn-success" @click="pause = !pause;">{{ pause ? '>' : '| |' }}</button></div>
             </div>
 
             <table class="matrix">
@@ -217,8 +217,8 @@ export default {
   data() {
     return {
       interval: 'timer', 
-      speed: 1000,  // 1000 milliseconds
-      pause: false,
+      speed: 2000,  // 1000 milliseconds
+      pause: true,
       show: true,
       load: true,
       rules: ['fastest'],
@@ -250,20 +250,20 @@ export default {
     };
   },
   methods: {
-    start(newSpeed) {
-      this.interval = setInterval(this.play, newSpeed);
+    start() {
       this.pause = false;
+      this.interval = setInterval(this.play, this.speed);
     },
     play() {
       this.nextProject();
       this.nextService();
     },
     stop() {
-      clearInterval(this.interval);
       this.pause = true;
+      clearInterval(this.interval);
     },
-    run() { // Toggle run button between play '>' and pause '||'
-      return this.show ? '| |' :  '>';
+    showPause() { // Toggle play button between play '>' and pause '||'
+      return this.pause ? '| |' :  '>';
     },
     nextBranch() {
       this.branch++;
