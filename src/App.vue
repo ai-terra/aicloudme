@@ -7,7 +7,7 @@
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
                 <h1 class="title-long">AI Money Makers&nbsp;</h1><h1 class="title-short"> AIMM&nbsp;</h1>
-                <h5>max speed progress & profit interest network</h5>
+                <h5>max speed power ﹡ profit ﹡ progress network</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-success" @click="play">++</button></div>
