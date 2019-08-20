@@ -15,7 +15,7 @@
             <div class="title" contenteditable="true"><h1>Jobs News:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
-                <li>Idea: Friendly community platform</li>
+                <li>Idea: Add Job Request to Job News</li>
                 <li>Budgeted: Table scrapper</li>
                 <li>Social: Job ranking and priorities</li>
               </ul>
@@ -65,7 +65,7 @@
               <div class="buttons">
                 <button contenteditable="true" class="next btn btn-primary" @click="nextProject">Next Project</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="show = !show">Job Request:</button>
-                <input type="text" class="input-add-new" name="new-job" value="eg. Snap Picture to AI Spreadsheet" size="40" maxlength="40">
+                <input type="text" class="input-add-new" name="new-job" value="eg: Add Job Request to Job News" size="40" maxlength="40">
               </div>
               <ul class="list-group">
                 <transition-group name="slide-up" type="animation" appear>
