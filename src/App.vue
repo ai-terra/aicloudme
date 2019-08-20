@@ -10,7 +10,7 @@
                 <h5>max speed power ﹡ profit ﹡ progress network</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
-            <div class="title"><button class="player btn btn-success" @click="play">++</button></div>
+            <div class="title"><button class="player btn btn-success" @click="play">+</button></div>
             <div class="title chromosomes" contenteditable="true">✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
             <div class="title" contenteditable="true"><h1>Jobs News:</h1></div>
             <div class="title news-scroller" contenteditable="true">
@@ -134,7 +134,7 @@
               <div class="title"><button class="btn btn-primary" @click="show = !show;">+Project</button></div>
               <div class="title"><button class="btn btn-primary" @click="show = !show;">+Service</button></div>
               <div class="title"><button class="btn btn-warning" @click="show = !show;">Commit</button></div>
-              <div class="title"><button class="player btn btn-success" @click="pause = !pause;">{{ pause ? '>' : '| |' }}</button></div>
+              <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |' }}</button></div>
             </div>
 
             <table class="matrix">
@@ -341,7 +341,7 @@ export default {
 }
 
 .chromosomes {
-  height: 3rem;
+  height: 3.4rem;
   width: 15rem;
   margin-top: 1.2rem;
   line-height: 90%;
@@ -352,7 +352,7 @@ export default {
 
 .news-scroller {
   width: 32rem;
-  height: 5rem;
+  height: 5.25rem;
   border: 1px solid rgba(108, 167, 84, 1);
 }
 
