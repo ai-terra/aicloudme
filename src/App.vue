@@ -9,7 +9,7 @@
                 <h1 class="title-long">AI Money Makers&nbsp;</h1><h1 class="title-short"> AIMM&nbsp;</h1>
                 <h5>max speed progress & profit interest network</h5>
             </div>
-            <div class="title"><button class="player btn btn-success" @click="play">{{ run(show) }}</button></div>
+            <div class="title"><button class="player btn btn-success" @click="!pause ? start(speed) : stop">{{ run(show) }}</button></div>
             <div class="title"><button class="player btn btn-success" @click="play">++</button></div>
             <div class="title chromosomes">✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
             <div class="title" contenteditable="true"><h1>New Jobs:</h1></div>
@@ -216,6 +216,9 @@ export default {
   name: "app",
   data() {
     return {
+      interval: 'timer', 
+      speed: 1000,  // 1000 milliseconds
+      pause: false,
       show: true,
       load: true,
       rules: ['fastest'],
@@ -247,10 +250,17 @@ export default {
     };
   },
   methods: {
+    start(newSpeed) {
+      this.interval = setInterval(this.play, newSpeed);
+      this.pause = false;
+    },
     play() {
-      this.show = !this.show; // To change to pause
       this.nextProject();
       this.nextService();
+    },
+    stop() {
+      clearInterval(this.interval);
+      this.pause = true;
     },
     run() { // Toggle run button between play '>' and pause '||'
       return this.show ? '| |' :  '>';
