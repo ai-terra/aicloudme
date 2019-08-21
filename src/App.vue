@@ -6,8 +6,8 @@
           <div class="title-container">
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
-                <h1 class="title-long">AI Money Makers&nbsp;</h1><h1 class="title-short"> AIMM&nbsp;</h1>
-                <h5>max speed power ﹡ profit ﹡ progress network</h5>
+                <h1 class="title-long">AI Ops Engine&nbsp;</h1><h1 class="title-short"> AI Ops&nbsp;</h1>
+                <h5>max performance﹡profit﹡progress</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-success" @click="play">+</button></div>
@@ -34,7 +34,7 @@
 
             <div id="ai-prog">
               <div class="buttons">
-                <button contenteditable="true" class="next btn btn-warning" @click="setCell('project-table', 3, 5, 'votes')">Process</button>
+                <button contenteditable="true" class="next btn btn-warning" @click="setCell('project-table', 3, 5, 'votes')">Rank</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="nextBranch">Next Branch</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="addNewRule">New Rule:</button>
                 <input type="text" class="input-add-new" name="new-rule" value="eg: cheapest - use cheapest operations" size="40" maxlength="40">
@@ -120,7 +120,7 @@
           <div class="background-signs">
             <p>RES = REQ ﹡ OPS
             <br><br>
-            W3AI &nbsp;Money &nbsp;Makers</p>
+            W3AI &nbsp;Ops &nbsp;Network</p>
           </div>
 
           <div id="editor">
@@ -200,7 +200,7 @@
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax</a>
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
-                <h4 class="title-long"><a href="https://github.com/ai-dev-ops/amp-processor">Test AI Money Maker processor @ Github</a></h4>
+                <h4 class="title-long"><a href="https://github.com/ai-dev-ops/amp-processor">Dev AI Ops Engine @ Github</a></h4>
               </div>
             </div>
           </div>
