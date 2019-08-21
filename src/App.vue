@@ -10,7 +10,7 @@
                 <h5>max performance﹡profit﹡progress</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
-            <div class="title"><button class="player btn btn-success" @click="play">+</button></div>
+            <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
             <div class="title chromosomes" contenteditable="true">✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
             <div class="title" contenteditable="true"><h1>Jobs News:</h1></div>
             <div class="title news-scroller" contenteditable="true">
@@ -66,6 +66,7 @@
                 <button contenteditable="true" class="next btn btn-primary" @click="nextProject">Next Project</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="show = !show">Job Request:</button>
                 <input type="text" class="input-add-new" name="new-job" value="eg: Add Job Request to Job News" size="40" maxlength="40">
+                <button class="next btn btn-warning" @click="play">+</button>
               </div>
               <ul class="list-group">
                 <transition-group name="slide-up" type="animation" appear>
@@ -93,6 +94,7 @@
                 <button contenteditable="true" class="next btn btn-primary" @click="nextService">Next Service</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="load = !load">Ops Offer:</button>
                 <input type="text" class="input-add-new" name="new-ops" value="eg: Execute or book top required ops." size="40" maxlength="40">
+                <button class="next btn btn-warning" @click="play">+</button>
               </div>
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
@@ -134,6 +136,7 @@
               <div class="title"><button class="btn btn-primary" @click="show = !show;">+Project</button></div>
               <div class="title"><button class="btn btn-primary" @click="show = !show;">+Service</button></div>
               <div class="title"><button class="btn btn-warning" @click="show = !show;">Commit</button></div>
+              <div class="title"><button class="btn btn-warning" @click="play">+</button></div>
               <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |' }}</button></div>
             </div>
 
@@ -342,7 +345,7 @@ export default {
 
 .chromosomes {
   height: 3.4rem;
-  width: 15rem;
+  width: 20rem;
   margin-top: 1.2rem;
   line-height: 90%;
   word-break: break-word; 
@@ -391,6 +394,7 @@ export default {
 .input-add-new {
   border-top: 5px;
   padding-left: 5px;
+  margin-right: 1rem;
   width: 26rem;
   height: 3rem;
   font-size: 1.5rem;
