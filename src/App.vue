@@ -265,10 +265,28 @@ export default {
       this.pause = true;
       clearInterval(this.interval);
     },
+    runOneOps() {
+      // Read/update current Service and Project tables/matrix - to include user edits
+      this.readProject();
+      this.readService();
+
+      // Run/Eval Service Input queries on Project data and add/update results as step[0]
+
+      // Run/Eval Service Steps/Functions/Commands and update Service results
+
+      // Run/Eval Service Output queries and update Project Output And Blockchain Branches
+
+    },
+    readProject() {
+
+    },
+    readService() {
+
+    },
     showPause() { // Toggle play button between play '>' and pause '||'
       return this.pause ? '| |' :  '>';
     },
-    nextBranch() {
+    nextBranch() {  // To add animation for showing the next branch table
       this.branch++;
     },
     addNewRule() {
