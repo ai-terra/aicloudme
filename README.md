@@ -1,4 +1,4 @@
-# AMP Processor for AI DevOps 
+# AI Ops Engine web app
 
 ## Project setup
 ```
