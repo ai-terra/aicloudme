@@ -20,7 +20,7 @@
                 <li>Social: Job ranking and priorities</li>
               </ul>
             </div>
-            <div class="title" contenteditable="true"><h1>Skill News:</h1></div>
+            <div class="title" contenteditable="true"><h1>Skills News:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>Idea: Friendly community platform</li>
@@ -64,7 +64,7 @@
             <div id="ai-jobs">
               <div class="buttons">
                 <button contenteditable="true" class="next btn btn-primary" @click="nextProject">Next Project</button>
-                <button contenteditable="true" class="next btn btn-primary" @click="show = !show">Job Request:</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="show = !show">New Request:</button>
                 <input type="text" class="input-add-new" name="new-job" value="eg: Add Job Request to Job News" size="40" maxlength="40">
                 <button class="next btn btn-warning" @click="play">+</button>
               </div>
@@ -92,7 +92,7 @@
             <div id="ai-ops">
               <div class="buttons">
                 <button contenteditable="true" class="next btn btn-primary" @click="nextService">Next Service</button>
-                <button contenteditable="true" class="next btn btn-primary" @click="load = !load">Ops Offer:</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="load = !load">New Offer:</button>
                 <input type="text" class="input-add-new" name="new-ops" value="eg: Execute or book top required ops." size="40" maxlength="40">
                 <button class="next btn btn-warning" @click="play">+</button>
               </div>
@@ -120,9 +120,9 @@
           </div>
 
           <div class="background-signs">
-            <p>RES = REQ ﹡ OPS
+            <p>VAL = JOB ﹡ OPS
             <br><br>
-            W3AI &nbsp;Ops &nbsp;Network</p>
+            Web &nbsp;Bank &nbsp;Engine</p>
           </div>
 
           <div id="editor">
