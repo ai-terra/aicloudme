@@ -203,7 +203,7 @@
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax</a>
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
-                <h4 class="title-long"><a href="https://github.com/ai-dev-ops/amp-processor">Dev AI Ops Engine @ Github</a></h4>
+                <h4 class="title-long"><a href="https://github.com/ai-ops-web/engine">Fork AI Ops Engine @ Github</a></h4>
                 <h4 class="title-long">Helping students worldwide to monetize the operations for the AI Economy.</h4>
               </div>
             </div>
