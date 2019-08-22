@@ -277,11 +277,11 @@ export default {
       // Run/Eval Service Output queries and update Project Output And Blockchain Branches
 
     },
-    readProject() {
-
+    readProject() { // Read user edits/updates in project table
+      // ToDo readProject()
     },
-    readService() {
-
+    readService() { // Read user edits/updates in service table
+      // Todo readService()
     },
     showPause() { // Toggle play button between play '>' and pause '||'
       return this.pause ? '| |' :  '>';
@@ -504,9 +504,14 @@ td:hover {
   to {background-color: rgba(108, 167, 84, .4);}
 }
 
+.fade-on-read {
+  background-color: rgba(254, 233, 78, .2);
+  animation: fade-out .1s 1;
+}
+
 .fade-on-change {
   background-color: rgba(108, 167, 84, .2);
-  animation: fade-out .5s 1;
+  animation: fade-out .1s 1;
 }
 
 .col0-head,
