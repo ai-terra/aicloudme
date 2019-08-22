@@ -66,7 +66,7 @@
                 <button contenteditable="true" class="next btn btn-primary" @click="nextProject">Next Project</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="show = !show">New Request:</button>
                 <input type="text" class="input-add-new" name="new-job" value="eg: Add Job Request to Job News" size="40" maxlength="40">
-                <button class="next btn btn-warning" @click="play">+</button>
+                <button class="next btn btn-warning" @click="runOneOps">+</button>
               </div>
               <ul class="list-group">
                 <transition-group name="slide-up" type="animation" appear>
@@ -94,7 +94,7 @@
                 <button contenteditable="true" class="next btn btn-primary" @click="nextService">Next Service</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="load = !load">New Offer:</button>
                 <input type="text" class="input-add-new" name="new-ops" value="eg: Execute or book top required ops." size="40" maxlength="40">
-                <button class="next btn btn-warning" @click="play">+</button>
+                <button class="next btn btn-warning" @click="runOneOps">+</button>
               </div>
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
@@ -136,7 +136,7 @@
               <div class="title"><button class="btn btn-primary" @click="show = !show;">+Project</button></div>
               <div class="title"><button class="btn btn-primary" @click="show = !show;">+Service</button></div>
               <div class="title"><button class="btn btn-warning" @click="show = !show;">Commit</button></div>
-              <div class="title"><button class="btn btn-warning" @click="play">+</button></div>
+              <div class="title"><button class="btn btn-warning" @click="runOneOps">+</button></div>
               <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |' }}</button></div>
             </div>
 
@@ -279,6 +279,15 @@ export default {
     },
     readProject() { // Read user edits/updates in project table
       // ToDo readProject()
+      let projectTable = document.getElementById('project-table');  // To move in an ini method?
+      // Read INPUT, STEPS and OUTPUT tabs from project table
+      for (let row = 10; row <= 14; row=row+2) {
+        let x = projectTable.rows[row].cells;
+        for (let col = 1; col <= 13; col=col+2) { // for demo read vizible cols
+          // x[col].innerHTML = value; // set value => should read cell into projectMatrix
+          x[col].classList.add('fade-on-read');
+        }
+      }
     },
     readService() { // Read user edits/updates in service table
       // Todo readService()
