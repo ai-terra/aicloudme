@@ -234,9 +234,9 @@ export default {
       blockchains: [365],
       mixops: [
         [' ','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
-        ['1','SOCIAL','>','open','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['1','VOTING','>','open','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','V','','','','','','','','','','','','','','','','','','','','','','','','',''],
-        ['2','RATES','>','money','&','votes','','','','','','','','','','','','','','','','','','','','',''],
+        ['2','FUNDS','>','money','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','V','','','','','','','','','','','','','','','','','','','','','','','','',''],
         ['3','TERMS','>','defs','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','V','','','','','','','','','','','','','','','','','','','','','','','','',''],
@@ -260,9 +260,9 @@ export default {
     },
     play() {
       // To add a conditional for visualization/animation or not
+      this.runOneOps();
       this.nextProject();
       this.nextService();
-      this.runOneOps();
     },
     stop() {
       this.pause = true;
@@ -291,6 +291,8 @@ export default {
           x[col].classList.add('fade-on-read');
         }
       }
+      // el.style.opacity = 0.5;
+      // done();
     },
     readService() { // Read user edits/updates in service table
       // Todo readService()
@@ -303,6 +305,7 @@ export default {
           x[col].classList.add('fade-on-ops');
         }
       }
+      // done();
     },
     showPause() { // Toggle play button between play '>' and pause '||'
       return this.pause ? '| |' :  '>';
@@ -527,17 +530,22 @@ td:hover {
 
 .fade-on-read {
   background-color: rgba(254, 233, 78, .2);
-  animation: fade-out .5s 1;
+  animation: fade-out .125s 1;
 }
 
 .fade-on-ops {
   background-color: rgba(58, 155, 252, .2);
-  animation: fade-out .5s 1;
+  animation: fade-out .250s 1;
 }
 
 .fade-on-result {
   background-color: rgba(108, 167, 84, .2);
-  animation: fade-out .5s 1;
+  animation: fade-out .125s 1;
+}
+
+.fade-on-change {
+  background-color: rgba(108, 167, 84, .2);
+  animation: fade-out .125s 1;
 }
 
 .col0-head,
