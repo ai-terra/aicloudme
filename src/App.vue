@@ -220,7 +220,7 @@ export default {
   data() {
     return {
       interval: 'timer', 
-      speed: 2000,  // 1000 milliseconds
+      speed: 2000,  // milliseconds
       pause: true,
       show: true,
       load: true,
@@ -258,8 +258,10 @@ export default {
       this.interval = setInterval(this.play, this.speed);
     },
     play() {
+      // To add a conditional for visualization/animation or not
       this.nextProject();
       this.nextService();
+      this.runOneOps();
     },
     stop() {
       this.pause = true;
@@ -291,6 +293,15 @@ export default {
     },
     readService() { // Read user edits/updates in service table
       // Todo readService()
+      let serviceTable = document.getElementById('service-table');  // To move in an ini method?
+      // Read INPUT, STEPS and OUTPUT tabs from project table
+      for (let row = 10; row <= 14; row=row+2) {
+        let x = serviceTable.rows[row].cells;
+        for (let col = 1; col <= 13; col=col+2) { // for demo read vizible cols
+          // x[col].innerHTML = value; // set value => should read cell into projectMatrix
+          x[col].classList.add('fade-on-ops');
+        }
+      }
     },
     showPause() { // Toggle play button between play '>' and pause '||'
       return this.pause ? '| |' :  '>';
@@ -515,12 +526,17 @@ td:hover {
 
 .fade-on-read {
   background-color: rgba(254, 233, 78, .2);
-  animation: fade-out .1s 1;
+  animation: fade-out .5s 1;
 }
 
-.fade-on-change {
+.fade-on-ops {
+  background-color: rgba(58, 155, 252, .2);
+  animation: fade-out .5s 1;
+}
+
+.fade-on-result {
   background-color: rgba(108, 167, 84, .2);
-  animation: fade-out .1s 1;
+  animation: fade-out .5s 1;
 }
 
 .col0-head,
