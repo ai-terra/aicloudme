@@ -204,7 +204,7 @@
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
                 <h4 class="title-long"><a href="https://github.com/ai-dev-ops/amp-processor">Dev AI Ops Engine @ Github</a></h4>
-                <h4 class="title-long">Helping AI Students worldwide.</h4>
+                <h4 class="title-long">Helping students worldwide to monetize the operations for the AI Economy.</h4>
               </div>
             </div>
           </div>
