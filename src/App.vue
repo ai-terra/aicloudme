@@ -204,7 +204,7 @@
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
                 <h4 class="title-long"><a href="https://github.com/ai-ops-web/engine">Copy AI Ops Engine @ Github</a></h4>
-                <h4 class="title-long" contenteditable="true">Helping students worldwide innovate AI Coins.</h4>
+                <h4 class="title-long" contenteditable="true">Helping students worldwide mint the new AI Coins.</h4>
               </div>
             </div>
           </div>
@@ -280,7 +280,7 @@ export default {
       // Run/Eval Service Steps/Functions/Commands and update Service results
 
       // Run/Eval Service Output queries and update Project Output And Blockchain Branches
-
+      this.writeProgress();
     },
     readProject() { // Read user edits/updates in project table
       // ToDo readProject()
@@ -300,7 +300,7 @@ export default {
         let x = projectTable.rows[row].cells;
         for (let col = 1; col <= 13; col=col+2) { // for demo read vizible cols
           // x[col].innerHTML = value; // set value => should read cell into projectMatrix
-          x[col].classList.add('fade-on-read');
+          x[col].classList.add('fade-on-job-status-read');
         }
       }
 
@@ -325,11 +325,35 @@ export default {
         let x = serviceTable.rows[row].cells;
         for (let col = 1; col <= 13; col=col+2) { // for demo read vizible cols
           // x[col].innerHTML = value; // set value => should read cell into projectMatrix
-          x[col].classList.add('fade-on-ops');
+          x[col].classList.add('fade-on-ops-exe-read');
         }
       }
       // done();
     },
+    writeProgress() { // Read user edits/updates in progress table
+      // Todo readService()
+      let serviceTable = document.getElementById('progress-table');  // To move in an ini method?
+      
+      // Write VOTING, FUNDS, TERMS and BOOK tabs to progress table
+      for (let row = 2; row <= 8; row=row+2) {
+        let x = serviceTable.rows[row].cells;
+        for (let col = 1; col <= 13; col=col+2) { // for demo read vizible cols
+          // x[col].innerHTML = value; // set value => should read cell into projectMatrix
+          x[col].classList.add('fade-on-block-deal-write');
+        }
+      }
+      
+      // Write INPUT, STEPS, OUTPUT and PAY tabs to progress table
+      for (let row = 10; row <= 16; row=row+2) {
+        let x = serviceTable.rows[row].cells;
+        for (let col = 1; col <= 13; col=col+2) { // for demo read vizible cols
+          // x[col].innerHTML = value; // set value => should read cell into projectMatrix
+          x[col].classList.add('fade-on-block-pay-write');
+        }
+      }
+      // done();
+    },
+
     showPause() { // Toggle play button between play '>' and pause '||'
       return this.pause ? '| |' :  '>';
     },
@@ -561,19 +585,24 @@ td:hover {
   animation: fade-out .250s 1;
 }
 
-.fade-on-read {
+.fade-on-job-status-read {
   background-color: rgba(254, 233, 78, .2);
-  animation: fade-out .125s 1;
+  animation: fade-out .500s 1;
 }
 
-.fade-on-ops {
+.fade-on-ops-exe-read {
   background-color: rgba(58, 155, 252, .2);
-  animation: fade-out .250s 1;
+  animation: fade-out .625s 1;
 }
 
-.fade-on-result {
-  background-color: rgba(108, 167, 84, 0);
-  animation: fade-out .125s 1;
+.fade-on-block-deal-write {
+  background-color: rgba(108, 167, 84, .2);
+  animation: fade-out .375s 1;
+}
+
+.fade-on-block-pay-write {
+  background-color: rgba(254, 233, 78, .2);
+  animation: fade-out .750s 1;
 }
 
 .fade-on-change {
