@@ -204,7 +204,7 @@
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
                 <h4 class="title-long"><a href="https://github.com/ai-ops-web/engine">Copy AI Ops Engine @ Github</a></h4>
-                <h4 class="title-long" contenteditable="true">Helping students worldwide innovate DevOps Coins.</h4>
+                <h4 class="title-long" contenteditable="true">Helping students worldwide innovate AI Coins.</h4>
               </div>
             </div>
           </div>
@@ -285,22 +285,23 @@ export default {
     readProject() { // Read user edits/updates in project table
       // ToDo readProject()
       let projectTable = document.getElementById('project-table');  // To move in an ini method?
-      // Read INPUT, STEPS and OUTPUT tabs from project table
-      for (let row = 10; row <= 14; row=row+2) {
+      // Read INPUT, STEPS, OUTPUT and PAY tabs from project table
+      for (let row = 10; row <= 16; row=row+2) {
         let x = projectTable.rows[row].cells;
         for (let col = 1; col <= 13; col=col+2) { // for demo read vizible cols
           // x[col].innerHTML = value; // set value => should read cell into projectMatrix
           x[col].classList.add('fade-on-read');
         }
       }
+
       // el.style.opacity = 0.5;
       // done();
     },
     readService() { // Read user edits/updates in service table
       // Todo readService()
       let serviceTable = document.getElementById('service-table');  // To move in an ini method?
-      // Read INPUT, STEPS and OUTPUT tabs from project table
-      for (let row = 10; row <= 14; row=row+2) {
+      // Read INPUT, STEPS, OUTPUT and PAY tabs from service table
+      for (let row = 10; row <= 16; row=row+2) {
         let x = serviceTable.rows[row].cells;
         for (let col = 1; col <= 13; col=col+2) { // for demo read vizible cols
           // x[col].innerHTML = value; // set value => should read cell into projectMatrix
@@ -541,12 +542,17 @@ td:hover {
 }
 
 .fade-on-result {
-  background-color: rgba(108, 167, 84, .2);
+  background-color: rgba(108, 167, 84, 0);
   animation: fade-out .125s 1;
 }
 
 .fade-on-change {
-  background-color: rgba(108, 167, 84, .2);
+  background-color: rgba(108, 167, 84, 0);
+  animation: fade-out .125s 1;
+}
+
+.fade-on-done {
+  background-color: transparent;
   animation: fade-out .125s 1;
 }
 
