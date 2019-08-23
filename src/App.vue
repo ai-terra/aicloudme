@@ -12,7 +12,7 @@
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
             <div class="title chromosomes" contenteditable="true">✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
-            <div class="title" contenteditable="true"><h1>&nbsp;Dev News:</h1></div>
+            <div class="title" contenteditable="true"><h1>&nbsp;Job News:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>Idea: Add Job Request to Job News</li>
@@ -203,8 +203,8 @@
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax</a>
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
-                <h4 class="title-long"><a href="https://github.com/ai-ops-web/engine">Copy AI Ops Engine @ Github</a></h4>
-                <h4 class="title-long" contenteditable="true">Helping students worldwide mint the new AI Coins.</h4>
+                <h4 class="title-long"><a href="https://github.com/ai-ops-web/engine">Test AI Ops Engine @ Github</a></h4>
+                <h4 class="title-long" contenteditable="true">Helping professionals worldwide mint new AI Coins.</h4>
               </div>
             </div>
           </div>
@@ -518,7 +518,7 @@ li.list-group-item {
 }
 
 .cell:nth-child(even) {
-  width: 6rem;
+  width: 7rem;
 }
 
 .cell-edit:nth-child(even) {
