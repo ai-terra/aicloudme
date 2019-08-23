@@ -574,10 +574,20 @@ td:hover {
   from {background-color: rgba(108, 167, 84, .2);}
   to {background-color: rgba(108, 167, 84, .4);}
 }
+@keyframes fade-out {
+  from {background-color: rgba(100, 100, 100, .2);}
+  to {background-color: rgba(100, 100, 100, .4);}
+}
+
+/* .fade-on-job-rules-read {
+  background-color: rgba(238, 71, 67, .2);
+  animation:  fade-in .125s .250s 1 backwards,
+              fade-out .125s .250s 1 backwards;
+} */
 
 .fade-on-job-rules-read {
   background-color: rgba(238, 71, 67, .2);
-  animation: fade-in .125s 1;
+  animation:  fade-in .125s 1;
 }
 
 .fade-on-ops-rules-read {
