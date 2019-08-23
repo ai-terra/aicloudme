@@ -12,7 +12,7 @@
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
             <div class="title chromosomes" contenteditable="true">✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
-            <div class="title" contenteditable="true"><h1>Jobs News:</h1></div>
+            <div class="title" contenteditable="true"><h1>&nbsp;Dev News:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>Idea: Add Job Request to Job News</li>
@@ -20,7 +20,7 @@
                 <li>Social: Job ranking and priorities</li>
               </ul>
             </div>
-            <div class="title" contenteditable="true"><h1>Skills News:</h1></div>
+            <div class="title" contenteditable="true"><h1>&nbsp;Ops News:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>Idea: Friendly community platform</li>
@@ -120,7 +120,7 @@
           </div>
 
           <div class="background-signs">
-            <p>VAL = JOB ﹡ OPS
+            <p>VAL = DEV ﹡ OPS
             <br><br>
             Web &nbsp;Bank &nbsp;Engine</p>
           </div>
@@ -204,7 +204,7 @@
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
                 <h4 class="title-long"><a href="https://github.com/ai-ops-web/engine">Fork AI Ops Engine @ Github</a></h4>
-                <h4 class="title-long">Helping students worldwide to monetize the operations for the AI Economy.</h4>
+                <h4 class="title-long" contenteditable="true">Funding automatic innovations worldwide with AI Ops Coins.</h4>
               </div>
             </div>
           </div>
@@ -260,9 +260,11 @@ export default {
     },
     play() {
       // To add a conditional for visualization/animation or not
-      this.runOneOps();
       this.nextProject();
+      // this.readProject();
       this.nextService();
+      // this.readService();
+      this.runOneOps();
     },
     stop() {
       this.pause = true;
@@ -620,17 +622,22 @@ td:hover {
 }
 
 .slide-up-enter-active {
-  animation: slide-up-in 0.125s ease-out forwards;
-  transition: opacity 0.125s;
+  animation: slide-up-in 0.250s ease-out forwards;
+  transition: opacity 0.250s;
 }
 
 .slide-up-leave {
 }
 
 .slide-up-leave-active {
-  animation: slide-up-out 0.125s ease-out forwards;
-  transition: opacity 0.125s;
+  animation: slide-up-out 0.250s ease-out forwards;
+  transition: opacity 0.250s;
   opacity: 0;
+  /* position: absolute; */
+}
+
+.slide-up-move {
+  transition: transform 0.250s;
 }
 
 @keyframes slide-up-in {
@@ -657,17 +664,22 @@ td:hover {
 }
 
 .slide-down-enter-active {
-  animation: slide-down-in 0.125s ease-out forwards;
-  transition: opacity 0.125s;
+  animation: slide-down-in 0.250s ease-out forwards;
+  transition: opacity 0.250s;
 }
 
 .slide-down-leave {
 }
 
 .slide-down-leave-active {
-  animation: slide-down-out 0.125s ease-out forwards;
-  transition: opacity 0.125s;
+  animation: slide-down-out 0.250s ease-out forwards;
+  transition: opacity 0.250s;
   opacity: 0;
+  /* position: absolute; */
+}
+
+.slide-down-move {
+  transition: transform 0.250s;
 }
 
 @keyframes slide-down-in {
