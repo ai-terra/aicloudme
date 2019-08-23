@@ -134,7 +134,7 @@
               <div class="title"><button class="btn btn-primary" @click="show = !show;">Friends</button></div>
               <div class="title"><button class="btn btn-primary" @click="show = !show;">Rules</button></div>
               <div class="title"><button class="btn btn-primary" @click="show = !show;">+Project</button></div>
-              <div class="title"><button class="btn btn-primary" @click="show = !show;">+Service</button></div>
+              <div class="title"><button class="btn btn-primary" @click="show = !show;">+Skills</button></div>
               <div class="title"><button class="btn btn-warning" @click="show = !show;">Commit</button></div>
               <div class="title"><button class="btn btn-warning" @click="runOneOps">+</button></div>
               <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |' }}</button></div>
@@ -203,8 +203,8 @@
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax</a>
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
-                <h4 class="title-long"><a href="https://github.com/ai-ops-web/engine">Test AI Ops Engine @ Github</a></h4>
-                <h4 class="title-long" contenteditable="true">Helping professionals worldwide mint new AI Coins.</h4>
+                <h4 class="title-long"><a href="https://github.com/ai-ops-web/engine">Check AI Ops Engine @ Github</a></h4>
+                <h4 class="title-long" contenteditable="true">Coin your own ops for the AI economy!</h4>
               </div>
             </div>
           </div>
