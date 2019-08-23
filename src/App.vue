@@ -590,7 +590,7 @@ td:hover {
   font-size: 18rem;
   text-align: center;
   position: relative;
-  transform: translate(1.1rem, -51.5rem);
+  transform: translate(0rem, -51.5rem);
   color: lightgrey;
   z-index: -1;
 }
