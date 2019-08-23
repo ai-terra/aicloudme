@@ -285,6 +285,16 @@ export default {
     readProject() { // Read user edits/updates in project table
       // ToDo readProject()
       let projectTable = document.getElementById('project-table');  // To move in an ini method?
+      
+      // Read VOTING, FUNDS, TERMS and BOOK tabs from project table
+      for (let row = 2; row <= 8; row=row+2) {
+        let x = projectTable.rows[row].cells;
+        for (let col = 1; col <= 13; col=col+2) { // for demo read vizible cols
+          // x[col].innerHTML = value; // set value => should read cell into projectMatrix
+          x[col].classList.add('fade-on-job-rules-read');
+        }
+      }
+      
       // Read INPUT, STEPS, OUTPUT and PAY tabs from project table
       for (let row = 10; row <= 16; row=row+2) {
         let x = projectTable.rows[row].cells;
@@ -300,6 +310,16 @@ export default {
     readService() { // Read user edits/updates in service table
       // Todo readService()
       let serviceTable = document.getElementById('service-table');  // To move in an ini method?
+      
+      // Read VOTING, FUNDS, TERMS and BOOK tabs from service table
+      for (let row = 2; row <= 8; row=row+2) {
+        let x = serviceTable.rows[row].cells;
+        for (let col = 1; col <= 13; col=col+2) { // for demo read vizible cols
+          // x[col].innerHTML = value; // set value => should read cell into projectMatrix
+          x[col].classList.add('fade-on-ops-rules-read');
+        }
+      }
+      
       // Read INPUT, STEPS, OUTPUT and PAY tabs from service table
       for (let row = 10; row <= 16; row=row+2) {
         let x = serviceTable.rows[row].cells;
