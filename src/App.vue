@@ -203,7 +203,7 @@
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax</a>
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
-                <h4 class="title-long"><a href="https://github.com/ai-ops-web/engine">Fork AI Ops Engine @ Github</a></h4>
+                <h4 class="title-long"><a href="https://github.com/ai-ops-web/engine">Copy AI Ops Engine @ Github</a></h4>
                 <h4 class="title-long" contenteditable="true">Helping students worldwide innovate DevOps Coins.</h4>
               </div>
             </div>
@@ -260,11 +260,11 @@ export default {
     },
     play() {
       // To add a conditional for visualization/animation or not
+      this.runOneOps();
       this.nextProject();
       // this.readProject();
       this.nextService();
       // this.readService();
-      this.runOneOps();
     },
     stop() {
       this.pause = true;
@@ -706,7 +706,7 @@ td:hover {
 }
 
 h4 {
-  padding-right: 6.3rem;
+  padding-right: 3.70rem;
 }
 
 @media screen and (min-width: 1200px) {
