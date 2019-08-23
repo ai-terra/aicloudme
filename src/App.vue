@@ -204,7 +204,7 @@
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
                 <h4 class="title-long"><a href="https://github.com/ai-ops-web/engine">Fork AI Ops Engine @ Github</a></h4>
-                <h4 class="title-long" contenteditable="true">Funding automatic innovations worldwide with DevOps Coins.</h4>
+                <h4 class="title-long" contenteditable="true">Funding algorithmic innovators worldwide with DevOps Coins.</h4>
               </div>
             </div>
           </div>
