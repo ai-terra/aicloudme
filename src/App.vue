@@ -120,7 +120,7 @@
           </div>
 
           <div class="background-signs">
-            <p>VAL = DEV ﹡ OPS
+            <p>Coins = DEV ﹡ OPS
             <br><br>
             Web &nbsp;Bank &nbsp;Engine</p>
           </div>
@@ -204,7 +204,7 @@
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
                 <h4 class="title-long"><a href="https://github.com/ai-ops-web/engine">Fork AI Ops Engine @ Github</a></h4>
-                <h4 class="title-long" contenteditable="true">Funding algorithmic innovators worldwide with DevOps Coins.</h4>
+                <h4 class="title-long" contenteditable="true">Helping students worldwide innovate DevOps Coins.</h4>
               </div>
             </div>
           </div>
