@@ -618,7 +618,7 @@ td:hover {
 
 .slide-up-enter {
   opacity: 0;
-  /* transform: translateY(20px); */
+  transform: translateY(20px);
 }
 
 .slide-up-enter-active {
@@ -633,7 +633,7 @@ td:hover {
   animation: slide-up-out 0.250s ease-out forwards;
   transition: opacity 0.250s;
   opacity: 0;
-  /* position: absolute; */
+  position: relative;
 }
 
 .slide-up-move {
@@ -660,7 +660,7 @@ td:hover {
 
 .slide-down-enter {
   opacity: 0;
-  /* transform: translateY(20px); */
+  transform: translateY(20px);
 }
 
 .slide-down-enter-active {
@@ -675,7 +675,7 @@ td:hover {
   animation: slide-down-out 0.250s ease-out forwards;
   transition: opacity 0.250s;
   opacity: 0;
-  /* position: absolute; */
+  position: relative;
 }
 
 .slide-down-move {
