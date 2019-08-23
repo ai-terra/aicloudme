@@ -570,49 +570,49 @@ td:hover {
   background-color: rgba(108, 167, 84, .5);
 }
 
-@keyframes fade-out {
+@keyframes fade-in {
   from {background-color: rgba(108, 167, 84, .2);}
   to {background-color: rgba(108, 167, 84, .4);}
 }
 
 .fade-on-job-rules-read {
   background-color: rgba(238, 71, 67, .2);
-  animation: fade-out .125s 1;
+  animation: fade-in .125s 1;
 }
 
 .fade-on-ops-rules-read {
   background-color: rgba(238, 71, 67, .2);
-  animation: fade-out .250s 1;
+  animation: fade-in .250s 1;
 }
 
 .fade-on-job-status-read {
   background-color: rgba(254, 233, 78, .2);
-  animation: fade-out .500s 1;
+  animation: fade-in .500s 1;
 }
 
 .fade-on-ops-exe-read {
   background-color: rgba(58, 155, 252, .2);
-  animation: fade-out .625s 1;
+  animation: fade-in .625s 1;
 }
 
 .fade-on-block-deal-write {
   background-color: rgba(108, 167, 84, .2);
-  animation: fade-out .375s 1;
+  animation: fade-in .375s 1;
 }
 
 .fade-on-block-pay-write {
   background-color: rgba(254, 233, 78, .2);
-  animation: fade-out .750s 1;
+  animation: fade-in .750s 1;
 }
 
 .fade-on-change {
   background-color: rgba(108, 167, 84, 0);
-  animation: fade-out .125s 1;
+  animation: fade-in .125s 1;
 }
 
 .fade-on-done {
   background-color: transparent;
-  animation: fade-out .125s 1;
+  animation: fade-in .125s 1;
 }
 
 .col0-head,
