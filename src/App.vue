@@ -531,6 +531,16 @@ td:hover {
   to {background-color: rgba(108, 167, 84, .4);}
 }
 
+.fade-on-job-rules-read {
+  background-color: rgba(238, 71, 67, .2);
+  animation: fade-out .125s 1;
+}
+
+.fade-on-ops-rules-read {
+  background-color: rgba(238, 71, 67, .2);
+  animation: fade-out .250s 1;
+}
+
 .fade-on-read {
   background-color: rgba(254, 233, 78, .2);
   animation: fade-out .125s 1;
