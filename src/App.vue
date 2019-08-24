@@ -7,7 +7,7 @@
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
                 <h1 class="title-long">My AI Bank&nbsp;</h1><h1 class="title-short"> AI Ops&nbsp;</h1>
-                <h5>performance﹡profit﹡progress</h5>
+                <h5>ai performance profit progress</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
@@ -390,7 +390,7 @@ export default {
 
 .chromosomes {
   height: 3.4rem;
-  width: 20rem;
+  width: 22.5rem;
   margin-top: 1.2rem;
   line-height: 90%;
   word-break: break-word; 
