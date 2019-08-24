@@ -444,7 +444,7 @@ export default {
 }
 
 .news-scroller {
-  width: 32rem;
+  width: 35rem;
   height: 5.25rem;
   border: 1px solid rgba(108, 167, 84, 1);
 }
