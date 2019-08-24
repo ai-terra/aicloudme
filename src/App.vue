@@ -7,7 +7,7 @@
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
                 <h1 class="title-long">My AI Bank&nbsp;</h1><h1 class="title-short"> AI Ops&nbsp;</h1>
-                <h5>max performance﹡profit﹡progress</h5>
+                <h5>performance﹡profit﹡progress</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
@@ -42,7 +42,7 @@
               </div>
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
-                  <li class="list-group-item" v-for="project in projects" v-bind:key="project"><h3>&nbsp;&nbsp;&nbsp;Blockchain ( Job-{{ project }}, Ops-{{ services[0] }}, Branch {{ branch }}/{{ branches[0] }}, 'FAST')</h3>
+                  <li class="list-group-item" v-for="project in projects" v-bind:key="project"><h3>&nbsp;&nbsp;&nbsp;Blockchain ( Job-{{ project }}, Ops-{{ services[0] }}, Branch {{ branch }}/{{ branches[0] }}, 'USE')</h3>
 
                     <table id="progress-table" class="matrix">
                       <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
@@ -120,7 +120,7 @@
           </div>
 
           <div class="background-signs">
-            <p>eCoin = DEV ﹡ OPS
+            <p>eCoins = DEV ﹡ OPS
             <br><br>
             My &nbsp;AI &nbsp;Bank &nbsp;Engine</p>
           </div>
