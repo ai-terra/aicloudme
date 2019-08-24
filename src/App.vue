@@ -24,7 +24,7 @@
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>Idea: Friendly Community AI Bank</li>
-                <li>Funded: Table scrapper</li>
+                <li>Funded: Political Party and Campaign Bank</li>
                 <li>Voting: Job ranking and priorities</li>
               </ul>
             </div>
