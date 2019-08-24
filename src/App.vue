@@ -15,17 +15,17 @@
             <div class="title" contenteditable="true"><h1>&nbsp;New Dev:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
-                <li>Idea: Add Job Request to Job News</li>
-                <li>Budgeted: Table scrapper</li>
-                <li>Social: Job ranking and priorities</li>
+                <li>Idea: Add Help Requests to Dev News</li>
+                <li>Funded: Famous 5 mins AI Bank setup</li>
+                <li>Voting: Job ranking and priorities</li>
               </ul>
             </div>
             <div class="title" contenteditable="true"><h1>&nbsp;New Ops:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
-                <li>Idea: Friendly community platform</li>
-                <li>Budgeted: Table scrapper</li>
-                <li>Social: Job ranking and priorities</li>
+                <li>Idea: Friendly Community AI Bank</li>
+                <li>Funded: Table scrapper</li>
+                <li>Voting: Job ranking and priorities</li>
               </ul>
             </div>
           </div>
