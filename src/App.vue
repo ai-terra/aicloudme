@@ -126,18 +126,20 @@
           </div>
 
           <div id="editor">
-            <div class="title-container">
-              <div class="title"><button class="btn btn-primary" @click="show = !show;">Interests</button></div>
-              <div class="title"><button class="btn btn-primary" @click="show = !show;">Friends</button></div>
-              <div class="title"><button class="btn btn-primary" @click="show = !show;">Rules</button></div>
-              <div class="title"><button class="btn btn-primary" @click="show = !show;">+Project</button></div>
-              <div class="title"><button class="btn btn-primary" @click="show = !show;">+Skills</button></div>
+            <div class="buttons">
+              <button class="edit btn btn-primary" @click="show = !show;">Interests</button>
+              <button class="edit btn btn-primary" @click="show = !show;">Friends</button>
+              <button class="edit btn btn-primary" @click="show = !show;">Rules</button>
+              <button class="edit btn btn-primary" @click="show = !show;">Projects</button>
+              <button class="edit btn btn-primary" @click="show = !show;">Skills</button>
+              <button class="edit btn btn-primary" @click="show = !show;">Demo</button>
+              <button class="edit btn btn-primary" @click="show = !show;">Wiki</button>
               <div><h2 class="title-long">Edit</h2></div>
               <input type="text" class="input-edit" name="edit-input" value="" size="40" maxlength="40">
-              <div class="title"><button class="btn btn-warning" @click="show = !show;">Commit</button></div>
-              <div class="title"><button class="btn btn-warning" @click="runOneOps">+</button></div>
-              <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |' }}</button></div>
-              <div><h2 class="">Coin your own money!</h2></div>
+              <button class="edit btn btn-warning" @click="show = !show;">Commit</button>
+              <button class="edit btn btn-warning" @click="runOneOps">+</button>
+              <button class="edit player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |' }}</button>
+              <div><h2 class="title-long">Coin your own money!</h2></div>
             </div>
 
             <table class="matrix">
@@ -446,13 +448,17 @@ export default {
 }
 
 h2.title-long {
-  margin-left: 13rem;
+  margin: 0 0 0 5rem;
+}
+
+.edit {
+  margin-right: 1rem;
 }
 
 .input-edit {
   border-top: 5px;
   padding-left: 5px;
-  margin: 1.1rem 1rem 0 1rem;
+  margin: 0rem 1rem 0 1rem;
   width: 46rem;
   height: 3rem;
   font-size: 1.5rem;
@@ -767,11 +773,11 @@ h4 {
   }
 
   #editor {
-    transform: translate(0, -93rem);
+    transform: translate(0, -92.5rem);
   }
 
   #footer {
-    transform: translate(0, -93rem);
+    transform: translate(0, -92rem);
   }
 
   .footer-items {
