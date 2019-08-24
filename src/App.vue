@@ -122,7 +122,7 @@
           <div class="background-signs">
             <p>eCoin = DEV ﹡ OPS
             <br><br>
-            AI &nbsp;Bank &nbsp;Engine</p>
+            My &nbsp;AI &nbsp;Bank &nbsp;Engine</p>
           </div>
 
           <div id="editor">
