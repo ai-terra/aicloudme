@@ -753,7 +753,7 @@ td:hover {
 }
 
 h4 {
-  padding-right: 3.70rem;
+  padding-right: 7rem;
 }
 
 @media screen and (min-width: 1200px) {
