@@ -6,13 +6,13 @@
           <div class="title-container">
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
-                <h1 class="title-long">AI Ops Engine&nbsp;</h1><h1 class="title-short"> AI Ops&nbsp;</h1>
+                <h1 class="title-long">My AI Bank&nbsp;</h1><h1 class="title-short"> AI Ops&nbsp;</h1>
                 <h5>max performance﹡profit﹡progress</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
             <div class="title chromosomes" contenteditable="true">✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
-            <div class="title" contenteditable="true"><h1>&nbsp;Job News:</h1></div>
+            <div class="title" contenteditable="true"><h1>&nbsp;New Dev:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>Idea: Add Job Request to Job News</li>
@@ -20,7 +20,7 @@
                 <li>Social: Job ranking and priorities</li>
               </ul>
             </div>
-            <div class="title" contenteditable="true"><h1>&nbsp;Ops News:</h1></div>
+            <div class="title" contenteditable="true"><h1>&nbsp;New Ops:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>Idea: Friendly community platform</li>
@@ -37,12 +37,12 @@
                 <button contenteditable="true" class="next btn btn-warning" @click="setCell('project-table', 3, 5, 'votes')">Rank</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="nextBranch">Next Branch</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="addNewRule">New Rule:</button>
-                <input type="text" class="input-add-new" name="new-rule" value="eg: cheapest - use cheapest operations" size="40" maxlength="40">
+                <input type="text" class="input-add-new" name="new-rule" value="eg: ECO - use eco operations" size="40" maxlength="40">
                 <!-- <button contenteditable="true" class="next btn btn-primary" @click="addTableRow('progress-table', 8, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Pay</button> -->
               </div>
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
-                  <li class="list-group-item" v-for="project in projects" v-bind:key="project"><h3>&nbsp;&nbsp;&nbsp;Blockchain ( Job-{{ project }}, Ops-{{ services[0] }}, Branch {{ branch }}/{{ branches[0] }}, 'fastest')</h3>
+                  <li class="list-group-item" v-for="project in projects" v-bind:key="project"><h3>&nbsp;&nbsp;&nbsp;Blockchain ( Job-{{ project }}, Ops-{{ services[0] }}, Branch {{ branch }}/{{ branches[0] }}, 'FAST')</h3>
 
                     <table id="progress-table" class="matrix">
                       <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
@@ -120,7 +120,7 @@
           </div>
 
           <div class="background-signs">
-            <p>Coins = DEV ﹡ OPS
+            <p>eCoin = DEV ﹡ OPS
             <br><br>
             Web &nbsp;Bank &nbsp;Engine</p>
           </div>
@@ -138,6 +138,7 @@
               <div class="title"><button class="btn btn-warning" @click="show = !show;">Commit</button></div>
               <div class="title"><button class="btn btn-warning" @click="runOneOps">+</button></div>
               <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |' }}</button></div>
+              <div><h2 class="title-long grey">Coin your own money!</h2></div>
             </div>
 
             <table class="matrix">
@@ -204,7 +205,7 @@
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
                 <h4 class="title-long"><a href="https://github.com/ai-ops-web/engine">Check AI Ops Engine @ Github</a></h4>
-                <h4 class="title-long" contenteditable="true">Coin your own ops for the AI economy!</h4>
+                <h4 class="title-long" contenteditable="true">Run your own web bank!</h4>
               </div>
             </div>
           </div>
