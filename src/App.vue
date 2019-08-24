@@ -17,7 +17,7 @@
               <ul>
                 <li>Idea: Add Help Requests to Dev News</li>
                 <li>Funded: Famous 5 mins AI Bank setup</li>
-                <li>Voting: Job ranking and priorities</li>
+                <li>Voting: Chinese, Hindy, Spanish, Arabic, Russian apps</li>
               </ul>
             </div>
             <div class="title" contenteditable="true"><h1>&nbsp;New Ops:</h1></div>
