@@ -204,7 +204,7 @@
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax</a>
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
-                <h4 class="title-long"><a href="https://github.com/ai-ops-web/engine">Check AI Ops Engine @ Github</a></h4>
+                <h4 class="title-long"><a href="https://github.com/ai-ops-web/engine">Download AI Bank Engine @ Github</a></h4>
                 <h4 class="title-long" contenteditable="true">Run your own web bank!</h4>
               </div>
             </div>
@@ -673,6 +673,10 @@ td:hover {
 
 #edit-title {
   margin-left: 1rem;
+}
+
+.grey {
+  color: lightgrey;
 }
 
 .fade-enter {
