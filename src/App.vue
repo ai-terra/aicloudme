@@ -161,7 +161,8 @@
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax</a>
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
-                <h4 class="title-long"><a href="https://github.com/open-ai-bank/my-ai-bank">Download AI Bank Engine @ Github</a></h4>
+                <h4 class="title-long"><a href="https://github.com/open-ai-bank/my-ai-bank">
+                Download Free AI Engine @ Github</a></h4>
                 <h4 class="title-long" contenteditable="true">Run your own web bank!</h4>
               </div>
             </div>
