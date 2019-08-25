@@ -1,4 +1,4 @@
-# AI Ops Engine web app
+# My AI Bank web app
 
 ## Project setup
 ```
