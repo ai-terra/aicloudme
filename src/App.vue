@@ -15,9 +15,9 @@
             <div class="title" contenteditable="true"><h1>&nbsp;New Dev:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
-                <li>Idea: Add Help Requests to Dev News</li>
                 <li>Funded: Famous 5 mins AI Bank setup</li>
                 <li>Voting: Chinese, Hindy, Spanish, Arabic, Russian apps</li>
+                <li>Idea: Add Help Requests to Dev News</li>
               </ul>
             </div>
             <div class="title" contenteditable="true"><h1>&nbsp;New Ops:</h1></div>
