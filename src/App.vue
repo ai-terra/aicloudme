@@ -23,9 +23,9 @@
             <div class="title" contenteditable="true"><h1>&nbsp;New Ops:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
-                <li>Idea: Friendly Community AI Bank</li>
-                <li>Funded: Political Party and Campaign Bank</li>
-                <li>Voting: Job ranking and priorities</li>
+                <li>COM: Friendly Community AI Bank</li>
+                <li>ORG: Political Party and Campaign Bank</li>
+                <li>EDU: Job ranking and priorities</li>
               </ul>
             </div>
           </div>
