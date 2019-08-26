@@ -139,7 +139,7 @@
               <button class="edit btn btn-warning" @click="show = !show;">Commit</button>
               <button class="edit btn btn-warning" @click="runOneOps">+</button>
               <button class="edit player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |' }}</button>
-              <div><h2 class="title-long">recombinant AI Ops</h2></div>
+              <div><h2 class="title" contenteditable="true">Recombinant AI Ops Editor</h2></div>
             </div>
 
             <table class="matrix">
@@ -163,7 +163,7 @@
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
                 <h4 class="title-long"><a href="https://github.com/open-ai-bank/my-ai-bank">
                 Download Free AI Engine @ Github</a></h4>
-                <h4 class="title-long" contenteditable="true">Run your own web bank!</h4>
+                <h4 class="title-long" contenteditable="true">Run your own AI Ops Engine!</h4>
               </div>
             </div>
           </div>
@@ -450,6 +450,10 @@ export default {
 
 h2.title-long {
   margin: 0 0 0 5rem;
+}
+
+h2.title {
+  margin: 0 0 0 .5rem;
 }
 
 .edit {
