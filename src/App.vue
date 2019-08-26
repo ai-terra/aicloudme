@@ -366,6 +366,7 @@ export default {
 <style>
 .container-fluid {
   padding: 0px;
+  overflow-x: hidden;
 }
 
 #logo {
@@ -412,6 +413,14 @@ export default {
   height: 64rem;
   display: flex;
   flex-direction: row;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#editor {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   overflow-y: auto;
   overflow-x: hidden;
 }
