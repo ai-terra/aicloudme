@@ -120,7 +120,7 @@
           </div>
 
           <div class="background-signs">
-            <p>eCoins = DEV ﹡ OPS
+            <p>My AI = DEV ﹡ OPS
             <br><br>
             My &nbsp;AI &nbsp;Bank &nbsp;Engine</p>
           </div>
