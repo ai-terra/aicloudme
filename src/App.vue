@@ -142,13 +142,17 @@
               <div><h2 class="title" contenteditable="true">Recombinant AI Ops Editor</h2></div>
             </div>
 
-            <table class="matrix">
-              <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
-                <td contenteditable="true" class="cell-edit" v-for="(col, index) in row" v-bind:key="index">
-                  {{ col }}
-                </td>
-              </tr>
-            </table>
+            <div id="editor-tabs">
+
+              <table class="matrix">
+                <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
+                  <td contenteditable="true" class="cell-edit" v-for="(col, index) in row" v-bind:key="index">
+                    {{ col }}
+                  </td>
+                </tr>
+              </table>
+
+            </div>
 
           </div>
 
