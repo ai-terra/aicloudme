@@ -23,7 +23,7 @@
             <div class="title" contenteditable="true"><h1>&nbsp;New Ops:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
-                <li>COM: Friendly Community AI Bank</li>
+                <li>COM: My Community AI Ops Bank</li>
                 <li>ORG: Political Party and Campaign Bank</li>
                 <li>EDU: Job ranking and priorities</li>
               </ul>
