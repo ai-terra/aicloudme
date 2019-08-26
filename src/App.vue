@@ -413,6 +413,7 @@ export default {
   display: flex;
   flex-direction: row;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .buttons {
