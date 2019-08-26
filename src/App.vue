@@ -6,7 +6,7 @@
           <div class="title-container">
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
-                <h1 class="title-long">My AI Bank&nbsp;</h1><h1 class="title-short"> AI Ops&nbsp;</h1>
+                <h1 class="title-long">My AI Ops&nbsp;</h1><h1 class="title-short"> AI Ops&nbsp;</h1>
                 <h5>ai performance profit progress</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
@@ -15,7 +15,7 @@
             <div class="title" contenteditable="true"><h1>&nbsp;New Dev:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
-                <li>Funded: Famous 5 mins AI Bank setup</li>
+                <li>Funded: Famous 5 mins AI Engine setup</li>
                 <li>Voting: Chinese, Hindy, Spanish, Arabic, Russian apps</li>
                 <li>Idea: Add Help Requests to Dev News</li>
               </ul>
@@ -122,7 +122,7 @@
           <div class="background-signs">
             <p>My AI = DEV ﹡ OPS
             <br><br>
-            My &nbsp;AI &nbsp;Bank &nbsp;Engine</p>
+            My &nbsp;AI &nbsp;Ops &nbsp;Engine</p>
           </div>
 
           <div id="editor">
