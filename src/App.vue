@@ -144,13 +144,19 @@
 
             <div id="editor-tabs">
 
-              <table class="matrix">
-                <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
-                  <td contenteditable="true" class="cell-edit" v-for="(col, index) in row" v-bind:key="index">
-                    {{ col }}
-                  </td>
-                </tr>
-              </table>
+              <div id="table-editor">
+                <table class="matrix">
+                  <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
+                    <td contenteditable="true" class="cell-edit" v-for="(col, index) in row" v-bind:key="index">
+                      {{ col }}
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <div id="text-editor">
+                <textarea id="textEdit" v-model="textEdit" placeholder="Edit your AI Ops here."></textarea>
+              </div>
 
             </div>
 
@@ -188,13 +194,14 @@ export default {
       pause: true,
       show: true,
       load: true,
-      rules: ['fastest'],
+      rules: ['FAST'],
       results: [8],
       projects: [24],
       branch: 1,
       branches: [360],
       services: [7],
       blockchains: [365],
+      textEdit: 'Hello AI World!',
       mixops: [
         ['1','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
         ['1','IDEA','>','voting','','','','','','','','','','','','','','','','','','','','','','',''],
@@ -427,6 +434,24 @@ export default {
   flex-direction: column;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+#editor-tabs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#table-editor,
+#text-editor {
+  width: 50%;
+  overflow-x: auto;
+}
+
+#textEdit {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
 }
 
 .buttons {
