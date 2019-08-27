@@ -139,7 +139,7 @@
               <button class="edit btn btn-warning" @click="show = !show;">Commit</button>
               <button class="edit btn btn-warning" @click="runOneOps">+</button>
               <button class="edit player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |' }}</button>
-              <div><h2 class="title" contenteditable="true">Post & Ops Editor</h2></div>
+              <div><h2 class="title" contenteditable="true">Post / Ops Editor</h2></div>
             </div>
 
             <div id="editor-tabs">
@@ -201,7 +201,7 @@ export default {
       branches: [360],
       services: [7],
       blockchains: [365],
-      textEdit: 'Hello AI World!',
+      textEdit: `Hello World!`,
       mixops: [
         ['1','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
         ['1','STATUS','>','post','','','','','','','','','','','','','','','','','','','','','','',''],
