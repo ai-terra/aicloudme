@@ -100,7 +100,7 @@
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="service in services" v-bind:key="service"><h3>&nbsp;&nbsp;&nbsp;Service {{ service }}: Title[{{ service }}] - Friend[{{ service }}] - [Interest] - Ops-{{ service }}</h3>
                     
-                    <table id="service-table" class="matrix">
+                    <table id="service-table" class="matrix" @click="onTableClick">
                       <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
                         <td contenteditable="true" class="cell" v-for="(col, index) in row" v-bind:key="index">
                           {{ col }}
@@ -128,7 +128,7 @@
           <div id="editor">
             <div class="buttons">
               <div><h2 class="title">Edit</h2></div>
-              <input type="text" class="input-edit" name="edit-input" value="" size="50" maxlength="40">
+              <input type="text" class="input-edit" v-model="inputEdit" value="" size="50" maxlength="40">
               <button class="edit btn btn-warning" @click="show = !show;">Commit</button>
               <button class="edit btn btn-warning" @click="runOneOps">+</button>
               <button class="edit player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |' }}</button>
@@ -201,6 +201,11 @@ export default {
       branches: [360],
       services: [7],
       blockchains: [365],
+      currentTable: '',
+      currentRow: '',
+      currentCol: '',
+      currentCellVal: '',
+      inputEdit: '',
       textEdit: `Hello World!
 
 This is your first post.
@@ -325,6 +330,13 @@ Add ops details to transform it in a working operation.`,
         }
       }
       // done();
+    },
+    onTableClick(el) {
+      this.currentTable = el.classList[0];
+      this.currentRow = 'rowNo';
+      this.currentCol = 'colNo';
+      this.currentCellVal = 'cellVal';
+      this.inputEdit = 'testCell';
     },
 
     showPause() { // Toggle play button between play '>' and pause '||'
