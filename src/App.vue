@@ -6,21 +6,21 @@
           <div class="title-container">
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
-                <h1 class="title-long">My AI Ops&nbsp;</h1><h1 class="title-short"> AI Ops&nbsp;</h1>
+                <h1 class="title-long">My AI Blog&nbsp;</h1><h1 class="title-short"> AI Ops&nbsp;</h1>
                 <h5>ai performance profit progress</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
             <div class="title chromosomes" contenteditable="true">✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
-            <div class="title" contenteditable="true"><h1>&nbsp;New Dev:</h1></div>
+            <div class="title" contenteditable="true"><h1>&nbsp;new posts:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
-                <li>Funded: Famous 5 mins AI Engine setup</li>
+                <li>Funded: Famous 5 mins AI Press Engine setup</li>
                 <li>Voting: Chinese, Hindy, Spanish, Arabic, Russian apps</li>
                 <li>Idea: Add Help Requests to Dev News</li>
               </ul>
             </div>
-            <div class="title" contenteditable="true"><h1>&nbsp;New Ops:</h1></div>
+            <div class="title" contenteditable="true"><h1>&nbsp;new ops:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>COM: My Community AI Ops Bank</li>
@@ -64,7 +64,7 @@
             <div id="ai-jobs">
               <div class="buttons">
                 <button contenteditable="true" class="next btn btn-primary" @click="nextProject">Next Project</button>
-                <button contenteditable="true" class="next btn btn-primary" @click="show = !show">New Request:</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="show = !show">New Post:</button>
                 <input type="text" class="input-add-new" name="new-job" value="eg: Add Job Request to Job News" size="40" maxlength="40">
                 <button class="next btn btn-warning" @click="runOneOps">+</button>
               </div>
@@ -92,7 +92,7 @@
             <div id="ai-ops">
               <div class="buttons">
                 <button contenteditable="true" class="next btn btn-primary" @click="nextService">Next Service</button>
-                <button contenteditable="true" class="next btn btn-primary" @click="load = !load">New Offer:</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="load = !load">New Ops:</button>
                 <input type="text" class="input-add-new" name="new-ops" value="eg: Execute or book top required ops." size="40" maxlength="40">
                 <button class="next btn btn-warning" @click="runOneOps">+</button>
               </div>
@@ -120,9 +120,9 @@
           </div>
 
           <div class="background-signs">
-            <p>My AI = DEV ﹡ OPS
+            <p>my AI = blog & ops
             <br><br>
-            My &nbsp;AI &nbsp;Ops &nbsp;Engine</p>
+            free &nbsp;AI &nbsp;blog &nbsp;engine</p>
           </div>
 
           <div id="editor">
@@ -173,7 +173,7 @@
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
                 <h4 class="title-long"><a href="https://github.com/open-ai-bank/my-ai-bank">
                 Download Free AI Engine @ Github</a></h4>
-                <h4 class="title-long" contenteditable="true">Run your own AI Ops Engine!</h4>
+                <h4 class="title-long" contenteditable="true">Run your own AI press operations!</h4>
               </div>
             </div>
           </div>
@@ -204,7 +204,7 @@ export default {
       textEdit: 'Hello AI World!',
       mixops: [
         ['1','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
-        ['1','IDEA','>','voting','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['1','STATUS','>','post','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','V','','','','','','','','','','','','','','','','','','','','','','','','',''],
         ['2','FUNDS','>','money','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','V','','','','','','','','','','','','','','','','','','','','','','','','',''],
