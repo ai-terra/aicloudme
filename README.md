@@ -1,4 +1,4 @@
-# My AI Bank web app
+# My AI Blog web app
 
 ## Project setup
 ```
