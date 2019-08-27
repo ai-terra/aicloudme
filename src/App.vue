@@ -17,7 +17,7 @@
               <ul>
                 <li>Funded: Famous 5 mins AI Press Engine setup</li>
                 <li>Voting: Chinese, Hindy, Spanish, Arabic, Russian apps</li>
-                <li>Idea: Add Help Requests to Dev News</li>
+                <li>Idea: Add Help Requests to Dev posts</li>
               </ul>
             </div>
             <div class="title" contenteditable="true"><h1>&nbsp;new ops:</h1></div>
