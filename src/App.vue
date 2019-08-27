@@ -138,7 +138,7 @@
               <button class="edit btn btn-primary" @click="show = !show;">Rules</button>
               <button class="edit btn btn-primary" @click="show = !show;">Projects</button>
               <button class="edit btn btn-primary" @click="show = !show;">Services</button>
-              <button class="edit btn btn-primary" @click="show = !show;">Demo</button>
+              <button class="edit btn btn-primary" @click="show = !show;">Engine</button>
               <button class="edit btn btn-primary" @click="show = !show;">Wiki</button>
             </div>
 
