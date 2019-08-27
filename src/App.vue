@@ -15,8 +15,8 @@
             <div class="title" contenteditable="true"><h1>&nbsp;new posts:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
-                <li>Funded: Famous 5 mins AI Press Engine setup</li>
-                <li>Voting: Chinese, Hindy, Spanish, Arabic, Russian apps</li>
+                <li>Funded: Famous 5 mins AI Press Engine install</li>
+                <li>Voting: Chinese, Hindi, Spanish, Arabic, Russian apps</li>
                 <li>Idea: Add Help Requests to Dev posts</li>
               </ul>
             </div>
