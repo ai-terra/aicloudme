@@ -6,7 +6,7 @@
           <div class="title-container">
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
-                <h1 class="title-long">My AI Blog&nbsp;</h1><h1 class="title-short"> AI Ops&nbsp;</h1>
+                <h1 class="title-long">My AI Press&nbsp;</h1><h1 class="title-short"> AI Press&nbsp;</h1>
                 <h5>ai performance profit progress</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
@@ -42,7 +42,7 @@
               </div>
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
-                  <li class="list-group-item" v-for="project in projects" v-bind:key="project"><h3>&nbsp;&nbsp;&nbsp;Blockchain ( Job-{{ project }}, Ops-{{ services[0] }}, Branch {{ branch }}/{{ branches[0] }}, 'USE')</h3>
+                  <li class="list-group-item" v-for="project in projects" v-bind:key="project"><h3>&nbsp;&nbsp;&nbsp;Blockchain ( Post-{{ project }}, Ops-{{ services[0] }}, Branch {{ branch }}/{{ branches[0] }}, 'USE')</h3>
 
                     <table id="progress-table" class="matrix">
                       <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
@@ -120,9 +120,9 @@
           </div>
 
           <div class="background-signs">
-            <p>my AI = blog & ops
+            <p>My AI = blog & ops
             <br><br>
-            free &nbsp;AI &nbsp;ops &nbsp;engine</p>
+            free AI ops &nbsp;engine</p>
           </div>
 
           <div id="editor">
@@ -201,9 +201,12 @@ export default {
       branches: [360],
       services: [7],
       blockchains: [365],
-      textEdit: `Hello World!`,
+      textEdit: `Hello World!
+
+This is your first post.
+Add ops details to transform it in a working operation.`,
       mixops: [
-        ['1','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
+        ['✦','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
         ['1','STATUS','>','post','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','V','','','','','','','','','','','','','','','','','','','','','','','','',''],
         ['2','FUNDS','>','money','','','','','','','','','','','','','','','','','','','','','','',''],
@@ -400,6 +403,7 @@ export default {
 }
 
 .player {
+  margin-left: 1rem;
   width: 3rem;
 }
 
@@ -449,6 +453,8 @@ export default {
 }
 
 #textEdit {
+  padding: 1rem;
+  font-size: 24px;
   width: 100%;
   height: 100%;
   background-color: transparent;
@@ -492,7 +498,7 @@ h2.title-long {
 }
 
 h2.title {
-  margin: 0 0 0 .5rem;
+  margin: 0 0 0 1rem;
 }
 
 .edit {
