@@ -127,22 +127,26 @@
 
           <div id="editor">
             <div class="buttons">
+              <div><h2 class="title">Edit</h2></div>
+              <input type="text" class="input-edit" name="edit-input" value="" size="50" maxlength="40">
+              <button class="edit btn btn-warning" @click="show = !show;">Commit</button>
+              <button class="edit btn btn-warning" @click="runOneOps">+</button>
+              <button class="edit player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |' }}</button>
+              <div><h2 class="title" contenteditable="true"></h2></div>
               <button class="edit btn btn-primary" @click="show = !show;">Interests</button>
               <button class="edit btn btn-primary" @click="show = !show;">Friends</button>
               <button class="edit btn btn-primary" @click="show = !show;">Rules</button>
               <button class="edit btn btn-primary" @click="show = !show;">Projects</button>
-              <button class="edit btn btn-primary" @click="show = !show;">Skills</button>
+              <button class="edit btn btn-primary" @click="show = !show;">Services</button>
               <button class="edit btn btn-primary" @click="show = !show;">Demo</button>
               <button class="edit btn btn-primary" @click="show = !show;">Wiki</button>
-              <div><h2 class="title-long">Edit</h2></div>
-              <input type="text" class="input-edit" name="edit-input" value="" size="40" maxlength="40">
-              <button class="edit btn btn-warning" @click="show = !show;">Commit</button>
-              <button class="edit btn btn-warning" @click="runOneOps">+</button>
-              <button class="edit player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |' }}</button>
-              <div><h2 class="title" contenteditable="true">Post / Ops Editor</h2></div>
             </div>
 
             <div id="editor-tabs">
+
+              <div id="text-editor">
+                <textarea id="textEdit" v-model="textEdit" placeholder="Edit your AI Ops here."></textarea>
+              </div>
 
               <div id="table-editor">
                 <table class="matrix">
@@ -152,10 +156,6 @@
                     </td>
                   </tr>
                 </table>
-              </div>
-
-              <div id="text-editor">
-                <textarea id="textEdit" v-model="textEdit" placeholder="Edit your AI Ops here."></textarea>
               </div>
 
             </div>
@@ -396,7 +396,7 @@ export default {
 
 .title {
   align-self: center;
-  margin: 15px 10px 0px;
+  margin: 15px 10px 0px 0px;
 }
 
 .player {
@@ -405,7 +405,7 @@ export default {
 
 .chromosomes {
   height: 3.4rem;
-  width: 22.5rem;
+  width: 26rem;
   margin-top: 1.2rem;
   line-height: 90%;
   word-break: break-word; 
@@ -503,7 +503,7 @@ h2.title {
   border-top: 5px;
   padding-left: 5px;
   margin: 0rem 1rem 0 1rem;
-  width: 46rem;
+  width: 72rem;
   height: 3rem;
   font-size: 1.5rem;
 }
