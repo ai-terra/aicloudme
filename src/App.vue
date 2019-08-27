@@ -122,7 +122,7 @@
           <div class="background-signs">
             <p>my AI = blog & ops
             <br><br>
-            free &nbsp;AI &nbsp;blog &nbsp;engine</p>
+            free &nbsp;AI &nbsp;ops &nbsp;engine</p>
           </div>
 
           <div id="editor">
@@ -139,7 +139,7 @@
               <button class="edit btn btn-warning" @click="show = !show;">Commit</button>
               <button class="edit btn btn-warning" @click="runOneOps">+</button>
               <button class="edit player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |' }}</button>
-              <div><h2 class="title" contenteditable="true">Recombinant AI Ops Editor</h2></div>
+              <div><h2 class="title" contenteditable="true">Post & Ops Editor</h2></div>
             </div>
 
             <div id="editor-tabs">
@@ -165,15 +165,15 @@
           <div id="footer">
             <div class="title-container">
               <div class="footer-items">
-                <h4 class="title-long">W3AI Meetups 
-                  <a href="https://www.meetup.com/SocialAI/">Toronto</a> 
-                  <a href="https://www.meetup.com/Manhattan-AIR/">NYC</a> 
-                  <a href="https://www.meetup.com/HalifaxAIG/">Halifax</a>
+                <h4 class="title-long">AI Press Meetups 
+                  <a href="https://www.meetup.com/SocialAI/">Toronto </a> 
+                  <a href="https://www.meetup.com/Manhattan-AIR/">NYC </a> 
+                  <a href="https://www.meetup.com/HalifaxAIG/">Halifax </a>
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
-                <h4 class="title-long"><a href="https://github.com/open-ai-bank/my-ai-bank">
-                Download Free AI Engine @ Github</a></h4>
-                <h4 class="title-long" contenteditable="true">Run your own AI press operations!</h4>
+                <h4 class="title-long"><a href="https://github.com/ai-press/post-ops-engine">
+                Download Free AI Ops Engine @ Github</a></h4>
+                <h4 class="title-long" contenteditable="true">Run your own AI operations!</h4>
               </div>
             </div>
           </div>
