@@ -137,7 +137,7 @@
           </div>
 
           <div class="background-signs">
-            <p>My AI = blog & ops
+            <p>My AI &nbsp; blog & ops
             <br><br>
             free AI ops &nbsp;engine</p>
           </div>
