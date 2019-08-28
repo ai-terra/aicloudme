@@ -101,8 +101,12 @@
                   <li class="list-group-item" v-for="service in services" v-bind:key="service"><h3>&nbsp;&nbsp;&nbsp;Service {{ service }}: Title[{{ service }}] - Friend[{{ service }}] - [Interest] - Ops-{{ service }}</h3>
                     
                     <table id="service-table" class="matrix" @click="onTableClick">
-                      <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
-                        <td contenteditable="true" class="cell" v-for="(col, index) in row" v-bind:key="index">
+                      <tr class="row" v-for="(row, rowIndex) in mixops" v-bind:key="rowIndex">                          
+                        <td contenteditable="true" class="cell" 
+                        matrix="ops" 
+                        v-for="(col, colIndex) in row" v-bind:key="colIndex"
+                        :row="rowIndex" :col="colIndex"
+                        >
                           {{ col }}
                         </td>
                       </tr>
