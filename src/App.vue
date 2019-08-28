@@ -100,12 +100,13 @@
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="service in services" v-bind:key="service"><h3>&nbsp;&nbsp;&nbsp;Service {{ service }}: Title[{{ service }}] - Friend[{{ service }}] - [Interest] - Ops-{{ service }}</h3>
                     
-                    <table id="service-table" class="matrix" @click="onTableClick">
+                    <table id="service-table" class="matrix">
                       <tr class="row" v-for="(row, rowIndex) in mixops" v-bind:key="rowIndex">                          
                         <td contenteditable="true" class="cell" 
                         matrix="ops" 
                         v-for="(col, colIndex) in row" v-bind:key="colIndex"
                         :row="rowIndex" :col="colIndex"
+                        @click="onCellClick"
                         >
                           {{ col }}
                         </td>
@@ -335,12 +336,13 @@ Add ops details to transform it in a working operation.`,
       }
       // done();
     },
-    onTableClick(el) {
-      this.currentTable = el.classList[0];
-      this.currentRow = 'rowNo';
-      this.currentCol = 'colNo';
-      this.currentCellVal = 'cellVal';
-      this.inputEdit = 'testCell';
+    onCellClick(el) {
+      this.currentTable = el.target.getAttribute('matrix');
+      this.currentRow = el.target.getAttribute('row');
+      this.currentCol = el.target.getAttribute('col');
+      this.currentCellVal = el.target.innerHTML;
+      this.inputEdit = this.currentCellVal;
+      // console.log('Click on cell: ', el.target);
     },
 
     showPause() { // Toggle play button between play '>' and pause '||'
