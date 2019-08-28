@@ -45,11 +45,17 @@
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project"><h3>&nbsp;&nbsp;&nbsp;Blockchain ( Post-{{ project }}, Ops-{{ services[0] }}, Branch {{ branch }}/{{ branches[0] }}, 'USE')</h3>
 
                     <table id="progress-table" class="matrix">
-                      <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
-                        <td contenteditable="true" class="cell" v-for="(col, index) in row" v-bind:key="index">
+                      <tr class="row" v-for="(row, rowIndex) in mixops" v-bind:key="rowIndex">                          
+                        <td contenteditable="true" class="cell" 
+                        matrix="result" 
+                        v-for="(col, colIndex) in row" v-bind:key="colIndex"
+                        :row="rowIndex" :col="colIndex"
+                        @click="onCellClick"
+                        >
                           {{ col }}
                         </td>
                       </tr>
+
                     </table>
 
                   </li>
@@ -73,11 +79,17 @@
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project"><h3>&nbsp;&nbsp;&nbsp;Project {{ project }}: Title[{{ project }}] - Friend[{{ project }}] - [Interest] - Job-{{ project }}</h3>
 
                     <table id="project-table" class="matrix">
-                      <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
-                        <td contenteditable="true" class="cell" v-for="(col, index) in row" v-bind:key="index">
+                      <tr class="row" v-for="(row, rowIndex) in mixops" v-bind:key="rowIndex">                          
+                        <td contenteditable="true" class="cell" 
+                        matrix="post" 
+                        v-for="(col, colIndex) in row" v-bind:key="colIndex"
+                        :row="rowIndex" :col="colIndex"
+                        @click="onCellClick"
+                        >
                           {{ col }}
                         </td>
                       </tr>
+
                     </table>
 
                   </li>
@@ -155,8 +167,13 @@
 
               <div id="table-editor">
                 <table class="matrix">
-                  <tr class="row" v-for="(row, index) in mixops" v-bind:key="index">                          
-                    <td contenteditable="true" class="cell-edit" v-for="(col, index) in row" v-bind:key="index">
+                  <tr class="row" v-for="(row, rowIndex) in mixops" v-bind:key="rowIndex">                          
+                    <td contenteditable="true" class="cell" 
+                    matrix="editor" 
+                    v-for="(col, colIndex) in row" v-bind:key="colIndex"
+                    :row="rowIndex" :col="colIndex"
+                    @click="onCellClick"
+                    >
                       {{ col }}
                     </td>
                   </tr>
