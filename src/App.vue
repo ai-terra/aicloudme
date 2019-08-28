@@ -150,7 +150,7 @@
             <div id="editor-tabs">
 
               <div id="text-editor">
-                <textarea id="textEdit" v-model="textEdit" placeholder="Edit your AI Ops here."></textarea>
+                <textarea id="textEdit" v-model="textEdit" placeholder="Edit your AI Post & Ops here."></textarea>
               </div>
 
               <div id="table-editor">
@@ -472,7 +472,7 @@ Add ops details to transform it in a working operation.`,
 
 #textEdit {
   padding: 1rem;
-  font-size: 24px;
+  font-size: 2rem;
   width: 100%;
   height: 100%;
   background-color: transparent;
@@ -529,7 +529,7 @@ h2.title {
   margin: 0rem 1rem 0 1rem;
   width: 72rem;
   height: 3rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .matrix {
