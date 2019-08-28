@@ -340,7 +340,7 @@ Add ops details to transform it in a working operation.`,
       this.currentTable = el.target.getAttribute('matrix');
       this.currentRow = el.target.getAttribute('row');
       this.currentCol = el.target.getAttribute('col');
-      this.currentCellVal = el.target.innerHTML;
+      this.currentCellVal = el.target.innerHTML.trim();
       this.inputEdit = this.currentCellVal;
       // console.log('Click on cell: ', el.target);
     },
