@@ -1,4 +1,4 @@
-# My AI Blog web app
+# My AI PMO web app
 
 ## Project setup
 ```
