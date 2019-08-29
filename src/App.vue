@@ -231,7 +231,7 @@ export default {
       textEdit: `Hello World!
 
 This is your first post.
-Add ops details to transform it in a working operation.`,
+Add actionable tests or details to transform it in a project task or functional operation.`,
       mixops: [
         ['✦','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
         ['1','STATUS','>','post','','','','','','','','','','','','','','','','','','','','','','',''],
