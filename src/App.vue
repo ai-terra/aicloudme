@@ -12,7 +12,7 @@
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
             <div class="title chromosomes" contenteditable="true">under dev daily deploys contributors welcome ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
-            <div class="title" contenteditable="true"><h1>&nbsp;new tasks:</h1></div>
+            <div class="title" contenteditable="true"><h1>&nbsp;new plans:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>Funded: Famous 5 mins AI Engine install</li>
@@ -137,9 +137,9 @@
           </div>
 
           <div class="background-signs">
-            <p>My AI &nbsp; PMO &nbsp; OPS
+            <p>My AI &nbsp; ERP &nbsp; OPS
             <br><br>
-            open AI PMO &nbsp;engine</p>
+            open AI &nbsp; engine</p>
           </div>
 
           <div id="editor">
@@ -187,15 +187,15 @@
           <div id="footer">
             <div class="title-container">
               <div class="footer-items">
-                <h4 class="title-long">AI Press Meetups 
+                <h4 class="title-long">W3AI Meetups 
                   <a href="https://www.meetup.com/SocialAI/">Toronto </a> 
                   <a href="https://www.meetup.com/Manhattan-AIR/">NYC </a> 
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax </a>
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
                 <h4 class="title-long"><a href="https://github.com/ai-press/ai-pmo">
-                Download Free AI PMO Engine @ Github</a></h4>
-                <h4 class="title-long" contenteditable="true">Run your own AI PMO!</h4>
+                Download Free AI Engine @ Github</a></h4>
+                <h4 class="title-long" contenteditable="true">AI performance profit progress</h4>
               </div>
             </div>
           </div>
@@ -413,6 +413,12 @@ Add actionable tests or details to transform it in a project task or functional 
 </script>
 
 <style>
+html {
+  /* font-size: 80%; */
+  /* font-size: smaller; */
+  /* font-size: calc(14px - .5vw); */
+}
+
 .container-fluid {
   padding: 0px;
   overflow-x: hidden;
