@@ -1,6 +1,7 @@
-# My AI PMO web app
+# My AI ERP web app
+AI Economy Resource Planning 
 
-## Project setup
+## AI Engine setup
 ```
 npm install
 ```
