@@ -137,7 +137,7 @@
           </div>
 
           <div class="background-signs">
-            <p>&nbsp;my ai &nbsp;&nbsp; dev &nbsp;& &nbsp;ops
+            <p>&nbsp;my ai &nbsp;&nbsp; dev &nbsp;&nbsp; &nbsp;ops
             <br><br>
             open ai cell engine</p>
           </div>
