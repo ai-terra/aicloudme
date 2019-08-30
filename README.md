@@ -1,5 +1,5 @@
-# My AI Cell web app
-AI Economy Resource Planning 
+# AI Cell web app
+A CUTE AI OS / Cloud Universal Turing Engines
 
 ## AI Cell Engine setup
 ```
