@@ -216,6 +216,7 @@ export default {
     return {
       interval: 'timer', 
       speed: 2000,  // milliseconds
+      visibleRows: 1,
       pause: true,
       show: true,
       load: true,
@@ -231,12 +232,13 @@ export default {
       currentCol: '',
       currentCellVal: '',
       inputEdit: '',
+      header: ['a','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
       textEdit: `Hello World!
 
 This is a demo business gene.
 Add actionable tests or ops to transform it in a business project or profitable operation.`,
       mixops: [
-        ['a','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
+        // ['a','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
         ['1','STATUS','>','post','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','V','','','','','','','','','','','','','','','','','','','','','','','','',''],
         ['2','FUNDS','>','money','','','','','','','','','','','','','','','','','','','','','','',''],
