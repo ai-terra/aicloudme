@@ -137,9 +137,9 @@
           </div>
 
           <div class="background-signs">
-            <p>&nbsp;&nbsp;my ai &nbsp; bids &nbsp;& &nbsp;asks
+            <p>&nbsp;my ai &nbsp;&nbsp; dev &nbsp;& &nbsp;ops
             <br><br>
-            open &nbsp;ai &nbsp;ask engine</p>
+            open ai cell engine</p>
           </div>
 
           <div id="editor">
@@ -196,6 +196,7 @@
                 <h4 class="title-long"><a href="https://github.com/ai-press/ai-pmo">
                 Download Free AI Engine @ Github</a></h4>
                 <h4 class="title-long" contenteditable="true">AI performance profit progress</h4>
+                <h4 class="title-long" contenteditable="true">Cloud Universal Turing Engines</h4>
               </div>
             </div>
           </div>
@@ -230,10 +231,10 @@ export default {
       inputEdit: '',
       textEdit: `Hello World!
 
-This is your first post.
-Add actionable tests or details to transform it in a project task or functional operation.`,
+This is a demo business gene.
+Add actionable tests or ops to transform it in a business project or profitable operation.`,
       mixops: [
-        ['✦','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
+        ['a','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
         ['1','STATUS','>','post','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','V','','','','','','','','','','','','','','','','','','','','','','','','',''],
         ['2','FUNDS','>','money','','','','','','','','','','','','','','','','','','','','','','',''],
