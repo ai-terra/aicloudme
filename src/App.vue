@@ -137,7 +137,7 @@
           </div>
 
           <div class="background-signs">
-            <p>&nbsp;my ai &nbsp;&nbsp; dev &nbsp;&nbsp; &nbsp;ops
+            <p>&nbsp;my ai &nbsp;&nbsp; dev &nbsp; &nbsp; &nbsp;ops
             <br><br>
             open ai cell engine</p>
           </div>
@@ -156,6 +156,7 @@
               <button class="edit btn btn-primary" @click="show = !show;">Projects</button>
               <button class="edit btn btn-primary" @click="show = !show;">Services</button>
               <button class="edit btn btn-primary" @click="show = !show;">Engine</button>
+              <button class="edit btn btn-danger" @click="show = !show;">Code</button>
               <button class="edit btn btn-primary" @click="show = !show;">Wiki</button>
             </div>
 
