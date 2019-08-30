@@ -156,8 +156,9 @@
               <button class="edit btn btn-primary" @click="show = !show;">Projects</button>
               <button class="edit btn btn-primary" @click="show = !show;">Services</button>
               <button class="edit btn btn-primary" @click="show = !show;">Engine</button>
-              <button class="edit btn btn-danger" @click="show = !show;">Code</button>
               <button class="edit btn btn-primary" @click="show = !show;">Wiki</button>
+              <button class="edit btn btn-danger" @click="show = !show;">Code</button>
+              <button class="edit btn btn-primary" @click="show = !show;"><b>F</b></button>
             </div>
 
             <div id="editor-tabs">
