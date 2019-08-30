@@ -1,7 +1,7 @@
-# My AI Economy web app
+# My AI Cell web app
 AI Economy Resource Planning 
 
-## AI Engine setup
+## AI Cell Engine setup
 ```
 npm install
 ```

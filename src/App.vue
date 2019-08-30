@@ -6,8 +6,8 @@
           <div class="title-container">
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
-                <h1 class="title-long">ai economy&nbsp;</h1><h1 class="title-short"> ai eco&nbsp;</h1>
-                <h5>my ai economy bid/ask engine</h5>
+                <h1 class="title-long">my ai cells&nbsp;</h1><h1 class="title-short"> ai cell&nbsp;</h1>
+                <h5>cute ai business genes</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
@@ -15,7 +15,7 @@
             <div class="title" contenteditable="true"><h1>&nbsp;new bids:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
-                <li>Funded: Famous 5 mins AI Engine install</li>
+                <li>Funded: Famous 5 mins AI Cell Engine install</li>
                 <li>Voting: Chinese, Hindi, Spanish, Arabic, Russian apps</li>
                 <li>Idea: Add Help Requests to Dev posts</li>
               </ul>
