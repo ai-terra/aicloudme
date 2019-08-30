@@ -7,7 +7,7 @@
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
                 <h1 class="title-long">my ai cells&nbsp;</h1><h1 class="title-short"> ai cell&nbsp;</h1>
-                <h5>- cute ai business engines -</h5>
+                <h5>CUTE AI Business Engines</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
@@ -170,7 +170,7 @@
               <div id="table-editor">
                 <table class="matrix">
                   <tr class="row">
-                    <td class="cell">{{ corner }}</td>
+                    <td class="cell" @click="expandRows">{{ corner }}</td>
                     <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                   </tr>
                   <tr class="row" v-for="(row, rowIndex) in mixops" v-bind:key="rowIndex">                          
@@ -371,7 +371,10 @@ Add actionable tests or ops to transform it in a business project or profitable 
       this.inputEdit = this.currentCellVal;
       // console.log('Click on cell: ', el.target);
     },
-
+    expandRows() {
+      this.visibleRows++;
+      this.corner = this.header[this.visibleRows - 1].toLowerCase();
+    },
     showPause() { // Toggle play button between play '>' and pause '||'
       return this.pause ? '| |' :  '>';
     },
