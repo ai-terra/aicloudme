@@ -1,4 +1,4 @@
-# My AI ERP web app
+# My AI Economy web app
 AI Economy Resource Planning 
 
 ## AI Engine setup
