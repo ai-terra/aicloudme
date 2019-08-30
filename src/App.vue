@@ -169,6 +169,10 @@
 
               <div id="table-editor">
                 <table class="matrix">
+                  <tr class="row">
+                    <td class="cell">{{ corner }}</td>
+                    <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
+                  </tr>
                   <tr class="row" v-for="(row, rowIndex) in mixops" v-bind:key="rowIndex">                          
                     <td contenteditable="true" class="cell" 
                     matrix="editor" 
@@ -232,7 +236,8 @@ export default {
       currentCol: '',
       currentCellVal: '',
       inputEdit: '',
-      header: ['a','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
+      corner: 'a',
+      header: ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
       textEdit: `Hello World!
 
 This is a demo business gene.
