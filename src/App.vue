@@ -45,6 +45,10 @@
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project"><h3>&nbsp;&nbsp;&nbsp;Blockchain ( Post-{{ project }}, Ops-{{ services[0] }}, Branch {{ branch }}/{{ branches[0] }}, 'USE')</h3>
 
                     <table id="progress-table" class="matrix">
+                      <tr class="row">
+                        <td class="cell" @click="expandRows">{{ corner }}</td>
+                        <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
+                      </tr>                      
                       <tr class="row" v-for="(row, rowIndex) in mixops" v-bind:key="rowIndex">                          
                         <td contenteditable="true" class="cell" 
                         matrix="result" 
@@ -79,6 +83,10 @@
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project"><h3>&nbsp;&nbsp;&nbsp;Project {{ project }}: Title[{{ project }}] - Friend[{{ project }}] - [Interest] - Job-{{ project }}</h3>
 
                     <table id="project-table" class="matrix">
+                      <tr class="row">
+                        <td class="cell" @click="expandRows">{{ corner }}</td>
+                        <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
+                      </tr>                      
                       <tr class="row" v-for="(row, rowIndex) in mixops" v-bind:key="rowIndex">                          
                         <td contenteditable="true" class="cell" 
                         matrix="post" 
@@ -113,6 +121,10 @@
                   <li class="list-group-item" v-for="service in services" v-bind:key="service"><h3>&nbsp;&nbsp;&nbsp;Service {{ service }}: Title[{{ service }}] - Friend[{{ service }}] - [Interest] - Ops-{{ service }}</h3>
                     
                     <table id="service-table" class="matrix">
+                      <tr class="row">
+                        <td class="cell" @click="expandRows">{{ corner }}</td>
+                        <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
+                      </tr>
                       <tr class="row" v-for="(row, rowIndex) in mixops" v-bind:key="rowIndex">                          
                         <td contenteditable="true" class="cell" 
                         matrix="ops" 
