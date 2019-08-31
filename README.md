@@ -1,5 +1,5 @@
 # AI Cell web app
-AI Cell & Coins OS / Universal Cloud DevOps Engines
+AI Cell & Coins OS / Universal Lambda DevOps Engines
 
 ## AI Cell Engine setup
 ```
