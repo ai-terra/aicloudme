@@ -7,7 +7,7 @@
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
                 <h1 class="title-long">my ai cells&nbsp;</h1><h1 class="title-short"> ai cell&nbsp;</h1>
-                <h5>CUTE AI Business Engines</h5>
+                <h5>ai coins business engines</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
@@ -43,7 +43,7 @@
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
-                    <h3>&nbsp;&nbsp;&nbsp;Blockchain ( Biz-{{ project }}, Ops-{{ services[0] }}, Branch {{ branch }}/{{ branches[0] }}, 'CASH')</h3>
+                    <h3>&nbsp;&nbsp;&nbsp;Blockchain ( Dev-{{ project }}, Ops-{{ services[0] }}, Branch {{ branch }}/{{ branches[0] }}, 'CASH')</h3>
 
                     <table id="progress-table" class="matrix">
                       <tr class="row">
@@ -150,7 +150,7 @@
           </div>
 
           <div class="background-signs">
-            <p>&nbsp;cash &nbsp;=&nbsp; BIZ &nbsp; ✱ &nbsp;OPS
+            <p>cash&nbsp;= &nbsp;dev &nbsp;⋆&nbsp; ops
             <br><br>
             open ai cell engine</p>
           </div>
