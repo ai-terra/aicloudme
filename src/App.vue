@@ -42,7 +42,8 @@
               </div>
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
-                  <li class="list-group-item" v-for="project in projects" v-bind:key="project"><h3>&nbsp;&nbsp;&nbsp;Blockchain ( Post-{{ project }}, Ops-{{ services[0] }}, Branch {{ branch }}/{{ branches[0] }}, 'USE')</h3>
+                  <li class="list-group-item" v-for="project in projects" v-bind:key="project">
+                    <h3>&nbsp;&nbsp;&nbsp;Blockchain ( Biz-{{ project }}, Ops-{{ services[0] }}, Branch {{ branch }}/{{ branches[0] }}, 'CASH')</h3>
 
                     <table id="progress-table" class="matrix">
                       <tr class="row">
@@ -149,7 +150,7 @@
           </div>
 
           <div class="background-signs">
-            <p>&nbsp;my ai &nbsp;&nbsp; dev &nbsp; &nbsp; &nbsp;ops
+            <p>&nbsp;cash &nbsp;=&nbsp; BIZ &nbsp; ✱ &nbsp;OPS
             <br><br>
             open ai cell engine</p>
           </div>

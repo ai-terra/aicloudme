@@ -1,5 +1,5 @@
 # AI Cell web app
-A CUTE AI OS / Cloud Universal Turing Engines
+AI Cell Coins OS / Universal Church-Turing Engines
 
 ## AI Cell Engine setup
 ```
