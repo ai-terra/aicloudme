@@ -198,6 +198,17 @@
                     </td>
                   </tr>
 
+                  <tr class="row" v-for="(row, rowIndex) in blankTabMatrix" v-bind:key="rowIndex">                          
+                    <td contenteditable="true" class="cell" 
+                    matrix="editor" 
+                    v-for="(col, colIndex) in row" v-bind:key="colIndex"
+                    :row="rowIndex" :col="colIndex"
+                    @click="onCellClick"
+                    >
+                      {{ col }}
+                    </td>
+                  </tr>                  
+
                 </table>
               </div>
 
@@ -253,8 +264,8 @@ export default {
       inputEdit: '',
       corner: 'a',
       header: ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
-      blankTabMatrix: [],
-      blankTabRow: ['','','','','','','','','','','','','','','','','','','','','','','','','',''],
+      blankTabMatrix: [['a','','','','','','','','','','','','','','','','','','','','','','','','','','']],
+      blankTabRow: ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
       textEdit: `Hello World!
 
 This is a demo business gene.
@@ -383,6 +394,10 @@ Add actionable tests or ops to transform it in a business project or profitable 
     expandRows() {
       this.visibleRows++;
       this.corner = this.header[this.visibleRows - 1].toLowerCase();
+      // add blankRows to the matrix table
+      let newRow = this.blankTabRow.slice(0);
+      newRow[0] = this.corner;
+      this.blankTabMatrix.push(newRow);
     },
     showPause() { // Toggle play button between play '>' and pause '||'
       return this.pause ? '| |' :  '>';
