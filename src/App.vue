@@ -186,6 +186,7 @@
                     <td class="cell" @click="expandRows">{{ corner }}</td>
                     <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                   </tr>
+
                   <tr class="row" v-for="(row, rowIndex) in matrixIni" v-bind:key="rowIndex">                          
                     <td contenteditable="true" class="cell" 
                     matrix="editor" 
@@ -196,6 +197,7 @@
                       {{ col }}
                     </td>
                   </tr>
+
                 </table>
               </div>
 
@@ -251,6 +253,8 @@ export default {
       inputEdit: '',
       corner: 'a',
       header: ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
+      blankTabMatrix: [],
+      blankTabRow: ['','','','','','','','','','','','','','','','','','','','','','','','','',''],
       textEdit: `Hello World!
 
 This is a demo business gene.
@@ -264,8 +268,7 @@ Add actionable tests or ops to transform it in a business project or profitable 
         ['5','INPUT',':','create','','','','','','','','','','','','','','','','','','','','','','',''],
         ['6','STEPS',':','plan','','','','','','','','','','','','','','','','','','','','','','',''],
         ['7','OUTPUT',':','test','','','','','','','','','','','','','','','','','','','','','','',''],
-        ['8','PAY',':','paid','','','','','','','','','','','','','','','','','','','','','','',''],
-        ['','','','','','','','','','','','','','','','','','','','','','','','','','']
+        ['8','PAY',':','paid','','','','','','','','','','','','','','','','','','','','','','','']
       ]
     };
   },
