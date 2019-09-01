@@ -50,7 +50,7 @@
                         <td class="cell" @click="expandRows">{{ corner }}</td>
                         <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                       </tr>                      
-                      <tr class="row" v-for="(row, rowIndex) in mixops" v-bind:key="rowIndex">                          
+                      <tr class="row" v-for="(row, rowIndex) in matrixIni" v-bind:key="rowIndex">                          
                         <td contenteditable="true" class="cell" 
                         matrix="result" 
                         v-for="(col, colIndex) in row" v-bind:key="colIndex"
@@ -88,7 +88,7 @@
                         <td class="cell" @click="expandRows">{{ corner }}</td>
                         <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                       </tr>                      
-                      <tr class="row" v-for="(row, rowIndex) in mixops" v-bind:key="rowIndex">                          
+                      <tr class="row" v-for="(row, rowIndex) in matrixIni" v-bind:key="rowIndex">                          
                         <td contenteditable="true" class="cell" 
                         matrix="post" 
                         v-for="(col, colIndex) in row" v-bind:key="colIndex"
@@ -126,7 +126,7 @@
                         <td class="cell" @click="expandRows">{{ corner }}</td>
                         <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                       </tr>
-                      <tr class="row" v-for="(row, rowIndex) in mixops" v-bind:key="rowIndex">                          
+                      <tr class="row" v-for="(row, rowIndex) in matrixIni" v-bind:key="rowIndex">                          
                         <td contenteditable="true" class="cell" 
                         matrix="ops" 
                         v-for="(col, colIndex) in row" v-bind:key="colIndex"
@@ -186,7 +186,7 @@
                     <td class="cell" @click="expandRows">{{ corner }}</td>
                     <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                   </tr>
-                  <tr class="row" v-for="(row, rowIndex) in mixops" v-bind:key="rowIndex">                          
+                  <tr class="row" v-for="(row, rowIndex) in matrixIni" v-bind:key="rowIndex">                          
                     <td contenteditable="true" class="cell" 
                     matrix="editor" 
                     v-for="(col, colIndex) in row" v-bind:key="colIndex"
@@ -255,7 +255,7 @@ export default {
 
 This is a demo business gene.
 Add actionable tests or ops to transform it in a business project or profitable operation.`,
-      mixops: [
+      matrixIni: [
         // ['a','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
         ['1','STATUS',':','post','','','','','','','','','','','','','','','','','','','','','','',''],
         ['2','FUNDS',':','money','','','','','','','','','','','','','','','','','','','','','','',''],
@@ -265,7 +265,7 @@ Add actionable tests or ops to transform it in a business project or profitable 
         ['6','STEPS',':','plan','','','','','','','','','','','','','','','','','','','','','','',''],
         ['7','OUTPUT',':','test','','','','','','','','','','','','','','','','','','','','','','',''],
         ['8','PAY',':','paid','','','','','','','','','','','','','','','','','','','','','','',''],
-        ['a','','','','','','','','','','','','','','','','','','','','','','','','','','']
+        ['','','','','','','','','','','','','','','','','','','','','','','','','','']
       ]
     };
   },
