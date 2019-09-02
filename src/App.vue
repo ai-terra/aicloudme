@@ -6,8 +6,8 @@
           <div class="title-container">
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
-                <h1 class="title-long">my ai cells&nbsp;</h1><h1 class="title-short"> ai cell&nbsp;</h1>
-                <h5>ai coins & business engine</h5>
+                <h1 class="title-long">my AI cells&nbsp;</h1><h1 class="title-short"> ai cell&nbsp;</h1>
+                <h5>ai coins & business services</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
@@ -258,7 +258,7 @@ export default {
       textEdit: `Hello World!
 
 This is your first business post.
-Add actionable tests or ops to transform it in a business project or profitable operation.`,
+Add actionable tests or ops to transform it in a business project or profitable service.`,
       matrixIni: [
         // ['a','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
         ['1','STATUS',':','post','','','','','','','','','','','','','','','','','','','','','','',''],
@@ -386,7 +386,10 @@ Add actionable tests or ops to transform it in a business project or profitable 
       this.currentCol = el.target.getAttribute('col');
       this.currentCellVal = el.target.innerHTML.trim();
       if ( this.fx[0] === '=' ) {
-        this.fx += this.currentTable[0] + this.header[this.currentCol - 1] + this.header[this.currentRow].toLowerCase();
+        this.fx += this.currentTable[0].toUpperCase() 
+                + this.currentRow/(this.visibleRows+1) 
+                + this.header[this.currentCol - 1] 
+                + this.header[this.currentRow%(this.visibleRows+1) - 1].toLowerCase();
       } else {
         this.fx = this.currentCellVal;
       }
