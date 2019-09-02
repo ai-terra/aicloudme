@@ -257,7 +257,7 @@ export default {
       blankTabRow: ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
       textEdit: `Hello World!
 
-This is a demo business gene.
+This is your first business post.
 Add actionable tests or ops to transform it in a business project or profitable operation.`,
       matrixIni: [
         // ['a','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
@@ -385,7 +385,11 @@ Add actionable tests or ops to transform it in a business project or profitable 
       this.currentRow = el.target.getAttribute('row');
       this.currentCol = el.target.getAttribute('col');
       this.currentCellVal = el.target.innerHTML.trim();
-      this.fx = this.currentCellVal;
+      if ( this.fx[0] === '=' ) {
+        this.fx += this.currentTable[0] + this.header[this.currentCol - 1] + this.header[this.currentRow].toLowerCase();
+      } else {
+        this.fx = this.currentCellVal;
+      }
       // console.log('Click on cell: ', el.target);
     },
     expandRows() {
