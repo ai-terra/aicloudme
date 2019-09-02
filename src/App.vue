@@ -150,9 +150,9 @@
           </div>
 
           <div class="background-signs">
-            <p>coins =&nbsp; dev&nbsp;⋆&nbsp; ops
+            <p>Coins =&nbsp;Dev&nbsp;⋆&nbsp;Ops
             <br><br>
-            open ai cell engine</p>
+            open AI cell engine</p>
           </div>
 
           <div id="editor">
