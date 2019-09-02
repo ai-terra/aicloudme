@@ -158,7 +158,7 @@
           <div id="editor">
             <div class="buttons">
               <div><h2 class="title"><i>fx</i></h2></div>
-              <input type="text" class="input-edit" v-model="inputEdit" value="" size="50" maxlength="40">
+              <input type="text" class="input-edit" v-model="fx" value="" size="50" maxlength="40">
               <button class="edit btn btn-warning" @click="show = !show;">Commit</button>
               <button class="edit btn btn-warning" @click="runOneOps">+</button>
               <button class="edit player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |' }}</button>
@@ -250,7 +250,7 @@ export default {
       currentRow: '',
       currentCol: '',
       currentCellVal: '',
-      inputEdit: '',
+      fx: '',
       corner: 'a',
       header: ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
       blankTabMatrix: [['a','','','','','','','','','','','','','','','','','','','','','','','','','','']],
@@ -385,7 +385,7 @@ Add actionable tests or ops to transform it in a business project or profitable 
       this.currentRow = el.target.getAttribute('row');
       this.currentCol = el.target.getAttribute('col');
       this.currentCellVal = el.target.innerHTML.trim();
-      this.inputEdit = this.currentCellVal;
+      this.fx = this.currentCellVal;
       // console.log('Click on cell: ', el.target);
     },
     expandRows() {
