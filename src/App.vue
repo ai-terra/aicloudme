@@ -387,7 +387,7 @@ Add actionable tests or ops to transform it in a business project or profitable 
       this.currentCellVal = el.target.innerHTML.trim();
       if ( this.fx[0] === '=' ) {
         this.fx += this.currentTable[0].toUpperCase() 
-                + this.currentRow/(this.visibleRows+1) 
+                + Math.floor(this.currentRow/(this.visibleRows+1) + 1)
                 + this.header[this.currentCol - 1] 
                 + this.header[this.currentRow%(this.visibleRows+1) - 1].toLowerCase();
       } else {
