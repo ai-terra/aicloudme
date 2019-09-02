@@ -275,7 +275,8 @@ Add actionable tests or ops to transform it in a business project or profitable 
         ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
         ['7','OUTPUT',':','test','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
-        ['8','PAY',':','paid','','','','','','','','','','','','','','','','','','','','','','','']
+        ['8','PAY',':','paid','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['a','','','','','','','','','','','','','','','','','','','','','','','','','','']
       ]
     };
   },
@@ -391,9 +392,12 @@ Add actionable tests or ops to transform it in a business project or profitable 
       this.visibleRows++;
       this.corner = this.header[this.visibleRows - 1].toLowerCase();
       // add blankRows to the matrix table
-      let newRow = this.blankTabRow.slice(0);
+      let newRow = this.blankTabRow.slice(0); // copy blankTabRow to new array
       newRow[0] = this.corner;
-      this.blankTabMatrix.push(newRow);
+      // this.blankTabMatrix.push(newRow);
+      for (let tab = 0; tab < 8; tab++) {
+        this.matrixIni.splice(this.visibleRows + (this.visibleRows + 1) * tab, 0, newRow);
+      }
     },
     showPause() { // Toggle play button between play '>' and pause '||'
       return this.pause ? '| |' :  '>';
