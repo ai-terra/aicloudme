@@ -7,7 +7,7 @@
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
                 <h1 class="title-long">my ai cells&nbsp;</h1><h1 class="title-short"> ai cell&nbsp;</h1>
-                <h5>ai coins business engines</h5>
+                <h5>ai coins & business engine</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
@@ -150,14 +150,14 @@
           </div>
 
           <div class="background-signs">
-            <p>cash&nbsp;= &nbsp;dev &nbsp;⋆&nbsp; ops
+            <p>coins =&nbsp; dev&nbsp;⋆&nbsp; ops
             <br><br>
             open ai cell engine</p>
           </div>
 
           <div id="editor">
             <div class="buttons">
-              <div><h2 class="title">Edit</h2></div>
+              <div><h2 class="title"><i>fx</i></h2></div>
               <input type="text" class="input-edit" v-model="inputEdit" value="" size="50" maxlength="40">
               <button class="edit btn btn-warning" @click="show = !show;">Commit</button>
               <button class="edit btn btn-warning" @click="runOneOps">+</button>
