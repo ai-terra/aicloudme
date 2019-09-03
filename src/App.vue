@@ -82,7 +82,7 @@
               <ul class="list-group">
                 <transition-group name="slide-up" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
-                    <h3>&nbsp;project {{ project }}: title[{{ project }}] - client[{{ project }}] - [votes] - bid-{{ project }}</h3>
+                    <h3>&nbsp;project {{ project }}: title[{{ project }}] - voter[{{ project }}] - [votes] - bid-{{ project }}</h3>
 
                     <table id="project-table" class="matrix">
                       <tr class="row">
@@ -121,7 +121,7 @@
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="service in services" v-bind:key="service">
-                    <h3>&nbsp;&nbsp;&nbsp;service {{ service }}: title[{{ service }}] - client[{{ service }}] - [votes] - ask-{{ service }}</h3>
+                    <h3>&nbsp;&nbsp;&nbsp;service {{ service }}: title[{{ service }}] - voter[{{ service }}] - [votes] - ask-{{ service }}</h3>
                     
                     <table id="service-table" class="matrix">
                       <tr class="row">
@@ -166,7 +166,7 @@
               <button class="edit player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |' }}</button>
               <div><h2 class="title" contenteditable="true"></h2></div>
               <button class="edit btn btn-primary" @click="show = !show;">Interests</button>
-              <button class="edit btn btn-primary" @click="show = !show;">Customers</button>
+              <button class="edit btn btn-primary" @click="show = !show;">Voters</button>
               <button class="edit btn btn-primary" @click="show = !show;">Rules</button>
               <button class="edit btn btn-primary" @click="show = !show;">Projects</button>
               <button class="edit btn btn-primary" @click="show = !show;">Services</button>
@@ -218,7 +218,7 @@
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
                 <h4 class="title-long"><a href="https://github.com/ai-press/ai-gov">
                 Download Free AI Engine @ Github</a></h4>
-                <h4 class="title-long" contenteditable="true">politically correct ai engine</h4>
+                <h4 class="title-long" contenteditable="true">politically correctness for million voters</h4>
               </div>
             </div>
           </div>
