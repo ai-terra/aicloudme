@@ -1,7 +1,7 @@
-# AI Banking web app
-Free AI Banking at best rates in your network
+# AI Governance web app
+Open AI Governance engine for best pollitically correct decisions
 
-## AI Bank Engine setup
+## AI Gov Engine setup
 ```
 npm install
 ```
