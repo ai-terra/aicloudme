@@ -7,7 +7,7 @@
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
                 <h1 class="title-long">ai banking&nbsp;</h1><h1 class="title-short"> ai cell&nbsp;</h1>
-                <h5>open ai banking for all</h5>
+                <h5>my open ai banking engine</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
@@ -15,7 +15,7 @@
             <div class="title" contenteditable="true"><h1>&nbsp;new need:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
-                <li>Funded: Famous 5 mins AI helps Engine install</li>
+                <li>Funded: Famous 5 mins AI Bank Engine install</li>
                 <li>Voting: Chinese, Hindi, Spanish, Arabic, Russian apps</li>
                 <li>Idea: Add Issue & Help Requests to Dev post loop</li>
               </ul>
@@ -152,9 +152,9 @@
           </div>
 
           <div class="background-signs">
-            <p>coins =&nbsp;like&nbsp;⋆&nbsp;help
+            <p>bank =&nbsp;like&nbsp;⋆&nbsp;pros
             <br><br>
-            free ai help engine</p>
+            free ai bank engine</p>
           </div>
 
           <div id="editor">
@@ -166,7 +166,7 @@
               <button class="edit player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |' }}</button>
               <div><h2 class="title" contenteditable="true"></h2></div>
               <button class="edit btn btn-primary" @click="show = !show;">Interests</button>
-              <button class="edit btn btn-primary" @click="show = !show;">Friends</button>
+              <button class="edit btn btn-primary" @click="show = !show;">Customers</button>
               <button class="edit btn btn-primary" @click="show = !show;">Rules</button>
               <button class="edit btn btn-primary" @click="show = !show;">Projects</button>
               <button class="edit btn btn-primary" @click="show = !show;">Services</button>
@@ -216,9 +216,9 @@
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax </a>
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
-                <h4 class="title-long"><a href="https://github.com/ai-press/ai-helps">
+                <h4 class="title-long"><a href="https://github.com/ai-press/ai-banking">
                 Download Free AI Engine @ Github</a></h4>
-                <h4 class="title-long" contenteditable="true">friends' help book wallet</h4>
+                <h4 class="title-long" contenteditable="true">free ai banking wallet</h4>
               </div>
             </div>
           </div>
