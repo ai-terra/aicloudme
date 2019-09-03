@@ -15,9 +15,9 @@
             <div class="title" contenteditable="true"><h1>&nbsp;new bids:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
-                <li>Funded: Famous 5 mins AI Bank Engine install</li>
+                <li>Funded: Famous 5 mins AI Gov Engine install</li>
                 <li>Voting: Chinese, Hindi, Spanish, Arabic, Russian apps</li>
-                <li>Idea: Add Issue & Help Requests to Dev post loop</li>
+                <li>Idea: Add Issue & Help Requests to Job post loop</li>
               </ul>
             </div>
             <div class="title" contenteditable="true"><h1>&nbsp;new asks:</h1></div>
@@ -43,7 +43,7 @@
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
-                    <h3>&nbsp;&nbsp;&nbsp;bankchain ( bid-{{ project }}, ask-{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'TRUST')</h3>
+                    <h3>&nbsp;&nbsp;&nbsp;govchain ( bid-{{ project }}, ask-{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'TRUST')</h3>
 
                     <table id="progress-table" class="matrix">
                       <tr class="row">
@@ -82,7 +82,7 @@
               <ul class="list-group">
                 <transition-group name="slide-up" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
-                    <h3>&nbsp;project {{ project }}: title[{{ project }}] - client[{{ project }}] - [shares] - bid-{{ project }}</h3>
+                    <h3>&nbsp;project {{ project }}: title[{{ project }}] - client[{{ project }}] - [votes] - bid-{{ project }}</h3>
 
                     <table id="project-table" class="matrix">
                       <tr class="row">
@@ -121,7 +121,7 @@
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="service in services" v-bind:key="service">
-                    <h3>&nbsp;&nbsp;&nbsp;service {{ service }}: title[{{ service }}] - client[{{ service }}] - [shares] - ask-{{ service }}</h3>
+                    <h3>&nbsp;&nbsp;&nbsp;service {{ service }}: title[{{ service }}] - client[{{ service }}] - [votes] - ask-{{ service }}</h3>
                     
                     <table id="service-table" class="matrix">
                       <tr class="row">
@@ -152,9 +152,9 @@
           </div>
 
           <div class="background-signs">
-            <p>bank =&nbsp;bids&nbsp;⋆&nbsp;asks
+            <p>gov =&nbsp;bids&nbsp;⋆&nbsp;asks
             <br><br>
-            free ai bank engine</p>
+            free ai gov engine</p>
           </div>
 
           <div id="editor">
@@ -216,9 +216,9 @@
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax </a>
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
-                <h4 class="title-long"><a href="https://github.com/ai-press/ai-banking">
+                <h4 class="title-long"><a href="https://github.com/ai-press/ai-gov">
                 Download Free AI Engine @ Github</a></h4>
-                <h4 class="title-long" contenteditable="true">free ai banking wallet</h4>
+                <h4 class="title-long" contenteditable="true">politically correct ai engine</h4>
               </div>
             </div>
           </div>
@@ -258,11 +258,11 @@ export default {
       blankTabRow: ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
       textEdit: `Hello World!
 
-This is your first banking post.
-Add tests or services to transform it in a banking project or profitable operation.
+This is your first governance post.
+Add polls or services to transform it in a governance project or progressive operation.
 
-My banking engine
-ai-banking.web.app`,
+My Gov engine
+ai-gov.web.app`,
       matrixIni: [
         // ['a','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
         ['1','STATUS',':','post','','','','','','','','','','','','','','','','','','','','','','',''],
