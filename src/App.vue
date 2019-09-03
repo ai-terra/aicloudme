@@ -15,7 +15,7 @@
             <div class="title" contenteditable="true"><h1>&nbsp;new need:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
-                <li>Funded: Famous 5 mins AI Cloud Office Engine install</li>
+                <li>Funded: Famous 5 mins AI helps Engine install</li>
                 <li>Voting: Chinese, Hindi, Spanish, Arabic, Russian apps</li>
                 <li>Idea: Add Issue & Help Requests to Dev post loop</li>
               </ul>
@@ -43,7 +43,7 @@
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
-                    <h3>&nbsp;&nbsp;&nbsp;helpchain ( need-{{ project }}, help-{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'TRUST')</h3>
+                    <h3>&nbsp;&nbsp;&nbsp;helpchain ( need-{{ project }}, help-{{ services[0] }}, book {{ branch }}/{{ branches[0] }}, 'TRUST')</h3>
 
                     <table id="progress-table" class="matrix">
                       <tr class="row">
@@ -82,7 +82,7 @@
               <ul class="list-group">
                 <transition-group name="slide-up" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
-                    <h3>&nbsp;Project {{ project }}: Title[{{ project }}] - Customer[{{ project }}] - [ROI] - Dev-{{ project }}</h3>
+                    <h3>&nbsp;project {{ project }}: title[{{ project }}] - friend[{{ project }}] - [likes] - job-{{ project }}</h3>
 
                     <table id="project-table" class="matrix">
                       <tr class="row">
@@ -121,7 +121,7 @@
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="service in services" v-bind:key="service">
-                    <h3>&nbsp;&nbsp;&nbsp;Service {{ service }}: Title[{{ service }}] - Customer[{{ service }}] - [ROI] - Ops-{{ service }}</h3>
+                    <h3>&nbsp;&nbsp;&nbsp;service {{ service }}: title[{{ service }}] - friend[{{ service }}] - [likes] - help-{{ service }}</h3>
                     
                     <table id="service-table" class="matrix">
                       <tr class="row">
@@ -152,9 +152,9 @@
           </div>
 
           <div class="background-signs">
-            <p>Coins =&nbsp;Dev&nbsp;⋆&nbsp;Ops
+            <p>coins =&nbsp;like&nbsp;⋆&nbsp;help
             <br><br>
-            open AI cell engine</p>
+            free ai help engine</p>
           </div>
 
           <div id="editor">
@@ -166,7 +166,7 @@
               <button class="edit player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |' }}</button>
               <div><h2 class="title" contenteditable="true"></h2></div>
               <button class="edit btn btn-primary" @click="show = !show;">Interests</button>
-              <button class="edit btn btn-primary" @click="show = !show;">Customers</button>
+              <button class="edit btn btn-primary" @click="show = !show;">Friends</button>
               <button class="edit btn btn-primary" @click="show = !show;">Rules</button>
               <button class="edit btn btn-primary" @click="show = !show;">Projects</button>
               <button class="edit btn btn-primary" @click="show = !show;">Services</button>
@@ -218,8 +218,7 @@
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
                 <h4 class="title-long"><a href="https://github.com/ai-press/ai-devops">
                 Download Free AI Engine @ Github</a></h4>
-                <h4 class="title-long" contenteditable="true">AI performance profit progress</h4>
-                <h4 class="title-long" contenteditable="true">Cloud Office Engines</h4>
+                <h4 class="title-long" contenteditable="true">friends' help book wallet</h4>
               </div>
             </div>
           </div>
@@ -259,8 +258,8 @@ export default {
       blankTabRow: ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
       textEdit: `Hello World!
 
-This is your first DevOps post.
-Add actionable tests or ops to transform it in a business project or profitable service.`,
+This is your first post.
+Add more details to transform it in a web project or something helpful.`,
       matrixIni: [
         // ['a','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
         ['1','STATUS',':','post','','','','','','','','','','','','','','','','','','','','','','',''],
