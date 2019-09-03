@@ -1,7 +1,7 @@
-# AI Helps web app
-AI Helps & Coins app / AI search engine for the best help
+# AI Banking web app
+Free AI Banking at best rates in your network
 
-## AI Engine setup
+## AI Bank Engine setup
 ```
 npm install
 ```
