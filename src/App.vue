@@ -152,7 +152,7 @@
           </div>
 
           <div class="background-signs">
-            <p>bank =&nbsp;like&nbsp;⋆&nbsp;pros
+            <p>bank =&nbsp;bids&nbsp;⋆&nbsp;asks
             <br><br>
             free ai bank engine</p>
           </div>
@@ -259,7 +259,10 @@ export default {
       textEdit: `Hello World!
 
 This is your first banking post.
-Add tests or services to transform it in a banking project or profitable operation.`,
+Add tests or services to transform it in a banking project or profitable operation.
+
+My banking engine
+ai-banking.web.app`,
       matrixIni: [
         // ['a','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
         ['1','STATUS',':','post','','','','','','','','','','','','','','','','','','','','','','',''],
