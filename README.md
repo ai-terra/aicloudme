@@ -1,7 +1,7 @@
 # AI DevOps web app
 AI DevOps & Coins for Universal Cloud Office Engines
 
-## AI Cloud Office Engine (COE) setup
+## AI DevOps Cloud Office Engine (COE) setup
 ```
 npm install
 ```
