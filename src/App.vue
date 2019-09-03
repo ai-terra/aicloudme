@@ -216,7 +216,7 @@
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax </a>
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
-                <h4 class="title-long"><a href="https://github.com/ai-press/ai-devops">
+                <h4 class="title-long"><a href="https://github.com/ai-press/ai-helps">
                 Download Free AI Engine @ Github</a></h4>
                 <h4 class="title-long" contenteditable="true">friends' help book wallet</h4>
               </div>
