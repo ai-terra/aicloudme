@@ -12,7 +12,7 @@
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
             <div class="title chromosomes" contenteditable="true">under dev daily deploys contributors welcome ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
-            <div class="title" contenteditable="true"><h1>&nbsp;new need:</h1></div>
+            <div class="title" contenteditable="true"><h1>&nbsp;new bids:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>Funded: Famous 5 mins AI Bank Engine install</li>
@@ -20,7 +20,7 @@
                 <li>Idea: Add Issue & Help Requests to Dev post loop</li>
               </ul>
             </div>
-            <div class="title" contenteditable="true"><h1>&nbsp;new help:</h1></div>
+            <div class="title" contenteditable="true"><h1>&nbsp;new asks:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>COM: My Service Team Ops Bank</li>
@@ -35,15 +35,15 @@
             <div id="ai-prog">
               <div class="buttons">
                 <button contenteditable="true" class="next btn btn-warning" @click="setCell('project-table', 3, 5, 'votes')">Rank</button>
-                <button contenteditable="true" class="next btn btn-primary" @click="nextBranch">Next Branch</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="nextBranch">Next Option</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="addNewRule">New Rule:</button>
-                <input type="text" class="input-add-new" name="new-rule" value="eg: ECO - use eco first operations" size="40" maxlength="40">
+                <input type="text" class="input-add-new" name="new-rule" value="eg: ECO - use eco first services" size="40" maxlength="40">
                 <!-- <button contenteditable="true" class="next btn btn-primary" @click="addTableRow('progress-table', 8, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Pay</button> -->
               </div>
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
-                    <h3>&nbsp;&nbsp;&nbsp;helpchain ( need-{{ project }}, help-{{ services[0] }}, book {{ branch }}/{{ branches[0] }}, 'TRUST')</h3>
+                    <h3>&nbsp;&nbsp;&nbsp;bankchain ( bid-{{ project }}, ask-{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'TRUST')</h3>
 
                     <table id="progress-table" class="matrix">
                       <tr class="row">
@@ -75,14 +75,14 @@
             <div id="ai-jobs">
               <div class="buttons">
                 <button contenteditable="true" class="next btn btn-primary" @click="nextProject">Next Project</button>
-                <button contenteditable="true" class="next btn btn-primary" @click="show = !show">New Post:</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="show = !show">New Bid:</button>
                 <input type="text" class="input-add-new" name="new-job" value="eg: Add Job Request to Job News" size="40" maxlength="40">
                 <button class="next btn btn-warning" @click="runOneOps">+</button>
               </div>
               <ul class="list-group">
                 <transition-group name="slide-up" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
-                    <h3>&nbsp;project {{ project }}: title[{{ project }}] - friend[{{ project }}] - [likes] - job-{{ project }}</h3>
+                    <h3>&nbsp;project {{ project }}: title[{{ project }}] - client[{{ project }}] - [shares] - bid-{{ project }}</h3>
 
                     <table id="project-table" class="matrix">
                       <tr class="row">
@@ -114,14 +114,14 @@
             <div id="ai-ops">
               <div class="buttons">
                 <button contenteditable="true" class="next btn btn-primary" @click="nextService">Next Service</button>
-                <button contenteditable="true" class="next btn btn-primary" @click="load = !load">New Ops:</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="load = !load">New Ask:</button>
                 <input type="text" class="input-add-new" name="new-ops" value="eg: Execute or book top required ops." size="40" maxlength="40">
                 <button class="next btn btn-warning" @click="runOneOps">+</button>
               </div>
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="service in services" v-bind:key="service">
-                    <h3>&nbsp;&nbsp;&nbsp;service {{ service }}: title[{{ service }}] - friend[{{ service }}] - [likes] - help-{{ service }}</h3>
+                    <h3>&nbsp;&nbsp;&nbsp;service {{ service }}: title[{{ service }}] - client[{{ service }}] - [shares] - ask-{{ service }}</h3>
                     
                     <table id="service-table" class="matrix">
                       <tr class="row">
@@ -258,8 +258,8 @@ export default {
       blankTabRow: ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
       textEdit: `Hello World!
 
-This is your first post.
-Add more details to transform it in a web project or something helpful.`,
+This is your first banking post.
+Add tests or services to transform it in a banking project or profitable operation.`,
       matrixIni: [
         // ['a','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
         ['1','STATUS',':','post','','','','','','','','','','','','','','','','','','','','','','',''],
