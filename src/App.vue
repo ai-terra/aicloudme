@@ -6,8 +6,8 @@
           <div class="title-container">
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
-                <h1 class="title-long">ai help book&nbsp;</h1><h1 class="title-short"> ai cell&nbsp;</h1>
-                <h5>fastest help whenever needed</h5>
+                <h1 class="title-long">ai banking&nbsp;</h1><h1 class="title-short"> ai cell&nbsp;</h1>
+                <h5>open ai banking for all</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
