@@ -1,7 +1,7 @@
-# AI Cell web app
-AI Cell & Coins OS / Universal Lambda DevOps Engines
+# AI DevOps web app
+AI DevOps & Coins for Universal Cloud Office Engines
 
-## AI Cell Engine setup
+## AI Cloud Office Engine (COE) setup
 ```
 npm install
 ```
