@@ -6,13 +6,13 @@
           <div class="title-container">
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
-                <h1 class="title-long">AI DevOps&nbsp;</h1><h1 class="title-short"> ai cell&nbsp;</h1>
-                <h5>Coins & DevOps Services</h5>
+                <h1 class="title-long">ai help book&nbsp;</h1><h1 class="title-short"> ai cell&nbsp;</h1>
+                <h5>fastest help whenever needed</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
             <div class="title chromosomes" contenteditable="true">under dev daily deploys contributors welcome ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
-            <div class="title" contenteditable="true"><h1>&nbsp;new Dev:</h1></div>
+            <div class="title" contenteditable="true"><h1>&nbsp;new need:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>Funded: Famous 5 mins AI Cloud Office Engine install</li>
@@ -20,7 +20,7 @@
                 <li>Idea: Add Issue & Help Requests to Dev post loop</li>
               </ul>
             </div>
-            <div class="title" contenteditable="true"><h1>&nbsp;new Ops:</h1></div>
+            <div class="title" contenteditable="true"><h1>&nbsp;new help:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>COM: My Service Team Ops Bank</li>
@@ -43,7 +43,7 @@
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
-                    <h3>&nbsp;&nbsp;&nbsp;Blockchain ( Dev-{{ project }}, Ops-{{ services[0] }}, Branch {{ branch }}/{{ branches[0] }}, 'CASH')</h3>
+                    <h3>&nbsp;&nbsp;&nbsp;helpchain ( need-{{ project }}, help-{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'TRUST')</h3>
 
                     <table id="progress-table" class="matrix">
                       <tr class="row">
