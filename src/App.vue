@@ -23,7 +23,7 @@
             <div class="title" contenteditable="true"><h1>&nbsp;new asks:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
-                <li>COM: My Service Team Ops Bank</li>
+                <li>COM: My Governance Team & AI Banks</li>
                 <li>ORG: Political Party and Campaign Ops</li>
                 <li>EDU: Research ranking and priorities</li>
               </ul>
