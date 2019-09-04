@@ -12,15 +12,15 @@
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
             <div class="title chromosomes" contenteditable="true">under dev daily deploys contributors welcome ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
-            <div class="title" contenteditable="true"><h1>&nbsp;new bids:</h1></div>
+            <div class="title" contenteditable="true"><h1>&nbsp;new info:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
-                <li>Funded: Famous 5 mins AI Press Engine install</li>
+                <li>Funded: Famous 5 mins AI Com Engine install</li>
                 <li>Voting: Chinese, Hindi, Spanish, Arabic, Russian apps</li>
                 <li>Idea: Add Issue & Help Requests to Job post loop</li>
               </ul>
             </div>
-            <div class="title" contenteditable="true"><h1>&nbsp;new asks:</h1></div>
+            <div class="title" contenteditable="true"><h1>&nbsp;new coms:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>COM: My Governance Team & AI Banks</li>
@@ -43,7 +43,7 @@
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
-                    <h3>&nbsp;&nbsp;&nbsp;govchain ( bid-{{ project }}, ask-{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'TRUST')</h3>
+                    <h3>&nbsp;&nbsp;&nbsp;comchain ( info-{{ project }}, com-{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'TRUST')</h3>
 
                     <table id="progress-table" class="matrix">
                       <tr class="row">
@@ -82,7 +82,7 @@
               <ul class="list-group">
                 <transition-group name="slide-up" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
-                    <h3>&nbsp;project {{ project }}: title[{{ project }}] - voter[{{ project }}] - [votes] - bid-{{ project }}</h3>
+                    <h3>&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares] - info-{{ project }}</h3>
 
                     <table id="project-table" class="matrix">
                       <tr class="row">
@@ -121,7 +121,7 @@
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="service in services" v-bind:key="service">
-                    <h3>&nbsp;&nbsp;&nbsp;service {{ service }}: title[{{ service }}] - voter[{{ service }}] - [votes] - ask-{{ service }}</h3>
+                    <h3>&nbsp;&nbsp;&nbsp;service {{ service }}: title[{{ service }}] - owner[{{ service }}] - [shares] - com-{{ service }}</h3>
                     
                     <table id="service-table" class="matrix">
                       <tr class="row">
@@ -152,9 +152,9 @@
           </div>
 
           <div class="background-signs">
-            <p>gov =&nbsp;bids&nbsp;⋆&nbsp;asks
+            <p>attn =&nbsp;post&nbsp;⋆&nbsp;com
             <br><br>
-            free ai gov engine</p>
+            free ai com engine</p>
           </div>
 
           <div id="editor">
