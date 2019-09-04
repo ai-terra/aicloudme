@@ -219,14 +219,15 @@
                 <h4 class="title-long"><a href="https://github.com/ai-press/ai-press">
                 Download Free AI Engine @ Github</a></h4>
                 <h4 class="title-long" contenteditable="true">ai speed communications worldwide</h4>
-              </div>
+              </div>            
             </div>
+            <div id="ai-engines">
+              <h4>free ai engine web apps</h4>
+              <h4>auto updated ai cells</h4>
+            </div>              
           </div>
 
-          <div id="ai-engines">
-            <h4>free ai engine web apps</h4>
-            <h4>auto updated ai cells</h4>
-          </div>
+
 
         </div>
       </div>
