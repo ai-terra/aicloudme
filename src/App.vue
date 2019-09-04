@@ -185,7 +185,7 @@
               <div id="table-editor">
                 <table class="matrix">
                   <tr class="row">
-                    <td class="cell" @click="expandRows">{{ corner }}</td>
+                    <td class="cell" @click="expandRows" @click.prevent.right="tabViews">{{ corner }}</td>
                     <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                   </tr>
 
@@ -409,6 +409,9 @@ ai-press.web.app`,
       for (let tab = 0; tab < 8; tab++) {
         this.matrixIni.splice(this.visibleRows + (this.visibleRows + 1) * tab, 0, newRow);
       }
+    },
+    tabViews() {
+      alert('Test on right mouse click works!');
     },
     showPause() { // Toggle play button between play '>' and pause '||'
       return this.pause ? '| |' :  '>';
