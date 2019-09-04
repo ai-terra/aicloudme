@@ -264,8 +264,8 @@ export default {
       blankTabRow: ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
       textEdit: `Hello World!
 
-This is your first communication post.
-Add a check list or services to transform it in a press project or com operation.
+This is your first press release.
+Add a check list or PR services to transform it in a press project or com operation.
 
 My Report engine
 ai-press.web.app`,
