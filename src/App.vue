@@ -258,11 +258,11 @@ export default {
       blankTabRow: ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
       textEdit: `Hello World!
 
-This is your first governance post.
-Add polls or services to transform it in a governance project or progressive operation.
+This is your first communication post.
+Add a check list or services to transform it in a press project or com operation.
 
-My Gov engine
-ai-gov.web.app`,
+My Report engine
+ai-press.web.app`,
       matrixIni: [
         // ['a','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
         ['1','STATUS',':','post','','','','','','','','','','','','','','','','','','','','','','',''],
