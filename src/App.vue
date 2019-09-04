@@ -152,9 +152,9 @@
           </div>
 
           <div class="background-signs">
-            <p>attn =&nbsp;post&nbsp;⋆&nbsp;com
+            <p>press =&nbsp;news&nbsp;⋆&nbsp;coms
             <br><br>
-            free ai com engine</p>
+            free ai press engine</p>
           </div>
 
           <div id="editor">
