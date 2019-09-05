@@ -6,13 +6,13 @@
           <div class="title-container">
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
-                <h1 class="title-long">help book&nbsp;</h1><h1 class="title-short"> ai cell&nbsp;</h1>
-                <h5>live help teams</h5>
+                <h1 class="title-long">livehelp&nbsp;</h1><h1 class="title-short"> ai cell&nbsp;</h1>
+                <h5>live ai teams help</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
             <div class="title chromosomes" contenteditable="true">under dev daily deploys contributors welcome ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
-            <div class="title" contenteditable="true"><h1>&nbsp;new teams:</h1></div>
+            <div class="title" contenteditable="true"><h1>&nbsp;new posts:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>Funded: Famous 5 mins AI Com Engine install</li>
@@ -20,7 +20,7 @@
                 <li>Idea: Add Issue & Help Requests to Job post loop</li>
               </ul>
             </div>
-            <div class="title" contenteditable="true"><h1>&nbsp;new ops:</h1></div>
+            <div class="title" contenteditable="true"><h1>&nbsp;new help:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>COM: My Governance Team & AI Banks</li>
@@ -152,7 +152,7 @@
           </div>
 
           <div class="background-signs">
-            <p>live &nbsp; &nbsp;team&nbsp;⋆&nbsp;ops
+            <p>&nbsp;&nbsp;live &nbsp;&nbsp; teams &nbsp; help
             <br><br>
             ai &nbsp;teams &nbsp;engine</p>
           </div>
@@ -166,7 +166,7 @@
               <button class="edit player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |' }}</button>
               <div><h2 class="title" contenteditable="true"></h2></div>
               <button class="edit btn btn-primary" @click="show = !show;">Values</button>
-              <button class="edit btn btn-primary" @click="show = !show;">Players</button>
+              <button class="edit btn btn-primary" @click="show = !show;">Members</button>
               <button class="edit btn btn-primary" @click="show = !show;">Projects</button>
               <button class="edit btn btn-primary" @click="show = !show;">Services</button>
               <button class="edit btn btn-primary" @click="show = !show;">Engine</button>
@@ -215,9 +215,9 @@
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax </a>
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
-                <h4 class="title-long"><a href="https://github.com/ai-press/ai-teams">
+                <h4 class="title-long"><a href="https://github.com/ai-teams/ai-helps">
                 Download Free AI Engine @ Github</a></h4>
-                <h4 class="title-long" contenteditable="true">ai teams web playground</h4>
+                <h4 class="title-long" contenteditable="true">live help by ai teams</h4>
               </div>            
             </div>
             <div id="ai-engines">
