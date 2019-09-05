@@ -649,6 +649,10 @@ li.list-group-item {
   width: 7rem;
 }
 
+.cell:nth-child(odd) {
+  text-align: center;
+}
+
 .cell-edit:nth-child(even) {
   width: 10rem;
 }
@@ -662,7 +666,7 @@ li.list-group-item {
 .cell,
 .cell-edit {
   padding: 0 0.5rem;
-  min-width: 2rem;
+  min-width: 3rem;
   max-width: 10rem;
   overflow-x: auto;
   overflow-wrap: normal;
