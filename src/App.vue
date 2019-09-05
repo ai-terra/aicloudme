@@ -242,6 +242,7 @@ export default {
       interval: 'timer', 
       speed: 2000,  // milliseconds
       visibleRows: 1,
+      visibleTab: 1,
       pause: true,
       show: true,
       load: true,
@@ -411,13 +412,17 @@ ai-teams.web.app`,
       // add blankRows to the matrix table
       let newRow = this.blankTabRow.slice(0); // copy blankTabRow to new array
       newRow[0] = this.corner;
-      // this.blankTabMatrix.push(newRow);
       for (let tab = 0; tab < 8; tab++) {
+        // insert newRow in matrix at index - first param
         this.matrixIni.splice(this.visibleRows + (this.visibleRows + 1) * tab, 0, newRow);
       }
     },
     tabViews() {
-      alert('Test on right mouse click works!');
+      // add remaining rows to the end of alphabet
+      for (let rows = this.visibleRows; rows < this.header.length; rows++) {
+        this.expandRows();
+      }
+      this.corner = this.visibleTab;
     },
     showPause() { // Toggle play button between play '>' and pause '||'
       return this.pause ? '| |' :  '>';
