@@ -1,4 +1,4 @@
-# AI Teams web app
+# Live Teams web app
 AI Teams engine for realtime playground
 
 ## AI Teams Engine setup
