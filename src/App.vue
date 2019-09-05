@@ -6,13 +6,13 @@
           <div class="title-container">
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
-                <h1 class="title-long">live teams&nbsp;</h1><h1 class="title-short"> ai cell&nbsp;</h1>
-                <h5>ai teams playground</h5>
+                <h1 class="title-long">ai teams&nbsp;</h1><h1 class="title-short"> ai cell&nbsp;</h1>
+                <h5>live teams playground</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
             <div class="title chromosomes" contenteditable="true">under dev daily deploys contributors welcome ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
-            <div class="title" contenteditable="true"><h1>&nbsp;new info:</h1></div>
+            <div class="title" contenteditable="true"><h1>&nbsp;new teams:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>Funded: Famous 5 mins AI Com Engine install</li>
@@ -20,7 +20,7 @@
                 <li>Idea: Add Issue & Help Requests to Job post loop</li>
               </ul>
             </div>
-            <div class="title" contenteditable="true"><h1>&nbsp;new coms:</h1></div>
+            <div class="title" contenteditable="true"><h1>&nbsp;new ops:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>COM: My Governance Team & AI Banks</li>
@@ -43,7 +43,7 @@
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
-                    <h3>&nbsp;&nbsp;&nbsp;comchain ( info-{{ project }}, com-{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'TRUST')</h3>
+                    <h3>&nbsp;&nbsp;&nbsp;livebook ( team-{{ project }}, ops-{{ services[0] }}, branch {{ branch }}/{{ branches[0] }}, 'TRUST')</h3>
 
                     <table id="progress-table" class="matrix">
                       <tr class="row">
@@ -75,14 +75,14 @@
             <div id="ai-jobs">
               <div class="buttons">
                 <button contenteditable="true" class="next btn btn-primary" @click="nextProject">Next Project</button>
-                <button contenteditable="true" class="next btn btn-primary" @click="show = !show">New Bid:</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="show = !show">New Team:</button>
                 <input type="text" class="input-add-new" name="new-job" value="eg: Add Job Request to Job News" size="40" maxlength="40">
                 <button class="next btn btn-warning" @click="runOneOps">+</button>
               </div>
               <ul class="list-group">
                 <transition-group name="slide-up" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
-                    <h3>&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares] - info-{{ project }}</h3>
+                    <h3>&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares] - team-{{ project }}</h3>
 
                     <table id="project-table" class="matrix">
                       <tr class="row">
@@ -114,14 +114,14 @@
             <div id="ai-ops">
               <div class="buttons">
                 <button contenteditable="true" class="next btn btn-primary" @click="nextService">Next Service</button>
-                <button contenteditable="true" class="next btn btn-primary" @click="load = !load">New Ask:</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="load = !load">New Ops:</button>
                 <input type="text" class="input-add-new" name="new-ops" value="eg: Execute or book top required ops." size="40" maxlength="40">
                 <button class="next btn btn-warning" @click="runOneOps">+</button>
               </div>
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="service in services" v-bind:key="service">
-                    <h3>&nbsp;&nbsp;&nbsp;service {{ service }}: title[{{ service }}] - owner[{{ service }}] - [shares] - com-{{ service }}</h3>
+                    <h3>&nbsp;&nbsp;&nbsp;service {{ service }}: title[{{ service }}] - owner[{{ service }}] - [shares] - ops-{{ service }}</h3>
                     
                     <table id="service-table" class="matrix">
                       <tr class="row">
@@ -152,9 +152,9 @@
           </div>
 
           <div class="background-signs">
-            <p>press =&nbsp;news&nbsp;⋆&nbsp;coms
+            <p>live &nbsp; &nbsp;team&nbsp;⋆&nbsp;ops
             <br><br>
-            free ai press engine</p>
+            ai &nbsp;teams &nbsp;engine</p>
           </div>
 
           <div id="editor">
@@ -165,9 +165,8 @@
               <button class="edit btn btn-warning" @click="runOneOps">+</button>
               <button class="edit player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |' }}</button>
               <div><h2 class="title" contenteditable="true"></h2></div>
-              <button class="edit btn btn-primary" @click="show = !show;">Interests</button>
-              <button class="edit btn btn-primary" @click="show = !show;">Voters</button>
               <button class="edit btn btn-primary" @click="show = !show;">Values</button>
+              <button class="edit btn btn-primary" @click="show = !show;">Players</button>
               <button class="edit btn btn-primary" @click="show = !show;">Projects</button>
               <button class="edit btn btn-primary" @click="show = !show;">Services</button>
               <button class="edit btn btn-primary" @click="show = !show;">Engine</button>
@@ -216,9 +215,9 @@
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax </a>
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
-                <h4 class="title-long"><a href="https://github.com/ai-press/ai-press">
+                <h4 class="title-long"><a href="https://github.com/ai-press/ai-teams">
                 Download Free AI Engine @ Github</a></h4>
-                <h4 class="title-long" contenteditable="true">ai speed communications worldwide</h4>
+                <h4 class="title-long" contenteditable="true">ai teams web playground</h4>
               </div>            
             </div>
             <div id="ai-engines">
@@ -264,11 +263,12 @@ export default {
       blankTabRow: ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
       textEdit: `Hello World!
 
-This is your first press release.
-Add a check list or PR services to transform it in a press project or com operation.
+This is your first team post.
+Add a check list to transform it in a team project.
+Or add live ops to keep your team alive.
 
-My Report engine
-ai-press.web.app`,
+join live teams  
+ai-teams.web.app`,
       matrixIni: [
         // ['a','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
         ['1','STATUS',':','post','','','','','','','','','','','','','','','','','','','','','','',''],
