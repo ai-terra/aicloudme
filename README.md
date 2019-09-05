@@ -1,7 +1,7 @@
-# AI Governance web app
-Open AI Governance engine for best pollitically correct decisions
+# AI Teams web app
+AI Teams engine for realtime playground
 
-## AI Gov Engine setup
+## AI Teams Engine setup
 ```
 npm install
 ```
