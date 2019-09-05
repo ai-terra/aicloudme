@@ -167,7 +167,7 @@
               <div><h2 class="title" contenteditable="true"></h2></div>
               <button class="edit btn btn-primary" @click="show = !show;">Interests</button>
               <button class="edit btn btn-primary" @click="show = !show;">Voters</button>
-              <button class="edit btn btn-primary" @click="show = !show;">Rules</button>
+              <button class="edit btn btn-primary" @click="show = !show;">Values</button>
               <button class="edit btn btn-primary" @click="show = !show;">Projects</button>
               <button class="edit btn btn-primary" @click="show = !show;">Services</button>
               <button class="edit btn btn-primary" @click="show = !show;">Engine</button>
