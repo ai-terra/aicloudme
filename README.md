@@ -1,5 +1,5 @@
-# Live Teams web app
-AI Teams engine for realtime playground
+# Live Help - Emergency web app
+AI teams coordination engine for Emergency help web app
 
 ## AI Teams Engine setup
 ```
