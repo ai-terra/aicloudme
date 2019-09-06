@@ -6,13 +6,13 @@
           <div class="title-container">
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
-                <h1 class="title-long">livehelp&nbsp;</h1><h1 class="title-short"> ai cell&nbsp;</h1>
-                <h5>live ai teams help</h5>
+                <h1 class="title-long">live biz&nbsp;</h1><h1 class="title-short"> ai cell&nbsp;</h1>
+                <h5>live ai biz engines</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
             <div class="title chromosomes" contenteditable="true">under dev daily deploys contributors welcome ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
-            <div class="title" contenteditable="true"><h1>&nbsp;new posts:</h1></div>
+            <div class="title" contenteditable="true"><h1>&nbsp;new biz:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>Funded: Famous 5 mins AI Com Engine install</li>
@@ -20,7 +20,7 @@
                 <li>Idea: Add Issue & Help Requests to Job post loop</li>
               </ul>
             </div>
-            <div class="title" contenteditable="true"><h1>&nbsp;new help:</h1></div>
+            <div class="title" contenteditable="true"><h1>&nbsp;new ops:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>COM: My Governance Team & AI Banks</li>
@@ -152,9 +152,9 @@
           </div>
 
           <div class="background-signs">
-            <p>&nbsp;&nbsp;live &nbsp;&nbsp; teams &nbsp; help
+            <p>&nbsp;&nbsp;live &nbsp;&nbsp; biz &nbsp; ops
             <br><br>
-            ai &nbsp;teams &nbsp;engine</p>
+            ai &nbsp;biz &nbsp;engine</p>
           </div>
 
           <div id="editor">
@@ -217,7 +217,7 @@
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
                 <h4 class="title-long"><a href="https://github.com/ai-teams/ai-helps">
                 Download Free AI Engine @ Github</a></h4>
-                <h4 class="title-long" contenteditable="true">live help by ai teams</h4>
+                <h4 class="title-long" contenteditable="true">live biz by ai teams</h4>
               </div>            
             </div>
             <!-- <div id="ai-engines">
