@@ -43,7 +43,7 @@
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
-                    <h3>&nbsp;&nbsp;&nbsp;livebook ( team-{{ project }}, ops-{{ services[0] }}, branch {{ branch }}/{{ branches[0] }}, 'TRUST')</h3>
+                    <h3>&nbsp;&nbsp;&nbsp;livebook ( biz-{{ project }}, ops-{{ services[0] }}, branch {{ branch }}/{{ branches[0] }}, 'TRUST')</h3>
 
                     <table id="progress-table" class="matrix">
                       <tr class="row">
@@ -82,7 +82,7 @@
               <ul class="list-group">
                 <transition-group name="slide-up" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
-                    <h3>&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares] - team-{{ project }}</h3>
+                    <h3>&nbsp;&nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares] - biz-{{ project }}</h3>
 
                     <table id="project-table" class="matrix">
                       <tr class="row">
@@ -189,7 +189,7 @@
 
                   <tr class="row" v-for="(row, rowIndex) in matrixIni" v-bind:key="rowIndex">                          
                     <td contenteditable="true" class="cell" 
-                    matrix="Editor" 
+                    matrix="Edit" 
                     v-for="(col, colIndex) in row" v-bind:key="colIndex"
                     :row="rowIndex" :col="colIndex"
                     @click="onCellClick"
