@@ -1,7 +1,7 @@
-# Live Help - Emergency web app
-AI teams coordination engine for Emergency help web app
+# AI Biz Engine web app
+Live Biz engine web app / devops social network protocol
 
-## AI Teams Engine setup
+## AI Biz Engine setup
 ```
 npm install
 ```
