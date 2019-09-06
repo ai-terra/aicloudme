@@ -75,7 +75,7 @@
             <div id="ai-jobs">
               <div class="buttons">
                 <button contenteditable="true" class="next btn btn-primary" @click="nextProject">Next Project</button>
-                <button contenteditable="true" class="next btn btn-primary" @click="show = !show">New Team:</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="show = !show">New Job:</button>
                 <input type="text" class="input-add-new" name="new-job" value="eg: Add Job Request to Job News" size="40" maxlength="40">
                 <button class="next btn btn-warning" @click="runOneOps">+</button>
               </div>
