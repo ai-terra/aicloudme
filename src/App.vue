@@ -52,7 +52,7 @@
                       </tr>                      
                       <tr class="row" v-for="(row, rowIndex) in matrixIni" v-bind:key="rowIndex">                          
                         <td contenteditable="true" class="cell" 
-                        matrix="Coins" 
+                        matrix="Res" 
                         v-for="(col, colIndex) in row" v-bind:key="colIndex"
                         :row="rowIndex" :col="colIndex"
                         @click="onCellClick"
@@ -160,7 +160,7 @@
           <div id="editor">
             <div class="buttons">
               <div><h2 class="title"><i>fx</i></h2></div>
-              <input type="text" class="input-edit" v-model="fx" value="" size="50" maxlength="40">
+              <div class="input-edit" contenteditable="true" >{{ fx }}</div>
               <button class="edit btn btn-warning" @click="show = !show;">Commit</button>
               <button class="edit btn btn-warning" @click="runOneOps">+</button>
               <button class="edit player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |' }}</button>
@@ -220,10 +220,10 @@
                 <h4 class="title-long" contenteditable="true">live help by ai teams</h4>
               </div>            
             </div>
-            <div id="ai-engines">
+            <!-- <div id="ai-engines">
               <h4>free ai engine web apps</h4>
               <h4>auto updated ai cells</h4>
-            </div>              
+            </div>               -->
           </div>
 
 
@@ -262,7 +262,8 @@ export default {
       header: ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
       blankTabMatrix: [['a','','','','','','','','','','','','','','','','','','','','','','','','','','']],
       blankTabRow: ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
-      textEdit: `Hello World!
+      textEdit: `
+Hello World!
 
 This is your first team post.
 Add a check list to transform it in a team project.
@@ -392,10 +393,11 @@ ai-teams.web.app`,
       // done();
     },
     onCellClick(el) {
-      this.currentTable = el.target.getAttribute('matrix');
-      this.currentRow = el.target.getAttribute('row');
-      this.currentCol = el.target.getAttribute('col');
-      this.currentCellVal = el.target.innerHTML.trim();
+      let m = this.currentTable = el.target.getAttribute('matrix');
+      let r = this.currentRow = el.target.getAttribute('row');
+      let c = this.currentCol = el.target.getAttribute('col');
+      let v = this.currentCellVal = el.target.innerHTML.trim();
+      // this.fx = '$ ' + m + r + c + v;
       if ( this.fx[0] === '=' ) {
         this.fx += this.currentTable[0].toUpperCase() 
                 + Math.floor(this.currentRow/(this.visibleRows+1) + 1)
@@ -404,7 +406,7 @@ ai-teams.web.app`,
       } else {
         this.fx = this.currentCellVal;
       }
-      // console.log('Click on cell: ', el.target);
+      this.textEdit = ' > ' + m + ' ' + r + ' ' + c + ' ' + v + '\n' + this.textEdit;
     },
     expandRows() {
       this.visibleRows++;
