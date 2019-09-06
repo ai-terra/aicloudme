@@ -239,9 +239,15 @@ export default {
     return {
       interval: 'timer', 
       speed: 2000,  // milliseconds
-      backgroundText: `&nbsp;&nbsp;live &nbsp; &nbsp;&nbsp;biz &nbsp;&nbsp;ops
+      backgroundText: `&nbsp;&nbsp;live &nbsp; &nbsp;&nbsp;biz &nbsp; &nbsp;ops
             <br><br>
             ai &nbsp; biz &nbsp; engine`,
+      liveText: `&nbsp;&nbsp;live &nbsp; &nbsp;&nbsp;biz &nbsp; &nbsp;ops
+            <br><br>
+            ai &nbsp; biz &nbsp; engine`,
+      devText: `&nbsp;&nbsp;res &nbsp;=&nbsp;&nbsp;dev &nbsp;⋆&nbsp;ops
+      <br><br>
+      ai &nbsp; biz &nbsp; engine`,
       visibleRows: 1,
       visibleTab: 1,
       pause: true,
@@ -297,6 +303,7 @@ ai-teams.web.app`,
     start() {
       this.pause = false;
       this.interval = setInterval(this.play, this.speed);
+      this.backgroundText = this.liveText;
     },
     play() {
       // To add a conditional for visualization/animation or not
@@ -309,6 +316,7 @@ ai-teams.web.app`,
     stop() {
       this.pause = true;
       clearInterval(this.interval);
+      this.backgroundText = this.devText;
     },
     runOneOps() {
       // Read/update current Service and Project tables/matrix - to include user edits
