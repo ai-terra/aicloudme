@@ -273,12 +273,12 @@ export default {
       textEdit: `
 Hello World!
 
-This is your first team post.
-Add a check list to transform it in a team project.
-Or add live ops to keep your team alive.
+This is your first business post.
+Add a check list to transform it in a biz project.
+Or add cloud ops to get your business live.
 
-join live teams  
-ai-teams.web.app`,
+free biz cells to share:
+github.com/ai-teams/live-biz`,
       matrixIni: [
         // ['a','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
         ['1','STATUS',':','post','','','','','','','','','','','','','','','','','','','','','','',''],
