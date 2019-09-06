@@ -6,7 +6,7 @@
           <div class="title-container">
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
-                <h1 class="title-long">live biz&nbsp;</h1><h1 class="title-short"> ai cell&nbsp;</h1>
+                <h1 class="title-long">live biz&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1><h1 class="title-short"> ai cell&nbsp;</h1>
                 <h5>live ai biz engines</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
@@ -20,7 +20,7 @@
                 <li>Idea: Add Issue & Help Requests to Job post loop</li>
               </ul>
             </div>
-            <div class="title" contenteditable="true"><h1>&nbsp;new ops:</h1></div>
+            <div class="title" contenteditable="true"><h1>&nbsp;&nbsp;&nbsp;&nbsp;new ops:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>COM: My Governance Team & AI Banks</li>
@@ -620,10 +620,11 @@ h2.title {
 }
 
 .input-edit {
-  border-top: 5px;
+  border: 1px solid lightgray;
   padding-left: 5px;
+  padding-top: 2px;
   margin: 0rem 1rem 0 1rem;
-  width: 72rem;
+  width: 75rem;
   height: 3rem;
   font-size: 2rem;
 }
