@@ -152,9 +152,7 @@
           </div>
 
           <div class="background-signs">
-            <p>&nbsp;&nbsp;live &nbsp;&nbsp; biz &nbsp; ops
-            <br><br>
-            ai &nbsp;biz &nbsp;engine</p>
+            <p><span v-html="backgroundText"></span></p>
           </div>
 
           <div id="editor">
@@ -241,6 +239,9 @@ export default {
     return {
       interval: 'timer', 
       speed: 2000,  // milliseconds
+      backgroundText: `&nbsp;&nbsp;live &nbsp; &nbsp;&nbsp;biz &nbsp;&nbsp;ops
+            <br><br>
+            ai &nbsp; biz &nbsp; engine`,
       visibleRows: 1,
       visibleTab: 1,
       pause: true,
