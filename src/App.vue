@@ -403,20 +403,23 @@ github.com/ai-teams/live-biz`,
       // done();
     },
     onCellClick(el) {
-      let m = this.currentTable = el.target.getAttribute('matrix');
-      let r = this.currentRow = el.target.getAttribute('row');
-      let c = this.currentCol = el.target.getAttribute('col');
-      let v = this.currentCellVal = el.target.innerHTML.trim();
+      let mat = this.currentTable = el.target.getAttribute('matrix');   // mat - matrix/table: Res | Dev | Ops | Edit
+      let m = mat[0].toUpperCase();                                     // m - matrix/table: R | D | O | E
+      let col = this.currentCol = el.target.getAttribute('col');        // col - col: 1-26
+      let c = this.header[col - 1];                                     // c - col: A-Z
+      let row = this.currentRow = el.target.getAttribute('row');        // row - row: 1 - 26 * 26
+      let r = this.header[row%(this.visibleRows+1) - 1].toLowerCase();  // r - row: a-z
+      let tab = Math.floor(this.currentRow/(this.visibleRows+1) + 1);   // tab - tab 1-8
+      let t = tab;                                                      // t - tab 1-8
+      let val = this.currentCellVal = el.target.innerHTML.trim();       // val - cell value - string
+      let v = val;
       // this.fx = '$ ' + m + r + c + v;
       if ( this.fx[0] === '=' ) {
-        this.fx += this.currentTable[0].toUpperCase() 
-                + Math.floor(this.currentRow/(this.visibleRows+1) + 1)
-                + this.header[this.currentCol - 1] 
-                + this.header[this.currentRow%(this.visibleRows+1) - 1].toLowerCase();
+        this.fx += ' ' + m + t + c + r;
       } else {
-        this.fx = this.currentCellVal;
+        this.fx = v;
       }
-      this.textEdit = ' > ' + m + ' ' + r + ' ' + c + ' ' + v + '\n' + this.textEdit;
+      this.textEdit = ' > ' + m + ' ' + t + ' ' + r + ' ' + c + ' ' + v + ' ' + this.fx + '\n' + this.textEdit;
     },
     expandRows() {
       this.visibleRows++;
