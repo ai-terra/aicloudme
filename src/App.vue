@@ -35,15 +35,15 @@
             <div id="ai-prog">
               <div class="buttons">
                 <button contenteditable="true" class="next btn btn-warning" @click="setCell('project-table', 3, 5, 'votes')">Rank</button>
-                <button contenteditable="true" class="next btn btn-primary" @click="nextBranch">Next Option</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="nextBranch">Next Future</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="addNewRule">New Rule:</button>
-                <input type="text" class="input-add-new" name="new-rule" value="eg: ECO - use eco first services" size="40" maxlength="40">
+                <input type="text" class="input-add-new" name="new-rule" value="eg: ECO - use ECO first services" size="40" maxlength="40">
                 <!-- <button contenteditable="true" class="next btn btn-primary" @click="addTableRow('progress-table', 8, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Pay</button> -->
               </div>
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
-                    <h3>&nbsp;&nbsp;&nbsp;freeMarket ( dev-{{ project }}, ops-{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'TRUST')</h3>
+                    <h3>&nbsp;&nbsp;&nbsp;freeMarketLog ( dev-{{ project }}, ops-{{ services[0] }}, future {{ branch }}/{{ branches[0] }}, 'ROI')</h3>
 
                     <table id="progress-table" class="matrix">
                       <tr class="row">
