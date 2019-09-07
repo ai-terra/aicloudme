@@ -131,11 +131,11 @@
                       <tr class="row" v-for="(row, rowIndex) in matrixIni" v-bind:key="rowIndex">                          
                         <td contenteditable="true" class="cell" 
                         matrix="Ops" 
-                        v-for="(col, colIndex) in row" v-bind:key="colIndex"
+                        v-for="(cell, colIndex) in row" v-bind:key="colIndex"
                         :row="rowIndex" :col="colIndex"
                         @click="onCellClick"
                         >
-                          {{ col }}
+                          {{ cell }}
                         </td>
                       </tr>
                     </table>
@@ -684,8 +684,9 @@ li.list-group-item {
   padding: 0 0.5rem;
   min-width: 3rem;
   max-width: 10rem;
-  overflow-x: auto;
+  overflow-x: visible;
   overflow-wrap: normal;
+  white-space: nowrap;
 }
 
 .cell:hover {
