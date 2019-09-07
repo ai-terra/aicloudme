@@ -1,7 +1,7 @@
-# AI Biz Engine web app
-Live Biz engine web app / devops social network protocol
+# AI CEO web app
+AI CEO engine web app / W3AI devops protocol
 
-## AI Biz Engine setup
+## AI CEO Engine setup
 ```
 npm install
 ```
