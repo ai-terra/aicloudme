@@ -53,11 +53,11 @@
                       <tr class="row" v-for="(row, rowIndex) in matrixIni" v-bind:key="rowIndex">                          
                         <td contenteditable="true" class="cell" 
                         matrix="Biz" 
-                        v-for="(col, colIndex) in row" v-bind:key="colIndex"
+                        v-for="(cell, colIndex) in row" v-bind:key="colIndex"
                         :row="rowIndex" :col="colIndex"
                         @click="onCellClick"
                         >
-                          {{ col }}
+                          {{ cell }}
                         </td>
                       </tr>
 
@@ -92,11 +92,11 @@
                       <tr class="row" v-for="(row, rowIndex) in matrixIni" v-bind:key="rowIndex">                          
                         <td contenteditable="true" class="cell" 
                         matrix="Dev" 
-                        v-for="(col, colIndex) in row" v-bind:key="colIndex"
+                        v-for="(cell, colIndex) in row" v-bind:key="colIndex"
                         :row="rowIndex" :col="colIndex"
                         @click="onCellClick"
                         >
-                          {{ col }}
+                          {{ cell }}
                         </td>
                       </tr>
 
@@ -190,11 +190,11 @@
                   <tr class="row" v-for="(row, rowIndex) in matrixIni" v-bind:key="rowIndex">                          
                     <td contenteditable="true" class="cell" 
                     matrix="Edit" 
-                    v-for="(col, colIndex) in row" v-bind:key="colIndex"
+                    v-for="(cell, colIndex) in row" v-bind:key="colIndex"
                     :row="rowIndex" :col="colIndex"
                     @click="onCellClick"
                     >
-                      {{ col }}
+                      {{ cell }}
                     </td>
                   </tr>                                 
 
