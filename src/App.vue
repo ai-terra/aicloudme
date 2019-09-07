@@ -208,6 +208,7 @@
           <div id="footer">
             <div class="title-container">
               <div class="footer-items">
+                <h4 class="title-long">Future Build Server</h4>
                 <h4 class="title-long">W3AI Meetups 
                   <a href="https://www.meetup.com/SocialAI/">Toronto </a> 
                   <a href="https://www.meetup.com/Manhattan-AIR/">NYC </a> 
