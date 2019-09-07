@@ -43,7 +43,7 @@
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
-                    <h3>&nbsp;&nbsp;&nbsp;bizlog ( dev-{{ project }}, ops-{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'TRUST')</h3>
+                    <h3>&nbsp;&nbsp;&nbsp;freeMarket ( dev-{{ project }}, ops-{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'TRUST')</h3>
 
                     <table id="progress-table" class="matrix">
                       <tr class="row">
