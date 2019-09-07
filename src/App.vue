@@ -82,7 +82,7 @@
               <ul class="list-group">
                 <transition-group name="slide-up" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
-                    <h3>&nbsp;&nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares] - job-{{ project }}</h3>
+                    <h3>&nbsp;&nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares] - dev-{{ project }}</h3>
 
                     <table id="project-table" class="matrix">
                       <tr class="row">
@@ -214,7 +214,7 @@
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax </a>
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
-                <h4 class="title-long"><a href="https://github.com/ai-teams/live-biz">
+                <h4 class="title-long"><a href="https://github.com/ai-teams/ai-ceo">
                 Download Free AI CEO @ Github</a></h4>
                 <h4 class="title-long" contenteditable="true">AI CEO Engine / W3AI protocol</h4>
               </div>            
@@ -240,10 +240,10 @@ export default {
     return {
       interval: 'timer', 
       speed: 2000,  // milliseconds
-      backgroundText: `&nbsp;&nbsp;live &nbsp; &nbsp;&nbsp;biz &nbsp; &nbsp;ops
+      backgroundText: `&nbsp;&nbsp;live &nbsp; &nbsp;&nbsp;dev &nbsp; &nbsp;ops
             <br><br>
             AI&nbsp;CEO &nbsp;Engine`,
-      liveText: `&nbsp;&nbsp;live &nbsp; &nbsp;&nbsp;biz &nbsp; &nbsp;ops
+      liveText: `&nbsp;&nbsp;live &nbsp; &nbsp;&nbsp;dev &nbsp; &nbsp;ops
             <br><br>
             ai &nbsp; ceo &nbsp; engine`,
       devText: `&nbsp;&nbsp;biz &nbsp;=&nbsp;&nbsp;dev&nbsp;⋆&nbsp;ops
