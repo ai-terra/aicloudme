@@ -52,7 +52,7 @@
                       </tr>                      
                       <tr class="row" v-for="(row, rowIndex) in matrixIni" v-bind:key="rowIndex">                          
                         <td contenteditable="true" class="cell" 
-                        matrix="Res" 
+                        matrix="Biz" 
                         v-for="(col, colIndex) in row" v-bind:key="colIndex"
                         :row="rowIndex" :col="colIndex"
                         @click="onCellClick"
@@ -246,7 +246,7 @@ export default {
       liveText: `&nbsp;&nbsp;live &nbsp; &nbsp;&nbsp;biz &nbsp; &nbsp;ops
             <br><br>
             ai &nbsp; biz &nbsp; engine`,
-      devText: `&nbsp;&nbsp;res &nbsp;=&nbsp;&nbsp;dev &nbsp;⋆&nbsp;ops
+      devText: `&nbsp;&nbsp;biz &nbsp;=&nbsp;&nbsp;dev&nbsp;⋆&nbsp;ops
       <br><br>
       ai &nbsp; biz &nbsp; engine`,
       visibleRows: 1,
@@ -403,7 +403,7 @@ github.com/ai-teams/live-biz`,
       // done();
     },
     onCellClick(el) {
-      let mat = this.currentTable = el.target.getAttribute('matrix');   // mat - matrix/table: Res | Dev | Ops | Edit
+      let mat = this.currentTable = el.target.getAttribute('matrix');   // mat - matrix/table: Biz | Dev | Ops | Edit
       let m = mat[0].toUpperCase();                                     // m - matrix/table: R | D | O | E
       let col = this.currentCol = el.target.getAttribute('col');        // col - col: 1-26
       let c = this.header[col - 1];                                     // c - col: A-Z
