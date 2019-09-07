@@ -6,8 +6,8 @@
           <div class="title-container">
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
-                <h1 class="title-long">live biz&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1><h1 class="title-short"> ai cell&nbsp;</h1>
-                <h5>live ai biz engines</h5>
+                <h1 class="title-long">AI CEO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1><h1 class="title-short"> ai cell&nbsp;</h1>
+                <h5>live ai ceo engines</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
@@ -15,7 +15,7 @@
             <div class="title" contenteditable="true"><h1>&nbsp;new biz:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
-                <li>Funded: Famous 5 mins AI Com Engine install</li>
+                <li>Funded: Famous 5 mins AI CEO Engine install</li>
                 <li>Voting: Chinese, Hindi, Spanish, Arabic, Russian apps</li>
                 <li>Idea: Add Issue & Help Requests to Job post loop</li>
               </ul>
@@ -43,7 +43,7 @@
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
-                    <h3>&nbsp;&nbsp;&nbsp;livebook ( biz-{{ project }}, ops-{{ services[0] }}, branch {{ branch }}/{{ branches[0] }}, 'TRUST')</h3>
+                    <h3>&nbsp;&nbsp;&nbsp;bizlog ( dev-{{ project }}, ops-{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'TRUST')</h3>
 
                     <table id="progress-table" class="matrix">
                       <tr class="row">
@@ -82,7 +82,7 @@
               <ul class="list-group">
                 <transition-group name="slide-up" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
-                    <h3>&nbsp;&nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares] - biz-{{ project }}</h3>
+                    <h3>&nbsp;&nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares] - job-{{ project }}</h3>
 
                     <table id="project-table" class="matrix">
                       <tr class="row">
@@ -215,8 +215,8 @@
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
                 <h4 class="title-long"><a href="https://github.com/ai-teams/live-biz">
-                Download Free AI Engine @ Github</a></h4>
-                <h4 class="title-long" contenteditable="true">live biz by ai teams</h4>
+                Download Free AI CEO @ Github</a></h4>
+                <h4 class="title-long" contenteditable="true">AI CEO Engine / W3AI protocol</h4>
               </div>            
             </div>
             <!-- <div id="ai-engines">
@@ -242,13 +242,13 @@ export default {
       speed: 2000,  // milliseconds
       backgroundText: `&nbsp;&nbsp;live &nbsp; &nbsp;&nbsp;biz &nbsp; &nbsp;ops
             <br><br>
-            ai &nbsp; biz &nbsp; engine`,
+            AI&nbsp;CEO &nbsp;Engine`,
       liveText: `&nbsp;&nbsp;live &nbsp; &nbsp;&nbsp;biz &nbsp; &nbsp;ops
             <br><br>
-            ai &nbsp; biz &nbsp; engine`,
+            ai &nbsp; ceo &nbsp; engine`,
       devText: `&nbsp;&nbsp;biz &nbsp;=&nbsp;&nbsp;dev&nbsp;⋆&nbsp;ops
       <br><br>
-      ai &nbsp; biz &nbsp; engine`,
+      ai &nbsp; ceo &nbsp; engine`,
       visibleRows: 1,
       visibleTab: 1,
       pause: true,
