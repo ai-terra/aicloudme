@@ -273,8 +273,8 @@ export default {
       textEdit: `
 Hello World!
 
-This is your first business post.
-Add a check list to transform it in a biz project.
+This is your first CEO post.
+Add a test list to transform it in a business project.
 Or add cloud ops to get your business live.
 
 free biz cells to share:
