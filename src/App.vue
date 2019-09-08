@@ -278,8 +278,8 @@ This is your first CEO post.
 Add a test list to transform it in a business project.
 Or add cloud ops to get your business live.
 
-free biz cells to share:
-github.com/ai-teams/live-biz`,
+Clone AI CEO:
+github.com/ai-teams/ai-ceo`,
       matrixDev: [
         ['1','STATUS',':','project','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','dQuery','=','if ( oStatus == "ready" ) { cont = "next" } else { cont = "stop" }','','','','','','','','','','','','','','','','','','','','','','',''],
