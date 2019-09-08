@@ -160,7 +160,7 @@
             <div class="buttons">
               <div><h2 class="title"><i>fx</i></h2></div>
               <div class="input-edit" contenteditable="true" >{{ fx }}</div>
-              <button class="edit btn btn-warning" @click="show = !show;">Commit</button>
+              <button class="edit btn btn-warning" @click="show = !show;">Clone</button>
               <button class="edit btn btn-warning" @click="runOneOps">+</button>
               <button class="edit player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |' }}</button>
               <div><h2 class="title" contenteditable="true"></h2></div>
