@@ -221,7 +221,7 @@
           <div id="footer">
             <div class="title-container">
               <div class="footer-items">
-                <h4 class="title-long">Future Build Server / AI Banks</h4>
+                <h4 class="title-long">W3AI Social Neural Network (SNN) Protocol</h4>
                 <h4 class="title-long">W3AI Meetups 
                   <a href="https://www.meetup.com/SocialAI/">Toronto </a> 
                   <a href="https://www.meetup.com/Manhattan-AIR/">NYC </a> 
@@ -230,7 +230,7 @@
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
                 <h4 class="title-long"><a href="https://github.com/ai-teams/ai-ceo">
                 Download Free AI CEO @ Github</a></h4>
-                <h4 class="title-long" contenteditable="true">AI CEO Engine / W3AI protocol</h4>
+                <h4 class="title-long" contenteditable="true">AI CEO Engine / W3AI Protocol</h4>
               </div>            
             </div>
             <div id="ai-engines" class="title-container">
