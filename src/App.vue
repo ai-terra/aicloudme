@@ -133,7 +133,8 @@
                         <td contenteditable="true" class="cell" 
                         matrix="Ops" 
                         v-for="(cell, colIndex) in row" v-bind:key="colIndex"
-                        :row="rowIndex" :col="colIndex"
+                        :row="rowIndex" :col="colIndex" 
+                        :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
                         @click="onCellClick"
                         >
                           {{ cell }}
@@ -725,6 +726,10 @@ li.list-group-item {
   border: 0px;
   background: transparent;
 }
+
+/* .row:nth-child(even) {
+  border-bottom: 1px solid green;
+} */
 
 .cell:nth-child(even) {
   width: 7rem;
