@@ -221,10 +221,17 @@
                 <h4 class="title-long" contenteditable="true">AI CEO Engine / W3AI protocol</h4>
               </div>            
             </div>
-            <!-- <div id="ai-engines">
-              <h4>free ai engine web apps</h4>
-              <h4>auto updated ai cells</h4>
-            </div>               -->
+            <div id="ai-engines" class="title-container">
+              <h4>AI Banks</h4>
+              <h4>AI GOV</h4>
+              <h4>AI PMO</h4>
+              <h4>AI ERP</h4>
+              <h4>AI HRM</h4>
+              <h4>AI PTO</h4>
+              <h4>AI ECO</h4>
+              <h4>AI R&D</h4>
+              <h4>AI EDU</h4>
+            </div>              
           </div>
 
 
