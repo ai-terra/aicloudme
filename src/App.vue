@@ -43,7 +43,8 @@
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
-                    <h3>&nbsp;marketBlockChain (dev{{ project }}, ops{{ services[0] }}, future {{ branch }}/{{ branches[0] }}, 'ROI')</h3>
+                    <h3 title="fairbook - public market ledger for the project">
+                      &nbsp;marketBlockChain (dev{{ project }}, ops{{ services[0] }}, future {{ branch }}/{{ branches[0] }}, 'ROI')</h3>
 
                     <table id="progress-table" class="matrix">
                       <tr class="row">
