@@ -135,6 +135,7 @@
                         v-for="(cell, colIndex) in row" v-bind:key="colIndex"
                         :row="rowIndex" :col="colIndex" 
                         :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
+                        :class="[(rowIndex%(visibleRows+1) == 0) ? tabClass : '']"
                         @click="onCellClick"
                         >
                           {{ cell }}
@@ -271,6 +272,7 @@ export default {
       branches: [360],
       services: [7],
       blockchains: [365],
+      tabClass: 'tabline',
       currentTable: '',
       currentRow: '',
       currentCol: '',
@@ -727,9 +729,9 @@ li.list-group-item {
   background: transparent;
 }
 
-/* .row:nth-child(even) {
+.tabline {
   border-bottom: 1px solid green;
-} */
+}
 
 .cell:nth-child(even) {
   width: 7rem;
