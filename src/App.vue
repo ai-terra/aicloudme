@@ -56,6 +56,9 @@
                         matrix="Biz" 
                         v-for="(cell, colIndex) in row" v-bind:key="colIndex"
                         :row="rowIndex" :col="colIndex"
+                        :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
+                        :class="[(rowIndex%(visibleRows+1) == 0) ? tabClass : '',
+                                ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '']"
                         @click="onCellClick"
                         >
                           {{ cell }}
@@ -95,6 +98,9 @@
                         matrix="Dev" 
                         v-for="(cell, colIndex) in row" v-bind:key="colIndex"
                         :row="rowIndex" :col="colIndex"
+                        :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
+                        :class="[(rowIndex%(visibleRows+1) == 0) ? tabClass : '',
+                                ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '']"
                         @click="onCellClick"
                         >
                           {{ cell }}
@@ -196,6 +202,9 @@
                     matrix="Edit" 
                     v-for="(cell, colIndex) in row" v-bind:key="colIndex"
                     :row="rowIndex" :col="colIndex"
+                    :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
+                    :class="[(rowIndex%(visibleRows+1) == 0) ? tabClass : '',
+                            ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '']"
                     @click="onCellClick"
                     >
                       {{ cell }}
