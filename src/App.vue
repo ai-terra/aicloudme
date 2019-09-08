@@ -163,8 +163,8 @@
               <button class="edit btn btn-warning" @click="runOneOps">+</button>
               <button class="edit player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |' }}</button>
               <div><h2 class="title" contenteditable="true"></h2></div>
-              <button class="edit btn btn-primary" @click="show = !show;">Values</button>
-              <button class="edit btn btn-primary" @click="show = !show;">Members</button>
+              <button class="edit btn btn-primary" @click="show = !show;">Interests</button>
+              <button class="edit btn btn-primary" @click="show = !show;">Partners</button>
               <button class="edit btn btn-primary" @click="show = !show;">Projects</button>
               <button class="edit btn btn-primary" @click="show = !show;">Services</button>
               <button class="edit btn btn-primary" @click="show = !show;">Engine</button>
