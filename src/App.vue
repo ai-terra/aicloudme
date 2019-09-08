@@ -50,7 +50,7 @@
                         <td class="cell" @click="expandRows">{{ corner }}</td>
                         <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                       </tr>                      
-                      <tr class="row" v-for="(row, rowIndex) in matrixIni" v-bind:key="rowIndex">                          
+                      <tr class="row" v-for="(row, rowIndex) in matrixBiz" v-bind:key="rowIndex">                          
                         <td contenteditable="true" class="cell" 
                         matrix="Biz" 
                         v-for="(cell, colIndex) in row" v-bind:key="colIndex"
@@ -280,6 +280,24 @@ Or add cloud ops to get your business live.
 
 Clone AI CEO:
 github.com/ai-teams/ai-ceo`,
+      matrixBiz: [
+        ['1','STATUS',':','project','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['a','dQuery1a','=','next','','oQuery1a','=','next','','','','','','','','','','','','','','','','','','',''],
+        ['2','FUNDS',':','money','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['3','DOCS',':','terms','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['4','BOOK',':','done','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['5','INPUT',':','create','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['6','STEPS',':','plan','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['7','OUTPUT',':','test','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['8','PAY',':','paid','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['a','','','','','','','','','','','','','','','','','','','','','','','','','','']
+      ],
       matrixDev: [
         ['1','STATUS',':','project','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','dQuery','=','if ( oStatus == "ready" ) { cont = "next" } else { cont = "stop" }','','','','','','','','','','','','','','','','','','','','','','',''],
@@ -465,6 +483,7 @@ github.com/ai-teams/ai-ceo`,
       newRow[0] = this.corner;
       for (let tab = 0; tab < 8; tab++) {
         // insert newRow in matrix at index - first param
+        this.matrixBiz.splice(this.visibleRows + (this.visibleRows + 1) * tab, 0, newRow);
         this.matrixDev.splice(this.visibleRows + (this.visibleRows + 1) * tab, 0, newRow);
         this.matrixOps.splice(this.visibleRows + (this.visibleRows + 1) * tab, 0, newRow);
         this.matrixIni.splice(this.visibleRows + (this.visibleRows + 1) * tab, 0, newRow);
