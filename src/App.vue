@@ -246,10 +246,10 @@ export default {
             AI&nbsp;CEO &nbsp;Engine`,
       liveText: `&nbsp;&nbsp;live &nbsp; &nbsp;&nbsp;dev &nbsp; &nbsp;ops
             <br><br>
-            ai &nbsp; ceo &nbsp; engine`,
+            AI&nbsp;CEO &nbsp;Engine`,
       devText: `&nbsp;&nbsp;biz &nbsp;=&nbsp;&nbsp;dev&nbsp;⋆&nbsp;ops
       <br><br>
-      ai &nbsp; ceo &nbsp; engine`,
+      AI&nbsp;CEO &nbsp;Engine`,
       visibleRows: 1,
       visibleTab: 1,
       pause: true,
