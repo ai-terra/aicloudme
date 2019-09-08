@@ -187,7 +187,7 @@
                     <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                   </tr>
 
-                  <tr class="row" v-for="(row, rowIndex) in matrixIni" v-bind:key="rowIndex">                          
+                  <tr class="row" v-for="(row, rowIndex) in matrixEdit" v-bind:key="rowIndex">                          
                     <td contenteditable="true" class="cell" 
                     matrix="Edit" 
                     v-for="(cell, colIndex) in row" v-bind:key="colIndex"
@@ -334,7 +334,7 @@ github.com/ai-teams/ai-ceo`,
         ['8','PAY',':','paid','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','','','','','','','','','','','','','','','','','','','','','','','','','','']
       ],
-      matrixIni: [
+      matrixEdit: [
         ['1','STATUS',':','post','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
         ['2','RATES',':','money','','','','','','','','','','','','','','','','','','','','','','',''],
@@ -486,7 +486,7 @@ github.com/ai-teams/ai-ceo`,
         this.matrixBiz.splice(this.visibleRows + (this.visibleRows + 1) * tab, 0, newRow);
         this.matrixDev.splice(this.visibleRows + (this.visibleRows + 1) * tab, 0, newRow);
         this.matrixOps.splice(this.visibleRows + (this.visibleRows + 1) * tab, 0, newRow);
-        this.matrixIni.splice(this.visibleRows + (this.visibleRows + 1) * tab, 0, newRow);
+        this.matrixEdit.splice(this.visibleRows + (this.visibleRows + 1) * tab, 0, newRow);
       }
     },
     tabViews() {
