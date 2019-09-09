@@ -44,7 +44,7 @@
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
                     <h3 title="fairbook - public market ledger for the project">
-                      &nbsp;marketBlockChain (dev{{ project }}, ops{{ services[0] }}, future {{ branch }}/{{ branches[0] }}, 'ROI')</h3>
+                      &nbsp;OfficeBlockChain (dev{{ project }}, ops{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'ROI')</h3>
 
                     <table id="progress-table" class="matrix">
                       <tr class="row">
@@ -219,6 +219,20 @@
           </div>
 
           <div id="footer">
+            <div id="ai-engines" class="title-container">
+              <h4>I <span style="color: red;">&hearts;</span> AI Teams:</h4>
+              <h4>AI CEO</h4>
+              <h4>AI FIN</h4>
+              <h4>AI GOV</h4>
+              <h4>AI PMO</h4>
+              <h4>AI ERP</h4>
+              <h4>AI HRM</h4>
+              <h4>AI PTO</h4>
+              <h4>AI ECO</h4>
+              <h4>AI R&D</h4>
+              <h4>AI EDU</h4>
+              <h4>AI DevOps</h4>
+            </div> 
             <div class="title-container">
               <div class="footer-items">
                 <h4 class="title-long">W3AI Social Neural Network Protocol</h4>
@@ -232,20 +246,7 @@
                 Download Free AI CEO @ Github</a></h4>
                 <h4 class="title-long" contenteditable="true">AI CEO Engine / W3AI SNN Protocol</h4>
               </div>            
-            </div>
-            <div id="ai-engines" class="title-container">
-              <h4>I &hearts; AI Teams:</h4>
-              <h4>AI CEO</h4>
-              <h4>AI FIN</h4>
-              <h4>AI GOV</h4>
-              <h4>AI PMO</h4>
-              <h4>AI ERP</h4>
-              <h4>AI HRM</h4>
-              <h4>AI PTO</h4>
-              <h4>AI ECO</h4>
-              <h4>AI R&D</h4>
-              <h4>AI EDU</h4>
-            </div>              
+            </div>             
           </div>
 
 
