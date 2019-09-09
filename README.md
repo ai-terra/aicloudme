@@ -1,7 +1,7 @@
-# AI CEO web app
-AI CEO engine web app / W3AI devops protocol
+# AI Team web app
+AI Team engine web app / W3AI social devops protocol
 
-## AI CEO Engine setup
+## AI Team Engine setup
 ```
 npm install
 ```
