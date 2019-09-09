@@ -242,9 +242,9 @@
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax </a>
                 </h4>
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
-                <h4 class="title-long"><a href="https://github.com/ai-teams/ai-ceo">
-                Download Free AI CEO @ Github</a></h4>
-                <h4 class="title-long" contenteditable="true">AI CEO Engine / W3AI SNN Protocol</h4>
+                <h4 class="title-long"><a href="https://github.com/ai-teams">
+                Download Free AI Teams @ Github</a></h4>
+                <h4 class="title-long" contenteditable="true">AI Team Engine / W3AI SNN Protocol</h4>
               </div>            
             </div>             
           </div>
