@@ -7,7 +7,7 @@
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
                 <h1 class="title-long">AI CEO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1><h1 class="title-short"> ai cell&nbsp;</h1>
-                <h5>ai ceo web engine</h5>
+                <h5>ai team web engine</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
@@ -234,7 +234,9 @@
               </div>            
             </div>
             <div id="ai-engines" class="title-container">
-              <h4>AI Banks</h4>
+              <h4>I &hearts; AI Teams:</h4>
+              <h4>AI CEO</h4>
+              <h4>AI FIN</h4>
               <h4>AI GOV</h4>
               <h4>AI PMO</h4>
               <h4>AI ERP</h4>
@@ -263,13 +265,13 @@ export default {
       speed: 2000,  // milliseconds
       backgroundText: `&nbsp;&nbsp;live &nbsp; &nbsp;&nbsp;dev &nbsp; &nbsp;ops
             <br><br>
-            AI&nbsp;CEO &nbsp;Engine`,
+            AI&nbsp;Team &nbsp;Engine`,
       liveText: `&nbsp;&nbsp;live &nbsp; &nbsp;&nbsp;dev &nbsp; &nbsp;ops
             <br><br>
-            AI&nbsp;CEO &nbsp;Engine`,
+            AI&nbsp;Team &nbsp;Engine`,
       devText: `&nbsp;&nbsp;biz &nbsp;=&nbsp;&nbsp;dev&nbsp;⋆&nbsp;ops
       <br><br>
-      AI&nbsp;CEO &nbsp;Engine`,
+      AI&nbsp;Team &nbsp;Engine`,
       visibleRows: 1,
       visibleTab: 1,
       pause: true,
