@@ -249,7 +249,21 @@
               <h4><a href="https://ai-devops.web.app">36 / 72</a></h4>
               <h4><a href="https://ai-teams.web.app">77 / 30</a></h4>
             </div> 
-
+            <div id="web-dev-ops" class="title-container">
+              <h4>web dev/ops:</h4>
+              <h4><a href="https://ai-cell.web.app">12 / 34</a></h4>
+              <h4><a href="https://ai-banks.web.app">56 / 78</a></h4>
+              <h4><a href="https://ai-gov.web.app">19 / 24</a></h4>
+              <h4><a href="https://ai-pmo.web.app">17 / 35</a></h4>
+              <h4><a href="https://ai-erp.web.app">16 / 22</a></h4>
+              <h4><a href="https://ai-hrm.web.app">22 / 48</a></h4>
+              <h4><a href="https://ai-pto.web.app">13 / 29</a></h4>
+              <h4><a href="https://ai-eco.web.app">35 / 74</a></h4>
+              <h4><a href="https://ai-press.web.app">40 / 87</a></h4>
+              <h4><a href="https://ai-cell.web.app">35 / 49</a></h4>
+              <h4><a href="https://ai-devops.web.app">36 / 72</a></h4>
+              <h4><a href="https://ai-teams.web.app">77 / 30</a></h4>
+            </div> 
             <div class="title-container">
               <div class="footer-items">
                 <h4 class="title-long">W3AI Social Neural Network Protocol</h4>
