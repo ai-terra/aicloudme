@@ -232,6 +232,7 @@
               <h4>AI R&D</h4>
               <h4>AI EDU</h4>
               <h4>AI DevOps</h4>
+              <h4>AI Team</h4>
             </div> 
             <div class="title-container">
               <div class="footer-items">
