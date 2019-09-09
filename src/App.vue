@@ -15,7 +15,7 @@
             <div class="title" contenteditable="true"><h1>&nbsp;new biz:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
-                <li>Funded: Famous 5 mins AI CEO Engine install</li>
+                <li>Funded: Famous 5 mins AI Team Engine install</li>
                 <li>Voting: Chinese, Hindi, Spanish, Arabic, Russian apps</li>
                 <li>Idea: Add Issue & Help Requests to Job post loop</li>
               </ul>
