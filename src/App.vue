@@ -299,12 +299,12 @@ export default {
       textEdit: `
 Hello World!
 
-This is your first CEO post.
+This is your first AI Team post.
 Add a test list to transform it in a business project.
-Or add cloud ops to get your business live.
+Or add cloud ops to get your team engine live.
 
-Clone AI CEO:
-github.com/ai-teams/ai-ceo`,
+Clone AI Teams at:
+github.com/ai-teams`,
       matrixBiz: [
         ['1','STATUS',':','OK','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','dQuery1a','=','Ok','','oQuery1a','=','Ok','','','','','','','','','','','','','','','','','','',''],
