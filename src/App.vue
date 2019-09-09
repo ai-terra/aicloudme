@@ -229,7 +229,7 @@
               <h4>AI HRM</h4>
               <h4>AI PTO</h4>
               <h4>AI ECO</h4>
-              <h4>AI R&D</h4>
+              <h4>AI Press</h4>
               <h4>AI EDU</h4>
               <h4>AI DevOps</h4>
               <h4>AI Team</h4>
