@@ -221,7 +221,7 @@
           <div id="footer">
             <div class="title-container">
               <div class="footer-items">
-                <h4 class="title-long">W3AI Social Neural Network (SNN) Protocol</h4>
+                <h4 class="title-long">W3AI Social Neural Network Protocol</h4>
                 <h4 class="title-long">W3AI Meetups 
                   <a href="https://www.meetup.com/SocialAI/">Toronto </a> 
                   <a href="https://www.meetup.com/Manhattan-AIR/">NYC </a> 
@@ -230,7 +230,7 @@
                 <h4 class="title-long">© Ianta Labs | MIT License</h4>
                 <h4 class="title-long"><a href="https://github.com/ai-teams/ai-ceo">
                 Download Free AI CEO @ Github</a></h4>
-                <h4 class="title-long" contenteditable="true">AI CEO Engine / W3AI Protocol</h4>
+                <h4 class="title-long" contenteditable="true">AI CEO Engine / W3AI SNN Protocol</h4>
               </div>            
             </div>
             <div id="ai-engines" class="title-container">
@@ -321,7 +321,7 @@ github.com/ai-teams/ai-ceo`,
         ['a','','','','','','','','','','','','','','','','','','','','','','','','','','']
       ],
       matrixDev: [
-        ['1','STATUS',':','project','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['1','STATUS',':','project','','priority','=','1','','votes','=','247','','likes','=','1234','','comments','=','144','','clones','=','24','','',''],
         ['a','dQuery','=','if ( opsStatus == "ready" ) { state = "Ok" } else { state = "Stop" }','','','','','','','','','','','','','','','','','','','','','','',''],
         ['2','RATES',':','money','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
