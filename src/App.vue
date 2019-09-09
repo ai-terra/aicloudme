@@ -221,18 +221,18 @@
           <div id="footer">
             <div id="ai-engines" class="title-container">
               <h4>I <span style="color: red;">&hearts;</span> AI Teams:</h4>
-              <h4>AI CEO</h4>
-              <h4>AI FIN</h4>
-              <h4>AI GOV</h4>
-              <h4>AI PMO</h4>
-              <h4>AI ERP</h4>
-              <h4>AI HRM</h4>
-              <h4>AI PTO</h4>
-              <h4>AI ECO</h4>
-              <h4>AI Press</h4>
-              <h4>AI EDU</h4>
-              <h4>AI DevOps</h4>
-              <h4>AI Team</h4>
+              <h4><a href="https://ai-cell.web.app">AI CEO</a></h4>
+              <h4><a href="https://ai-banks.web.app">AI FIN</a></h4>
+              <h4><a href="https://ai-gov.web.app">AI GOV</a></h4>
+              <h4><a href="https://ai-pmo.web.app">AI PMO</a></h4>
+              <h4><a href="https://ai-erp.web.app">AI ERP</a></h4>
+              <h4><a href="https://ai-hrm.web.app">AI HRM</a></h4>
+              <h4><a href="https://ai-pto.web.app">AI PTO</a></h4>
+              <h4><a href="https://ai-eco.web.app">AI ECO</a></h4>
+              <h4><a href="https://ai-press.web.app">AI Press</a></h4>
+              <h4><a href="https://ai-cell.web.app">AI EDU</a></h4>
+              <h4><a href="https://ai-devops.web.app">AI DevOps</a></h4>
+              <h4><a href="https://ai-teams.web.app">AI Team</a></h4>
             </div> 
             <div class="title-container">
               <div class="footer-items">
