@@ -181,7 +181,7 @@
               <button class="edit btn btn-primary" @click="show = !show;">Wiki</button>
               <button class="edit btn btn-danger" @click="show = !show;">Code</button>
               <button class="edit btn btn-warning" @click="show = !show;"><b>&lt;</b></button>
-              <button class="edit btn btn-success" @click="show = !show;"><b>CEO</b></button>
+              <button class="edit btn btn-success" @click="modeId++;"><b>{{ mode[modeId%mode.length] }}</b></button>
             </div>
 
             <div id="editor-tabs">
