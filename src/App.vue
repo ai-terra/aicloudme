@@ -295,15 +295,15 @@ export default {
     return {
       interval: 'timer', 
       speed: 2000,  // milliseconds
-      backgroundText: `&nbsp;&nbsp;AI &nbsp; &nbsp; &nbsp; dev &nbsp; &nbsp;ops
+      backgroundText: `&nbsp; &nbsp;AI&nbsp; &nbsp; &nbsp; &nbsp; Dev &nbsp; &nbsp; Ops
             <br><br>
-            AI&nbsp;Team &nbsp;Engine`,
-      liveText: `&nbsp;&nbsp;live &nbsp; &nbsp;&nbsp;dev &nbsp; &nbsp;ops
+            &nbsp; AI&nbsp;Team &nbsp; &nbsp; Engine`,
+      liveText: `&nbsp; &nbsp;live &nbsp; &nbsp;&nbsp;Dev &nbsp; &nbsp; Ops
             <br><br>
-            AI&nbsp;Team &nbsp;Engine`,
-      devText: `&nbsp;&nbsp;AI &nbsp; &nbsp; &nbsp; dev &nbsp; &nbsp;ops
+            &nbsp; AI&nbsp;Team &nbsp;&nbsp; Engine`,
+      devText: `&nbsp; &nbsp;AI &nbsp; &nbsp; &nbsp; Dev &nbsp; &nbsp; Ops
       <br><br>
-      AI&nbsp;Team &nbsp;Engine`,
+      &nbsp; AI&nbsp;Team &nbsp;&nbsp; Engine`,
       visibleRows: 1,
       visibleTab: 1,
       pause: true,
