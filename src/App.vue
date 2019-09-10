@@ -43,7 +43,7 @@
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
-                    <h3 title="fairbook - public market ledger for the project">
+                    <h3 title="AI FairBook Blockchain - Public market ledger for the project">
                       &nbsp;&nbsp;&nbsp;AIBlockChain (dev{{ project }}, ops{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'ROI')</h3>
 
                     <table id="progress-table" class="matrix">
@@ -86,7 +86,8 @@
               <ul class="list-group">
                 <transition-group name="slide-up" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
-                    <h3>&nbsp;&nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares] - dev{{ project }}</h3>
+                    <h3 title="Dev FeedBook - Project & Job Demand in your social market">
+                      &nbsp;&nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares] - dev{{ project }}</h3>
 
                     <table id="project-table" class="matrix">
                       <tr class="row">
@@ -128,7 +129,8 @@
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="service in services" v-bind:key="service">
-                    <h3>&nbsp;&nbsp;&nbsp;service {{ service }}: title[{{ service }}] - owner[{{ service }}] - [shares] - ops{{ service }}</h3>
+                    <h3 title="Ops FeedBook - Service & Skills Offer in your social market">
+                      &nbsp;&nbsp;&nbsp;service {{ service }}: title[{{ service }}] - owner[{{ service }}] - [shares] - ops{{ service }}</h3>
                     
                     <table id="service-table" class="matrix">
                       <tr class="row">
