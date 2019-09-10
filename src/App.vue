@@ -12,7 +12,7 @@
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
             <div class="title chromosomes" contenteditable="true">under dev daily deploys contributors welcome ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
-            <div class="title" contenteditable="true"><h1>&nbsp;new dev:</h1></div>
+            <div class="title" contenteditable="true"><h1>&nbsp;new Dev:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>Funded: Famous 5 mins AI Team Engine install</li>
@@ -20,7 +20,7 @@
                 <li>Idea: Add Issue & Help Requests to Job post loop</li>
               </ul>
             </div>
-            <div class="title" contenteditable="true"><h1>&nbsp;&nbsp;&nbsp;&nbsp;new ops:</h1></div>
+            <div class="title" contenteditable="true"><h1>&nbsp;&nbsp;&nbsp;&nbsp;new Ops:</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>COM: My Governance Team & AI Banks</li>
@@ -295,6 +295,8 @@ export default {
     return {
       interval: 'timer', 
       speed: 2000,  // milliseconds
+      mode: ['CEO', 'DEV', 'OPS', 'EDU', 'QA', 'UA'],
+      modeId: 0,
       backgroundText: `&nbsp; &nbsp;AI&nbsp; &nbsp; &nbsp; &nbsp; Dev &nbsp; &nbsp; Ops
             <br><br>
             &nbsp; AI&nbsp;Team &nbsp; &nbsp; Engine`,
