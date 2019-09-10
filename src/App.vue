@@ -35,7 +35,7 @@
             <div id="ai-prog">
               <div class="buttons">
                 <button contenteditable="true" class="next btn btn-warning" @click="setCell('project-table', 3, 5, 'votes')">Rank</button>
-                <button contenteditable="true" class="next btn btn-primary" @click="nextBranch">Next Future</button>
+                <button contenteditable="true" class="next btn btn-primary" @click="nextBranch">Next Option</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="addNewRule">New Rule:</button>
                 <input type="text" class="input-add-new" name="new-rule" value="eg: ECO - use ECO first services" size="40" maxlength="40">
                 <!-- <button contenteditable="true" class="next btn btn-primary" @click="addTableRow('progress-table', 8, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Pay</button> -->
@@ -44,7 +44,7 @@
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
                     <h3 title="fairbook - public market ledger for the project">
-                      &nbsp;OfficeBlockChain (dev{{ project }}, ops{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'ROI')</h3>
+                      &nbsp;&nbsp;&nbsp;AIBlockChain (dev{{ project }}, ops{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'ROI')</h3>
 
                     <table id="progress-table" class="matrix">
                       <tr class="row">
@@ -295,13 +295,13 @@ export default {
     return {
       interval: 'timer', 
       speed: 2000,  // milliseconds
-      backgroundText: `&nbsp;&nbsp;live &nbsp; &nbsp;&nbsp;dev &nbsp; &nbsp;ops
+      backgroundText: `&nbsp;&nbsp;AI &nbsp; &nbsp; &nbsp; dev &nbsp; &nbsp;ops
             <br><br>
             AI&nbsp;Team &nbsp;Engine`,
       liveText: `&nbsp;&nbsp;live &nbsp; &nbsp;&nbsp;dev &nbsp; &nbsp;ops
             <br><br>
             AI&nbsp;Team &nbsp;Engine`,
-      devText: `&nbsp;&nbsp;biz &nbsp;=&nbsp;&nbsp;dev&nbsp;⋆&nbsp;ops
+      devText: `&nbsp;&nbsp;AI &nbsp; &nbsp; &nbsp; dev &nbsp; &nbsp;ops
       <br><br>
       AI&nbsp;Team &nbsp;Engine`,
       visibleRows: 1,
