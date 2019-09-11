@@ -327,6 +327,7 @@ export default {
       currentCol: '',
       currentCellVal: '',
       fx: '',
+      fxEval: '',
       corner: 'a',
       header: ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
       blankTabMatrix: [['a','','','','','','','','','','','','','','','','','','','','','','','','','','']],
@@ -529,14 +530,14 @@ github.com/ai-teams`,
       let v = val;
 
       if ( this.fx[0] === '=' ) {
-        this.fx += ' ' + m + t + c + r;
+        this.fx += ' ' + m + t + c + r + '';
       } else {
         this.fx = v;
       }
       if (this.modeId == 0) {
         // if mode[0] is CEO - educational / training
         // ToDo: hide fx if blank
-        this.textEdit = ' > tbl: ' + m + ' tab: ' + t + ' row: ' + r + ' col: ' + c + ' val: ' + v + '\n > fx = ' + this.fx + '\n' + this.textEdit;
+        this.textEdit = ' > tbl: ' + m + ' tab: ' + t + ' row: ' + r + ' col: ' + c + ' val: ' + v + '\n > fx = ' + eval(this.fx) + '\n' + this.textEdit;
       } else {
         // mainly for dev
         this.textEdit = ' > ' + m + ' ' + t + ' ' + r + ' ' + c + ' ' + v + '\n > ' + this.fx + '\n' + this.textEdit;
