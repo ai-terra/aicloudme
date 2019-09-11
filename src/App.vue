@@ -527,13 +527,18 @@ github.com/ai-teams`,
       let t = tab;                                                      // t - tab 1-8
       let val = this.currentCellVal = el.target.innerHTML.trim();       // val - cell value - string
       let v = val;
-      // this.fx = '$ ' + m + r + c + v;
+
       if ( this.fx[0] === '=' ) {
         this.fx += ' ' + m + t + c + r;
       } else {
         this.fx = v;
       }
-      this.textEdit = ' > ' + m + ' ' + t + ' ' + r + ' ' + c + ' ' + v + ' ' + this.fx + '\n' + this.textEdit;
+      if (this.modeId == 3) {
+        // if mode is EDU - educational / training
+        this.textEdit = ' > mat: ' + m + ' tab: ' + t + ' row: ' + r + ' col: ' + c + ' val: ' + v + '\n > fx = ' + this.fx + '\n' + this.textEdit;
+      } else {
+        this.textEdit = ' > ' + m + ' ' + t + ' ' + r + ' ' + c + ' ' + v + '\n > ' + this.fx + '\n' + this.textEdit;
+      }
     },
     expandRows() {
       this.visibleRows++;
