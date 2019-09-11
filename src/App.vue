@@ -6,8 +6,8 @@
           <div class="title-container">
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
-                <h1 class="title-long">AI PMO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1><h1 class="title-short"> pmo&nbsp;</h1>
-                <h5>ai speed innovation</h5>
+                <h1 class="title-long">AI PMO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1><h1 class="title-short">{{ ai.shortTitle }}</h1>
+                <h5 class="title-long">innovate @ai speed</h5><h5 class="title-short">{{ ai.shortSubtitle }}</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
@@ -291,10 +291,12 @@
 </template>
 
 <script>
+import team from './assets/team.json';
 export default {
   name: "app",
   data() {
     return {
+      ai: team,
       interval: 'timer', 
       speed: 2000,  // milliseconds
       mode: ['CEO', 'DEV', 'OPS', 'EDU', 'QA', 'UA'],
@@ -1078,6 +1080,9 @@ h4 {
   h1.title-short {
     display: none;
   }
+  h5.title-short {
+    display: none;
+  }
 
   div.background-text {
     font-size: 18rem;
@@ -1099,6 +1104,9 @@ h4 {
 @media screen and (max-width: 1200px) {
 
   h1.title-long {
+    display: none;
+  }
+  h5.title-long {
     display: none;
   }
 
