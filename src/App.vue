@@ -533,9 +533,9 @@ github.com/ai-teams`,
       } else {
         this.fx = v;
       }
-      if (this.modeId == 3) {
+      if (this.modeId == 0) {
         // if mode is EDU - educational / training
-        this.textEdit = ' > mat: ' + m + ' tab: ' + t + ' row: ' + r + ' col: ' + c + ' val: ' + v + '\n > fx = ' + this.fx + '\n' + this.textEdit;
+        this.textEdit = ' > tbl: ' + m + ' tab: ' + t + ' row: ' + r + ' col: ' + c + ' val: ' + v + '\n > fx = ' + this.fx + '\n' + this.textEdit;
       } else {
         this.textEdit = ' > ' + m + ' ' + t + ' ' + r + ' ' + c + ' ' + v + '\n > ' + this.fx + '\n' + this.textEdit;
       }
