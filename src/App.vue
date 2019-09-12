@@ -414,6 +414,16 @@ github.com/ai-teams`,
         ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
         ['8','PAY',':','paid','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','','','','','','','','','','','','','','','','','','','','','','','','','','']
+      ],
+      newDevPosts: [
+        'Funded: Famous 5 mins AI Team Engine install',
+        'Voting: Chinese, Hindi, Spanish, Arabic, Russian apps',
+        'Idea: Add Issue & Help Requests to Job post loop'
+      ],
+      newOpsPosts: [
+        'COM: My Governance Team & AI Banks',
+        'ORG: Political Party and Campaign Ops',
+        'EDU: Research ranking and priorities'
       ]
     };
   },
