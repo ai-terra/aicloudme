@@ -6,8 +6,8 @@
           <div class="title-container">
             <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
             <div contenteditable="true">
-                <h1 class="title-long">AI PMO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1><h1 class="title-short">{{ ai.shortTitle }}</h1>
-                <h5 class="title-long">innovate @ai speed</h5><h5 class="title-short">{{ ai.shortSubtitle }}</h5>
+                <h1 class="long">{{ team.title }}</h1><h1 class="short">{{ team.titleShort }}</h1>
+                <h5 class="long">{{ team.subtitle }}</h5><h5 class="short">{{ team.subtitleShort }}</h5>
             </div>
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
@@ -268,16 +268,16 @@
             </div> 
             <div class="title-container">
               <div class="footer-items">
-                <h4 class="title-long">W3AI Social Neural Network Protocol</h4>
-                <h4 class="title-long">W3AI Meetups 
+                <h4 class="long">W3AI Social Neural Network Protocol</h4>
+                <h4 class="long">W3AI Meetups 
                   <a href="https://www.meetup.com/SocialAI/">Toronto </a> 
                   <a href="https://www.meetup.com/Manhattan-AIR/">NYC </a> 
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax </a>
                 </h4>
-                <h4 class="title-long">© Ianta Labs | MIT License</h4>
-                <h4 class="title-long"><a href="https://github.com/ai-teams">
+                <h4 class="long">© Ianta Labs | MIT License</h4>
+                <h4 class="long"><a href="https://github.com/ai-teams">
                 Download Free AI Teams @ Github</a></h4>
-                <h4 class="title-long" contenteditable="true">AI Team Engine / W3AI SNN Protocol</h4>
+                <h4 class="long" contenteditable="true">AI Team Engine / W3AI SNN Protocol</h4>
               </div>            
             </div>             
           </div>
@@ -291,12 +291,12 @@
 </template>
 
 <script>
-import team from './assets/team.json';
+import aiteam from './assets/ai-team.json';
 export default {
   name: "app",
   data() {
     return {
-      ai: team,
+      team: aiteam,
       interval: 'timer', 
       speed: 2000,  // milliseconds
       mode: ['CEO', 'DEV', 'OPS', 'EDU', 'QA', 'UA'],
@@ -748,7 +748,7 @@ html {
   font-size: 1.5rem;
 }
 
-h2.title-long {
+h2.long {
   margin: 0 0 0 5rem;
 }
 
@@ -1087,10 +1087,10 @@ h4 {
 
 @media screen and (min-width: 1200px) {
 
-  h1.title-short {
+  h1.short {
     display: none;
   }
-  h5.title-short {
+  h5.short {
     display: none;
   }
 
@@ -1113,10 +1113,10 @@ h4 {
 
 @media screen and (max-width: 1200px) {
 
-  h1.title-long {
+  h1.long {
     display: none;
   }
-  h5.title-long {
+  h5.long {
     display: none;
   }
 
