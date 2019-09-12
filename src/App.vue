@@ -88,8 +88,10 @@
               <ul class="list-group">
                 <transition-group name="slide-up" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
-                    <h3 title="Dev FeedBook - Project & Job Demand in your social market">
+                    <h3 class="long" title="Dev FairBook - Project & Job Demand in your social network">
                       &nbsp;&nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares] - dev{{ project }}</h3>
+                    <h3 class="short" title="Dev FairBook - Project & Job Demand in your social network">
+                      &nbsp;&nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares]</h3>
 
                     <table id="project-table" class="matrix">
                       <tr class="row">
@@ -131,9 +133,11 @@
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="service in services" v-bind:key="service">
-                    <h3 title="Ops FeedBook - Service & Skills Offer in your social market">
+                    <h3 class="long" title="Ops FairBook - Service & Skills Offer in your social network">
                       &nbsp;&nbsp;&nbsp;service {{ service }}: title[{{ service }}] - owner[{{ service }}] - [shares] - ops{{ service }}</h3>
-                    
+                    <h3 class="short" title="Ops FairBook - Service & Skills Offer in your social network">
+                      &nbsp;&nbsp;&nbsp;service {{ service }}: title[{{ service }}] - owner[{{ service }}] - [shares]</h3>
+
                     <table id="service-table" class="matrix">
                       <tr class="row">
                         <td class="cell" @click="expandRows">{{ corner }}</td>
