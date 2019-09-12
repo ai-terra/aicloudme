@@ -12,7 +12,8 @@
             <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
             <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
             <div class="title chromosomes" contenteditable="true">under dev daily deploys contributors welcome ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
-            <div class="title" contenteditable="true"><h1>&nbsp;new Dev:</h1></div>
+            <div class="title long"><h1>{{ team.newDevTitle }}</h1></div>
+            <div class="title short"><h1>{{ team.newDevTitleShort }}</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>Funded: Famous 5 mins AI Team Engine install</li>
@@ -274,9 +275,11 @@
                   <a href="https://www.meetup.com/Manhattan-AIR/">NYC </a> 
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax </a>
                 </h4>
-                <h4 class="long">© Ianta Labs | MIT License</h4>
+                <h4>© Ianta Labs | MIT License</h4>
                 <h4 class="long"><a href="https://github.com/ai-teams">
                 Download Free AI Teams @ Github</a></h4>
+                <h4 class="short"><a href="https://github.com/ai-teams">
+                Free AI Teams @ Github</a></h4>
                 <h4 class="long" contenteditable="true">AI Team Engine / W3AI SNN Protocol</h4>
               </div>            
             </div>             
@@ -1087,10 +1090,10 @@ h4 {
 
 @media screen and (min-width: 1200px) {
 
-  h1.short {
+  .short {
     display: none;
   }
-  h5.short {
+  .short {
     display: none;
   }
 
@@ -1113,10 +1116,10 @@ h4 {
 
 @media screen and (max-width: 1200px) {
 
-  h1.long {
+  .long {
     display: none;
   }
-  h5.long {
+  .long {
     display: none;
   }
 
