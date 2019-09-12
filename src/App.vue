@@ -21,7 +21,8 @@
                 <li>Idea: Add Issue & Help Requests to Job post loop</li>
               </ul>
             </div>
-            <div class="title" contenteditable="true"><h1>&nbsp;&nbsp;&nbsp;&nbsp;new Ops:</h1></div>
+            <div class="title long"><h1>{{ team.newOpsTitle }}</h1></div>
+            <div class="title short"><h1>{{ team.newOpsTitleShort }}</h1></div>
             <div class="title news-scroller" contenteditable="true">
               <ul>
                 <li>COM: My Governance Team & AI Banks</li>
