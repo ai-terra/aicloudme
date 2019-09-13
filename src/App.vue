@@ -240,49 +240,49 @@
 
           <div id="footer">
             <div id="ai-engines" class="title-container">
-              <h4>I <span style="color: red;">&hearts;</span> AI Teams:</h4>
-              <h4><a href="https://ai-cell.web.app">AI CEO</a></h4>
-              <h4><a href="https://ai-banks.web.app">AI FIN</a></h4>
-              <h4><a href="https://ai-gov.web.app">AI GOV</a></h4>
-              <h4><a href="https://ai-pmo.web.app">AI PMO</a></h4>
-              <h4><a href="https://ai-erp.web.app">AI ERP</a></h4>
-              <h4><a href="https://ai-hrm.web.app">AI HRM</a></h4>
-              <h4><a href="https://ai-pto.web.app">AI PTO</a></h4>
-              <h4><a href="https://ai-eco.web.app">AI ECO</a></h4>
-              <h4><a href="https://ai-press.web.app">AI Press</a></h4>
-              <h4><a href="https://ai-cell.web.app">AI EDU</a></h4>
-              <h4><a href="https://ai-devops.web.app">AI DevOps</a></h4>
-              <h4><a href="https://ai-teams.web.app">AI Team</a></h4>
+              <h4>I&nbsp;<span style="color: red;">&hearts;</span>&nbsp;ai</h4>
+              <h4><a href="https://ai-cell.web.app">CEO</a></h4>
+              <h4><a href="https://ai-banks.web.app">FIN</a></h4>
+              <h4><a href="https://ai-gov.web.app">GOV</a></h4>
+              <h4><a href="https://ai-pmo.web.app">PMO</a></h4>
+              <h4><a href="https://ai-erp.web.app">ERP</a></h4>
+              <h4><a href="https://ai-hrm.web.app">HRM</a></h4>
+              <h4><a href="https://ai-pto.web.app">PTO</a></h4>
+              <h4><a href="https://ai-eco.web.app">ECO</a></h4>
+              <h4><a href="https://ai-press.web.app">Press</a></h4>
+              <h4><a href="https://ai-cell.web.app">EDU</a></h4>
+              <h4><a href="https://ai-devops.web.app">DevOps</a></h4>
+              <h4><a href="https://ai-teams.web.app">Team</a></h4>
             </div> 
             <div id="my-dev-ops" class="title-container">
-              <h4>my dev/ops:</h4>
-              <h4><a href="https://ai-cell.web.app">12 / 34</a></h4>
-              <h4><a href="https://ai-banks.web.app">56 / 78</a></h4>
-              <h4><a href="https://ai-gov.web.app">19 / 24</a></h4>
-              <h4><a href="https://ai-pmo.web.app">17 / 35</a></h4>
-              <h4><a href="https://ai-erp.web.app">16 / 22</a></h4>
-              <h4><a href="https://ai-hrm.web.app">22 / 48</a></h4>
-              <h4><a href="https://ai-pto.web.app">13 / 29</a></h4>
-              <h4><a href="https://ai-eco.web.app">35 / 74</a></h4>
-              <h4><a href="https://ai-press.web.app">40 / 87</a></h4>
-              <h4><a href="https://ai-cell.web.app">35 / 49</a></h4>
-              <h4><a href="https://ai-devops.web.app">36 / 72</a></h4>
-              <h4><a href="https://ai-teams.web.app">77 / 30</a></h4>
+              <h4>group</h4>
+              <h4><a href="https://ai-cell.web.app">12✦34</a></h4>
+              <h4><a href="https://ai-banks.web.app">56✦78</a></h4>
+              <h4><a href="https://ai-gov.web.app">19✦24</a></h4>
+              <h4><a href="https://ai-pmo.web.app">17✦35</a></h4>
+              <h4><a href="https://ai-erp.web.app">16✦22</a></h4>
+              <h4><a href="https://ai-hrm.web.app">22✦48</a></h4>
+              <h4><a href="https://ai-pto.web.app">13✦29</a></h4>
+              <h4><a href="https://ai-eco.web.app">35✦74</a></h4>
+              <h4><a href="https://ai-press.web.app">40✦87</a></h4>
+              <h4><a href="https://ai-cell.web.app">35✦49</a></h4>
+              <h4><a href="https://ai-devops.web.app">36✦72</a></h4>
+              <h4><a href="https://ai-teams.web.app">77✦30</a></h4>
             </div> 
             <div id="web-dev-ops" class="title-container">
-              <h4>web dev/ops:</h4>
-              <h4><a href="https://ai-cell.web.app">12 / 34</a></h4>
-              <h4><a href="https://ai-banks.web.app">56 / 78</a></h4>
-              <h4><a href="https://ai-gov.web.app">19 / 24</a></h4>
-              <h4><a href="https://ai-pmo.web.app">17 / 35</a></h4>
-              <h4><a href="https://ai-erp.web.app">16 / 22</a></h4>
-              <h4><a href="https://ai-hrm.web.app">22 / 48</a></h4>
-              <h4><a href="https://ai-pto.web.app">13 / 29</a></h4>
-              <h4><a href="https://ai-eco.web.app">35 / 74</a></h4>
-              <h4><a href="https://ai-press.web.app">40 / 87</a></h4>
-              <h4><a href="https://ai-cell.web.app">35 / 49</a></h4>
-              <h4><a href="https://ai-devops.web.app">36 / 72</a></h4>
-              <h4><a href="https://ai-teams.web.app">77 / 30</a></h4>
+              <h4>group</h4>
+              <h4><a href="https://ai-cell.web.app">12✦34</a></h4>
+              <h4><a href="https://ai-banks.web.app">56✦78</a></h4>
+              <h4><a href="https://ai-gov.web.app">19✦24</a></h4>
+              <h4><a href="https://ai-pmo.web.app">17✦35</a></h4>
+              <h4><a href="https://ai-erp.web.app">16✦22</a></h4>
+              <h4><a href="https://ai-hrm.web.app">22✦48</a></h4>
+              <h4><a href="https://ai-pto.web.app">13✦29</a></h4>
+              <h4><a href="https://ai-eco.web.app">35✦74</a></h4>
+              <h4><a href="https://ai-press.web.app">40✦87</a></h4>
+              <h4><a href="https://ai-cell.web.app">35✦49</a></h4>
+              <h4><a href="https://ai-devops.web.app">36✦72</a></h4>
+              <h4><a href="https://ai-teams.web.app">77✦30</a></h4>
             </div> 
             <div class="title-container">
               <div class="footer-items">
@@ -301,8 +301,6 @@
               </div>            
             </div>             
           </div>
-
-
 
         </div>
       </div>
