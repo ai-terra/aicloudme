@@ -161,8 +161,11 @@
                         v-for="(cell, colIndex) in row" v-bind:key="colIndex"
                         :row="rowIndex" :col="colIndex" 
                         :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
-                        :class="[(rowIndex%(visibleRows+1) == 0) ? tabClass : '',
-                                ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '']"
+                        :class="[
+                                  (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
+                                  ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
+                                  (matrixOps[rowIndex][colIndex] == 'Check1') ? checkBtn : ''
+                                ]"
                         @click="onCellClick"
                         >
                           {{ cell }}
@@ -342,6 +345,7 @@ export default {
       blockchains: [365],
       tabClass: 'tabline',
       tabTitle: 'tabname',
+      checkBtn: 'checkbtn',
       currentTable: '',
       currentRow: '',
       currentCol: '',
@@ -833,6 +837,14 @@ li.list-group-item {
   border-radius: 8px 8px 0px 0px;
   background-color: #6aa84f;
   color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.checkbtn {
+  border-radius: 8px 8px 8px 8px;
+  background-color: lightblue;
+  color: grey;
   text-align: center;
   font-weight: bold;
 }
