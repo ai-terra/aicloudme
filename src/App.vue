@@ -853,6 +853,7 @@ li.list-group-item {
   color: black;
   text-align: center;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .checkbtn {
