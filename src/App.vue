@@ -12,9 +12,10 @@
                   <h5 class="long">{{ team.subtitle }}</h5><h5 class="short">{{ team.subtitleShort }}</h5>
               </div>
 
-              <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
-              <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
-              <div class="title chromosomes" contenteditable="true">2</div>
+              <div class="title" title="Start / Stop Engine"><button class="btn btn-success player" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
+              <div class="title" contenteditable="true">2<br>sec</div>
+              <div class="title" contenteditable="true">8 tabs<br>engine</div>
+              <div class="title" title="Manual cycles"><button class="btn btn-warning player" @click="play">1</button></div>
             </div>
             
             <div class="header-group devNews">
@@ -685,8 +686,9 @@ html {
 }
 
 .player {
-  margin-left: 1rem;
-  width: 3rem;
+  /* margin-left: 1rem; */
+  width: 4rem;
+  height: 4rem;
 }
 
 .chromosomes {
