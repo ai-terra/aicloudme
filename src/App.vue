@@ -62,7 +62,7 @@
 
                     <table id="progress-table" class="matrix">
                       <tr class="row">
-                        <td class="cell" @click="expandRows">{{ corner }}</td>
+                        <td class="cell config-btn" title="Click to expand visible rows" @click="expandRows">{{ corner }}</td>
                         <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                       </tr>                      
                       <tr class="row" v-for="(row, rowIndex) in matrixBiz" v-bind:key="rowIndex">                          
@@ -107,7 +107,7 @@
 
                     <table id="project-table" class="matrix">
                       <tr class="row">
-                        <td class="cell" @click="expandRows">{{ corner }}</td>
+                        <td class="cell config-btn" title="Click to expand visible rows" @click="expandRows">{{ corner }}</td>
                         <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                       </tr>                      
                       <tr class="row" v-for="(row, rowIndex) in matrixDev" v-bind:key="rowIndex">                          
@@ -156,7 +156,7 @@
 
                     <table id="service-table" class="matrix">
                       <tr class="row">
-                        <td class="cell" @click="expandRows">{{ corner }}</td>
+                        <td class="cell config-btn" title="Click to expand visible rows" @click="expandRows">{{ corner }}</td>
                         <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                       </tr>
                       <tr class="row" v-for="(row, rowIndex) in matrixOps" v-bind:key="rowIndex">                          
@@ -221,7 +221,7 @@
               <div id="table-editor">
                 <table class="matrix">
                   <tr class="row">
-                    <td class="cell" @click="expandRows" @click.prevent.right="tabViews">{{ corner }}</td>
+                    <td class="cell config-btn" title="Click to expand visible rows or Right click for full tab view" @click="expandRows" @click.prevent.right="tabViews">{{ corner }}</td>
                     <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                   </tr>
 
@@ -843,6 +843,14 @@ li.list-group-item {
   border-radius: 8px 8px 0px 0px;
   background-color: #6aa84f;
   color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.config-btn {
+  border-radius: 8px 8px 8px 8px;
+  background-color: lightgrey;
+  color: black;
   text-align: center;
   font-weight: bold;
 }
