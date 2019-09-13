@@ -14,7 +14,7 @@
 
               <div class="title" title="Start / Stop Engine"><button class="btn btn-success player" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
               <div class="title" contenteditable="true">2<br>sec</div>
-              <div class="title" contenteditable="true">8 tabs<br>engine</div>
+              <div class="title" contenteditable="true">ai click<br>engine</div>
               <div class="title" title="Manual cycles"><button class="btn btn-warning player" @click="play">1</button></div>
             </div>
             
@@ -116,8 +116,11 @@
                         v-for="(cell, colIndex) in row" v-bind:key="colIndex"
                         :row="rowIndex" :col="colIndex"
                         :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
-                        :class="[(rowIndex%(visibleRows+1) == 0) ? tabClass : '',
-                                ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '']"
+                        :class="[
+                                  (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
+                                  ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
+                                  (matrixOps[rowIndex][colIndex] == 'Check') ? checkBtn : ''
+                                ]"
                         @click="onCellClick"
                         >
                           {{ cell }}
@@ -164,7 +167,7 @@
                         :class="[
                                   (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
                                   ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
-                                  (matrixOps[rowIndex][colIndex] == 'Check1') ? checkBtn : ''
+                                  (matrixOps[rowIndex][colIndex] == 'Check') ? checkBtn : ''
                                 ]"
                         @click="onCellClick"
                         >
@@ -367,7 +370,7 @@ Clone AI Teams at:
 github.com/ai-teams`,
       matrixBiz: [
         ['1','STATUS',':','OK','','','','','','','','','','','','','','','','','','','','','','',''],
-        ['a','Check1a',':','Ok','','Check1a',':','Ok','','','','','','','','','','','','','','','','','','',''],
+        ['a','d1aA',':','Ok','','o1aA',':','Ok','','','','','','','','','','','','','','','','','','',''],
         ['2','RATES',':','OK','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
         ['3','DOCS',':','terms','','','','','','','','','','','','','','','','','','','','','','',''],
@@ -385,7 +388,7 @@ github.com/ai-teams`,
       ],
       matrixDev: [
         ['1','STATUS',':','project','','priority','=','1','','votes','=','247','','likes','=','1234','','comments','=','144','','clones','=','24','','',''],
-        ['a','Check1',':','= if ( opsStatus == "ready" ) { state = "Ok" } else { state = "Quit" }','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['a','Check',':','= if ( opsStatus == "ready" ) { state = "Ok" } else { state = "Quit" }','','','','','','','','','','','','','','','','','','','','','','',''],
         ['2','RATES',':','money','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','type',':','script','','','','','','','','','','','','','','','','','','','','','','',''],
         ['3','DOCS',':','terms','','','','','','','','','','','','','','','','','','','','','','',''],
@@ -403,7 +406,7 @@ github.com/ai-teams`,
       ],
       matrixOps: [
         ['1','STATUS',':','ready','','','','','','','','','','','','','','','','','','','','','','',''],
-        ['a','Check1',':','= if ( devStatus == "project" ) { state = "Ok" } else { state = "Quit" }','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['a','Check',':','= if ( devStatus == "project" ) { state = "Ok" } else { state = "Quit" }','','','','','','','','','','','','','','','','','','','','','','',''],
         ['2','RATES',':','money','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
         ['3','DOCS',':','terms','','','','','','','','','','','','','','','','','','','','','','',''],
