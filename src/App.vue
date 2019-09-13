@@ -119,7 +119,8 @@
                         :class="[
                                   (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
                                   ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
-                                  (matrixOps[rowIndex][colIndex] == 'Check') ? checkBtn : ''
+                                  (matrixOps[rowIndex][colIndex] == 'Check') ? checkBtn : '',
+                                  (matrixOps[rowIndex][colIndex] == 'Post') ? postClass : ''
                                 ]"
                         @click="onCellClick"
                         >
@@ -167,7 +168,8 @@
                         :class="[
                                   (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
                                   ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
-                                  (matrixOps[rowIndex][colIndex] == 'Check') ? checkBtn : ''
+                                  (matrixOps[rowIndex][colIndex] == 'Check') ? checkBtn : '',
+                                  (matrixOps[rowIndex][colIndex] == 'Post') ? postClass : ''
                                 ]"
                         @click="onCellClick"
                         >
@@ -349,6 +351,7 @@ export default {
       tabClass: 'tabline',
       tabTitle: 'tabname',
       checkBtn: 'checkbtn',
+      postClass: 'postclass',
       currentTable: '',
       currentRow: '',
       currentCol: '',
@@ -392,7 +395,7 @@ github.com/ai-teams`,
         ['2','RATES',':','money','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','type',':','script','','','','','','','','','','','','','','','','','','','','','','',''],
         ['3','DOCS',':','terms','','','','','','','','','','','','','','','','','','','','','','',''],
-        ['a','type',':','file','','posts',':','24','','comments',':','36','','','','','','','','','','','','','','',''],
+        ['a','Post',':','Toronto W3AI News','','posts',':','24','','comments',':','36','','','','','','','','','','','','','','',''],
         ['4','BOOK',':','done','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','type',':','cal','','','','','','','','','','','','','','','','','','','','','','',''],
         ['5','INPUT',':','create','','','','','','','','','','','','','','','','','','','','','','',''],
@@ -410,7 +413,7 @@ github.com/ai-teams`,
         ['2','RATES',':','money','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
         ['3','DOCS',':','terms','','','','','','','','','','','','','','','','','','','','','','',''],
-        ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['a','Post',':','Toronto W3AI Updates','','','','','','','','','','','','','','','','','','','','','','',''],
         ['4','BOOK',':','done','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
         ['5','INPUT',':','create','','','','','','','','','','','','','','','','','','','','','','',''],
@@ -847,7 +850,17 @@ li.list-group-item {
 .checkbtn {
   border-radius: 8px 8px 8px 8px;
   background-color: lightblue;
-  color: grey;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+.postclass {
+  width: 200px;
+  height: 100px;
+  background-image: url("./assets/DNA.png");
+  background-color: lightpink;
+  color: darkblue;
   text-align: center;
   font-weight: bold;
 }
