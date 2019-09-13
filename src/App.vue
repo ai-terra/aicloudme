@@ -4,32 +4,43 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
           <div class="title-container">
-            <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
-            <div contenteditable="true">
-                <h1 class="long">{{ team.title }}</h1><h1 class="short">{{ team.titleShort }}</h1>
-                <h5 class="long">{{ team.subtitle }}</h5><h5 class="short">{{ team.subtitleShort }}</h5>
+
+            <div class="header-group titles">
+              <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
+              <div contenteditable="true">
+                  <h1 class="long">{{ team.title }}</h1><h1 class="short">{{ team.titleShort }}</h1>
+                  <h5 class="long">{{ team.subtitle }}</h5><h5 class="short">{{ team.subtitleShort }}</h5>
+              </div>
+
+              <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
+              <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
+              <div class="title chromosomes" contenteditable="true">2</div>
             </div>
-            <div class="title"><button class="player btn btn-success" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
-            <div class="title"><button class="player btn btn-warning" @click="play">+</button></div>
-            <div class="title chromosomes" contenteditable="true">under dev daily deploys contributors welcome ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦</div>
-            <div class="title long"><h1>{{ team.newDevTitle }}</h1></div>
-            <div class="title short"><h1>{{ team.newDevTitleShort }}</h1></div>
-            <div class="title news-scroller" contenteditable="true">
-              <ul>
-                <li>Funded: Famous 5 mins AI Team Engine install</li>
-                <li>Voting: Chinese, Hindi, Spanish, Arabic, Russian apps</li>
-                <li>Idea: Add Issue & Help Requests to Job post loop</li>
-              </ul>
+            
+            <div class="header-group devNews">
+              <div class="title long"><h1>{{ team.newDevTitle }}</h1></div>
+              <div class="title short"><h1>{{ team.newDevTitleShort }}</h1></div>
+              <div class="title news-scroller" contenteditable="true">
+                <ul>
+                  <li>Funded: Famous 5 mins AI Team Engine install</li>
+                  <li>Voting: Chinese, Hindi, Spanish, Arabic, Russian apps</li>
+                  <li>Idea: Add Issue & Help Requests to Job post loop</li>
+                </ul>
+              </div>
             </div>
-            <div class="title long"><h1>{{ team.newOpsTitle }}</h1></div>
-            <div class="title short"><h1>{{ team.newOpsTitleShort }}</h1></div>
-            <div class="title news-scroller" contenteditable="true">
-              <ul>
-                <li>COM: My Governance Team & AI Banks</li>
-                <li>ORG: Political Party and Campaign Ops</li>
-                <li>EDU: Research ranking and priorities</li>
-              </ul>
+
+            <div class="header-group opsNews">
+              <div class="title long"><h1>{{ team.newOpsTitle }}</h1></div>
+              <div class="title short"><h1>{{ team.newOpsTitleShort }}</h1></div>
+              <div class="title news-scroller" contenteditable="true">
+                <ul>
+                  <li>COM: My Governance Team & AI Banks</li>
+                  <li>ORG: Political Party and Campaign Ops</li>
+                  <li>EDU: Research ranking and priorities</li>
+                </ul>
+              </div>
             </div>
+
           </div>
 
           <div id="ai-protocol">
@@ -657,7 +668,15 @@ html {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   margin-left: 1rem;
+}
+
+.header-group {
+  width: 33.33%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .title {
@@ -681,7 +700,7 @@ html {
 }
 
 .news-scroller {
-  width: 35rem;
+  width: 80%;
   height: 5.25rem;
   border: 1px solid rgba(108, 167, 84, 1);
 }
