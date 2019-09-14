@@ -15,12 +15,12 @@
               <div class="title" title="Start / Stop Engine"><button class="btn btn-success player" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
               <div class="title" contenteditable="true">
                 <div class="config-btn">2</div>
-                <div class="config-btn">sec</div>
+                <div class="config-btn">&nbsp; sec &nbsp;</div>
               </div>
               <div class="title" title="Manual cycles"><button class="btn btn-warning player" @click="play">1</button></div>
               <div class="title" contenteditable="true">ai click<br>engine</div>
               <div class="title" contenteditable="true">
-                <div class="config-btn">ai | fb</div>
+                <div class="config-btn">&nbsp; ai | fb &nbsp;</div>
                 view
               </div>
             </div>
@@ -397,7 +397,7 @@ github.com/ai-teams`,
         ['a','','','','','','','','','','','','','','','','','','','','','','','','','','']
       ],
       matrixDev: [
-        ['1','STATUS',':','project','','priority','=','1','','votes','=','247','','likes','=','1234','','comments','=','144','','clones','=','24','','',''],
+        ['1','SOCIAL',':','project','','priority','=','1','','votes','=','247','','likes','=','1234','','comments','=','144','','clones','=','24','','',''],
         ['a','Check',':','= if ( opsStatus == "ready" ) { state = "Ok" } else { state = "Quit" }','','','','','','','','','','','','','','','','','','','','','','',''],
         ['2','RATES',':','money','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','type',':','script','','','','','','','','','','','','','','','','','','','','','','',''],
@@ -415,7 +415,7 @@ github.com/ai-teams`,
         ['a','','','','','','','','','','','','','','','','','','','','','','','','','','']
       ],
       matrixOps: [
-        ['1','STATUS',':','ready','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['1','MARKET',':','ready','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','Check',':','= if ( devStatus == "project" ) { state = "Ok" } else { state = "Quit" }','','','','','','','','','','','','','','','','','','','','','','',''],
         ['2','RATES',':','money','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
