@@ -13,9 +13,16 @@
               </div>
 
               <div class="title" title="Start / Stop Engine"><button class="btn btn-success player" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
-              <div class="title" contenteditable="true">2<br>sec</div>
-              <div class="title" contenteditable="true">ai click<br>engine</div>
+              <div class="title" contenteditable="true">
+                <div class="config-btn">2</div>
+                <div class="config-btn">sec</div>
+              </div>
               <div class="title" title="Manual cycles"><button class="btn btn-warning player" @click="play">1</button></div>
+              <div class="title" contenteditable="true">ai click<br>engine</div>
+              <div class="title" contenteditable="true">
+                <div class="config-btn">ai | fb</div>
+                view
+              </div>
             </div>
             
             <div class="header-group devNews">
@@ -58,7 +65,7 @@
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
                     <h3 title="AI FairBook Blockchain - Public market ledger for the project">
-                      &nbsp;&nbsp;&nbsp;AIBlockChain (dev{{ project }}, ops{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'ROI')</h3>
+                      &nbsp;&nbsp;&nbsp;aiFairBook (dev{{ project }}, ops{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'ROI')</h3>
 
                     <table id="progress-table" class="matrix">
                       <tr class="row">
