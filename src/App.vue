@@ -13,14 +13,14 @@
               </div>
 
               <div class="title" title="Start / Stop Engine"><button class="btn btn-success player" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
-              <div class="title" contenteditable="true">
+              <div class="title">
                 <div class="config-btn" title="cycle time: 1-9">2</div>
                 <div class="config-btn" title="cycle time: sec / min">&nbsp; sec &nbsp;</div>
               </div>
               <div class="title" title="Manual cycles"><button class="btn btn-warning player" @click="play">1</button></div>
               <div class="title" contenteditable="true">ai click<br>engine</div>
-              <div class="title" contenteditable="true">
-                <div class="config-btn" title="fun > com > edu > pol > soc > dev switch">&nbsp; fun &nbsp;</div>
+              <div class="title">
+                <div class="config-btn" title="fun > com > edu > pol > soc > dev switch" @click="viewId++">&nbsp; {{ view[viewId%view.length] }} &nbsp;</div>
               </div>
             </div>
             
@@ -331,6 +331,8 @@ export default {
       team: aiteam,
       interval: 'timer', 
       speed: 2000,  // milliseconds
+      view: ['fun', 'com', 'edu', 'pol', 'soc', 'dev'],
+      viewId: 0,
       mode: ['CEO', 'DEV', 'OPS', 'EDU', 'QA', 'UA'],
       modeId: 0,
       backgroundText: `&nbsp; &nbsp;AI&nbsp; &nbsp; &nbsp; &nbsp; Dev &nbsp; &nbsp; Ops
