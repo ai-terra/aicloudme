@@ -20,7 +20,7 @@
               <div class="title" title="Manual cycles"><button class="btn btn-warning player" @click="play">1</button></div>
               <div class="title" contenteditable="true">ai click<br>engine</div>
               <div class="title" contenteditable="true">
-                <div class="config-btn" title="ENtertainment > COmercial > EDucation switch">&nbsp; EN &nbsp;</div>
+                <div class="config-btn" title="fun > com > edu > pol > soc > dev switch">&nbsp; fun &nbsp;</div>
               </div>
             </div>
             
@@ -125,7 +125,7 @@
                         :class="[
                                   (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
                                   ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
-                                  (matrixOps[rowIndex][colIndex] == 'Check') ? checkBtn : '',
+                                  (matrixOps[rowIndex][colIndex] == 'Click') ? checkBtn : '',
                                   (matrixOps[rowIndex][colIndex] == 'Post') ? postClass : ''
                                 ]"
                         @click="onCellClick"
@@ -174,7 +174,7 @@
                         :class="[
                                   (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
                                   ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
-                                  (matrixOps[rowIndex][colIndex] == 'Check') ? checkBtn : '',
+                                  (matrixOps[rowIndex][colIndex] == 'Click') ? checkBtn : '',
                                   (matrixOps[rowIndex][colIndex] == 'Post') ? postClass : ''
                                 ]"
                         @click="onCellClick"
@@ -397,7 +397,7 @@ github.com/ai-teams`,
       ],
       matrixDev: [
         ['1','SOCIAL',':','project','','priority','=','1','','votes','=','247','','likes','=','1234','','comments','=','144','','clones','=','24','','',''],
-        ['a','Check',':','= if ( opsStatus == "ready" ) { state = "Ok" } else { state = "Quit" }','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['a','Click',':','= if ( opsStatus == "ready" ) { state = "Ok" } else { state = "Quit" }','','','','','','','','','','','','','','','','','','','','','','',''],
         ['2','RATES',':','money','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','type',':','script','','','','','','','','','','','','','','','','','','','','','','',''],
         ['3','DOCS',':','terms','','','','','','','','','','','','','','','','','','','','','','',''],
@@ -415,7 +415,7 @@ github.com/ai-teams`,
       ],
       matrixOps: [
         ['1','MARKET',':','ready','','','','','','','','','','','','','','','','','','','','','','',''],
-        ['a','Check',':','= if ( devStatus == "project" ) { state = "Ok" } else { state = "Quit" }','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['a','Click',':','= if ( devStatus == "project" ) { state = "Ok" } else { state = "Quit" }','','','','','','','','','','','','','','','','','','','','','','',''],
         ['2','RATES',':','money','','','','','','','','','','','','','','','','','','','','','','',''],
         ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
         ['3','DOCS',':','terms','','','','','','','','','','','','','','','','','','','','','','',''],
