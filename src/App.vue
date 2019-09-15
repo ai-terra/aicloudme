@@ -65,7 +65,7 @@
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
                     <h3 title="AI FairBook Blockchain - Public market ledger for the project">
-                      &nbsp;&nbsp;&nbsp;aiFairBook (dev{{ project }}, ops{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'ROI')</h3>
+                      &nbsp;&nbsp;&nbsp;aiFairBlock (dev{{ project }}, ops{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'ROI')</h3>
 
                     <table id="progress-table" class="matrix">
                       <tr class="row">
@@ -874,7 +874,7 @@ li.list-group-item {
 .postclass {
   width: 200px;
   height: 100px;
-  background-image: url("./assets/DNA.png");
+  background-image: url("./assets/amp-logo.png");
   background-color: lightpink;
   color: darkblue;
   text-align: center;
