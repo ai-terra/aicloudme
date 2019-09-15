@@ -20,7 +20,7 @@
               <div class="title" title="Manual cycles"><button class="btn btn-warning player" @click="play">1</button></div>
               <div class="title" contenteditable="true">ai click<br>engine</div>
               <div class="title">
-                <div class="config-btn" title="fun > com > edu > pol > soc > dev switch" @click="viewId++">&nbsp; {{ view[viewId%view.length] }} &nbsp;</div>
+                <div class="config-btn" title="fun > com > edu > pol > soc > dev > ops > test" @click="viewId++"><h3>&nbsp;{{ view[viewId%view.length] }}&nbsp;</h3></div>
               </div>
             </div>
             
@@ -331,7 +331,7 @@ export default {
       team: aiteam,
       interval: 'timer', 
       speed: 2000,  // milliseconds
-      view: ['fun', 'com', 'edu', 'pol', 'soc', 'dev'],
+      view: ['fun', 'com', 'edu', 'pol', 'soc', 'dev', 'ops', 'test', 'biz'],
       viewId: 0,
       mode: ['CEO', 'DEV', 'OPS', 'EDU', 'QA', 'UA'],
       modeId: 0,
