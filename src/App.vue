@@ -322,13 +322,13 @@ export default {
       viewId: 0,
       mode: ['CEO', 'DEV', 'OPS', 'EDU', 'QA', 'UA'],
       modeId: 0,
-      backgroundText: `&nbsp; &nbsp;AI&nbsp; &nbsp; &nbsp; &nbsp; Click &nbsp; &nbsp; Ops
+      backgroundText: `&nbsp; &nbsp;AI&nbsp; &nbsp; &nbsp; &nbsp; Web &nbsp; &nbsp; Ops
             <br><br>
             &nbsp; AI&nbsp;Market&nbsp; &nbsp; Engine`,
-      liveText: `&nbsp; &nbsp;live &nbsp; &nbsp;&nbsp;Click &nbsp; &nbsp; Ops
+      liveText: `&nbsp; &nbsp;live &nbsp; &nbsp;&nbsp;Web &nbsp; &nbsp; Ops
             <br><br>
             &nbsp; AI&nbsp;Market&nbsp;&nbsp; Engine`,
-      devText: `&nbsp; &nbsp;AI &nbsp; &nbsp; &nbsp; Click &nbsp; &nbsp; Ops
+      devText: `&nbsp; &nbsp;AI &nbsp; &nbsp; &nbsp; Web &nbsp; &nbsp; Ops
       <br><br>
       &nbsp; AI&nbsp;Market&nbsp;&nbsp; Engine`,
       visibleRows: 1,
@@ -361,7 +361,7 @@ export default {
       textEdit: `
 Hello World!
 
-This is your first AI Market post.
+This is your first AI Economy post.
 Add a check list to transform it in a business project.
 Or add cloud ops to get your AI engine producing value for you.
 
