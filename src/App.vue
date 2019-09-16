@@ -581,7 +581,6 @@ github.com/ai-teams`,
     },
     expandRows() {
       this.visibleRows++;
-      // this.corner = this.header[this.visibleRows - 1].toLowerCase(); - initially the rows where lower letters a, b, c, ... 
       this.corner = this.visibleRows;
       // add blankRows to the matrix table
       let newRow = this.blankTabRow.slice(0); // copy blankTabRow to new array
@@ -599,7 +598,6 @@ github.com/ai-teams`,
       for (let newRows = 0; newRows < this.rowsBatch; newRows++) {
         this.expandRows();
       }
-      // this.corner = this.visibleRows;
     },
     showPause() { // Toggle play button between play '>' and pause '||'
       return this.pause ? '| |' :  '>';
