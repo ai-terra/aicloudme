@@ -322,13 +322,13 @@ export default {
       viewId: 0,
       mode: ['CEO', 'DEV', 'OPS', 'EDU', 'QA', 'UA'],
       modeId: 0,
-      backgroundText: `&nbsp; &nbsp;AI&nbsp; &nbsp; &nbsp; &nbsp; Dev &nbsp; &nbsp; Ops
+      backgroundText: `&nbsp; &nbsp;AI&nbsp; &nbsp; &nbsp; &nbsp; Click &nbsp; &nbsp; Ops
             <br><br>
             &nbsp; AI&nbsp;Team &nbsp; &nbsp; Engine`,
-      liveText: `&nbsp; &nbsp;live &nbsp; &nbsp;&nbsp;Dev &nbsp; &nbsp; Ops
+      liveText: `&nbsp; &nbsp;live &nbsp; &nbsp;&nbsp;Click &nbsp; &nbsp; Ops
             <br><br>
             &nbsp; AI&nbsp;Team &nbsp;&nbsp; Engine`,
-      devText: `&nbsp; &nbsp;AI &nbsp; &nbsp; &nbsp; Dev &nbsp; &nbsp; Ops
+      devText: `&nbsp; &nbsp;AI &nbsp; &nbsp; &nbsp; Click &nbsp; &nbsp; Ops
       <br><br>
       &nbsp; AI&nbsp;Team &nbsp;&nbsp; Engine`,
       visibleRows: 1,
