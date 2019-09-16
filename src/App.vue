@@ -14,10 +14,10 @@
 
               <div class="title" title="Start / Stop Engine"><button class="btn btn-success player" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
               <div class="title">
-                <div class="config-btn" title="cycle time: 1-9">2</div>
-                <div class="config-btn" title="cycle time: sec / min">&nbsp; sec &nbsp;</div>
+                <div class="config-btn" title="cycle time: 1-9" @click="cycleId++">{{ cycle[cycleId%cycle.length] }}</div>
+                <div class="config-btn" title="cycle time: sec / min" @click="timeUnitId++">&nbsp; {{ timeUnit[timeUnitId%timeUnit.length] }} &nbsp;</div>
               </div>
-              <div class="title" title="Manual cycles"><button class="btn btn-warning player" @click="play">1</button></div>
+              <div class="title" title="Manual / batch cycles"><button class="btn btn-warning player" @click="play">1</button></div>
               <div class="title" contenteditable="true">ai click<br>engine</div>
               <div class="title">
                 <div class="config-btn" title="fun > com > edu > pol > soc > dev > ops > test" @click="viewId++"><h3>&nbsp;{{ view[viewId%view.length] }}&nbsp;</h3></div>
@@ -331,6 +331,10 @@ export default {
       team: aiteam,
       interval: 'timer', 
       speed: 2000,  // milliseconds
+      cycle: [1,2,3,4,5,6,7,8,9],
+      cycleId: 1,
+      timeUnit: ['sec', 'min'],
+      timeUnitId: 0,
       view: ['fun', 'com', 'edu', 'pol', 'soc', 'dev', 'ops', 'test', 'biz'],
       viewId: 0,
       mode: ['CEO', 'DEV', 'OPS', 'EDU', 'QA', 'UA'],
