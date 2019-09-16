@@ -227,7 +227,7 @@
               <div id="table-editor">
                 <table class="matrix">
                   <tr class="row">
-                    <td class="cell config-btn" title="Click to expand visible rows or Right click for full tab view" @click="expandRows" @click.prevent.right="tabViews">{{ corner }}</td>
+                    <td class="cell config-btn" title="Click to expand visible rows or Right click for full tab view" @click="expandRows" @click.prevent.right="expandRowsBatch">{{ corner }}</td>
                     <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                   </tr>
 
@@ -353,7 +353,8 @@ export default {
       currentCellVal: '',
       fx: '',
       fxEval: '',
-      corner: 'a',
+      corner: 1,
+      rowsBatch: 5,
       header: ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
       blankTabMatrix: [['a','','','','','','','','','','','','','','','','','','','','','','','','','','']],
       blankTabRow: ['a','','','','','','','','','','','','','','','','','','','','','','','','','',''],
@@ -580,7 +581,8 @@ github.com/ai-teams`,
     },
     expandRows() {
       this.visibleRows++;
-      this.corner = this.header[this.visibleRows - 1].toLowerCase();
+      // this.corner = this.header[this.visibleRows - 1].toLowerCase(); - initially the rows where lower letters a, b, c, ... 
+      this.corner = this.visibleRows;
       // add blankRows to the matrix table
       let newRow = this.blankTabRow.slice(0); // copy blankTabRow to new array
       newRow[0] = this.corner;
@@ -592,12 +594,12 @@ github.com/ai-teams`,
         this.matrixEdit.splice(this.visibleRows + (this.visibleRows + 1) * tab, 0, newRow);
       }
     },
-    tabViews() {
-      // add remaining rows to the end of alphabet
-      for (let rows = this.visibleRows; rows < this.header.length; rows++) {
+    expandRowsBatch() {
+      // add a batch of rows
+      for (let newRows = 0; newRows < this.rowsBatch; newRows++) {
         this.expandRows();
       }
-      this.corner = this.visibleTab;
+      // this.corner = this.visibleRows;
     },
     showPause() { // Toggle play button between play '>' and pause '||'
       return this.pause ? '| |' :  '>';
