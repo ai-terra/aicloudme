@@ -20,7 +20,7 @@
               <div class="title" title="Manual / batch cycles"><button class="btn btn-warning player" @click="play">1</button></div>
               <div class="title" contenteditable="true">ai click<br>engine</div>
               <div class="title">
-                <div class="config-btn" title="com > edu > pol > soc > dev > ops > test > fun" @click="viewId++">&nbsp; {{ view[viewId%view.length] }} &nbsp;</div>view
+                <div class="config-btn" title="com > edu > pol > soc > dev > ops > test > bank" @click="viewId++">&nbsp; {{ view[viewId%view.length] }} &nbsp;</div>view
               </div>
             </div>
             
@@ -318,7 +318,7 @@ export default {
       cycleId: 1,
       timeUnit: ['sec', 'min'],
       timeUnitId: 0,
-      view: ['com', 'edu', 'pol', 'soc', 'dev', 'ops', 'test', 'fun'],
+      view: ['com', 'edu', 'pol', 'soc', 'dev', 'ops', 'test', 'bank'],
       viewId: 0,
       mode: ['CEO', 'DEV', 'OPS', 'EDU', 'QA', 'UA'],
       modeId: 0,
