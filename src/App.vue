@@ -324,13 +324,13 @@ export default {
       modeId: 0,
       backgroundText: `&nbsp; &nbsp;AI&nbsp; &nbsp; &nbsp; &nbsp; Click &nbsp; &nbsp; Ops
             <br><br>
-            &nbsp; AI&nbsp;Team &nbsp; &nbsp; Engine`,
+            &nbsp; AI&nbsp;Market&nbsp; &nbsp; Engine`,
       liveText: `&nbsp; &nbsp;live &nbsp; &nbsp;&nbsp;Click &nbsp; &nbsp; Ops
             <br><br>
-            &nbsp; AI&nbsp;Team &nbsp;&nbsp; Engine`,
+            &nbsp; AI&nbsp;Market&nbsp;&nbsp; Engine`,
       devText: `&nbsp; &nbsp;AI &nbsp; &nbsp; &nbsp; Click &nbsp; &nbsp; Ops
       <br><br>
-      &nbsp; AI&nbsp;Team &nbsp;&nbsp; Engine`,
+      &nbsp; AI&nbsp;Market&nbsp;&nbsp; Engine`,
       visibleRows: 1,
       visibleTab: 1,
       pause: true,
@@ -361,11 +361,11 @@ export default {
       textEdit: `
 Hello World!
 
-This is your first AI Team post.
-Add a test list to transform it in a business project.
-Or add cloud ops to get your team engine live.
+This is your first AI Market post.
+Add a check list to transform it in a business project.
+Or add cloud ops to get your AI engine producing value for you.
 
-Clone AI Teams at:
+Clone AI Engines at:
 github.com/ai-teams`,
       matrixBiz: [
         ['a','STATUS',':','OK','','','','','','','','','','','','','','','','','','','','','','',''],
