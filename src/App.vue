@@ -555,13 +555,20 @@ github.com/ai-teams`,
     },
     onCellClick(el) {
       let mat = this.currentTable = el.target.getAttribute('matrix');   // mat - matrix/table: Biz | Dev | Ops | Edit
-      let m = mat[0].toUpperCase();                                     // m - matrix/table: R | D | O | E
+      let m = mat[0].toUpperCase();                                     // m - matrix/table: B | D | O | E
+
       let col = this.currentCol = el.target.getAttribute('col');        // col - col: 1-26
       let c = this.header[col - 1];                                     // c - col: A-Z
-      let row = this.currentRow = el.target.getAttribute('row');        // row - row: 1 - 26 * 26
-      let r = this.header[row%(this.visibleRows+1) - 1].toLowerCase();  // r - row: a-z
-      let tab = Math.floor(this.currentRow/(this.visibleRows+1) + 1);   // tab - tab 1-8
-      let t = tab;                                                      // t - tab 1-8
+      let row = this.currentRow = el.target.getAttribute('row');        // row - row: 1,... - the row in the matrix table
+      // let r = row;                                                      
+
+      // let tab = Math.floor( row / (this.visibleRows+1) + 1);         // tab - tab 1-8
+      let tab = el.target.getAttribute('tab');
+      let t = tab;                                                      // t - tab a-h
+      
+      let tabrow = el.target.getAttribute('tabrow');                    // r - row: 1,... - the row in the tab
+      let r = tabrow;
+
       let val = this.currentCellVal = el.target.innerHTML.trim();       // val - cell value - string
       let v = val;
 
