@@ -54,11 +54,11 @@
 
             <div id="ai-prog">
               <div class="buttons">
-                <button contenteditable="true" class="next btn btn-warning" @click="setCell('project-table', 3, 5, 'votes')">Rank</button>
+                <button contenteditable="true" class="next btn btn-warning" @click="setCell('b-table', 2, 3, 'Ok')">Rank</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="nextBranch">Next Option</button>
                 <button contenteditable="true" class="next btn btn-primary" @click="addNewRule">New Rule:</button>
                 <input type="text" class="input-add-new" name="new-rule" value="eg: ECO - use ECO first services" size="40" maxlength="40">
-                <!-- <button contenteditable="true" class="next btn btn-primary" @click="addTableRow('progress-table', 8, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Pay</button> -->
+                <!-- <button contenteditable="true" class="next btn btn-primary" @click="addTableRow('b-table', 8, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Pay</button> -->
               </div>
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
@@ -66,7 +66,7 @@
                     <h3 title="AI FairBook Blockchain - Public market ledger for the project">
                       &nbsp;&nbsp;&nbsp;BlockChainLog (dev{{ project }}, ops{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'ROI')</h3>
 
-                    <table id="progress-table" class="matrix">
+                    <table id="b-table" class="matrix">
                       <tr class="row">
                         <td class="cell config-btn" title="Click to expand visible rows" @click="expandRows">{{ corner }}</td>
                         <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
@@ -111,7 +111,7 @@
                     <h3 class="short" title="Dev FairBook - Project & Job Demand in your social network">
                       &nbsp;&nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares]</h3>
 
-                    <table id="project-table" class="matrix">
+                    <table id="d-table" class="matrix">
                       <tr class="row">
                         <td class="cell config-btn" title="Click to expand visible rows" @click="expandRows">{{ corner }}</td>
                         <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
@@ -160,7 +160,7 @@
                     <h3 class="short" title="Ops FairBook - Service & Skills Offer in your social network">
                       &nbsp;&nbsp;&nbsp;service {{ service }}: title[{{ service }}] - owner[{{ service }}] - [shares]</h3>
 
-                    <table id="service-table" class="matrix">
+                    <table id="o-table" class="matrix">
                       <tr class="row">
                         <td class="cell config-btn" title="Click to expand visible rows" @click="expandRows">{{ corner }}</td>
                         <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
@@ -225,7 +225,7 @@
               </div>
 
               <div id="table-editor">
-                <table class="matrix">
+                <table id="e-table" class="matrix">
                   <tr class="row">
                     <td class="cell config-btn" title="Click to expand visible rows or Right click for full tab view" @click="expandRows" @click.prevent.right="expandRowsBatch">{{ corner }}</td>
                     <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
@@ -484,7 +484,7 @@ github.com/ai-teams`,
     },
     readProject() { // Read user edits/updates in project table
       // ToDo readProject()
-      let projectTable = document.getElementById('project-table');  // To move in an ini method?
+      let projectTable = document.getElementById('d-table');  // To move in an ini method?
       
       // Read VOTING, FUNDS, TERMS and BOOK tabs from project table
       for (let row = 2; row <= 8; row=row+2) {
@@ -509,7 +509,7 @@ github.com/ai-teams`,
     },
     readService() { // Read user edits/updates in service table
       // Todo readService()
-      let serviceTable = document.getElementById('service-table');  // To move in an ini method?
+      let serviceTable = document.getElementById('o-table');  // To move in an ini method?
       
       // Read VOTING, FUNDS, TERMS and BOOK tabs from service table
       for (let row = 2; row <= 8; row=row+2) {
@@ -530,9 +530,9 @@ github.com/ai-teams`,
       }
       // done();
     },
-    writeProgress() { // Read user edits/updates in progress table
+    writeProgress() { // Read user edits/updates in progress table - ToDo - To review
       // Todo readService()
-      let serviceTable = document.getElementById('progress-table');  // To move in an ini method?
+      let serviceTable = document.getElementById('b-table');  // To move in an ini method? serviceTable or bizTable (former progress-table)
       
       // Write VOTING, FUNDS, TERMS and BOOK tabs to progress table
       for (let row = 2; row <= 8; row=row+2) {
@@ -1009,9 +1009,9 @@ td:hover {
   display: inline-block;
 }
 
-#project-table,
-#service-table,
-#progress-table {
+#b-table,
+#d-table,
+#o-table {
   width: 100%;
   /* margin: 0px; */
 }
