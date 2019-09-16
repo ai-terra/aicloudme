@@ -559,8 +559,8 @@ github.com/ai-teams`,
 
       let col = this.currentCol = el.target.getAttribute('col');        // col - col: 1-26
       let c = this.header[col - 1];                                     // c - col: A-Z
-      let row = this.currentRow = el.target.getAttribute('row');        // row - row: 1,... - the row in the matrix table
-      // let r = row;                                                      
+      // let row = this.currentRow = el.target.getAttribute('row');        // row - row: 1,... - the row in the matrix table
+      // let tr = row;                                                      
 
       // let tab = Math.floor( row / (this.visibleRows+1) + 1);         // tab - tab 1-8
       let tab = el.target.getAttribute('tab');
