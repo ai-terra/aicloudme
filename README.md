@@ -1,8 +1,8 @@
-# AI PMO web app
+# AI Economy web app
 
-AI PMO Team web app / W3AI social devops protocol
+Free AI Economy web app / W3AI social devops protocol
 
-## AI Team Engine setup
+## AI Market Engine setup
 
 ```
 npm install
