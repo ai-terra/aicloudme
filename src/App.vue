@@ -324,7 +324,7 @@ export default {
       modeId: 0,
       backgroundText: `&nbsp; &nbsp;AI&nbsp; &nbsp; &nbsp; &nbsp; Web &nbsp; &nbsp; Ops
             <br><br>
-            &nbsp; AI&nbsp;Market&nbsp; &nbsp; Engine`,
+            Web AI Combinator`,
       liveText: `&nbsp; &nbsp;live &nbsp; &nbsp;&nbsp;Web &nbsp; &nbsp; Ops
             <br><br>
             &nbsp; AI&nbsp;Market&nbsp;&nbsp; Engine`,
