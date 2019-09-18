@@ -327,10 +327,10 @@ export default {
             AI &nbsp; Combinator`,
       liveText: `&nbsp; &nbsp;live &nbsp; &nbsp;&nbsp;Web &nbsp; &nbsp; Ops
             <br><br>
-            &nbsp; AI&nbsp;Market&nbsp;&nbsp; Engine`,
+            AI &nbsp; Combinator`,
       devText: `&nbsp; &nbsp;AI &nbsp; &nbsp; &nbsp; Web &nbsp; &nbsp; Ops
       <br><br>
-      &nbsp; AI&nbsp;Market&nbsp;&nbsp; Engine`,
+      AI &nbsp; Combinator`,
       visibleRows: 1,
       visibleTab: 1,
       pause: true,
@@ -361,9 +361,9 @@ export default {
       textEdit: `
 Hello World!
 
-This is your first AI Economy post.
+This is your first AI Combinator post.
 Add a check list to transform it in a business project.
-Or add cloud ops to get your AI engine producing value for you.
+Or add operations to get your combinator build and run your options.
 
 Clone AI Engines at:
 github.com/ai-teams`,
