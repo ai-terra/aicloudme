@@ -1,8 +1,8 @@
-# AI Economy web app
+# ai combinator web app
 
-Free AI Economy web app / W3AI social devops protocol
+Open AI combinator web app / W3AI social devops protocol
 
-## AI Market Engine setup
+## AI Combinator Engine setup
 
 ```
 npm install
