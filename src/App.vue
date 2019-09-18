@@ -8,8 +8,8 @@
             <div class="header-group titles">
               <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
               <div contenteditable="true">
-                  <h1 class="long">{{ team.title }}</h1><h1 class="short">{{ team.titleShort }}</h1>
-                  <h5 class="long">{{ team.subtitle }}</h5><h5 class="short">{{ team.subtitleShort }}</h5>
+                  <h1 class="long">{{ team.title }}&nbsp;</h1><h1 class="short">{{ team.titleShort }}</h1>
+                  <h5 class="long">{{ team.subtitle }}</h5><h5 class="short">{{ team.subtitleShort }}&nbsp;</h5>
               </div>
 
               <div class="title" title="Start / Stop Engine"><button class="btn btn-success player" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
@@ -322,13 +322,13 @@ export default {
       viewId: 0,
       mode: ['CEO', 'DEV', 'OPS', 'EDU', 'QA', 'UA'],
       modeId: 0,
-      backgroundText: `&nbsp; &nbsp;AI&nbsp; &nbsp; &nbsp; &nbsp; Web &nbsp; &nbsp; Ops
+      backgroundText: `&nbsp; &nbsp;AI&nbsp; &nbsp; &nbsp; &nbsp; Dev &nbsp; &nbsp; Ops
             <br><br>
             AI &nbsp; Combinator`,
-      liveText: `&nbsp; &nbsp;live &nbsp; &nbsp;&nbsp;Web &nbsp; &nbsp; Ops
+      liveText: `&nbsp; &nbsp;live &nbsp; &nbsp;&nbsp;Dev &nbsp; &nbsp; Ops
             <br><br>
             AI &nbsp; Combinator`,
-      devText: `&nbsp; &nbsp;AI &nbsp; &nbsp; &nbsp; Web &nbsp; &nbsp; Ops
+      devText: `&nbsp; &nbsp;AI &nbsp; &nbsp; &nbsp; Dev &nbsp; &nbsp; Ops
       <br><br>
       AI &nbsp; Combinator`,
       visibleRows: 1,
@@ -363,9 +363,9 @@ Hello World!
 
 This is your first AI Combinator post.
 Add a check list to transform it in a business project.
-Or add operations to get your combinator build and run your options.
+Or add operations to get your combinator build and run your best options.
 
-Clone AI Engines at:
+Clone AI Combinators at:
 github.com/ai-teams`,
       matrixBiz: [
         ['a','STATUS',':','OK?','','','','','','','','','','','','','','','','','','','','','','',''],
@@ -393,7 +393,7 @@ github.com/ai-teams`,
         ['c','DOCS',':','terms','','','','','','','','','','','','','','','','','','','','','','',''],
         ['1','post',':','Toronto W3AI News','','posts',':','24','','comments',':','36','','','','','','','','','','','','','','',''],
         ['d','BOOK',':','done','','','','','','','','','','','','','','','','','','','','','','',''],
-        ['1','type',':','cal','','','','','','','','','','','','','','','','','','','','','','',''],
+        ['1','type',':','calendar','','','','','','','','','','','','','','','','','','','','','','',''],
         ['e','INPUT',':','create','','','','','','','','','','','','','','','','','','','','','','',''],
         ['1','','','','','','','','','','','','','','','','','','','','','','','','','',''],
         ['f','STEPS',':','plan','','','','','','','','','','','','','','','','','','','','','','',''],
