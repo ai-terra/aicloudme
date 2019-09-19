@@ -110,7 +110,7 @@
                         &nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares] - dev{{ project }}</h3>
                       <h3 class="short" title="Dev FairBook - Project & Job Demand in your social network">
                         &nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares]</h3>
-                      <div class="fork">f</div>
+                      <div class="fork" @click="newDevPosts.unshift('New idea')">f</div>
                     </div>
 
                     <table id="d-table" class="matrix">
