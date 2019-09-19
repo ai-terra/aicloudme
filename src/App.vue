@@ -110,7 +110,7 @@
                         &nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares] - dev{{ project }}</h3>
                       <h3 class="short" title="Dev FairBook - Project & Job Demand in your social network">
                         &nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares]</h3>
-                      <div class="fork" @click="newDevPosts.unshift('New idea')">f</div>
+                      <div class="fork" title="Copy Project" @click="newDevPosts.unshift('New project idea')">f</div>
                     </div>
 
                     <table id="d-table" class="matrix">
@@ -157,10 +157,14 @@
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="service in services" v-bind:key="service">
-                    <h3 class="long" title="Ops FairBook - Service & Skills Offer in your social network">
-                      &nbsp;&nbsp;service {{ service }}: title[{{ service }}] - owner[{{ service }}] - [shares] - ops{{ service }}</h3>
-                    <h3 class="short" title="Ops FairBook - Service & Skills Offer in your social network">
-                      &nbsp;&nbsp;service {{ service }}: title[{{ service }}] - owner[{{ service }}] - [shares]</h3>
+
+                    <div class="table-title">
+                      <h3 class="long" title="Ops FairBook - Service & Skills Offer in your social network">
+                        &nbsp;&nbsp;service {{ service }}: title[{{ service }}] - owner[{{ service }}] - [shares] - ops{{ service }}</h3>
+                      <h3 class="short" title="Ops FairBook - Service & Skills Offer in your social network">
+                        &nbsp;&nbsp;service {{ service }}: title[{{ service }}] - owner[{{ service }}] - [shares]</h3>
+                      <div class="fork" title="Copy Service" @click="newOpsPosts.unshift('New service idea')">f</div>
+                    </div>
 
                     <table id="o-table" class="matrix">
                       <tr class="row">
@@ -788,6 +792,11 @@ html {
   /* font-weight: bold; */
   background-color: rgba(108, 167, 84, 1);
   text-align: center;
+  cursor: pointer;
+}
+
+.fork:hover {
+  background-color: rgba(108, 167, 84, .8);
 }
 
 #ai-protocol {
