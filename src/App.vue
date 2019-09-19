@@ -62,7 +62,7 @@
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
                     <h3 title="AI FairBook Blockchain - Public market ledger for the project">
-                      &nbsp;&nbsp;&nbsp;BlockChainLog (dev{{ project }}, ops{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'ROI')</h3>
+                      &nbsp;&nbsp;BlockChainLog (dev{{ project }}, ops{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'ROI')</h3>
 
                     <table id="b-table" class="matrix">
                       <tr class="row">
@@ -104,10 +104,14 @@
               <ul class="list-group">
                 <transition-group name="slide-up" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
-                    <h3 class="long" title="Dev FairBook - Project & Job Demand in your social network">
-                      &nbsp;&nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares] - dev{{ project }}</h3>
-                    <h3 class="short" title="Dev FairBook - Project & Job Demand in your social network">
-                      &nbsp;&nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares]</h3>
+                    
+                    <div class="table-title">
+                      <h3 class="long" title="Dev FairBook - Project & Job Demand in your social network">
+                        &nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares] - dev{{ project }}</h3>
+                      <h3 class="short" title="Dev FairBook - Project & Job Demand in your social network">
+                        &nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares]</h3>
+                      <div class="fork">f</div>
+                    </div>
 
                     <table id="d-table" class="matrix">
                       <tr class="row">
@@ -154,9 +158,9 @@
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="service in services" v-bind:key="service">
                     <h3 class="long" title="Ops FairBook - Service & Skills Offer in your social network">
-                      &nbsp;&nbsp;&nbsp;service {{ service }}: title[{{ service }}] - owner[{{ service }}] - [shares] - ops{{ service }}</h3>
+                      &nbsp;&nbsp;service {{ service }}: title[{{ service }}] - owner[{{ service }}] - [shares] - ops{{ service }}</h3>
                     <h3 class="short" title="Ops FairBook - Service & Skills Offer in your social network">
-                      &nbsp;&nbsp;&nbsp;service {{ service }}: title[{{ service }}] - owner[{{ service }}] - [shares]</h3>
+                      &nbsp;&nbsp;service {{ service }}: title[{{ service }}] - owner[{{ service }}] - [shares]</h3>
 
                     <table id="o-table" class="matrix">
                       <tr class="row">
@@ -766,6 +770,24 @@ html {
   width: 80%;
   height: 6rem;
   border: 1px solid rgba(108, 167, 84, 1);
+}
+
+.table-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fork {
+  width: 3rem;
+  height: 3rem;
+  padding: .5rem;
+  margin-right: 1rem;
+  border-radius: 1.5rem 0 1.5rem 0;
+  color: white;
+  /* font-weight: bold; */
+  background-color: rgba(108, 167, 84, 1);
+  text-align: center;
 }
 
 #ai-protocol {
