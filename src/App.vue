@@ -29,7 +29,8 @@
               <div class="title short" @click="postNameId++"><h1>{{ postName[postNameId%postName.length] }}</h1></div>
               <div class="title news-scroller" contenteditable="true">
                 <ul>
-                  <li v-for="(title, devPostId) in newDevPosts" v-bind:key="devPostId">{{ title }}</li>
+                  <li v-for="(title, devPostId) in newDevPosts.slice(0, 3)" 
+                      v-bind:key="devPostId">{{ title }}</li>
                 </ul>
               </div>
             </div>
@@ -39,7 +40,8 @@
               <div class="title short" @click="opsNameId++"><h1>{{ opsName[opsNameId%opsName.length] }}</h1></div>
               <div class="title news-scroller" contenteditable="true">
                 <ul>
-                  <li v-for="(title, opsPostId) in newOpsPosts" v-bind:key="opsPostId">{{ title }}</li>
+                  <li v-for="(title, opsPostId) in newOpsPosts.slice(0, 3)" 
+                  v-bind:key="opsPostId">{{ title }}</li>
                 </ul>
               </div>
             </div>
