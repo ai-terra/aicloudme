@@ -26,7 +26,7 @@
             
             <div class="header-group devNews">
               <div class="title long"><h1>{{ team.newDevTitle }}</h1></div>
-              <div class="title short"><h1>{{ team.newDevTitleShort }}</h1></div>
+              <div class="title short" @click="postNameId++"><h1>{{ postName[postNameId%postName.length] }}</h1></div>
               <div class="title news-scroller" contenteditable="true">
                 <ul>
                   <li v-for="(title, devPostId) in newDevPosts" v-bind:key="devPostId">{{ title }}</li>
@@ -36,7 +36,7 @@
 
             <div class="header-group opsNews">
               <div class="title long"><h1>{{ team.newOpsTitle }}</h1></div>
-              <div class="title short"><h1>{{ team.newOpsTitleShort }}</h1></div>
+              <div class="title short" @click="opsNameId++"><h1>{{ opsName[opsNameId%opsName.length] }}</h1></div>
               <div class="title news-scroller" contenteditable="true">
                 <ul>
                   <li v-for="(title, opsPostId) in newOpsPosts" v-bind:key="opsPostId">{{ title }}</li>
@@ -318,6 +318,10 @@ export default {
       viewId: 0,
       mode: ['CEO', 'DEV', 'OPS', 'EDU', 'QA', 'UA'],
       modeId: 0,
+      postName: ["post", "dev", "prj", "biz", "bid"],
+      postNameId: 0,
+      opsName: ["ads" , "ops", "srv", "ofr", "ask"],
+      opsNameId: 1,
       backgroundText: `&nbsp; &nbsp;AI&nbsp; &nbsp; &nbsp; &nbsp; Dev &nbsp; &nbsp; Ops
             <br><br>
             AI &nbsp; Combinator`,
