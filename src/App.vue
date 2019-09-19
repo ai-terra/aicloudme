@@ -29,9 +29,7 @@
               <div class="title short"><h1>{{ team.newDevTitleShort }}</h1></div>
               <div class="title news-scroller" contenteditable="true">
                 <ul>
-                  <li>Funded: Famous 5 mins AI Team Engine install</li>
-                  <li>Voting: Chinese, Hindi, Spanish, Arabic, Russian apps</li>
-                  <li>Idea: Add Issue & Help Requests to Job post loop</li>
+                  <li v-for="(title, devPostId) in newDevPosts" v-bind:key="devPostId">{{ title }}</li>
                 </ul>
               </div>
             </div>
@@ -41,9 +39,7 @@
               <div class="title short"><h1>{{ team.newOpsTitleShort }}</h1></div>
               <div class="title news-scroller" contenteditable="true">
                 <ul>
-                  <li>COM: My Governance Team & AI Banks</li>
-                  <li>ORG: Political Party and Campaign Ops</li>
-                  <li>EDU: Research ranking and priorities</li>
+                  <li v-for="(title, opsPostId) in newOpsPosts" v-bind:key="opsPostId">{{ title }}</li>
                 </ul>
               </div>
             </div>
@@ -440,14 +436,14 @@ github.com/ai-teams`,
         ['1','','','','','','','','','','','','','','','','','','','','','','','','','','']
       ],
       newDevPosts: [
-        'Funded: Famous 5 mins AI Team Engine install',
-        'Voting: Chinese, Hindi, Spanish, Arabic, Russian apps',
-        'Idea: Add Issue & Help Requests to Job post loop'
+        'Funded: 5min Combinator install',
+        'Voting: Chinese, Hindi, Spanish',
+        'Idea: Add Job & Help Requests'
       ],
       newOpsPosts: [
-        'COM: My Governance Team & AI Banks',
-        'ORG: Political Party and Campaign Ops',
-        'EDU: Research ranking and priorities'
+        'COM: Governance Team & AI Banks',
+        'ORG: Political Party & Campaign Ops',
+        'EDU: Research ranking & priorities'
       ]
     };
   },
