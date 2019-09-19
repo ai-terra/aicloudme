@@ -110,7 +110,7 @@
                         &nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares] - dev{{ project }}</h3>
                       <h3 class="short" title="Dev FairBook - Project & Job Demand in your social network">
                         &nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares]</h3>
-                      <div class="fork" title="Copy Project" @click="newDevPosts.unshift('New project idea')">f</div>
+                      <div class="fork" title="Fork (copy) Project" @click="newDevPosts.unshift('New project idea')">f</div>
                     </div>
 
                     <table id="d-table" class="matrix">
@@ -163,7 +163,7 @@
                         &nbsp;&nbsp;service {{ service }}: title[{{ service }}] - owner[{{ service }}] - [shares] - ops{{ service }}</h3>
                       <h3 class="short" title="Ops FairBook - Service & Skills Offer in your social network">
                         &nbsp;&nbsp;service {{ service }}: title[{{ service }}] - owner[{{ service }}] - [shares]</h3>
-                      <div class="fork" title="Copy Service" @click="newOpsPosts.unshift('New service idea')">f</div>
+                      <div class="fork" title="Fork (copy) Service" @click="newOpsPosts.unshift('New service idea')">f</div>
                     </div>
 
                     <table id="o-table" class="matrix">
