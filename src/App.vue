@@ -758,7 +758,7 @@ html {
 
 .news-scroller {
   width: 80%;
-  height: 5.25rem;
+  height: 6rem;
   border: 1px solid rgba(108, 167, 84, 1);
 }
 
