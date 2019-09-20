@@ -18,7 +18,7 @@
                 <div class="config-btn" title="cycle time: sec / min" @click="timeUnitId++">&nbsp; {{ timeUnit[timeUnitId%timeUnit.length] }} &nbsp;</div>
               </div>
               <div class="title" title="Manual / batch cycles"><button class="btn btn-warning player" @click="play">1</button></div>
-              <div class="title" contenteditable="true">ai click<br>engine</div>
+              <!-- <div class="title" contenteditable="true">ai click<br>engine</div> -->
               <div class="title">
                 <div class="config-btn" title="com > edu > pol > soc > dev > ops > test > bank" @click="viewId++">&nbsp; {{ view[viewId%view.length] }} &nbsp;</div>view
               </div>
@@ -110,7 +110,7 @@
                         &nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares] - dev{{ project }}</h3>
                       <h3 class="short" title="Dev FairBook - Project & Job Demand in your social network">
                         &nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares]</h3>
-                      <div class="fork" title="Fork (copy) Project" @click="newDevPosts.unshift('New project idea')">f</div>
+                      <div class="fork" title="fork (copy) project" @click="newDevPosts.unshift('New project idea')">f</div>
                     </div>
 
                     <table id="d-table" class="matrix">
@@ -163,7 +163,7 @@
                         &nbsp;&nbsp;service {{ service }}: title[{{ service }}] - owner[{{ service }}] - [shares] - ops{{ service }}</h3>
                       <h3 class="short" title="Ops FairBook - Service & Skills Offer in your social network">
                         &nbsp;&nbsp;service {{ service }}: title[{{ service }}] - owner[{{ service }}] - [shares]</h3>
-                      <div class="fork" title="Fork (copy) Service" @click="newOpsPosts.unshift('New service idea')">f</div>
+                      <div class="fork" title="fork (copy) service" @click="newOpsPosts.unshift('New service idea')">f</div>
                     </div>
 
                     <table id="o-table" class="matrix">
@@ -298,8 +298,8 @@
                 <h4>© Ianta Labs | MIT License</h4>
                 <h4 class="long"><a href="https://github.com/ai-teams">
                 Download Free AI Teams @ Github</a></h4>
-                <h4 class="short"><a href="https://github.com/ai-teams/aicombinator">
-                Free AI Combinator @ Github</a></h4>
+                <h4 class="short"><a href="https://github.com/ai-teams/aicliker">
+                free ai clicker @ github</a></h4>
                 <h4 class="long" contenteditable="true">AI Team Engine / W3AI SNN Protocol</h4>
               </div>            
             </div>             

@@ -1,8 +1,8 @@
-# ai combinator web app
+# ai clicker web app
 
-Open AI combinator web app / W3AI social devops protocol
+Open ai clicker web app / social dev & ops protocol
 
-## AI Combinator Engine setup
+## ai clicker engine setup
 
 ```
 npm install
