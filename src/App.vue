@@ -324,13 +324,13 @@ export default {
       cycleId: 1,
       timeUnit: ['sec', 'min'],
       timeUnitId: 0,
-      view: ['com', 'edu', 'pol', 'soc', 'dev', 'ops', 'test', 'bank'],
+      view: ['run', 'com', 'edu', 'soc', 'dev', 'ops', 'test', 'bank'],
       viewId: 0,
       mode: ['CEO', 'DEV', 'OPS', 'EDU', 'QA', 'UA'],
       modeId: 0,
-      postName: ["post", "dev", "prj", "biz", "bid"],
+      postName: ["plan", "idea", "post", "dev", "repo", "prj", "biz", "bid"],
       postNameId: 0,
-      opsName: ["ads" , "ops", "srv", "ofr", "ask"],
+      opsName: ["ads", "share" ,"ops", "srv", "ofr", "ask"],
       opsNameId: 1,
       backgroundText: `&nbsp; &nbsp;AI&nbsp; &nbsp; &nbsp; &nbsp; Dev &nbsp; &nbsp; Ops
             <br><br>
@@ -455,9 +455,9 @@ github.com/ai-teams`,
         'Idea: Add Job & Help Requests'
       ],
       newOpsPosts: [
-        'COM: Governance Team & AI Banks',
-        'ORG: Political Party & Campaign Ops',
-        'EDU: Research ranking & priorities'
+        'COM: Governance Banks',
+        'ORG: Party Campaign Ops',
+        'EDU: Research priorities'
       ]
     };
   },
