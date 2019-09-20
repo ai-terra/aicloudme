@@ -62,7 +62,7 @@
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in projects" v-bind:key="project">
                     <h3 title="AI FairBook Blockchain - Public market ledger for the project">
-                      &nbsp;&nbsp;BlockChainLog (dev{{ project }}, ops{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'ROI')</h3>
+                      &nbsp;&nbsp;fairBlockChain (dev{{ project }}, ops{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'ROI')</h3>
 
                     <table id="b-table" class="matrix">
                       <tr class="row">
@@ -332,15 +332,15 @@ export default {
       postNameId: 0,
       opsName: ["ads", "share" ,"ops", "srv", "ofr", "ask"],
       opsNameId: 1,
-      backgroundText: `&nbsp; &nbsp;AI&nbsp; &nbsp; &nbsp; &nbsp; Dev &nbsp; &nbsp; Ops
+      backgroundText: `&nbsp; &nbsp;ai&nbsp; &nbsp; &nbsp; &nbsp; plan &nbsp;& &nbsp; share
             <br><br>
-            AI &nbsp; Combinator`,
-      liveText: `&nbsp; &nbsp;live &nbsp; &nbsp;&nbsp;Dev &nbsp; &nbsp; Ops
+            free planet share`,
+      liveText: `&nbsp; &nbsp;live &nbsp; &nbsp;&nbsp;plan &nbsp;& &nbsp; share
             <br><br>
-            AI &nbsp; Combinator`,
-      devText: `&nbsp; &nbsp;AI &nbsp; &nbsp; &nbsp; Dev &nbsp; &nbsp; Ops
+            free planet share`,
+      devText: `&nbsp; &nbsp;fair &nbsp; &nbsp; &nbsp; plan &nbsp;& &nbsp; share
       <br><br>
-      AI &nbsp; Combinator`,
+      free planet share`,
       visibleRows: 1,
       visibleTab: 1,
       pause: true,
