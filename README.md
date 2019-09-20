@@ -1,8 +1,8 @@
-# ai clicker web app
+# ai planet web app
 
-Open ai clicker web app / social dev & ops protocol
+Open ai planet web app / social planet share protocol
 
-## ai clicker engine setup
+## free ai planet engine setup
 
 ```
 npm install

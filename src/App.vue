@@ -297,9 +297,9 @@
                 </h4>
                 <h4>© Ianta Labs | MIT License</h4>
                 <h4 class="long"><a href="https://github.com/ai-teams">
-                Download Free AI Teams @ Github</a></h4>
-                <h4 class="short"><a href="https://github.com/ai-teams/aicliker">
-                free ai clicker @ github</a></h4>
+                Download AI Planet Teams @ Github</a></h4>
+                <h4 class="short"><a href="https://github.com/ai-teams/aiplanet">
+                free ai planet @ github</a></h4>
                 <h4 class="long" contenteditable="true">AI Team Engine / W3AI SNN Protocol</h4>
               </div>            
             </div>             
