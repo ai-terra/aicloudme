@@ -68,7 +68,7 @@
                     <table id="b-table" class="matrix">
                       <tr class="row">
                         <td class="cell config-btn" title="Click to expand visible rows" @click="expandRows">{{ corner }}</td>
-                        <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
+                        <td class="cell tbl-head" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                       </tr>                      
                       <tr class="row" v-for="(row, rowIndex) in matrixBiz" v-bind:key="rowIndex">                          
                         <td contenteditable="true" class="cell" 
@@ -117,7 +117,7 @@
                     <table id="d-table" class="matrix">
                       <tr class="row">
                         <td class="cell config-btn" title="Click to expand visible rows" @click="expandRows">{{ corner }}</td>
-                        <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
+                        <td class="cell tbl-head" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                       </tr>                      
                       <tr class="row" v-for="(row, rowIndex) in matrixDev" v-bind:key="rowIndex">                          
                         <td contenteditable="true" class="cell" 
@@ -170,7 +170,7 @@
                     <table id="o-table" class="matrix">
                       <tr class="row">
                         <td class="cell config-btn" title="Click to expand visible rows" @click="expandRows">{{ corner }}</td>
-                        <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
+                        <td class="cell tbl-head" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                       </tr>
                       <tr class="row" v-for="(row, rowIndex) in matrixOps" v-bind:key="rowIndex">                          
                         <td contenteditable="true" class="cell" 
@@ -235,7 +235,7 @@
                 <table id="e-table" class="matrix">
                   <tr class="row">
                     <td class="cell config-btn" title="Click to expand visible rows or Right click for full tab view" @click="expandRows" @click.prevent.right="expandRowsBatch">{{ corner }}</td>
-                    <td class="cell" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
+                    <td class="cell tbl-head" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                   </tr>
 
                   <tr class="row" v-for="(row, rowIndex) in matrixEdit" v-bind:key="rowIndex">                          
@@ -786,6 +786,10 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.tbl-head {
+  background-color: whitesmoke;
 }
 
 .fork {
