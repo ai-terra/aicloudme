@@ -372,11 +372,11 @@ export default {
       textEdit: `
 Hello World!
 
-This is your first AI Planet post.
-Add a check list to transform it in a business project.
-Or add services to get your AI engine run your best options.
+This is your first Fair Planet post.
+Add a check list to transform it in a business plan.
+Or add services to get your Planet engine run your fair options.
 
-Clone AI Planet Teams at:
+Clone Fair Planet Teams at:
 github.com/ai-teams`,
       matrixBiz: [
         ['a','STATUS',':','OK?','','','','','','','','','','','','','','','','','','','','','','',''],
