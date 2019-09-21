@@ -18,28 +18,29 @@
                 <div class="config-btn" title="cycle time: sec / min" @click="timeUnitId++">&nbsp; {{ timeUnit[timeUnitId%timeUnit.length] }} &nbsp;</div>
               </div>
               <div class="title" title="Manual / batch cycles"><button class="btn btn-warning player" @click="play">1</button></div>
-              <!-- <div class="title" contenteditable="true">ai click<br>engine</div> -->
               <div class="title">
-                <div class="config-btn" title="com > edu > pol > soc > dev > ops > test > bank" @click="viewId++">&nbsp; {{ view[viewId%view.length] }} &nbsp;</div>view
+                <div class="config-btn" title="run > com > edu > soc > dev > ops > test > bank" 
+                  @click="viewId++">&nbsp; {{ view[viewId%view.length] }} &nbsp;</div>walk
               </div>
+              <div class="title" contenteditable="true">sign<br> up | in</div>
             </div>
             
             <div class="header-group devNews">
-              <div class="title long"><h1>{{ team.newDevTitle }}</h1></div>
-              <div class="title short" @click="postNameId++"><h1>{{ postName[postNameId%postName.length] }}</h1></div>
               <div class="title news-scroller" contenteditable="true">
-                <ul>
+                <ul class="scroller">
                   <li v-for="(title, devPostId) in newDevPosts.slice(0, 3)" 
                       v-bind:key="devPostId">{{ title }}</li>
                 </ul>
               </div>
+              <div class="title long"><h1>{{ team.newDevTitle }}&</h1></div>
+              <div class="title short" @click="postNameId++"><h1>{{ postName[postNameId%postName.length] }}&</h1></div>
             </div>
 
             <div class="header-group opsNews">
               <div class="title long"><h1>{{ team.newOpsTitle }}</h1></div>
               <div class="title short" @click="opsNameId++"><h1>{{ opsName[opsNameId%opsName.length] }}</h1></div>
               <div class="title news-scroller" contenteditable="true">
-                <ul>
+                <ul class="scroller">
                   <li v-for="(title, opsPostId) in newOpsPosts.slice(0, 3)" 
                   v-bind:key="opsPostId">{{ title }}</li>
                 </ul>
@@ -371,11 +372,11 @@ export default {
       textEdit: `
 Hello World!
 
-This is your first AI Combinator post.
+This is your first AI Planet post.
 Add a check list to transform it in a business project.
-Or add operations to get your combinator build and run your best options.
+Or add services to get your AI engine run your best options.
 
-Clone AI Combinators at:
+Clone AI Planet Teams at:
 github.com/ai-teams`,
       matrixBiz: [
         ['a','STATUS',':','OK?','','','','','','','','','','','','','','','','','','','','','','',''],
@@ -450,7 +451,7 @@ github.com/ai-teams`,
         ['1','','','','','','','','','','','','','','','','','','','','','','','','','','']
       ],
       newDevPosts: [
-        'Funded: 5min Combinator install',
+        'Funded: 5min ai planet install',
         'Voting: Chinese, Hindi, Spanish',
         'Idea: Add Job & Help Requests'
       ],
@@ -771,9 +772,14 @@ html {
 }
 
 .news-scroller {
-  width: 80%;
+  width: 70%;
   height: 6rem;
   border: 1px solid rgba(108, 167, 84, 1);
+}
+
+.scroller {
+  margin-left: 1rem;
+  padding-left: 1rem;
 }
 
 .table-title {
