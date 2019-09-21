@@ -110,7 +110,7 @@
                       <h3 class="long" title="Dev FairBook - Project & Job Demand in your social network">
                         &nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares] - dev{{ project }}</h3>
                       <h3 class="short" title="Dev FairBook - Project & Job Demand in your social network">
-                        &nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares]</h3>
+                        &nbsp;&nbsp; <div class="icon3x3">{{ projectIcon }}</div>&nbsp;title[{{ project }}] - owner[{{ project }}] - [shares]</h3>
                       <div class="fork" title="fork (copy) project" @click="newDevPosts.unshift('New project idea')">f</div>
                     </div>
 
@@ -350,6 +350,7 @@ export default {
       rules: ['FAST'],
       results: [8],
       projects: [24],
+      projectIcon: '✦✦✦◼◼◼◆◆◆',
       branch: 1,
       branches: [360],
       services: [7],
@@ -1242,6 +1243,22 @@ td:hover {
 
 h4 {
   padding-right: 6rem;
+}
+
+.short {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon3x3 {
+  width: 2.4rem;
+  height: 2.5rem;
+  font-size: .8rem;
+  overflow-wrap: break-word; 
+  border: 0rem;
+  margin: 0rem;
+  padding: 0rem;
+  color: lightseagreen;
 }
 
 @media screen and (min-width: 1200px) {
