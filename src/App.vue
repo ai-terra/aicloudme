@@ -298,9 +298,9 @@
                 </h4>
                 <h4>© Ianta Labs | MIT License</h4>
                 <h4 class="long"><a href="https://github.com/ai-teams">
-                Download AI Planet Teams @ Github</a></h4>
-                <h4 class="short"><a href="https://github.com/ai-teams/aiplanet">
-                free ai planet @ github</a></h4>
+                Download Fair Planet Teams @ Github</a></h4>
+                <h4 class="short"><a href="https://github.com/ai-teams/fairplanetshare">
+                free planet share @ github</a></h4>
                 <h4 class="long" contenteditable="true">AI Team Engine / W3AI SNN Protocol</h4>
               </div>            
             </div>             
@@ -333,15 +333,15 @@ export default {
       postNameId: 0,
       opsName: ["ads", "share" ,"ops", "srv", "ofr", "ask", "rRNA"],
       opsNameId: 1,
-      backgroundText: `&nbsp; &nbsp;ai&nbsp; &nbsp; &nbsp; &nbsp; plan &nbsp;& &nbsp; share
+      backgroundText: `&nbsp; &nbsp;fair&nbsp; &nbsp; &nbsp; &nbsp; plan &nbsp;& &nbsp; share
             <br><br>
-            free planet share`,
+            fair planet share`,
       liveText: `&nbsp; &nbsp;live &nbsp; &nbsp;&nbsp;plan &nbsp;& &nbsp; share
             <br><br>
-            free planet share`,
-      devText: `&nbsp; &nbsp;fair &nbsp; &nbsp; &nbsp; plan &nbsp;& &nbsp; share
+            fair planet share`,
+      devText: `&nbsp; &nbsp;fair &nbsp; &nbsp; &nbsp; planet &nbsp;& &nbsp; share
       <br><br>
-      free planet share`,
+      fair planet share`,
       visibleRows: 1,
       visibleTab: 1,
       pause: true,
