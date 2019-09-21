@@ -110,7 +110,7 @@
                       <h3 class="long" title="Dev FairBook - Project & Job Demand in your social network">
                         &nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares] - dev{{ project }}</h3>
                       <h3 class="short" title="Dev FairBook - Project & Job Demand in your social network">
-                        &nbsp;&nbsp; <div class="icon3x3">{{ projectIcon }}</div>&nbsp;title[{{ project }}] - owner[{{ project }}] - [shares]</h3>
+                        &nbsp;&nbsp; <div class="icon3x3prj">{{ projectIcon }}</div>&nbsp;title[{{ project }}] - owner[{{ project }}] - [shares]</h3>
                       <div class="fork" title="fork (copy) project" @click="newDevPosts.unshift('New project idea')">f</div>
                     </div>
 
@@ -163,7 +163,7 @@
                       <h3 class="long" title="Ops FairBook - Service & Skills Offer in your social network">
                         &nbsp;&nbsp;service {{ service }}: title[{{ service }}] - owner[{{ service }}] - [shares] - ops{{ service }}</h3>
                       <h3 class="short" title="Ops FairBook - Service & Skills Offer in your social network">
-                        &nbsp;&nbsp;service {{ service }}: title[{{ service }}] - owner[{{ service }}] - [shares]</h3>
+                        &nbsp;&nbsp;<div class="icon3x3srv">{{ serviceIcon }}</div>&nbsp;title[{{ service }}] - owner[{{ service }}] - [shares]</h3>
                       <div class="fork" title="fork (copy) service" @click="newOpsPosts.unshift('New service idea')">f</div>
                     </div>
 
@@ -350,7 +350,8 @@ export default {
       rules: ['FAST'],
       results: [8],
       projects: [24],
-      projectIcon: '✦✦✦◼◼◼◆◆◆',
+      projectIcon: '◼◼◼◼◼◼◼◼◼',
+      serviceIcon: '◼◼◼◼◼◼◼◼◼',
       branch: 1,
       branches: [360],
       services: [7],
@@ -697,6 +698,7 @@ github.com/ai-teams`,
       // let servicesNo = this.services.length;
       this.services.unshift(Math.floor(Math.random()*100)); // add service to top
       this.services.pop();  // removes the last service
+      this.serviceIcon = this.generateIcon3x3(this.services[0], '◼');
     },
     // ToDo - To include in Processor / Eval workflow
     addTableRow(tableId, contextId, array) {
@@ -1258,7 +1260,7 @@ h4 {
   flex-direction: row;
 }
 
-.icon3x3 {
+.icon3x3prj {
   font-family: monospace;
   width: 2.4rem;
   height: 2.4rem;
@@ -1268,7 +1270,20 @@ h4 {
   /* border: 1px solid lightgray; */
   margin: 0rem;
   padding: 0rem;
-  color: lightseagreen;
+  color: #f1453d;
+}
+
+.icon3x3srv {
+  font-family: monospace;
+  width: 2.4rem;
+  height: 2.4rem;
+  font-size: .8rem;
+  overflow-y: hidden;
+  overflow-wrap: break-word; 
+  /* border: 1px solid lightgray; */
+  margin: 0rem;
+  padding: 0rem;
+  color: #1eaaf1;
 }
 
 @media screen and (min-width: 1200px) {
