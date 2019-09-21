@@ -1,8 +1,8 @@
-# ai planet web app
+# fair planet share web app
 
-Open ai planet web app / social planet share protocol
+Free planet share web app / fair social planet protocol
 
-## free ai planet engine setup
+## planetshare engine setup
 
 ```
 npm install
