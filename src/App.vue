@@ -676,10 +676,18 @@ github.com/ai-teams`,
     addNewRule() {
       this.rules.push('new rule');
     },
+    generateIcon3x3(index, symbol) {
+      let hex = index.toString(2);
+      hex = hex + hex;
+      hex = hex.replace(/[0]/g, ' ');
+      hex = hex.replace(/[1]/g, symbol);
+      return hex;
+    },
     nextProject() {
       // let projectsNo = this.projects.length;
       this.projects.push(Math.floor(Math.random()*100)); // add project to end/bottom
       this.projects.shift();  // removes the first project
+      this.projectIcon = this.generateIcon3x3(this.projects[0], '◼');
       // ToDo: add branches and results structures to project data structure - Code below is just demo/dummy
       this.branches.push(Math.floor(Math.random()*100));
       this.branches.shift();
@@ -1251,11 +1259,13 @@ h4 {
 }
 
 .icon3x3 {
+  font-family: monospace;
   width: 2.4rem;
-  height: 2.5rem;
+  height: 2.4rem;
   font-size: .8rem;
+  overflow-y: hidden;
   overflow-wrap: break-word; 
-  border: 0rem;
+  /* border: 1px solid lightgray; */
   margin: 0rem;
   padding: 0rem;
   color: lightseagreen;
