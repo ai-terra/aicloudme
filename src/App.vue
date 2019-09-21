@@ -32,8 +32,8 @@
                       v-bind:key="devPostId">{{ title }}</li>
                 </ul>
               </div>
-              <div class="title long"><h1>{{ team.newDevTitle }}&</h1></div>
-              <div class="title short" @click="postNameId++"><h1>{{ postName[postNameId%postName.length] }}&</h1></div>
+              <div class="title long"><h1>{{ team.newDevTitle }}</h1></div>
+              <div class="title short" @click="postNameId++"><h1>{{ postName[postNameId%postName.length] }}</h1></div>
             </div>
 
             <div class="header-group opsNews">
@@ -329,9 +329,9 @@ export default {
       viewId: 0,
       mode: ['CEO', 'DEV', 'OPS', 'EDU', 'QA', 'UA'],
       modeId: 0,
-      postName: ["plan", "idea", "post", "dev", "repo", "prj", "biz", "bid"],
+      postName: ["plan", "idea", "post", "dev", "repo", "prj", "biz", "bid", "rDNA"],
       postNameId: 0,
-      opsName: ["ads", "share" ,"ops", "srv", "ofr", "ask"],
+      opsName: ["ads", "share" ,"ops", "srv", "ofr", "ask", "rRNA"],
       opsNameId: 1,
       backgroundText: `&nbsp; &nbsp;ai&nbsp; &nbsp; &nbsp; &nbsp; plan &nbsp;& &nbsp; share
             <br><br>
