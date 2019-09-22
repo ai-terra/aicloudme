@@ -8,8 +8,8 @@
             <div class="header-group titles">
               <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
               <div contenteditable="true">
-                  <h1 class="long">{{ team.title }}&nbsp;</h1><h1 class="short">{{ team.titleShort }}</h1>
-                  <h5 class="long">{{ team.subtitle }}</h5><h5 class="short">{{ team.subtitleShort }}&nbsp;</h5>
+                  <h1 class="long">{{ team.title }}&nbsp;</h1><h1 class="short">{{ team.titleShort }}&nbsp;</h1>
+                  <h5 class="long">{{ team.subtitle }}&nbsp;</h5><h5 class="short">{{ team.subtitleShort }}&nbsp;</h5>
               </div>
 
               <div class="title" title="Start / Stop Engine"><button class="btn btn-success player" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
@@ -22,7 +22,11 @@
                 <div class="config-btn" title="run > com > edu > soc > dev > ops > test > bank" 
                   @click="viewId++">&nbsp; {{ view[viewId%view.length] }} &nbsp;</div>walk
               </div>
-              <div class="title" contenteditable="true">sign<br> up | in</div>
+              <div class="title" contenteditable="true">
+                <div class="config-btn">&nbsp;Sign Up&nbsp;</div>
+                <div class="config-btn">&nbsp;Sign In&nbsp;</div>
+
+              </div>
             </div>
             
             <div class="header-group devNews">
@@ -111,7 +115,7 @@
                         &nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares] - dev{{ project }}</h3>
                       <h3 class="short" title="Dev FairBook - Project & Job Demand in your social network">
                         &nbsp;&nbsp; <div class="icon3x3prj">{{ projectIcon }}</div>&nbsp;title[{{ project }}] - owner[{{ project }}] - [shares]</h3>
-                      <div class="fork" title="fork (copy) project" @click="newDevPosts.unshift('New project idea')">f</div>
+                      <div class="fork" title="fork (copy) project" @click="onProjectFork">f</div>
                     </div>
 
                     <table id="d-table" class="matrix">
@@ -164,7 +168,7 @@
                         &nbsp;&nbsp;service {{ service }}: title[{{ service }}] - owner[{{ service }}] - [shares] - ops{{ service }}</h3>
                       <h3 class="short" title="Ops FairBook - Service & Skills Offer in your social network">
                         &nbsp;&nbsp;<div class="icon3x3srv">{{ serviceIcon }}</div>&nbsp;title[{{ service }}] - owner[{{ service }}] - [shares]</h3>
-                      <div class="fork" title="fork (copy) service" @click="newOpsPosts.unshift('New service idea')">f</div>
+                      <div class="fork" title="fork (copy) service" @click="onServiceFork">f</div>
                     </div>
 
                     <table id="o-table" class="matrix">
@@ -313,6 +317,7 @@
 </template>
 
 <script>
+import axios from 'axios';
 import aiteam from './assets/ai-team.json';
 export default {
   name: "app",
@@ -676,6 +681,18 @@ github.com/ai-teams`,
     },
     addNewRule() {
       this.rules.push('new rule');
+    },
+    onProjectFork() {
+      this.newOpsPosts.unshift('New project idea');
+      axios.post('https://aiplanet.firebaseio.com/projects.json', this.matrixDev)
+        .then(res => console.log(res))
+        .catch(err => console.log(err));
+    },
+    onServiceFork() {
+      this.newOpsPosts.unshift('New service idea');
+      axios.post('https://aiplanet.firebaseio.com/services.json', this.matrixOps)
+        .then(res => console.log(res))
+        .catch(err => console.log(err));
     },
     generateIcon3x3(index, symbol) {
       let hex = index.toString(2);
