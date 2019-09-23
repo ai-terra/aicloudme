@@ -133,7 +133,8 @@
                                   (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
                                   ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
                                   (matrixOps[rowIndex][colIndex] == 'Click') ? checkBtn : '',
-                                  (matrixOps[rowIndex][colIndex] == 'Post') ? postClass : ''
+                                  (matrixOps[rowIndex][colIndex] == 'Post') ? postClass : '',
+                                  ((matrixOps[rowIndex][colIndex] != 'Post') && fbview )? noView : ''
                                 ]"
                         @click="onCellClick"
                         >
@@ -361,6 +362,8 @@ export default {
       load: true,
       rules: ['FAST'],
       results: [8],
+      fbview: true,
+      noView: 'noview',
       viewProjects: [24],
       projects: [],
       projectIcon: '◼◼◼◼◼◼◼◼◼',
@@ -1321,6 +1324,10 @@ h4 {
   margin: 0rem;
   padding: 0rem;
   color: #1eaaf1;
+}
+
+.noview {
+  display: none;
 }
 
 @media screen and (min-width: 1200px) {
