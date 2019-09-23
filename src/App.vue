@@ -23,7 +23,7 @@
                 <div class="config-btn" title="run > com > edu > soc > dev > ops > test > bank" 
                   @click="viewId++">&nbsp; {{ view[viewId%view.length] }} &nbsp;</div>
                 <div class="config-btn" title="View posts or view table" 
-                  @click="fbview = !fbview">&nbsp; {{ fbview ? 'posts' : 'table' }} &nbsp;</div>
+                  @click="fbview = !fbview">&nbsp; {{ fbview ? 'posts' : 'edit' }} &nbsp;</div>
               </div>
               <div class="title" contenteditable="true">
                 <div class="config-btn">&nbsp;Sign Up&nbsp;</div>
@@ -472,7 +472,7 @@ github.com/aiteams`,
         ['1','','','','','','','','','','','','','','','','','','','','','','','','','','']
       ],
       newDevPosts: [
-        'Funded: 5min ai planet install',
+        'Funded: 5min ai engine install',
         'Voting: Chinese, Hindi, Spanish',
         'Idea: Add Job & Help Requests'
       ],
