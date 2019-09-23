@@ -65,7 +65,7 @@
               </div>
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
-                  <li class="list-group-item" v-for="project in projects" v-bind:key="project">
+                  <li class="list-group-item" v-for="project in viewProjects" v-bind:key="project">
                     <h3 title="AI FairBook Blockchain - Public market ledger for the project">
                       &nbsp;&nbsp;fairBlockChain (dev{{ project }}, ops{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'ROI')</h3>
 
@@ -108,7 +108,7 @@
               </div>
               <ul class="list-group">
                 <transition-group name="slide-up" type="animation" appear>
-                  <li class="list-group-item" v-for="project in projects" v-bind:key="project">
+                  <li class="list-group-item" v-for="project in viewProjects" v-bind:key="project">
                     
                     <div class="table-title">
                       <h3 class="long" title="Dev FairBook - Project & Job Demand in your social network">
@@ -317,7 +317,14 @@
 </template>
 
 <script>
-import axios from 'axios';
+import axios from 'axios';  // for connecting to Frirebase RTDB
+
+import db from './db.js';
+// import firebase from 'firebase/app' // as part of Vuefire to nennect to Firestore
+// import 'firebase/firestore'
+
+// const db = firebase.initializeApp({ projectId: 'aiplanet' }).firestore()
+
 import aiteam from './assets/ai-team.json';
 export default {
   name: "app",
@@ -354,7 +361,8 @@ export default {
       load: true,
       rules: ['FAST'],
       results: [8],
-      projects: [24],
+      viewProjects: [24],
+      projects: [],
       projectIcon: '◼◼◼◼◼◼◼◼◼',
       serviceIcon: '◼◼◼◼◼◼◼◼◼',
       branch: 1,
@@ -469,6 +477,11 @@ github.com/ai-teams`,
       ]
     };
   },
+
+  firestore: {
+    projects: db.collection('projects')
+  },
+
   methods: {
     start() {
       this.pause = false;
@@ -683,10 +696,17 @@ github.com/ai-teams`,
       this.rules.push('new rule');
     },
     onProjectFork() {
-      this.newOpsPosts.unshift('New project idea');
-      axios.post('https://aiplanet.firebaseio.com/projects.json', this.matrixDev)
-        .then(res => console.log(res))
-        .catch(err => console.log(err));
+      this.newDevPosts.unshift('New project idea');
+
+      const lines = { ...this.matrixDev }
+
+      db.collection('projects').add({
+          tablelines: lines
+        });
+      // axios.post('https://aiplanet.firebaseio.com/projects.json', this.matrixDev)
+      // axios.post('https://firestore.googleapis.com/v1/projects/aiplanet/databases/(default)/documents/projects', this.matrixDev)
+      //   .then(res => console.log(res))
+      //   .catch(err => console.log(err));
     },
     onServiceFork() {
       this.newOpsPosts.unshift('New service idea');
@@ -702,10 +722,10 @@ github.com/ai-teams`,
       return hex;
     },
     nextProject() {
-      // let projectsNo = this.projects.length;
-      this.projects.push(Math.floor(Math.random()*100)); // add project to end/bottom
-      this.projects.shift();  // removes the first project
-      this.projectIcon = this.generateIcon3x3(this.projects[0], '◼');
+      // let projectsNo = this.viewProjects.length;
+      this.viewProjects.push(Math.floor(Math.random()*100)); // add project to end/bottom
+      this.viewProjects.shift();  // removes the first project
+      this.projectIcon = this.generateIcon3x3(this.viewProjects[0], '◼');
       // ToDo: add branches and results structures to project data structure - Code below is just demo/dummy
       this.branches.push(Math.floor(Math.random()*100));
       this.branches.shift();

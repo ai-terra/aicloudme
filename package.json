@@ -11,7 +11,9 @@
     "axios": "^0.19.0",
     "core-js": "^2.6.5",
     "eslint-utils": "^1.4.2",
-    "vue": "^2.6.10"
+    "firebase": "^6.6.2",
+    "vue": "^2.6.10",
+    "vuefire": "^2.1.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.9.0",
