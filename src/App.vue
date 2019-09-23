@@ -305,11 +305,11 @@
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax </a>
                 </h4>
                 <h4>© Ianta Labs | MIT License</h4>
-                <h4 class="long"><a href="https://github.com/ai-teams">
-                Download Fair Planet Teams @ Github</a></h4>
-                <h4 class="short"><a href="https://github.com/ai-teams/fairplanetshare">
-                free planet share @ github</a></h4>
-                <h4 class="long" contenteditable="true">AI Team Engine / W3AI SNN Protocol</h4>
+                <h4 class="long"><a href="https://github.com/aiteams">
+                innovation engines @ github</a></h4>
+                <h4 class="short"><a href="https://github.com/aiteams/aivisions">
+                aivisions app @ github</a></h4>
+                <h4 class="long" contenteditable="true">Innovation Engine / W3AI SNN Protocol</h4>
               </div>            
             </div>             
           </div>
@@ -345,9 +345,9 @@ export default {
       viewId: 0,
       mode: ['CEO', 'DEV', 'OPS', 'EDU', 'QA', 'UA'],
       modeId: 0,
-      postName: ["plan", "idea", "post", "dev", "repo", "prj", "biz", "bid", "rDNA"],
+      postName: ["vis", "idea", "post", "dev", "repo", "prj", "bid", "rDNA"],
       postNameId: 0,
-      opsName: ["ads", "share" ,"ops", "srv", "ofr", "ask", "rRNA"],
+      opsName: ["ads" ,"ops", "srv", "offr", "ask", "rRNA"],
       opsNameId: 1,
       backgroundText: `&nbsp; &nbsp;fair&nbsp; &nbsp; &nbsp; &nbsp; plan &nbsp;& &nbsp; share
             <br><br>
@@ -360,12 +360,12 @@ export default {
       fair planet share`,
       visibleRows: 1,
       visibleTab: 1,
-      pause: false,
+      pause: true,
       show: true,
       load: true,
       rules: ['FAST'],
       results: [8],
-      fbview: true,
+      fbview: false,
       noView: 'noview',
       viewProjects: [24],
       projects: [],
