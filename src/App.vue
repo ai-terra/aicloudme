@@ -20,7 +20,9 @@
               <div class="title" title="Manual / batch cycles"><button class="btn btn-warning player" @click="play">1</button></div>
               <div class="title">
                 <div class="config-btn" title="run > com > edu > soc > dev > ops > test > bank" 
-                  @click="viewId++">&nbsp; {{ view[viewId%view.length] }} &nbsp;</div>walk
+                  @click="viewId++">&nbsp; {{ view[viewId%view.length] }} &nbsp;</div>
+                <div class="config-btn" title="View posts or view table" 
+                  @click="fbview = !fbview">&nbsp; {{ fbview ? 'posts' : 'table' }} &nbsp;</div>
               </div>
               <div class="title" contenteditable="true">
                 <div class="config-btn">&nbsp;Sign Up&nbsp;</div>
