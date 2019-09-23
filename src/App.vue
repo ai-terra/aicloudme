@@ -12,7 +12,8 @@
                   <h5 class="long">{{ team.subtitle }}&nbsp;</h5><h5 class="short">{{ team.subtitleShort }}&nbsp;</h5>
               </div>
 
-              <div class="title" title="Start / Stop Engine"><button class="btn btn-success player" @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
+              <div class="title" title="Start / Stop Engine"><button class="btn btn-success player" 
+                @click="pause ? start() : stop()">{{ pause ? '>' : '| |'}}</button></div>
               <div class="title">
                 <div class="config-btn" title="cycle time: 1-9" @click="cycleId++">{{ cycle[cycleId%cycle.length] }}</div>
                 <div class="config-btn" title="cycle time: sec / min" @click="timeUnitId++">&nbsp; {{ timeUnit[timeUnitId%timeUnit.length] }} &nbsp;</div>
@@ -359,7 +360,7 @@ export default {
       fair planet share`,
       visibleRows: 1,
       visibleTab: 1,
-      pause: true,
+      pause: false,
       show: true,
       load: true,
       rules: ['FAST'],

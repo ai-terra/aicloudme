@@ -1,8 +1,8 @@
-# fair planet share web app
+# ai visions web app
 
-Free planet share web app / fair social planet protocol
+ai visions web app / social innovation protocol
 
-## planetshare engine setup
+## ai innovation engine install
 
 ```
 npm install
@@ -34,4 +34,4 @@ npm run lint
 
 ### Customize configuration
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Edit src/assets/ai-team.json
