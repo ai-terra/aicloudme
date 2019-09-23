@@ -307,8 +307,8 @@
                 <h4>© Ianta Labs | MIT License</h4>
                 <h4 class="long"><a href="https://github.com/aiteams">
                 innovation engines @ github</a></h4>
-                <h4 class="short"><a href="https://github.com/aiteams/aivisions">
-                ai visions app @ github</a></h4>
+                <h4 class="short"><a href="https://github.com/aiteams/livevis">
+                live vision app @ github</a></h4>
                 <h4 class="long" contenteditable="true">Innovation Engine / W3AI SNN Protocol</h4>
               </div>            
             </div>             
@@ -393,11 +393,12 @@ export default {
       textEdit: `
 Hello World!
 
-This is your first ai vision.
-Add a check list to transform it in a business plan.
+This is your first vision post.
+Add a check list to transform it in a live business plan.
 Or add your services to help innovators worldwide.
 
-Clone innovation teams at:
+Live your dreams!
+Join ai innovation teams at:
 github.com/aiteams`,
       matrixBiz: [
         ['a','STATUS',':','OK?','','','','','','','','','','','','','','','','','','','','','','',''],
