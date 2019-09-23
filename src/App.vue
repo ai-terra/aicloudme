@@ -349,15 +349,15 @@ export default {
       postNameId: 0,
       opsName: ["ads" ,"ops", "srv", "offr", "ask", "rRNA"],
       opsNameId: 1,
-      backgroundText: `&nbsp; &nbsp;fair&nbsp; &nbsp; &nbsp; &nbsp; plan &nbsp;& &nbsp; share
+      backgroundText: `&nbsp;win &nbsp; &nbsp; vision &nbsp;&nbsp; &nbsp; ops
             <br><br>
-            fair planet share`,
-      liveText: `&nbsp; &nbsp;live &nbsp; &nbsp;&nbsp;plan &nbsp;& &nbsp; share
+            ai &nbsp;team &nbsp; &nbsp; engine`,
+      liveText: `&nbsp;live &nbsp; &nbsp; vision &nbsp;&nbsp; &nbsp; ops
             <br><br>
-            fair planet share`,
-      devText: `&nbsp; &nbsp;fair &nbsp; &nbsp; &nbsp; planet &nbsp;& &nbsp; share
+            ai &nbsp;team &nbsp; &nbsp; engine`,
+      devText: `&nbsp;rank &nbsp; &nbsp; &nbsp;vision &nbsp;&nbsp; &nbsp; ops
       <br><br>
-      fair planet share`,
+      ai &nbsp;team &nbsp; &nbsp; engine`,
       visibleRows: 1,
       visibleTab: 1,
       pause: true,
