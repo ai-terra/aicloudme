@@ -308,7 +308,7 @@
                 <h4 class="long"><a href="https://github.com/aiteams">
                 innovation engines @ github</a></h4>
                 <h4 class="short"><a href="https://github.com/aiteams/aivisions">
-                aivisions app @ github</a></h4>
+                ai visions app @ github</a></h4>
                 <h4 class="long" contenteditable="true">Innovation Engine / W3AI SNN Protocol</h4>
               </div>            
             </div>             
