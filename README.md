@@ -1,6 +1,6 @@
 # ai visions web app
 
-ai visions web app / social innovation protocol
+ai visions web app / open social innovation protocol
 
 ## ai innovation engine install
 
