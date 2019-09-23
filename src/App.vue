@@ -393,12 +393,12 @@ export default {
       textEdit: `
 Hello World!
 
-This is your first Fair Planet post.
+This is your first ai vision.
 Add a check list to transform it in a business plan.
-Or add services to get your Planet engine run your fair options.
+Or add your services to help innovators worldwide.
 
-Clone Fair Planet Teams at:
-github.com/ai-teams`,
+Clone innovation teams at:
+github.com/aiteams`,
       matrixBiz: [
         ['a','STATUS',':','OK?','','','','','','','','','','','','','','','','','','','','','','',''],
         ['1','da-State',':','-','','oa-State',':','-','','','','','','','','','','','','','','','','','','',''],
