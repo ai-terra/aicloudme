@@ -349,15 +349,15 @@ export default {
       postNameId: 0,
       opsName: ["ads" ,"ops", "srv", "offr", "ask", "rRNA"],
       opsNameId: 1,
-      backgroundText: `&nbsp;win &nbsp;&nbsp; vis &nbsp;&nbsp; ops
+      backgroundText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;web &nbsp; app
             <br><br>
-            ai team&nbsp; engine`,
-      liveText: `&nbsp;live &nbsp;&nbsp; vis &nbsp;&nbsp; ops
+            &nbsp;ai web &nbsp;&nbsp; cells`,
+      liveText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;web &nbsp; app
             <br><br>
-            ai team&nbsp; engine`,
-      devText: `&nbsp;rank &nbsp;&nbsp; vis &nbsp;&nbsp; ops
+            &nbsp;ai web &nbsp;&nbsp; cells`,
+      devText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;dev &nbsp; ops
       <br><br>
-      ai team&nbsp; engine`,
+      &nbsp;ai web &nbsp;&nbsp; cells`,
       visibleRows: 1,
       visibleTab: 1,
       pause: true,
@@ -393,13 +393,13 @@ export default {
       textEdit: `
 Hello World!
 
-This is your first vision post.
-Add a check list to transform it in a live business plan.
-Or add your services to help innovators worldwide.
+This is just another ai web log.
+Add a check list to transform it in an ai web plan.
+Or add your services to join ai innovators worldwide.
 
-Live your dreams!
-Join ai innovation teams at:
-github.com/aiteams`,
+Live ai development
+Clone ai web cells:
+github.com/ai-cell`,
       matrixBiz: [
         ['a','STATUS',':','OK?','','','','','','','','','','','','','','','','','','','','','','',''],
         ['1','da-State',':','-','','oa-State',':','-','','','','','','','','','','','','','','','','','','',''],
