@@ -992,11 +992,16 @@ li.list-group-item {
 
 .tabline {
   border-bottom: 1px solid #6aa84f;
+  /* border-bottom: 1px solid peru; */
+  /* border-bottom: 1px solid grey; */
 }
 
 .tabname {
-  border-radius: 8px 8px 0px 0px;
-  background-color: #6aa84f;
+  border-radius: 10px 10px 0px 0px;
+  background-color: rgba(108, 167, 84, .7);
+  /* background-color: #6aa84f; */
+  /* background-color: burlywood; */
+  /* background-color: lightslategrey; */
   color: white;
   text-align: center;
   font-weight: bold;
@@ -1026,6 +1031,7 @@ li.list-group-item {
   color: darkblue;
   text-align: center;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .cell:nth-child(even) {
