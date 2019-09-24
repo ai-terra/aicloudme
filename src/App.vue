@@ -23,7 +23,7 @@
                 <div class="config-btn" title="run > com > edu > soc > dev > ops > test > bank" 
                   @click="viewId++">&nbsp; {{ view[viewId%view.length] }} &nbsp;</div>
                 <div class="config-btn" title="View posts or view table" 
-                  @click="fbview = !fbview">&nbsp; {{ fbview ? 'posts' : 'edit' }} &nbsp;</div>
+                  @click="fbview = !fbview">&nbsp; {{ fbview ? 'web' : 'edit' }} &nbsp;</div>
               </div>
               <div class="title" contenteditable="true">
                 <div class="config-btn">&nbsp;Sign Up&nbsp;</div>
@@ -136,8 +136,7 @@
                                   (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
                                   ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
                                   (matrixOps[rowIndex][colIndex] == 'Click') ? checkBtn : '',
-                                  (matrixOps[rowIndex][colIndex] == 'Post') ? postClass : '',
-                                  ((matrixOps[rowIndex][colIndex] != 'Post') && fbview )? noView : ''
+                                  (matrixOps[rowIndex][colIndex] == 'Post') ? postClass : ''
                                 ]"
                         @click="onCellClick"
                         >
@@ -418,13 +417,16 @@ github.com/ai-cell`,
         ['h','PAY',':','PAID?','','','','','','','','','','','','','','','','','','','','','','',''],
         ['1','dh-State',':','-','','oh-State',':','-','','','','','','','','','','','','','','','','','','','']
       ],
+      listDev: [
+        {title: 'Toronto W3AI News', post: 'bla bla, bla', author: 'SI'}
+      ],  // rows of posts, docs, links, obj, etc from matrixDev
       matrixDev: [
         ['a','SOCIAL',':','project','','title',':','Innovation 1','','priority','=','1','','votes','=','247','','comments','=','144','','clones','=','24','','',''],
         ['1','Click',':','= if ( oa-Market == "ready" ) { da-State = "Ok" } else { da-State = "Quit" }','','','','','','','','','','','','','','','','','','','','','','',''],
         ['b','RATES',':','money','','','','','','','','','','','','','','','','','','','','','','',''],
         ['1','type',':','script','','','','','','','','','','','','','','','','','','','','','','',''],
         ['c','DOCS',':','terms','','','','','','','','','','','','','','','','','','','','','','',''],
-        ['1','post',':','Toronto W3AI News','','posts',':','24','','comments',':','36','','','','','','','','','','','','','','',''],
+        ['1','Post',':','Toronto W3AI News','','posts',':','24','','comments',':','36','','','','','','','','','','','','','','',''],
         ['d','BOOK',':','done','','','','','','','','','','','','','','','','','','','','','','',''],
         ['1','type',':','calendar','','','','','','','','','','','','','','','','','','','','','','',''],
         ['e','INPUT',':','create','','','','','','','','','','','','','','','','','','','','','','',''],
