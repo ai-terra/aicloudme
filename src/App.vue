@@ -104,8 +104,8 @@
 
             <div id="ai-jobs">
               <div class="buttons">
-                <button contenteditable="true" class="next btn btn-primary" @click="nextProject">Next Project</button>
-                <button contenteditable="true" class="next btn btn-primary" @click="show = !show">New Job:</button>
+                <button class="next btn btn-primary" @click="nextProject">Projects</button>
+                <button class="next btn btn-primary" @click="show = !show">+</button>
                 <input type="text" class="input-add-new" name="new-job" value="eg: Add Job Request to Job News" size="40" maxlength="40">
                 <button class="next btn btn-warning" @click="runOneOps">+</button>
               </div>
@@ -161,8 +161,8 @@
 
             <div id="ai-ops">
               <div class="buttons">
-                <button contenteditable="true" class="next btn btn-primary" @click="nextService">Next Service</button>
-                <button contenteditable="true" class="next btn btn-primary" @click="load = !load">New Ops:</button>
+                <button class="next btn btn-primary" @click="nextService">Services</button>
+                <button class="next btn btn-primary" @click="load = !load">+</button>
                 <input type="text" class="input-add-new" name="new-ops" value="eg: Execute or book top required ops." size="40" maxlength="40">
                 <button class="next btn btn-warning" @click="runOneOps">+</button>
               </div>
