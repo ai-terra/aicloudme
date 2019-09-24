@@ -1007,7 +1007,7 @@ li.list-group-item {
 
 .checkbtn {
   border-radius: 8px 8px 8px 8px;
-  background-color: lightblue;
+  background-color: lightsteelblue;
   color: black;
   text-align: center;
   font-weight: bold;
@@ -1015,10 +1015,8 @@ li.list-group-item {
 }
 
 .postclass {
-  width: 200px;
-  height: 100px;
-  background-image: url("./assets/amp-logo.png");
-  background-color: lightpink;
+  /* background-image: url("./assets/amp-logo.png"); */
+  background-color: lightblue;
   color: darkblue;
   text-align: center;
   font-weight: bold;
