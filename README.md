@@ -1,6 +1,6 @@
 # live ai web app
 
-ai cloud stem cell / realtime social innovation protocol
+ai cloud stem cell / live social innovation protocol
 
 ## ai innovation engine install
 
