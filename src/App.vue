@@ -121,7 +121,11 @@
                       <div class="fork" title="fork (copy) project" @click="onProjectFork">f</div>
                     </div>
 
-                    <table id="d-table" class="matrix">
+                    <div v-if="fbview">
+                      <div>List of posts, docs, etc from the table</div>
+                    </div>
+
+                    <table v-else id="d-table" class="matrix">
                       <tr class="row">
                         <td class="cell config-btn" title="Click to expand visible rows" @click="expandRows">{{ corner }}</td>
                         <td class="cell tbl-head" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
@@ -398,7 +402,7 @@ Or add your services to join ai innovators worldwide.
 
 Live ai development
 Clone ai web cells:
-github.com/ai-cell`,
+github.com/aicell`,
       matrixBiz: [
         ['a','STATUS',':','OK?','','','','','','','','','','','','','','','','','','','','','','',''],
         ['1','da-State',':','-','','oa-State',':','-','','','','','','','','','','','','','','','','','','',''],
@@ -417,9 +421,9 @@ github.com/ai-cell`,
         ['h','PAY',':','PAID?','','','','','','','','','','','','','','','','','','','','','','',''],
         ['1','dh-State',':','-','','oh-State',':','-','','','','','','','','','','','','','','','','','','','']
       ],
-      listDev: [
+      listDev: [  // list/rows of posts, docs, links, obj, etc from matrixDev
         {title: 'Toronto W3AI News', post: 'bla bla, bla', author: 'SI'}
-      ],  // rows of posts, docs, links, obj, etc from matrixDev
+      ],  
       matrixDev: [
         ['a','SOCIAL',':','project','','title',':','Innovation 1','','priority','=','1','','votes','=','247','','comments','=','144','','clones','=','24','','',''],
         ['1','Click',':','= if ( oa-Market == "ready" ) { da-State = "Ok" } else { da-State = "Quit" }','','','','','','','','','','','','','','','','','','','','','','',''],
