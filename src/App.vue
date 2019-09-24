@@ -308,10 +308,10 @@
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax </a>
                 </h4>
                 <h4>© Ianta Labs | MIT License</h4>
-                <h4 class="long"><a href="https://github.com/aiteams">
+                <h4 class="long"><a href="https://github.com/live-ai">
                 innovation engines @ github</a></h4>
-                <h4 class="short"><a href="https://github.com/aiteams/livevis">
-                live vision app @ github</a></h4>
+                <h4 class="short"><a href="https://github.com/live-ai/live-ai">
+                ai stem cell @ github</a></h4>
                 <h4 class="long" contenteditable="true">Innovation Engine / W3AI SNN Protocol</h4>
               </div>            
             </div>             

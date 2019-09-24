@@ -1,6 +1,6 @@
-# live vision web app
+# live ai web app
 
-live vision web app / realtime social innovation protocol
+ai cloud stem cell / realtime social innovation protocol
 
 ## ai innovation engine install
 
