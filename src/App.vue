@@ -70,7 +70,7 @@
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in viewProjects" v-bind:key="project">
                     <h3 title="AI FairBook Blockchain - Public market ledger for the project">
-                      &nbsp;&nbsp;blockchain (dev{{ project }}, ops{{ services[0] }}, opt {{ branch }}/{{ branches[0] }}, 'ROI')</h3>
+                      &nbsp;&nbsp;txblock (dev{{ project }}, ops{{ services[0] }}, opt {{ branch }}/{{ branches[0] }}, 'ROI')</h3>
 
                     <table id="b-table" class="matrix">
                       <tr class="row">
@@ -115,7 +115,7 @@
                     
                     <div class="table-title">
                       <h3 class="long" title="Dev FairBook - Project & Job Demand in your social network">
-                        &nbsp;&nbsp;project {{ project }}: title[{{ project }}] - owner[{{ project }}] - [shares] - dev{{ project }}</h3>
+                        &nbsp;&nbsp; title[{{ project }}] - owner[{{ project }}] - [shares]</h3>
                       <h3 class="short" title="Dev FairBook - Project & Job Demand in your social network">
                         &nbsp;&nbsp; <div class="icon3x3prj">{{ projectIcon }}</div>&nbsp;title[{{ project }}] - owner[{{ project }}] - [shares]</h3>
                       <div class="fork" title="fork (copy) project" @click="onProjectFork">f</div>
@@ -172,7 +172,7 @@
 
                     <div class="table-title">
                       <h3 class="long" title="Ops FairBook - Service & Skills Offer in your social network">
-                        &nbsp;&nbsp;service {{ service }}: title[{{ service }}] - owner[{{ service }}] - [shares] - ops{{ service }}</h3>
+                        &nbsp;&nbsp;title[{{ service }}] - owner[{{ service }}] - [shares]</h3>
                       <h3 class="short" title="Ops FairBook - Service & Skills Offer in your social network">
                         &nbsp;&nbsp;<div class="icon3x3srv">{{ serviceIcon }}</div>&nbsp;title[{{ service }}] - owner[{{ service }}] - [shares]</h3>
                       <div class="fork" title="fork (copy) service" @click="onServiceFork">f</div>
@@ -229,7 +229,6 @@
               <button class="edit btn btn-primary" @click="show = !show;">Members</button>
               <button class="edit btn btn-primary" @click="show = !show;">Projects</button>
               <button class="edit btn btn-primary" @click="show = !show;">Services</button>
-              <button class="edit btn btn-primary" @click="show = !show;">Engine</button>
               <button class="edit btn btn-primary" @click="show = !show;">Wiki</button>
               <button class="edit btn btn-danger" @click="show = !show;">Code</button>
               <button class="edit btn btn-warning" @click="show = !show;"><b>&lt;</b></button>
