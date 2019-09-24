@@ -396,8 +396,8 @@ export default {
       textEdit: `
 Hello World!
 
-This is just another ai web log.
-Add a check list to transform it in an ai web plan.
+Just another live innovation post.
+Add a check list to transform it in an open ai plan.
 Or add your services to join ai innovators worldwide.
 
 Live ai innovators
