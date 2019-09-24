@@ -348,9 +348,9 @@ export default {
       viewId: 0,
       mode: ['CEO', 'DEV', 'OPS', 'EDU', 'QA', 'UA'],
       modeId: 0,
-      postName: ["vis", "idea", "post", "dev", "repo", "prj", "bid", "rDNA"],
+      postName: ["job", "post", "dev", "repo", "prj", "bid", "rDNA"],
       postNameId: 0,
-      opsName: ["ads" ,"ops", "srv", "offr", "ask", "rRNA"],
+      opsName: ["ads" , "app", "ops", "srv", "offr", "ask", "rRNA"],
       opsNameId: 1,
       backgroundText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;web &nbsp; app
             <br><br>
