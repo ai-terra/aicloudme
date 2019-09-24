@@ -70,7 +70,7 @@
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in viewProjects" v-bind:key="project">
                     <h3 title="AI FairBook Blockchain - Public market ledger for the project">
-                      &nbsp;&nbsp;fairBlockChain (dev{{ project }}, ops{{ services[0] }}, option {{ branch }}/{{ branches[0] }}, 'ROI')</h3>
+                      &nbsp;&nbsp;blockchain (dev{{ project }}, ops{{ services[0] }}, opt {{ branch }}/{{ branches[0] }}, 'ROI')</h3>
 
                     <table id="b-table" class="matrix">
                       <tr class="row">
@@ -375,7 +375,7 @@ export default {
       projectIcon: '◼◼◼◼◼◼◼◼◼',
       serviceIcon: '◼◼◼◼◼◼◼◼◼',
       branch: 1,
-      branches: [360],
+      branches: [8],
       services: [7],
       blockchains: [365],
       tabClass: 'tabline',
