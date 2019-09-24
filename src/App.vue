@@ -310,7 +310,7 @@
                 <h4>© Ianta Labs | MIT License</h4>
                 <h4 class="long"><a href="https://github.com/live-ai">
                 innovation engines @ github</a></h4>
-                <h4 class="short"><a href="https://github.com/live-ai/live-ai">
+                <h4 class="short"><a href="https://github.com/live-ai/stem-cell">
                 ai stem cell @ github</a></h4>
                 <h4 class="long" contenteditable="true">Innovation Engine / W3AI SNN Protocol</h4>
               </div>            
