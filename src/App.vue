@@ -400,9 +400,9 @@ This is just another ai web log.
 Add a check list to transform it in an ai web plan.
 Or add your services to join ai innovators worldwide.
 
-Live ai development
-Clone ai web cells:
-github.com/aicell`,
+Live ai innovators
+clone ai web cells:
+github.com/live-ai`,
       matrixBiz: [
         ['a','STATUS',':','OK?','','','','','','','','','','','','','','','','','','','','','','',''],
         ['1','da-State',':','-','','oa-State',':','-','','','','','','','','','','','','','','','','','','',''],
