@@ -135,7 +135,7 @@
                           <td class="cell tbl-head" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                         </tr>                      
                         <tr class="row" v-for="(row, rowIndex) in matrixDev" v-bind:key="rowIndex">                          
-                          <td class="cell" 
+                          <td class="cell" style="position: relative;"
                             v-for="(cell, colIndex) in row" v-bind:key="colIndex"
                             matrix="Dev" 
                             :row="rowIndex" :col="colIndex"
@@ -147,7 +147,7 @@
                                       (matrixDev[rowIndex][colIndex] == 'Post') ? postClass : ''
                                     ]"
                           >
-                            <input style="text-align: inherit; text-overflow: visible;" class="cell-input" type="text" v-model="matrixDev[rowIndex][colIndex]"
+                            <input style="text-align: inherit; overflow: visible;" class="cell-input" type="text" v-model="matrixDev[rowIndex][colIndex]"
                               matrix="Dev" 
                               :row="rowIndex" :col="colIndex"
                               :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
@@ -889,7 +889,7 @@ html {
 
 #ai-protocol {
   width: 100%;
-  height: 64rem;
+  max-height: 68rem;
   display: flex;
   flex-direction: row;
   overflow-y: auto;
