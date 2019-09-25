@@ -135,10 +135,10 @@
                           <td class="cell tbl-head" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                         </tr>                      
                         <tr class="row" v-for="(row, rowIndex) in matrixDev" v-bind:key="rowIndex">                          
-                          <td class="cell" style="position: relative;"
+                          <td contenteditable="true" class="cell" style="position: relative;"
                             v-for="(cell, colIndex) in row" v-bind:key="colIndex"
                             matrix="Dev" 
-                            :row="rowIndex" :col="colIndex"
+                            :row="rowIndex" :col="colIndex" :valueini="matrixDev[rowIndex][colIndex]"
                             :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
                             :class="[
                                       (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
@@ -146,8 +146,15 @@
                                       (matrixDev[rowIndex][colIndex] == 'Click') ? checkBtn : '',
                                       (matrixDev[rowIndex][colIndex] == 'Post') ? postClass : ''
                                     ]"
+                            
                           >
-                            <input style="text-align: inherit; overflow: visible;" class="cell-input" type="text" v-model="matrixDev[rowIndex][colIndex]"
+                            <div style="position: absolute; z-index: 10; left: 0; top: 0;">
+                              {{ matrixDev[rowIndex][colIndex] }}
+                              </div>
+
+                            <input style="text-align: inherit; visibility: hidden; 
+                              position: absolute; z-index: 20; left: 0; top: 0;" 
+                            class="cell-input" type="text" v-model="matrixDev[rowIndex][colIndex]"
                               matrix="Dev" 
                               :row="rowIndex" :col="colIndex"
                               :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
@@ -157,9 +164,9 @@
                                         (matrixDev[rowIndex][colIndex] == 'Click') ? checkBtn : '',
                                         (matrixDev[rowIndex][colIndex] == 'Post') ? postClass : ''
                                       ]"
-                              @click="onCellClick"
+                                @click="onCellClick"
                             >
-                              <!-- {{ cell }} -->
+
                           </td>
                         </tr>
 
@@ -669,7 +676,7 @@ github.com/live-ai`,
 
       let col = this.currentCol = el.target.getAttribute('col');        // col - col: 1-26
       let c = this.header[col - 1];                                     // c - col: A-Z
-      // let row = this.currentRow = el.target.getAttribute('row');        // row - row: 1,... - the row in the matrix table
+      let row = this.currentRow = el.target.getAttribute('row');        // row - row: 1,... - the row in the matrix table
       // let tr = row;                                                      
 
       // let tab = Math.floor( row / (this.visibleRows+1) + 1);         // tab - tab 1-8
@@ -679,8 +686,9 @@ github.com/live-ai`,
       let tabrow = el.target.getAttribute('tabrow');                    // r - row: 1,... - the row in the tab
       let r = tabrow;
 
-      let val = this.currentCellVal = el.target.innerHTML.trim();       // val - cell value - string
-      let v = val;
+      // let val = this.currentCellVal = el.target.innerHTML.trim();       // val - cell value - string
+      let val = this.currentCellVal = el.target.getAttribute('valueini');      // val - cell value - string
+      let v = this.matrixDev[row][col];
 
       if ( this.fx[0] === '=' ) {
         this.fx += ' ' + m + t + c + r + '';
@@ -690,7 +698,7 @@ github.com/live-ai`,
       if (this.modeId == 0) {
         // if mode[0] is CEO - educational / training
         // ToDo: hide fx if blank
-        this.textEdit = ' > tbl: ' + m + ' tab: ' + t + ' row: ' + r + ' col: ' + c + ' val: ' + v + '\n > fx = ' + eval(this.fx) + '\n' + this.textEdit;
+        this.textEdit = ' > tbl: ' + m + ' tab: ' + t + ' row: ' + r + ' col: ' + c + ' val: ' + val + '\n > fx = ' + eval(this.fx) + '\n' + this.textEdit;
       } else {
         // mainly for dev
         this.textEdit = ' > ' + m + ' ' + t + ' ' + r + ' ' + c + ' ' + v + '\n > ' + this.fx + '\n' + this.textEdit;
@@ -1076,7 +1084,7 @@ li.list-group-item {
 
 .cell,
 .cell-edit {
-  padding: 0 0rem;
+  padding: 0 0.5rem;
   min-width: 3rem;
   max-width: 10rem;
   overflow-x: visible;
@@ -1087,8 +1095,8 @@ li.list-group-item {
 .cell-input {
   direction:ltr;
   text-align: left;
-  position: relative;
-  z-index: 20;
+  position: absolute;
+  /* z-index: 20; */
   min-width: 100%;
   /* box-sizing: border-box; */
   /* min-width: 3rem;
