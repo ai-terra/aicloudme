@@ -146,13 +146,13 @@
                                       (matrixDev[rowIndex][colIndex] == 'Click') ? checkBtn : '',
                                       (matrixDev[rowIndex][colIndex] == 'Post') ? postClass : ''
                                     ]"
-                            
+                            @click="onCellClick"
                           >
-                            <div style="position: absolute; z-index: 10; left: 0; top: 0;">
-                              {{ matrixDev[rowIndex][colIndex] }}
-                              </div>
+                            <!-- <div style="position: absolute; z-index: 10; left: 0; top: 0;"> -->
+                              {{ cell }}
+                              <!-- </div> -->
 
-                            <input style="text-align: inherit; visibility: hidden; 
+                            <!-- <input style="text-align: inherit; visibility: hidden; 
                               position: absolute; z-index: 20; left: 0; top: 0;" 
                             class="cell-input" type="text" v-model="matrixDev[rowIndex][colIndex]"
                               matrix="Dev" 
@@ -165,7 +165,7 @@
                                         (matrixDev[rowIndex][colIndex] == 'Post') ? postClass : ''
                                       ]"
                                 @click="onCellClick"
-                            >
+                            > -->
 
                           </td>
                         </tr>
@@ -686,8 +686,8 @@ github.com/live-ai`,
       let tabrow = el.target.getAttribute('tabrow');                    // r - row: 1,... - the row in the tab
       let r = tabrow;
 
-      // let val = this.currentCellVal = el.target.innerHTML.trim();       // val - cell value - string
-      let val = this.currentCellVal = el.target.getAttribute('valueini');      // val - cell value - string
+      let val = this.currentCellVal = el.target.innerHTML.trim();       // val - cell value - string
+      // let val = this.currentCellVal = el.target.getAttribute('valueini');      // val - cell value - string
       let v = this.matrixDev[row][col];
 
       if ( this.fx[0] === '=' ) {
