@@ -147,7 +147,7 @@
                                       (matrixDev[rowIndex][colIndex] == 'Post') ? postClass : ''
                                     ]"
                           >
-                            <input class="cell-input" type="text" v-model="matrixDev[rowIndex][colIndex]"
+                            <input style="text-align: inherit; text-overflow: visible;" class="cell-input" type="text" v-model="matrixDev[rowIndex][colIndex]"
                               matrix="Dev" 
                               :row="rowIndex" :col="colIndex"
                               :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
@@ -994,7 +994,6 @@ li.list-group-item {
 }
 
 .list-group {
-  height: 40rem;
   margin: 0px;
   overflow-x: auto;
   overflow-y: auto;
@@ -1085,7 +1084,7 @@ li.list-group-item {
   white-space: nowrap;
 }
 
-input.cell-input {
+.cell-input {
   direction:ltr;
   text-align: left;
   position: relative;
@@ -1097,18 +1096,18 @@ input.cell-input {
   text-overflow: visible;
   margin: 0px;
   border: 0px;
-  padding: 0px;
+  padding: 0 0.5rem;
   background: transparent;
 }
 
-input.cell-input:nth-child(even) {
+.cell-input:nth-child(even) {
   /* min-width: 7rem; */
   min-width: 8rem;
   /* overflow-x: visible; */
   text-align: left;
 }
 
-input.cell-input:nth-child(odd) {
+.cell-input:nth-child(odd) {
   max-width: 1.9rem;
   /* box-sizing: border-box; */
   text-align: center;
