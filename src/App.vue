@@ -135,20 +135,30 @@
                           <td class="cell tbl-head" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                         </tr>                      
                         <tr class="row" v-for="(row, rowIndex) in matrixDev" v-bind:key="rowIndex">                          
-                          <td contenteditable="true" class="cell" 
-                          matrix="Dev" 
-                          v-for="(cell, colIndex) in row" v-bind:key="colIndex"
-                          :row="rowIndex" :col="colIndex"
-                          :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
-                          :class="[
-                                    (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
-                                    ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
-                                    (matrixOps[rowIndex][colIndex] == 'Click') ? checkBtn : '',
-                                    (matrixOps[rowIndex][colIndex] == 'Post') ? postClass : ''
-                                  ]"
-                          @click="onCellClick"
+                          <td class="cell" 
+                            v-for="(cell, colIndex) in row" v-bind:key="colIndex"
+                            matrix="Dev" 
+                            :row="rowIndex" :col="colIndex"
+                            :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
+                            :class="[
+                                      (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
+                                      ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
+                                      (matrixDev[rowIndex][colIndex] == 'Click') ? checkBtn : '',
+                                      (matrixDev[rowIndex][colIndex] == 'Post') ? postClass : ''
+                                    ]"
                           >
-                            <input class="cell-input" type="text" v-model="matrixDev[rowIndex][colIndex]">
+                            <input class="cell-input" type="text" v-model="matrixDev[rowIndex][colIndex]"
+                              matrix="Dev" 
+                              :row="rowIndex" :col="colIndex"
+                              :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
+                              :class="[
+                                        (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
+                                        ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
+                                        (matrixDev[rowIndex][colIndex] == 'Click') ? checkBtn : '',
+                                        (matrixDev[rowIndex][colIndex] == 'Post') ? postClass : ''
+                                      ]"
+                              @click="onCellClick"
+                            >
                               <!-- {{ cell }} -->
                           </td>
                         </tr>
@@ -984,6 +994,7 @@ li.list-group-item {
 }
 
 .list-group {
+  height: 40rem;
   margin: 0px;
   overflow-x: auto;
   overflow-y: auto;
@@ -1075,27 +1086,32 @@ li.list-group-item {
 }
 
 input.cell-input {
+  direction:ltr;
+  text-align: left;
+  position: relative;
+  z-index: 20;
   min-width: 100%;
   /* box-sizing: border-box; */
   /* min-width: 3rem;
   max-width: 10rem; */
-  overflow-x: visible;
+  text-overflow: visible;
   margin: 0px;
   border: 0px;
-  padding: 0 0.5rem;
+  padding: 0px;
   background: transparent;
+}
+
+input.cell-input:nth-child(even) {
+  /* min-width: 7rem; */
+  min-width: 8rem;
+  /* overflow-x: visible; */
+  text-align: left;
 }
 
 input.cell-input:nth-child(odd) {
   max-width: 1.9rem;
   /* box-sizing: border-box; */
   text-align: center;
-}
-
-input.cell-input:nth-child(even) {
-  /* min-width: 7rem; */
-  min-width: 8rem;
-  overflow-x: visible;
 }
 
 .cell:hover {
