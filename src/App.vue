@@ -1066,7 +1066,7 @@ li.list-group-item {
 
 .cell,
 .cell-edit {
-  padding: 0 0.5rem;
+  padding: 0 0rem;
   min-width: 3rem;
   max-width: 10rem;
   overflow-x: visible;
@@ -1082,7 +1082,7 @@ input.cell-input {
   overflow-x: visible;
   margin: 0px;
   border: 0px;
-  padding: 0px;
+  padding: 0 0.5rem;
   background: transparent;
 }
 
