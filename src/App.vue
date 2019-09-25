@@ -70,28 +70,31 @@
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in viewProjects" v-bind:key="project">
                     <h3 title="AI FairBook Blockchain - Public market ledger for the project">
-                      &nbsp;&nbsp;txblock (dev{{ project }}, ops{{ services[0] }}, opt {{ branch }}/{{ branches[0] }}, 'ROI')</h3>
+                      &nbsp;&nbsp;txblock (dev{{ project }}, ops{{ services[0] }}, opt {{ branch }}/{{ branches[0] }}, 'ROI')
+                      </h3>
 
-                    <table id="b-table" class="matrix">
-                      <tr class="row">
-                        <td class="cell config-btn" title="Click to expand visible rows" @click="expandRows">{{ corner }}</td>
-                        <td class="cell tbl-head" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
-                      </tr>                      
-                      <tr class="row" v-for="(row, rowIndex) in matrixBiz" v-bind:key="rowIndex">                          
-                        <td contenteditable="true" class="cell" 
-                        matrix="Biz" 
-                        v-for="(cell, colIndex) in row" v-bind:key="colIndex"
-                        :row="rowIndex" :col="colIndex"
-                        :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
-                        :class="[(rowIndex%(visibleRows+1) == 0) ? tabClass : '',
-                                ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '']"
-                        @click="onCellClick"
-                        >
-                          {{ cell }}
-                        </td>
-                      </tr>
+                    <div class="scrollable">
+                      <table id="b-table" class="matrix">
+                        <tr class="row">
+                          <td class="cell config-btn" title="Click to expand visible rows" @click="expandRows">{{ corner }}</td>
+                          <td class="cell tbl-head" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
+                        </tr>                      
+                        <tr class="row" v-for="(row, rowIndex) in matrixBiz" v-bind:key="rowIndex">                          
+                          <td contenteditable="true" class="cell" 
+                          matrix="Biz" 
+                          v-for="(cell, colIndex) in row" v-bind:key="colIndex"
+                          :row="rowIndex" :col="colIndex"
+                          :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
+                          :class="[(rowIndex%(visibleRows+1) == 0) ? tabClass : '',
+                                  ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '']"
+                          @click="onCellClick"
+                          >
+                            {{ cell }}
+                          </td>
+                        </tr>
 
-                    </table>
+                      </table>
+                    </div>
 
                   </li>
                 </transition-group>
@@ -125,30 +128,32 @@
                       <div>List of posts, docs, etc from the table</div>
                     </div>
 
-                    <table v-else id="d-table" class="matrix">
-                      <tr class="row">
-                        <td class="cell config-btn" title="Click to expand visible rows" @click="expandRows">{{ corner }}</td>
-                        <td class="cell tbl-head" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
-                      </tr>                      
-                      <tr class="row" v-for="(row, rowIndex) in matrixDev" v-bind:key="rowIndex">                          
-                        <td contenteditable="true" class="cell" 
-                        matrix="Dev" 
-                        v-for="(cell, colIndex) in row" v-bind:key="colIndex"
-                        :row="rowIndex" :col="colIndex"
-                        :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
-                        :class="[
-                                  (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
-                                  ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
-                                  (matrixOps[rowIndex][colIndex] == 'Click') ? checkBtn : '',
-                                  (matrixOps[rowIndex][colIndex] == 'Post') ? postClass : ''
-                                ]"
-                        @click="onCellClick"
-                        >
-                          {{ cell }}
-                        </td>
-                      </tr>
+                    <div v-else class="scrollable">
+                      <table id="d-table" class="matrix">
+                        <tr class="row">
+                          <td class="cell config-btn" title="Click to expand visible rows" @click="expandRows">{{ corner }}</td>
+                          <td class="cell tbl-head" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
+                        </tr>                      
+                        <tr class="row" v-for="(row, rowIndex) in matrixDev" v-bind:key="rowIndex">                          
+                          <td contenteditable="true" class="cell" 
+                          matrix="Dev" 
+                          v-for="(cell, colIndex) in row" v-bind:key="colIndex"
+                          :row="rowIndex" :col="colIndex"
+                          :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
+                          :class="[
+                                    (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
+                                    ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
+                                    (matrixOps[rowIndex][colIndex] == 'Click') ? checkBtn : '',
+                                    (matrixOps[rowIndex][colIndex] == 'Post') ? postClass : ''
+                                  ]"
+                          @click="onCellClick"
+                          >
+                            {{ cell }}
+                          </td>
+                        </tr>
 
-                    </table>
+                      </table>
+                    </div>
 
                   </li>
                 </transition-group>
@@ -178,29 +183,31 @@
                       <div class="fork" title="fork (copy) service" @click="onServiceFork">f</div>
                     </div>
 
-                    <table id="o-table" class="matrix">
-                      <tr class="row">
-                        <td class="cell config-btn" title="Click to expand visible rows" @click="expandRows">{{ corner }}</td>
-                        <td class="cell tbl-head" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
-                      </tr>
-                      <tr class="row" v-for="(row, rowIndex) in matrixOps" v-bind:key="rowIndex">                          
-                        <td contenteditable="true" class="cell" 
-                        matrix="Ops" 
-                        v-for="(cell, colIndex) in row" v-bind:key="colIndex"
-                        :row="rowIndex" :col="colIndex" 
-                        :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
-                        :class="[
-                                  (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
-                                  ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
-                                  (matrixOps[rowIndex][colIndex] == 'Click') ? checkBtn : '',
-                                  (matrixOps[rowIndex][colIndex] == 'Post') ? postClass : ''
-                                ]"
-                        @click="onCellClick"
-                        >
-                          {{ cell }}
-                        </td>
-                      </tr>
-                    </table>
+                    <div class="scrollable">
+                      <table id="o-table" class="matrix">
+                        <tr class="row">
+                          <td class="cell config-btn" title="Click to expand visible rows" @click="expandRows">{{ corner }}</td>
+                          <td class="cell tbl-head" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
+                        </tr>
+                        <tr class="row" v-for="(row, rowIndex) in matrixOps" v-bind:key="rowIndex">                          
+                          <td contenteditable="true" class="cell" 
+                          matrix="Ops" 
+                          v-for="(cell, colIndex) in row" v-bind:key="colIndex"
+                          :row="rowIndex" :col="colIndex" 
+                          :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
+                          :class="[
+                                    (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
+                                    ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
+                                    (matrixOps[rowIndex][colIndex] == 'Click') ? checkBtn : '',
+                                    (matrixOps[rowIndex][colIndex] == 'Post') ? postClass : ''
+                                  ]"
+                          @click="onCellClick"
+                          >
+                            {{ cell }}
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
 
                   </li>
                 </transition-group>
@@ -981,6 +988,11 @@ li.list-group-item {
   overflow-y: auto;
   border: 1px solid grey;
   background: transparent;
+}
+
+.scrollable {
+  overflow-x: auto;
+  overflow-y: auto;
 }
 
 .list-group-item {
