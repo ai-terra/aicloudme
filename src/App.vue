@@ -423,9 +423,9 @@ export default {
       textEdit: `
 Hello World!
 
-Just another live innovation post.
-Add a check list to transform it in an open ai plan.
-Or add your services to join ai innovators worldwide.
+Just another innovation blog!
+Add a check list to trigger live ai teams.
+Or add your services to join web innovators worldwide.
 
 Live ai innovators
 clone ai web cells:
