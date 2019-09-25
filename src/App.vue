@@ -136,7 +136,7 @@
                         </tr>                      
                         <tr class="row" v-for="(row, rowIndex) in matrixDev" v-bind:key="rowIndex">    
 
-                          <td contenteditable="true" class="cell" style="position: relative;"
+                          <td class="cell" style="position: relative;"
                             v-for="(cell, colIndex) in row" v-bind:key="colIndex"
                             matrix="Dev" 
                             :row="rowIndex" :col="colIndex" :valueini="matrixDev[rowIndex][colIndex]"
@@ -147,16 +147,16 @@
                                       (matrixDev[rowIndex][colIndex] == 'Click') ? checkBtn : '',
                                       (matrixDev[rowIndex][colIndex] == 'Post') ? postClass : ''
                                     ]"
-                            @click="onCellClick"
+                            
                           >
-                            <div :id="'Dev:' + rowIndex + ':' + colIndex" 
-                              class="cell"
-                              style="position: absolute; z-index: 10; left: 0; top: 0;">
-                              {{ cell }}
-                              </div>
+                            <!-- <div contenteditable="true" :id="'Dev:' + rowIndex + ':' + colIndex" 
+                              class="cell" 
+                              style="visibility: visible; position: relative; z-index: 20; left: 0; top: 0;">
+                              {{ matrixDev[rowIndex][colIndex] }}
+                            </div> -->
 
-                            <!-- <input style="text-align: inherit; visibility: hidden; 
-                              position: absolute; z-index: 20; left: 0; top: 0;" 
+                            <input :id="'DevInput:' + rowIndex + ':' + colIndex"
+style="text-align: inherit; visibility: visible; width: inherit; background: transparent; position: relative; z-index: 40; left: 0; top: 0;"
                             class="cell-input" type="text" v-model="matrixDev[rowIndex][colIndex]"
                               matrix="Dev" 
                               :row="rowIndex" :col="colIndex"
@@ -167,8 +167,8 @@
                                         (matrixDev[rowIndex][colIndex] == 'Click') ? checkBtn : '',
                                         (matrixDev[rowIndex][colIndex] == 'Post') ? postClass : ''
                                       ]"
-                                @click="onCellClick"
-                            > -->
+                                
+                            >
 
                           </td>
                         </tr>
@@ -412,7 +412,7 @@ export default {
       currentTable: '',
       currentRow: '',
       currentCol: '',
-      currentCellVal: '',
+      currentCellVal: ' ',
       fx: '',
       fxEval: '',
       corner: 1,
@@ -673,6 +673,31 @@ github.com/live-ai`,
       }
       // done();
     },
+    updateCell(matrix, row, col) {
+
+      // let mat = this.currentTable = el.target.getAttribute(matrix);   // mat - matrix/table: Biz | Dev | Ops | Edit
+      // let m = mat[0].toUpperCase();                                     // m - matrix/table: B | D | O | E
+
+      // let col = this.currentCol = el.target.getAttribute('col');        // col - col: 1-26
+      // let c = this.header[col - 1];                                     // c - col: A-Z
+      // let row = this.currentRow = el.target.getAttribute('row');        // row - row: 1,... - the row in the matrix table
+      // // let tr = row;                                                      
+
+      // // let tab = Math.floor( row / (this.visibleRows+1) + 1);         // tab - tab 1-8
+      // let tab = el.target.getAttribute('tab');
+      // let t = tab;                                                      // t - tab a-h
+      
+      // let tabrow = el.target.getAttribute('tabrow');                    // r - row: 1,... - the row in the tab
+      // let r = tabrow;
+
+      let cellId = matrix + ':' + row + ':' + col;
+      console.log(cellId);
+
+      let cellToUpdate = document.getElementById(cellId);
+
+      // ToDo - switch statement for Biz, Dev, Ops Edit matrices
+      cellToUpdate.innerHTML = this.matrixDev[row][col];
+    },
     onCellClick(el) {
       let mat = this.currentTable = el.target.getAttribute('matrix');   // mat - matrix/table: Biz | Dev | Ops | Edit
       let m = mat[0].toUpperCase();                                     // m - matrix/table: B | D | O | E
@@ -689,23 +714,35 @@ github.com/live-ai`,
       let tabrow = el.target.getAttribute('tabrow');                    // r - row: 1,... - the row in the tab
       let r = tabrow;
 
-      let val = this.currentCellVal = el.target.innerHTML.trim();       // val - cell value - string
+      // let val = this.currentCellVal = el.target.innerHTML.trim();       // val - cell value - string
       // let val = this.currentCellVal = el.target.getAttribute('valueini');      // val - cell value - string
       let v = this.matrixDev[row][col];
+      this.currentCellVal = v;
 
-      if ( this.fx[0] === '=' ) {
-        this.fx += ' ' + m + t + c + r + '';
-      } else {
-        this.fx = v;
-      }
-      if (this.modeId == 0) {
-        // if mode[0] is CEO - educational / training
-        // ToDo: hide fx if blank
-        this.textEdit = ' > tbl: ' + m + ' tab: ' + t + ' row: ' + r + ' col: ' + c + ' val: ' + val + '\n > fx = ' + eval(this.fx) + '\n' + this.textEdit;
-      } else {
-        // mainly for dev
-        this.textEdit = ' > ' + m + ' ' + t + ' ' + r + ' ' + c + ' ' + v + '\n > ' + this.fx + '\n' + this.textEdit;
-      }
+      let cellId = mat + ':' + row + ':' + col;
+
+      console.log('test onCellClick')
+      console.log(m, c, t, r, cellId);
+
+      let cellToUpdate = document.getElementById(cellId);
+      cellToUpdate.innerHTML = v;
+
+      // this.fx = this.currentCellVal;
+
+      // if ( this.fx[0] === '=' ) {
+      //   this.fx += ' ' + m + t + c + r + '';
+      // } else {
+      //   this.fx = v;
+      // }
+      // if (this.modeId == 0) {
+      //   // if mode[0] is CEO - educational / training
+      //   // ToDo: hide fx if blank
+      //   this.textEdit = ' > tbl: ' + m + ' tab: ' + t + ' row: ' + r + ' col: ' + c + ' val: ' + v + '\n > fx = ' + eval(this.fx) + '\n' + this.textEdit;
+      // } else {
+      //   // mainly for dev
+      //   this.textEdit = ' > ' + m + ' ' + t + ' ' + r + ' ' + c + ' ' + v + '\n > ' + this.fx + '\n' + this.textEdit;
+      // }
+
     },
     expandRows() {
       this.visibleRows++;
