@@ -134,7 +134,8 @@
                           <td class="cell config-btn" title="Click to expand visible rows" @click="expandRows">{{ corner }}</td>
                           <td class="cell tbl-head" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                         </tr>                      
-                        <tr class="row" v-for="(row, rowIndex) in matrixDev" v-bind:key="rowIndex">                          
+                        <tr class="row" v-for="(row, rowIndex) in matrixDev" v-bind:key="rowIndex">    
+
                           <td contenteditable="true" class="cell" style="position: relative;"
                             v-for="(cell, colIndex) in row" v-bind:key="colIndex"
                             matrix="Dev" 
@@ -148,9 +149,11 @@
                                     ]"
                             @click="onCellClick"
                           >
-                            <!-- <div style="position: absolute; z-index: 10; left: 0; top: 0;"> -->
+                            <div :id="'Dev:' + rowIndex + ':' + colIndex" 
+                              class="cell"
+                              style="position: absolute; z-index: 10; left: 0; top: 0;">
                               {{ cell }}
-                              <!-- </div> -->
+                              </div>
 
                             <!-- <input style="text-align: inherit; visibility: hidden; 
                               position: absolute; z-index: 20; left: 0; top: 0;" 
