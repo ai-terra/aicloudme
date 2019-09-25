@@ -148,7 +148,8 @@
                                   ]"
                           @click="onCellClick"
                           >
-                            {{ cell }}
+                            <!-- <input class="cell-input" type="text" v-model="matrixDev[rowIndex][colIndex]"> -->
+                              {{ cell }}
                           </td>
                         </tr>
 
@@ -1071,6 +1072,29 @@ li.list-group-item {
   overflow-x: visible;
   overflow-wrap: normal;
   white-space: nowrap;
+}
+
+input.cell-input {
+  /* width: 100%; */
+  box-sizing: border-box;
+  /* min-width: 3rem;
+  max-width: 10rem; */
+  overflow-x: visible;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  background: transparent;
+}
+
+input.cell-input:nth-child(odd) {
+  max-width: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+input.cell-input:nth-child(even) {
+  min-width: 7rem;
+  max-width: 7rem;
 }
 
 .cell:hover {
