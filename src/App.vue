@@ -381,7 +381,7 @@ export default {
       opsNameId: 1,
       backgroundText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;web &nbsp; app
             <br><br>
-            &nbsp;ai web &nbsp;&nbsp; cells`,
+            &nbsp;ai accelerator`,
       liveText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;web &nbsp; app
             <br><br>
             &nbsp;ai web &nbsp;&nbsp; cells`,
