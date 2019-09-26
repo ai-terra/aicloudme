@@ -387,7 +387,7 @@ export default {
             match8 &nbsp;engine`,
       devText: `&nbsp; dev&nbsp; &nbsp;ops &nbsp; app
       <br><br>
-      match8 &nbsp;engine`,
+      agile8 &nbsp;engine`,
       visibleRows: 1,
       visibleTab: 1,
       pause: true,
