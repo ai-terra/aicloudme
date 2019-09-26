@@ -70,7 +70,7 @@
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in viewProjects" v-bind:key="project">
                     <h3 title="AI FairBook Blockchain - Public market ledger for the project">
-                      &nbsp;&nbsp;match (dev{{ project }}, ops{{ services[0] }}, opt {{ branch }}/{{ branches[0] }}, 'ROI')
+                      &nbsp;&nbsp;match (dev{{ project }}, ops{{ services[0] }}, {{ branch }}/{{ branches[0] }}, ROI)
                       </h3>
 
                     <div class="scrollable">
@@ -382,12 +382,12 @@ export default {
       backgroundText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;web &nbsp; app
             <br><br>
             &nbsp;ai accelerator`,
-      liveText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;web &nbsp; app
+      liveText: `&nbsp; live&nbsp; &nbsp;web &nbsp; app
             <br><br>
-            &nbsp;ai web &nbsp;&nbsp; cells`,
-      devText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;dev &nbsp; ops
+            match8 &nbsp;engine`,
+      devText: `&nbsp; dev&nbsp; &nbsp;ops &nbsp; app
       <br><br>
-      &nbsp;ai web &nbsp;&nbsp; cells`,
+      match8 &nbsp;engine`,
       visibleRows: 1,
       visibleTab: 1,
       pause: true,
@@ -936,7 +936,7 @@ html {
 
 #ai-protocol {
   width: 100%;
-  max-height: 68rem;
+  max-height: 66rem;
   display: flex;
   flex-direction: row;
   overflow-y: auto;
