@@ -1,8 +1,8 @@
-# live ai web app
+# ai match web app
 
-ai cloud stem cell / live social innovation protocol
+ai match engine / live social innovation protocol
 
-## ai innovation engine install
+## ai match engine install
 
 ```
 npm install
