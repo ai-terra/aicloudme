@@ -359,7 +359,7 @@ import db from './db.js';
 
 // const db = firebase.initializeApp({ projectId: 'aiplanet' }).firestore()
 
-import aiteam from './assets/ai-team.json';
+import aiteam from './ai-config.json';
 export default {
   name: "app",
   data() {

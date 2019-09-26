@@ -32,6 +32,6 @@ npm run test
 npm run lint
 ```
 
-### Customize configuration
+### Customize ai engine
 
-Edit src/assets/ai-team.json
+Edit src/ai-config.json
