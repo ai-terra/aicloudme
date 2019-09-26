@@ -423,13 +423,12 @@ export default {
       textEdit: `
 Hello World!
 
-Just another innovation blog!
-Add a check list to trigger live ai teams.
-Or add your services to join web innovators worldwide.
+Just another match engine.
+Add a check list to trigger web matchers.
+Or add your skills/services to match open games/projects.
 
-Live ai innovators
-clone ai web cells:
-github.com/live-ai`,
+clone ai match engines @
+github.com/ai-accelerator`,
       matrixBiz: [
         ['a','STATUS',':','OK?','','','','','','','','','','','','','','','','','','','','','','',''],
         ['1','da-State',':','-','','oa-State',':','-','','','','','','','','','','','','','','','','','','',''],
