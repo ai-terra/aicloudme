@@ -167,7 +167,7 @@ style="text-align: inherit; visibility: visible; width: inherit; background: tra
                                         (matrixDev[rowIndex][colIndex] == 'Click') ? checkBtn : '',
                                         (matrixDev[rowIndex][colIndex] == 'Post') ? postClass : ''
                                       ]"
-                                
+                              v-on:keyup="fx = $event.target.value"
                             >
 
                           </td>
