@@ -70,7 +70,7 @@
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in viewProjects" v-bind:key="project">
                     <h3 title="AI FairBook Blockchain - Public market ledger for the project">
-                      &nbsp;&nbsp;txblock (dev{{ project }}, ops{{ services[0] }}, opt {{ branch }}/{{ branches[0] }}, 'ROI')
+                      &nbsp;&nbsp;match (dev{{ project }}, ops{{ services[0] }}, opt {{ branch }}/{{ branches[0] }}, 'ROI')
                       </h3>
 
                     <div class="scrollable">
@@ -423,11 +423,11 @@ export default {
       textEdit: `
 Hello World!
 
-Just another match app.
+Just another matching app.
 Add a check list to trigger ai matchers.
 Or add your skills/services to match open games/projects.
 
-clone ai match engines @
+clone&hack matcher apps
 github.com/ai-accelerator`,
       matrixBiz: [
         ['a','STATUS',':','OK?','','','','','','','','','','','','','','','','','','','','','','',''],
