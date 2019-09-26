@@ -423,8 +423,8 @@ export default {
       textEdit: `
 Hello World!
 
-Just another match engine.
-Add a check list to trigger web matchers.
+Just another match app.
+Add a check list to trigger ai matchers.
 Or add your skills/services to match open games/projects.
 
 clone ai match engines @
