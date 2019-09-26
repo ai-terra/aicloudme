@@ -384,10 +384,10 @@ export default {
             &nbsp;ai accelerator`,
       liveText: `&nbsp; live&nbsp; &nbsp;web &nbsp; app
             <br><br>
-            match8 &nbsp;engine`,
+            market &nbsp;engine`,
       devText: `&nbsp; dev&nbsp; &nbsp;ops &nbsp; app
       <br><br>
-      agile8 &nbsp;engine`,
+      match8 &nbsp;engine`,
       visibleRows: 1,
       visibleTab: 1,
       pause: true,
