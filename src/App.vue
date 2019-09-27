@@ -336,17 +336,17 @@ style="text-align: inherit; visibility: visible; width: inherit; background: tra
             </div> 
             <div class="title-container">
               <div class="footer-items">
-                <h4 class="long">W3AI Social Neural Network Protocol</h4>
+                <h4 class="long">W3AI Social Neural Network</h4>
                 <h4 class="long">W3AI Meetups 
                   <a href="https://www.meetup.com/SocialAI/">Toronto </a> 
                   <a href="https://www.meetup.com/Manhattan-AIR/">NYC </a> 
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax </a>
                 </h4>
                 <h4>© Ianta Labs | MIT License</h4>
-                <h4 class="long"><a href="https://github.com/live-ai">
+                <h4 class="long"><a href="https://github.com/ai-accelerator">
                 innovation engines @ github</a></h4>
-                <h4 class="short"><a href="https://github.com/live-ai/stem-cell">
-                ai stem cell @ github</a></h4>
+                <h4 class="short"><a href="https://github.com/ai-accelerator/aimart">
+                ai market @ github</a></h4>
                 <h4 class="long" contenteditable="true">Innovation Engine / W3AI SNN Protocol</h4>
               </div>            
             </div>             
@@ -431,11 +431,11 @@ export default {
       textEdit: `
 Hello World!
 
-Just another matching app.
-Add a check list to trigger ai matchers.
-Or add your skills/services to match open games/projects.
+Just another market app.
+Add a check list to trigger market players.
+Or add your services to compete on open projects.
 
-clone&hack matcher apps
+ai market hackers
 github.com/ai-accelerator`,
       matrixBiz: [
         ['a','STATUS',':','OK?','','','','','','','','','','','','','','','','','','','','','','',''],
