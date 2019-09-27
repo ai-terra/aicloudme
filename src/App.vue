@@ -56,12 +56,9 @@
           </div>
 
           <div id="flags">
-            <img class="flag" v-for="flag in team.flags" v-bind:key="flag" :src=" require('./assets/flags/'+ flag + '.png')"/>
-            <img class="flag" v-for="flag in team.flags" v-bind:key="flag" :src=" require('./assets/flags/'+ flag + '.png')"/>
-            <img class="flag" v-for="flag in team.flags" v-bind:key="flag" :src=" require('./assets/flags/'+ flag + '.png')"/>
-            <img class="flag" v-for="flag in team.flags" v-bind:key="flag" :src=" require('./assets/flags/'+ flag + '.png')"/>
-            <img class="flag" v-for="flag in team.flags" v-bind:key="flag" :src=" require('./assets/flags/'+ flag + '.png')"/>
-            <img class="flag" v-for="flag in team.flags" v-bind:key="flag" :src=" require('./assets/flags/'+ flag + '.png')"/>
+            <div v-for="index in 6" :key="index">
+              <img class="flag" v-for="flag in team.flags" v-bind:key="flag" :src="require('./assets/flags/'+ flag + '.png')"/>
+            </div>
           </div>
 
           <div id="ai-protocol">
@@ -916,6 +913,8 @@ html {
 }
 
 #flags {
+  display: flex;
+  flex-direction: row;
   height: 20px;
   overflow-x: hidden;
 }
