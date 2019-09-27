@@ -57,6 +57,11 @@
 
           <div id="flags">
             <img class="flag" v-for="flag in team.flags" v-bind:key="flag" :src=" require('./assets/flags/'+ flag + '.png')"/>
+            <img class="flag" v-for="flag in team.flags" v-bind:key="flag" :src=" require('./assets/flags/'+ flag + '.png')"/>
+            <img class="flag" v-for="flag in team.flags" v-bind:key="flag" :src=" require('./assets/flags/'+ flag + '.png')"/>
+            <img class="flag" v-for="flag in team.flags" v-bind:key="flag" :src=" require('./assets/flags/'+ flag + '.png')"/>
+            <img class="flag" v-for="flag in team.flags" v-bind:key="flag" :src=" require('./assets/flags/'+ flag + '.png')"/>
+            <img class="flag" v-for="flag in team.flags" v-bind:key="flag" :src=" require('./assets/flags/'+ flag + '.png')"/>
           </div>
 
           <div id="ai-protocol">
@@ -908,6 +913,11 @@ html {
 .scroller {
   margin-left: 1rem;
   padding-left: 1rem;
+}
+
+#flags {
+  height: 20px;
+  overflow-x: hidden;
 }
 
 .flag {
