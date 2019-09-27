@@ -131,6 +131,9 @@
 
                     <div v-if="fbview">
                       <div>List of posts, docs, etc from the table</div>
+                      <h1>{{ listDev[0].title }}</h1>
+                      <h3>{{ listDev[0].author }}</h3>
+                      <p>{{ listDev[0].post }}</p>
                     </div>
 
                     <div v-else class="scrollable">
