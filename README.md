@@ -1,8 +1,8 @@
-# ai match web app
+# ai mart web app
 
-ai match engine / live social innovation protocol
+ai market engine / live social innovation protocol
 
-## ai match engine install
+## ai market engine install
 
 ```
 npm install
