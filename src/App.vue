@@ -110,65 +110,47 @@
               </div>
             </div>
 
-            <div id="ai-jobs">
-              <div class="buttons">
-                <button class="next btn btn-primary" @click="nextProject">Projects</button>
-                <button class="next btn btn-primary" @click="show = !show">+</button>
-                <input type="text" class="input-add-new" name="new-job" value="eg: Add Job Request to Job News" size="40" maxlength="40">
-                <button class="next btn btn-warning" @click="runOneOps">+</button>
-              </div>
-              <ul class="list-group">
-                <transition-group name="slide-up" type="animation" appear>
-                  <li class="list-group-item" v-for="project in viewProjects" v-bind:key="project">
-                    
-                    <div class="table-title">
-                      <h3 class="long" title="Dev FairBook - Project & Job Demand in your social network">
-                        &nbsp;&nbsp; title[{{ project }}] - owner[{{ project }}] - [shares]</h3>
-                      <h3 class="short" title="Dev FairBook - Project & Job Demand in your social network">
-                        &nbsp;&nbsp; <div class="icon3x3prj">{{ projectIcon }}</div>&nbsp;title[{{ project }}] - owner[{{ project }}] - [shares]</h3>
-                      <div class="fork" title="fork (copy) project" @click="onProjectFork">f</div>
-                    </div>
+            <!-- <div id="ai-market"> -->
 
-                    <div v-if="fbview">
-                      <div>List of posts, docs, etc from the table</div>
-                      <h1>{{ listDev[0].title }}</h1>
-                      <h3>{{ listDev[0].author }}</h3>
-                      <p>{{ listDev[0].post }}</p>
-                      <ai-post></ai-post>
-                    </div>
+              <div id="ai-jobs">
+                <div class="buttons">
+                  <button class="next btn btn-primary" @click="nextProject">Projects</button>
+                  <button class="next btn btn-primary" @click="show = !show">+</button>
+                  <input type="text" class="input-add-new" name="new-job" value="eg: Add Job Request to Job News" size="40" maxlength="40">
+                  <button class="next btn btn-warning" @click="runOneOps">+</button>
+                </div>
+                <ul class="list-group">
+                  <transition-group name="slide-up" type="animation" appear>
+                    <li class="list-group-item" v-for="project in viewProjects" v-bind:key="project">
+                      
+                      <div class="table-title">
+                        <h3 class="long" title="Dev FairBook - Project & Job Demand in your social network">
+                          &nbsp;&nbsp; title[{{ project }}] - owner[{{ project }}] - [shares]</h3>
+                        <h3 class="short" title="Dev FairBook - Project & Job Demand in your social network">
+                          &nbsp;&nbsp; <div class="icon3x3prj">{{ projectIcon }}</div>&nbsp;title[{{ project }}] - owner[{{ project }}] - [shares]</h3>
+                        <div class="fork" title="fork (copy) project" @click="onProjectFork">f</div>
+                      </div>
 
-                    <div v-else class="scrollable">
-                      <table id="d-table" class="matrix">
-                        <tr class="row">
-                          <td class="cell config-btn" title="Click to expand visible rows" @click="expandRows">{{ corner }}</td>
-                          <td class="cell tbl-head" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
-                        </tr>                      
-                        <tr class="row" v-for="(row, rowIndex) in matrixDev" v-bind:key="rowIndex">    
+                      <div v-if="fbview">
+                        <div>List of posts, docs, etc from the table</div>
+                        <h1>{{ listDev[0].title }}</h1>
+                        <h3>{{ listDev[0].author }}</h3>
+                        <p>{{ listDev[0].post }}</p>
+                        <ai-post></ai-post>
+                      </div>
 
-                          <td class="cell" style="position: relative;"
-                            v-for="(cell, colIndex) in row" v-bind:key="colIndex"
-                            matrix="Dev" 
-                            :row="rowIndex" :col="colIndex" :valueini="matrixDev[rowIndex][colIndex]"
-                            :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
-                            :class="[
-                                      (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
-                                      ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
-                                      (matrixDev[rowIndex][colIndex] == 'Click') ? checkBtn : '',
-                                      (matrixDev[rowIndex][colIndex] == 'Post') ? postClass : ''
-                                    ]"
-                            
-                          >
-                            <!-- <div contenteditable="true" :id="'Dev:' + rowIndex + ':' + colIndex" 
-                              class="cell" 
-                              style="visibility: visible; position: relative; z-index: 20; left: 0; top: 0;">
-                              {{ matrixDev[rowIndex][colIndex] }}
-                            </div> -->
+                      <div class="scrollable">
+                        <table id="d-table" class="matrix">
+                          <tr class="row">
+                            <td class="cell config-btn" title="Click to expand visible rows" @click="expandRows">{{ corner }}</td>
+                            <td class="cell tbl-head" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
+                          </tr>                      
+                          <tr class="row" v-for="(row, rowIndex) in matrixDev" v-bind:key="rowIndex">    
 
-                            <input :id="'DevInput:' + rowIndex + ':' + colIndex"
-style="text-align: inherit; visibility: visible; width: inherit; background: transparent; position: relative; z-index: 40; left: 0; top: 0;"
-                            class="cell-input" type="text" v-model="matrixDev[rowIndex][colIndex]"
+                            <td class="cell" style="position: relative;"
+                              v-for="(cell, colIndex) in row" v-bind:key="colIndex"
                               matrix="Dev" 
-                              :row="rowIndex" :col="colIndex"
+                              :row="rowIndex" :col="colIndex" :valueini="matrixDev[rowIndex][colIndex]"
                               :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
                               :class="[
                                         (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
@@ -176,77 +158,99 @@ style="text-align: inherit; visibility: visible; width: inherit; background: tra
                                         (matrixDev[rowIndex][colIndex] == 'Click') ? checkBtn : '',
                                         (matrixDev[rowIndex][colIndex] == 'Post') ? postClass : ''
                                       ]"
-                              v-on:keyup="fx = $event.target.value"
+                              
                             >
+                              <!-- <div contenteditable="true" :id="'Dev:' + rowIndex + ':' + colIndex" 
+                                class="cell" 
+                                style="visibility: visible; position: relative; z-index: 20; left: 0; top: 0;">
+                                {{ matrixDev[rowIndex][colIndex] }}
+                              </div> -->
 
-                          </td>
-                        </tr>
+                              <input :id="'DevInput:' + rowIndex + ':' + colIndex"
+                              style="text-align: inherit; visibility: visible; width: inherit; background: transparent; position: relative; z-index: 40; left: 0; top: 0;"
+                              class="cell-input" type="text" v-model="matrixDev[rowIndex][colIndex]"
+                                matrix="Dev" 
+                                :row="rowIndex" :col="colIndex"
+                                :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
+                                :class="[
+                                          (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
+                                          ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
+                                          (matrixDev[rowIndex][colIndex] == 'Click') ? checkBtn : '',
+                                          (matrixDev[rowIndex][colIndex] == 'Post') ? postClass : ''
+                                        ]"
+                                v-on:keyup="fx = $event.target.value"
+                              >
 
-                      </table>
-                    </div>
+                            </td>
+                          </tr>
 
-                  </li>
-                </transition-group>
-              </ul>
-              <div class="background-text">
-                <p>&nbsp;</p>
-                <!-- <p>REQ</p> -->
+                        </table>
+                      </div>
+
+                    </li>
+                  </transition-group>
+                </ul>
+                <div class="background-text">
+                  <p>&nbsp;</p>
+                  <!-- <p>REQ</p> -->
+                </div>
               </div>
-            </div>
 
-            <div id="ai-ops">
-              <div class="buttons">
-                <button class="next btn btn-primary" @click="nextService">Services</button>
-                <button class="next btn btn-primary" @click="load = !load">+</button>
-                <input type="text" class="input-add-new" name="new-ops" value="eg: Execute or book top required ops." size="40" maxlength="40">
-                <button class="next btn btn-warning" @click="runOneOps">+</button>
+              <div id="ai-ops">
+                <div class="buttons">
+                  <button class="next btn btn-primary" @click="nextService">Services</button>
+                  <button class="next btn btn-primary" @click="load = !load">+</button>
+                  <input type="text" class="input-add-new" name="new-ops" value="eg: Execute or book top required ops." size="40" maxlength="40">
+                  <button class="next btn btn-warning" @click="runOneOps">+</button>
+                </div>
+                <ul class="list-group">
+                  <transition-group name="slide-down" type="animation" appear>
+                    <li class="list-group-item" v-for="service in services" v-bind:key="service">
+
+                      <div class="table-title">
+                        <h3 class="long" title="Ops FairBook - Service & Skills Offer in your social network">
+                          &nbsp;&nbsp;title[{{ service }}] - owner[{{ service }}] - [shares]</h3>
+                        <h3 class="short" title="Ops FairBook - Service & Skills Offer in your social network">
+                          &nbsp;&nbsp;<div class="icon3x3srv">{{ serviceIcon }}</div>&nbsp;title[{{ service }}] - owner[{{ service }}] - [shares]</h3>
+                        <div class="fork" title="fork (copy) service" @click="onServiceFork">f</div>
+                      </div>
+
+                      <div class="scrollable">
+                        <table id="o-table" class="matrix">
+                          <tr class="row">
+                            <td class="cell config-btn" title="Click to expand visible rows" @click="expandRows">{{ corner }}</td>
+                            <td class="cell tbl-head" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
+                          </tr>
+                          <tr class="row" v-for="(row, rowIndex) in matrixOps" v-bind:key="rowIndex">                          
+                            <td contenteditable="true" class="cell" 
+                            matrix="Ops" 
+                            v-for="(cell, colIndex) in row" v-bind:key="colIndex"
+                            :row="rowIndex" :col="colIndex" 
+                            :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
+                            :class="[
+                                      (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
+                                      ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
+                                      (matrixOps[rowIndex][colIndex] == 'Click') ? checkBtn : '',
+                                      (matrixOps[rowIndex][colIndex] == 'Post') ? postClass : ''
+                                    ]"
+                            @click="onCellClick"
+                            >
+                              {{ cell }}
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+
+                    </li>
+                  </transition-group>
+                </ul>
+                <div class="background-text">
+                  <p>&nbsp;</p>
+                  <!-- <p>OPS</p> -->
+                </div>
               </div>
-              <ul class="list-group">
-                <transition-group name="slide-down" type="animation" appear>
-                  <li class="list-group-item" v-for="service in services" v-bind:key="service">
 
-                    <div class="table-title">
-                      <h3 class="long" title="Ops FairBook - Service & Skills Offer in your social network">
-                        &nbsp;&nbsp;title[{{ service }}] - owner[{{ service }}] - [shares]</h3>
-                      <h3 class="short" title="Ops FairBook - Service & Skills Offer in your social network">
-                        &nbsp;&nbsp;<div class="icon3x3srv">{{ serviceIcon }}</div>&nbsp;title[{{ service }}] - owner[{{ service }}] - [shares]</h3>
-                      <div class="fork" title="fork (copy) service" @click="onServiceFork">f</div>
-                    </div>
-
-                    <div class="scrollable">
-                      <table id="o-table" class="matrix">
-                        <tr class="row">
-                          <td class="cell config-btn" title="Click to expand visible rows" @click="expandRows">{{ corner }}</td>
-                          <td class="cell tbl-head" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
-                        </tr>
-                        <tr class="row" v-for="(row, rowIndex) in matrixOps" v-bind:key="rowIndex">                          
-                          <td contenteditable="true" class="cell" 
-                          matrix="Ops" 
-                          v-for="(cell, colIndex) in row" v-bind:key="colIndex"
-                          :row="rowIndex" :col="colIndex" 
-                          :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
-                          :class="[
-                                    (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
-                                    ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
-                                    (matrixOps[rowIndex][colIndex] == 'Click') ? checkBtn : '',
-                                    (matrixOps[rowIndex][colIndex] == 'Post') ? postClass : ''
-                                  ]"
-                          @click="onCellClick"
-                          >
-                            {{ cell }}
-                          </td>
-                        </tr>
-                      </table>
-                    </div>
-
-                  </li>
-                </transition-group>
-              </ul>
-              <div class="background-text">
-                <p>&nbsp;</p>
-                <!-- <p>OPS</p> -->
-              </div>
-            </div>
+            <!-- </div> -->
 
           </div>
 
@@ -1011,6 +1015,14 @@ html {
   align-content: space-around;
 }
 
+/* #ai-market {
+  width: 100%;
+  max-height: 64rem;
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+} */
+
 #ai-prog,
 #ai-jobs,
 #ai-ops {
@@ -1523,6 +1535,8 @@ h4 {
   #ai-jobs,
   #ai-ops {
     width: 50%;
+    max-height: 36rem;
+    overflow-y: hidden;
   }
 
   div.buttons {
