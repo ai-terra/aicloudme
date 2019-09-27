@@ -134,6 +134,7 @@
                       <h1>{{ listDev[0].title }}</h1>
                       <h3>{{ listDev[0].author }}</h3>
                       <p>{{ listDev[0].post }}</p>
+                      <ai-post></ai-post>
                     </div>
 
                     <div v-else class="scrollable">
@@ -362,14 +363,16 @@ style="text-align: inherit; visibility: visible; width: inherit; background: tra
 import axios from 'axios';  // for connecting to Frirebase RTDB
 
 import db from './db.js';
-// import firebase from 'firebase/app' // as part of Vuefire to nennect to Firestore
-// import 'firebase/firestore'
-
-// const db = firebase.initializeApp({ projectId: 'aiplanet' }).firestore()
 
 import aiteam from './ai-config.json';
+
+import Post from './views/Post.vue';
+
 export default {
   name: "app",
+  components: {
+    'ai-post': Post,
+  },
   data() {
     return {
       team: aiteam,
@@ -554,53 +557,53 @@ github.com/ai-accelerator`,
       this.readService();
 
       // dev dummy animation
-      this.setCell('d-table', 2, 2, 'ok');
-      this.setCell('o-table', 2, 2, 'ok');
-      this.setCell('b-table', 2, 3, 'ok');
-      this.setCell('b-table', 2, 7, 'ok');
-      this.setCell('b-table', 1, 3, 'OK');
+      // this.setCell('d-table', 2, 2, 'ok');
+      // this.setCell('o-table', 2, 2, 'ok');
+      // this.setCell('b-table', 2, 3, 'ok');
+      // this.setCell('b-table', 2, 7, 'ok');
+      // this.setCell('b-table', 1, 3, 'OK');
 
-      this.setCell('d-table', 4, 2, 'ok');
-      this.setCell('o-table', 4, 2, 'ok');
-      this.setCell('b-table', 4, 3, 'ok');
-      this.setCell('b-table', 4, 7, 'ok');
-      this.setCell('b-table', 3, 3, 'OK');
+      // this.setCell('d-table', 4, 2, 'ok');
+      // this.setCell('o-table', 4, 2, 'ok');
+      // this.setCell('b-table', 4, 3, 'ok');
+      // this.setCell('b-table', 4, 7, 'ok');
+      // this.setCell('b-table', 3, 3, 'OK');
 
-      this.setCell('d-table', 6, 2, 'ok');
-      this.setCell('o-table', 6, 2, 'ok');
-      this.setCell('b-table', 6, 3, 'ok');
-      this.setCell('b-table', 6, 7, 'ok');
-      this.setCell('b-table', 5, 3, 'OK');
+      // this.setCell('d-table', 6, 2, 'ok');
+      // this.setCell('o-table', 6, 2, 'ok');
+      // this.setCell('b-table', 6, 3, 'ok');
+      // this.setCell('b-table', 6, 7, 'ok');
+      // this.setCell('b-table', 5, 3, 'OK');
 
-      this.setCell('d-table', 8, 2, 'ok');
-      this.setCell('o-table', 8, 2, 'ok');
-      this.setCell('b-table', 8, 3, 'ok');
-      this.setCell('b-table', 8, 7, 'ok');
-      this.setCell('b-table', 7, 3, 'OK');
+      // this.setCell('d-table', 8, 2, 'ok');
+      // this.setCell('o-table', 8, 2, 'ok');
+      // this.setCell('b-table', 8, 3, 'ok');
+      // this.setCell('b-table', 8, 7, 'ok');
+      // this.setCell('b-table', 7, 3, 'OK');
 
-      this.setCell('d-table', 10, 2, 'ok');
-      this.setCell('o-table', 10, 2, 'ok');
-      this.setCell('b-table', 10, 3, 'ok');
-      this.setCell('b-table', 10, 7, 'ok');
-      this.setCell('b-table', 9, 3, 'OK');
+      // this.setCell('d-table', 10, 2, 'ok');
+      // this.setCell('o-table', 10, 2, 'ok');
+      // this.setCell('b-table', 10, 3, 'ok');
+      // this.setCell('b-table', 10, 7, 'ok');
+      // this.setCell('b-table', 9, 3, 'OK');
 
-      this.setCell('d-table', 12, 2, 'ok');
-      this.setCell('o-table', 12, 2, 'ok');
-      this.setCell('b-table', 12, 3, 'ok');
-      this.setCell('b-table', 12, 7, 'ok');
-      this.setCell('b-table', 11, 3, 'OK');
+      // this.setCell('d-table', 12, 2, 'ok');
+      // this.setCell('o-table', 12, 2, 'ok');
+      // this.setCell('b-table', 12, 3, 'ok');
+      // this.setCell('b-table', 12, 7, 'ok');
+      // this.setCell('b-table', 11, 3, 'OK');
 
-      this.setCell('d-table', 14, 2, 'ok');
-      this.setCell('o-table', 14, 2, 'ok');
-      this.setCell('b-table', 14, 3, 'ok');
-      this.setCell('b-table', 14, 7, 'ok');
-      this.setCell('b-table', 13, 3, 'OK');
+      // this.setCell('d-table', 14, 2, 'ok');
+      // this.setCell('o-table', 14, 2, 'ok');
+      // this.setCell('b-table', 14, 3, 'ok');
+      // this.setCell('b-table', 14, 7, 'ok');
+      // this.setCell('b-table', 13, 3, 'OK');
 
-      this.setCell('d-table', 16, 2, 'ok');
-      this.setCell('o-table', 16, 2, 'ok');
-      this.setCell('b-table', 16, 3, 'ok');
-      this.setCell('b-table', 16, 7, 'ok');
-      this.setCell('b-table', 15, 3, 'OK');      
+      // this.setCell('d-table', 16, 2, 'ok');
+      // this.setCell('o-table', 16, 2, 'ok');
+      // this.setCell('b-table', 16, 3, 'ok');
+      // this.setCell('b-table', 16, 7, 'ok');
+      // this.setCell('b-table', 15, 3, 'OK');      
 
       // Run/Eval Service Input queries on Project data and add/update results as step[0]
 
@@ -610,74 +613,83 @@ github.com/ai-accelerator`,
       this.writeProgress();
     },
     readProject() { // Read user edits/updates in project table
-      // ToDo readProject()
-      let projectTable = document.getElementById('d-table');  // To move in an ini method?
+      // ToDo readProject() form matrix synced to market / Firestore
+
+      // Dummy animation of reading & changing table cells
+      // let projectTable = document.getElementById('d-table');  // To move in an ini method?
       
-      // Read VOTING, FUNDS, TERMS and BOOK tabs from project table
-      for (let row = 2; row <= 8; row=row+2) {
-        let x = projectTable.rows[row].cells;
-        for (let col = 1; col <= 13; col=col+2) { // for demo read vizible cols
-          // x[col].innerHTML = value; // set value => should read cell into projectMatrix
-          x[col].classList.add('fade-on-job-rules-read');
-        }
-      }
+      // // Read VOTING, FUNDS, TERMS and BOOK tabs from project table
+      // for (let row = 2; row <= 8; row=row+2) {
+      //   let x = projectTable.rows[row].cells;
+      //   for (let col = 1; col <= 13; col=col+2) { // for demo read vizible cols
+      //     // x[col].innerHTML = value; // set value => should read cell into projectMatrix
+      //     x[col].classList.add('fade-on-job-rules-read');
+      //   }
+      // }
       
-      // Read INPUT, STEPS, OUTPUT and PAY tabs from project table
-      for (let row = 10; row <= 16; row=row+2) {
-        let x = projectTable.rows[row].cells;
-        for (let col = 1; col <= 13; col=col+2) { // for demo read vizible cols
-          // x[col].innerHTML = value; // set value => should read cell into projectMatrix
-          x[col].classList.add('fade-on-job-status-read');
-        }
-      }
+      // // Read INPUT, STEPS, OUTPUT and PAY tabs from project table
+      // for (let row = 10; row <= 16; row=row+2) {
+      //   let x = projectTable.rows[row].cells;
+      //   for (let col = 1; col <= 13; col=col+2) { // for demo read vizible cols
+      //     // x[col].innerHTML = value; // set value => should read cell into projectMatrix
+      //     x[col].classList.add('fade-on-job-status-read');
+      //   }
+      // }
 
       // el.style.opacity = 0.5;
+
       // done();
     },
     readService() { // Read user edits/updates in service table
-      // Todo readService()
-      let serviceTable = document.getElementById('o-table');  // To move in an ini method?
+      // Todo readService() form matrix synced to market / Firestore
+
+      // Dummy animation of reading & changing table cells
+      // let serviceTable = document.getElementById('o-table');  // To move in an ini method?
       
-      // Read VOTING, FUNDS, TERMS and BOOK tabs from service table
-      for (let row = 2; row <= 8; row=row+2) {
-        let x = serviceTable.rows[row].cells;
-        for (let col = 1; col <= 13; col=col+2) { // for demo read vizible cols
-          // x[col].innerHTML = value; // set value => should read cell into projectMatrix
-          x[col].classList.add('fade-on-ops-rules-read');
-        }
-      }
+      // // Read VOTING, FUNDS, TERMS and BOOK tabs from service table
+      // for (let row = 2; row <= 8; row=row+2) {
+      //   let x = serviceTable.rows[row].cells;
+      //   for (let col = 1; col <= 13; col=col+2) { // for demo read vizible cols
+      //     // x[col].innerHTML = value; // set value => should read cell into projectMatrix
+      //     x[col].classList.add('fade-on-ops-rules-read');
+      //   }
+      // }
       
-      // Read INPUT, STEPS, OUTPUT and PAY tabs from service table
-      for (let row = 10; row <= 16; row=row+2) {
-        let x = serviceTable.rows[row].cells;
-        for (let col = 1; col <= 13; col=col+2) { // for demo read vizible cols
-          // x[col].innerHTML = value; // set value => should read cell into projectMatrix
-          x[col].classList.add('fade-on-ops-exe-read');
-        }
-      }
+      // // Read INPUT, STEPS, OUTPUT and PAY tabs from service table
+      // for (let row = 10; row <= 16; row=row+2) {
+      //   let x = serviceTable.rows[row].cells;
+      //   for (let col = 1; col <= 13; col=col+2) { // for demo read vizible cols
+      //     // x[col].innerHTML = value; // set value => should read cell into projectMatrix
+      //     x[col].classList.add('fade-on-ops-exe-read');
+      //   }
+      // }
+
       // done();
     },
     writeProgress() { // Read user edits/updates in progress table - ToDo - To review
-      // Todo readService()
-      let serviceTable = document.getElementById('b-table');  // To move in an ini method? serviceTable or bizTable (former progress-table)
+      // Todo writeProgress() form matrix synced to market / Firestore
+
+      // // Dummy animation of reading & changing table cells
+      // let serviceTable = document.getElementById('b-table');  // To move in an ini method? serviceTable or bizTable (former progress-table)
       
-      // Write VOTING, FUNDS, TERMS and BOOK tabs to progress table
-      for (let row = 2; row <= 8; row=row+2) {
-        let x = serviceTable.rows[row].cells;
-        for (let col = 1; col <= 13; col=col+2) { // for demo read vizible cols
-          // x[col].innerHTML = value; // set value => should read cell into projectMatrix
-          x[col].classList.add('fade-on-block-deal-write');
-        }
-      }
+      // // Write VOTING, FUNDS, TERMS and BOOK tabs to progress table
+      // for (let row = 2; row <= 8; row=row+2) {
+      //   let x = serviceTable.rows[row].cells;
+      //   for (let col = 1; col <= 13; col=col+2) { // for demo read vizible cols
+      //     // x[col].innerHTML = value; // set value => should read cell into projectMatrix
+      //     x[col].classList.add('fade-on-block-deal-write');
+      //   }
+      // }
       
-      // Write INPUT, STEPS, OUTPUT and PAY tabs to progress table
-      for (let row = 10; row <= 16; row=row+2) {
-        let x = serviceTable.rows[row].cells;
-        for (let col = 1; col <= 13; col=col+2) { // for demo read vizible cols
-          // x[col].innerHTML = value; // set value => should read cell into projectMatrix
-          x[col].classList.add('fade-on-block-pay-write');
-        }
-      }
+      // // Write INPUT, STEPS, OUTPUT and PAY tabs to progress table
+      // for (let row = 10; row <= 16; row=row+2) {
+      //   let x = serviceTable.rows[row].cells;
+      //   for (let col = 1; col <= 13; col=col+2) { // for demo read vizible cols
+      //     // x[col].innerHTML = value; // set value => should read cell into projectMatrix
+      //     x[col].classList.add('fade-on-block-pay-write');
+      //   }
+      // }
+
       // done();
     },
     updateCell(matrix, row, col) {
@@ -837,14 +849,15 @@ github.com/ai-accelerator`,
       }
     },
     // TODO - check table/rows/cells length, etc
-    setCell(tableId, row, col, value) {
-      let table = document.getElementById(tableId);
-      let x = table.rows[row].cells;
+    // TODO - setCell in the matrices linked to Firestore / not in tables
+    // setCell(tableId, row, col, value) {
+    //   let table = document.getElementById(tableId);
+    //   let x = table.rows[row].cells;
 
-      x[col].innerHTML = value;
+    //   x[col].innerHTML = value;
 
-      x[col].classList.add('fade-on-change');
-    }
+    //   x[col].classList.add('fade-on-change');
+    // }
   }
 };
 </script>
@@ -956,10 +969,10 @@ html {
 
 #ai-protocol {
   width: 100%;
-  max-height: 66rem;
+  max-height: 64rem;
   display: flex;
   flex-direction: row;
-  overflow-y: auto;
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 
@@ -1002,8 +1015,10 @@ html {
 #ai-jobs,
 #ai-ops {
   width: 33.33%;
+  max-height: 64rem;
   display: flex;
   flex-direction: column;
+  overflow-y: hidden;
 }
 
 .btn {
