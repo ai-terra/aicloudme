@@ -1180,6 +1180,10 @@ li.list-group-item {
   text-align: center;
 }
 
+.cell-input:focus {
+   outline:none;
+}
+
 .cell:hover {
   background-color: rgba(108, 167, 84, .5);
 }
