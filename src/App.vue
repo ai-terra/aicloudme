@@ -28,7 +28,6 @@
               <div class="title" contenteditable="true">
                 <div class="config-btn">&nbsp;Sign Up&nbsp;</div>
                 <div class="config-btn">&nbsp;Sign In&nbsp;</div>
-
               </div>
             </div>
             
@@ -54,6 +53,10 @@
               </div>
             </div>
 
+          </div>
+
+          <div id="flags">
+            <img v-for="flag in team.flags" v-bind:key="flag" :src=" require('./assets/flags/'+ flag + '.png')"/>
           </div>
 
           <div id="ai-protocol">
