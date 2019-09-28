@@ -160,8 +160,11 @@
                                 {{ matrixDev[rowIndex][colIndex] }}
                               </div> -->
 
-                              <input :id="'DevInput:' + rowIndex + ':' + colIndex"
-                              style="text-align: inherit; visibility: visible; width: inherit; background: transparent; position: relative; z-index: 40; left: 0; top: 0;"
+                              <!-- <input :id="'DevInput:' + rowIndex + ':' + colIndex"
+                              style="text-align: inherit; visibility: visible; width: inherit; background: transparent; position: relative; z-index: 40; left: 0; top: 0;" -->
+
+                              <textarea :id="'DevInput:' + rowIndex + ':' + colIndex" rows="1"
+                              style="text-align: inherit; visibility: visible; resize: none; width: inherit; background: transparent; position: relative; z-index: 40; left: 0; top: 0;"
                               class="cell-input" type="text" v-model="matrixDev[rowIndex][colIndex]"
                                 matrix="Dev" 
                                 :row="rowIndex" :col="colIndex"
@@ -174,6 +177,7 @@
                                         ]"
                                 v-on:keyup="fx = $event.target.value"
                               >
+                              </textarea>
 
                             </td>
                           </tr>
