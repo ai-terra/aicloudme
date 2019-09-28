@@ -1,7 +1,9 @@
 <template>
-  <div>
-    <div class="title">
-      <h2 v-html="matrix[3]"></h2>
+  <div class="card">
+    <div class="poster">
+      <div class="title">
+        <h2 v-html="matrix[3]"></h2>
+      </div>
     </div>
     <ul class="controls">
       <li class="react">Views</li>
@@ -21,6 +23,10 @@ export default {
 </script>
 
 <style scoped>
+.poster {
+  background-color: azure;
+}
+
 h2 {
   margin: 1rem;
 }
