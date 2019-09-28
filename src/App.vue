@@ -38,13 +38,13 @@
                       v-bind:key="devPostId">{{ title }}</li>
                 </ul>
               </div>
-              <div class="title long"><h1>{{ team.newDevTitle }}</h1></div>
-              <div class="title short" @click="postNameId++"><h1>{{ postName[postNameId%postName.length] }}</h1></div>
+              <div class="title long"><h2>{{ team.newDevTitle }}</h2></div>
+              <div class="title short" @click="postNameId++"><h2>{{ postName[postNameId%postName.length] }}</h2></div>
             </div>
 
             <div class="header-group opsNews">
-              <div class="title long"><h1>{{ team.newOpsTitle }}</h1></div>
-              <div class="title short" @click="opsNameId++"><h1>{{ opsName[opsNameId%opsName.length] }}</h1></div>
+              <div class="title long"><h2>{{ team.newOpsTitle }}</h2></div>
+              <div class="title short" @click="opsNameId++"><h2>{{ opsName[opsNameId%opsName.length] }}</h2></div>
               <div class="title news-scroller" contenteditable="true">
                 <ul class="scroller">
                   <li v-for="(title, opsPostId) in newOpsPosts.slice(0, 3)" 
@@ -1057,6 +1057,12 @@ html {
 .long {
   display: flex;
   flex-direction: row;
+}
+
+h2 {
+  margin: 0rem;
+  border: 0rem;
+  padding: 0rem;
 }
 
 h2.long {
