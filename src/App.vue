@@ -125,7 +125,7 @@
                       
                       <div class="table-title">
                         <h3 class="long" title="Dev FairBook - Project & Job Demand in your social network">
-                          &nbsp;&nbsp; title[{{ project }}] - owner[{{ project }}] - [shares]</h3>
+                          &nbsp;&nbsp; <div class="icon3x3prj">{{ projectIcon }}</div>&nbsp;title[{{ project }}] - owner[{{ project }}] - [shares]</h3>
                         <h3 class="short" title="Dev FairBook - Project & Job Demand in your social network">
                           &nbsp;&nbsp; <div class="icon3x3prj">{{ projectIcon }}</div>&nbsp;title[{{ project }}] - owner[{{ project }}] - [shares]</h3>
                         <div class="fork" title="fork (copy) project" @click="onProjectFork">f</div>
@@ -948,6 +948,7 @@ html {
 
 .table-title {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
@@ -1051,6 +1052,11 @@ html {
   width: 26rem;
   height: 3rem;
   font-size: 1.5rem;
+}
+
+.long {
+  display: flex;
+  flex-direction: row;
 }
 
 h2.long {
@@ -1523,9 +1529,6 @@ h4 {
 
 @media screen and (max-width: 1200px) {
 
-  .long {
-    display: none;
-  }
   .long {
     display: none;
   }
