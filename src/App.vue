@@ -136,7 +136,9 @@
                         <h1>{{ listDev[0].title }}</h1>
                         <h3>{{ listDev[0].author }}</h3>
                         <p>{{ listDev[0].post }}</p>
-                        <ai-post></ai-post>
+
+                        <ai-post :matrix="matrixDev[5]"></ai-post>
+
                       </div>
 
                       <div class="scrollable">

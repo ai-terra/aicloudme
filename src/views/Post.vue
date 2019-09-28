@@ -1,11 +1,15 @@
 <template>
   <div>
     <h1>Test Post Component</h1>
+    <div>{{ matrix[3] }}</div>
+    <input type="text" v-model="matrix[3]" />
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["matrix"]
+};
 </script>
 
 <style scoped>
