@@ -886,6 +886,14 @@ html {
   margin: .9rem 2rem 0 0rem;
 }
 
+h1.long {
+  margin: .5rem 0 .5rem;
+}
+
+h5.long {
+  margin: 0px;
+}
+
 .title-container {
   width: 100%;
   display: flex;
