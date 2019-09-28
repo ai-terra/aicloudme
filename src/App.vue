@@ -948,7 +948,7 @@ html {
 }
 
 .tbl-head {
-  background-color: whitesmoke;
+  background-color: rgba(100, 100, 100, .2);
 }
 
 .fork {
