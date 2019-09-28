@@ -110,8 +110,6 @@
               </div>
             </div>
 
-            <!-- <div id="ai-market"> -->
-
               <div id="ai-jobs">
                 <div class="buttons">
                   <button class="next btn btn-primary" @click="nextProject">Projects</button>
@@ -941,6 +939,8 @@ html {
 }
 
 .table-title {
+  height: 5rem;
+  border-bottom: 1px solid grey;
   display: flex;
   flex-direction: row;
   align-items: center;

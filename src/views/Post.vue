@@ -29,6 +29,7 @@ h2 {
   margin-left: 1rem;
   display: flex;
   justify-items: center;
+  justify-content: space-between;
   list-style-type: none;
   padding: 0;
 }
