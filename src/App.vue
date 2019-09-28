@@ -1489,8 +1489,8 @@ h4 {
 
 .icon3x3prj {
   font-family: monospace;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2.35rem;
+  height: 2.35rem;
   font-size: .8rem;
   overflow-y: hidden;
   overflow-wrap: break-word; 
@@ -1502,8 +1502,8 @@ h4 {
 
 .icon3x3srv {
   font-family: monospace;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2.35rem;
+  height: 2.35rem;
   font-size: .8rem;
   overflow-y: hidden;
   overflow-wrap: break-word; 

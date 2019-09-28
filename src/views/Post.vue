@@ -4,6 +4,7 @@
       <h2 v-html="matrix[3]"></h2>
     </div>
     <ul class="controls">
+      <li class="react">Views</li>
       <li class="react">Like</li>
       <li class="react">Comment</li>
       <li class="react">Share</li>
