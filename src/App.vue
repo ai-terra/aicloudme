@@ -22,7 +22,7 @@
               <div class="title">
                 <div class="config-btn" title="run > com > edu > soc > dev > ops > test > bank" 
                   @click="viewId++">&nbsp; {{ view[viewId%view.length] }} &nbsp;</div>
-                <div class="config-btn" title="View posts or view table" 
+                <div class="config-btn" title="Switch views: web | edit" 
                   @click="fbview = !fbview">&nbsp; {{ fbview ? 'web' : 'edit' }} &nbsp;</div>
               </div>
               <div class="title" contenteditable="true">
@@ -129,9 +129,13 @@
                         <div class="fork" title="fork (copy) project" @click="onProjectFork">f</div>
                       </div>
 
+                      <!-- <section class="views"> -->
+
                       <div v-if="fbview">
-                        <ai-post :matrix="matrixDev[5]"></ai-post>
+                        <ai-post :matrix="matrixDev[1]"></ai-post>
                       </div>
+
+                      <!-- </section> -->
 
                       <div class="scrollable">
                         <table id="d-table" class="matrix">
