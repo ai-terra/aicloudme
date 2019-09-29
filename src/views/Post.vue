@@ -10,15 +10,20 @@
       <li class="react">Like</li>
       <li class="react">Comment</li>
       <li class="react">Share</li>
-      <li class="react">Edit</li>
+      <li class="react" @click="showEdit = !showEdit">Edit</li>
     </ul>
-    <textarea class="title" v-model="matrix[3]" placeholder="edit post"></textarea>
+    <textarea class="edit" v-if="showEdit" v-model="matrix[3]" placeholder="edit post"></textarea>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["matrix"]
+  props: ["matrix"],
+  data() {
+    return {
+      showEdit: false
+    };
+  }
 };
 </script>
 
@@ -33,7 +38,7 @@ h2 {
 
 .controls {
   width: 95%;
-  margin-left: 1rem;
+  margin: 1rem;
   display: flex;
   justify-items: center;
   justify-content: space-between;
@@ -42,6 +47,7 @@ h2 {
 }
 
 .react {
+  cursor: pointer;
 }
 
 .title {
@@ -49,7 +55,9 @@ h2 {
   width: 95%;
 }
 
-textarea.title {
+.edit {
   background: transparent;
+  margin: 0 1rem 1rem 1rem;
+  width: 95%;
 }
 </style>
