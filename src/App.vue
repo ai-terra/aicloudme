@@ -1113,7 +1113,7 @@ li.list-group-item {
 
 .list-group {
   margin: 0px;
-  overflow-x: auto;
+  /* overflow-x: auto; */
   overflow-y: auto;
   border: 1px solid grey;
   background: transparent;

@@ -28,12 +28,25 @@ export default {
 </script>
 
 <style scoped>
+.card {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
 .poster {
+  width: 100%;
+  height: 100px;
+  background-image: url("./../assets/img/innovators-200.jpg");
   background-color: azure;
 }
 
 h2 {
   margin: 1rem;
+  color: white;
+  text-align: center;
+  align-self: center;
 }
 
 .controls {
