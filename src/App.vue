@@ -444,7 +444,7 @@ Just another market app.
 Add a check list to trigger market players.
 Or add your services to compete on open projects.
 
-ai market hackers
+clone free ai web markets:
 github.com/ai-accelerator`,
       matrixBiz: [
         ['a','STATUS',':','OK?','','','','','','','','','','','','','','','','','','','','','','',''],
