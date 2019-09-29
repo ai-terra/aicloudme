@@ -328,7 +328,7 @@
               <h4><a href="https://ai-teams.web.app">Team</a></h4>
             </div> 
             <div id="my-dev-ops" class="title-container">
-              <h4><a href="https://ai-cell.web.app">Stem</a></h4>
+              <h4><a href="https://ai-cell.web.app">DNA</a></h4>
               <h4><a href="https://ai-banks.web.app">RPA</a></h4>
               <h4><a href="https://ai-gov.web.app">R&D</a></h4>
               <h4><a href="https://ai-pmo.web.app">MIL</a></h4>
@@ -442,7 +442,7 @@ Hello World!
 
 Just another market app.
 Add a check list to trigger market players.
-Or add your services to compete on open projects.
+Or add your ai services to compete on world's projects.
 
 clone free ai web markets:
 github.com/ai-accelerator`,
