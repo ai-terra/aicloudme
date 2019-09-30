@@ -281,7 +281,7 @@
             <div id="editor-tabs">
 
               <div id="text-editor">
-                <textarea id="textEdit" v-model="textEdit" placeholder="Edit your AI Post & Ops here."></textarea>
+                <textarea id="textEdit" v-model="matrixDev[1][11]" placeholder="Edit your AI Post & Ops here."></textarea>
               </div>
 
               <div id="table-editor">
@@ -472,8 +472,12 @@ github.com/ai-accelerator`,
         {title: 'Toronto W3AI News', post: 'bla bla, bla', author: 'SI'}
       ],  
       matrixDev: [
-        ['a','SOCIAL',':','project','','title',':','Market 1','','priority','=','1','','votes','=','247','','comments','=','144','','clones','=','24','','','\n'],
-        ['1','Post',':','Free AI Market Engine','','','','','','','','','','','','','','','','','','','','','','','\n'],
+        ['a','SOCIAL',':','project','','title',':','AI World','','priority','=','1','','votes','=','247','','comments','=','144','','clones','=','24','','','\n'],
+        ['1','Post',':','Hello World!','','subtitle',':','welcome to ai web','','body',':',
+        `The super productivity ai apps.
+Add a check list to trigger world players.
+Or add your services to contribute to world's projects.`,'','signature',':',`clone free ai world apps:
+github.com/ai-accelerator`,'','','','','','','','','','','\n'],
         ['b','RATES',':','money','','','','','','','','','','','','','','','','','','','','','','','\n'],
         ['1','Click',':','= if ( oa-Market == "ready" ) { da-State = "Ok" } else { da-State = "Quit" }','','','','','','','','','','','','','','','','','','','','','','','\n'],
         ['c','DOCS',':','terms','','','','','','','','','','','','','','','','','','','','','','','\n'],
