@@ -114,7 +114,7 @@
                 <div class="buttons">
                   <button class="next btn btn-primary" @click="nextProject">Projects</button>
                   <button class="next btn btn-primary" @click="addProject">+</button>
-                  <input type="text" class="input-add-new" v-model="newProject" size="20" maxlength="40">
+                  <input type="text" class="input-add-new" v-model="matrixDev[0][7]" size="20" maxlength="40">
                   <button class="next btn btn-warning" @click="runOneOps">+</button>
                 </div>
                 <ul class="list-group">
@@ -417,7 +417,7 @@ export default {
       viewProjects: [24],
       projects: [],
       projectStore: [],
-      newProject: 'New Project Title',
+      // newProjectTitle: 'New Project Title',
       projectIcon: '◼◼◼◼◼◼◼◼◼',
       serviceIcon: '◼◼◼◼◼◼◼◼◼',
       branch: 1,
@@ -543,7 +543,7 @@ github.com/ai-accelerator`,
   mounted() {
     if (localStorage.getItem('projects')) {
       try {
-        this.projects = JSON.parse(localStorage.getItem('projects'));
+        this.projectStore = JSON.parse(localStorage.getItem('projects'));
       } catch(e) {
         localStorage.removeItem('projects');
       }
@@ -554,12 +554,12 @@ github.com/ai-accelerator`,
 
     addProject() {
       // ensure they actually typed something as new Project Title
-      if (!this.newProject) {
+      if (!this.matrixDev[0][7]) {
         return;
       }
 
-      this.projectStore.push(this.newProject);
-      this.newProject = 'Project Idea';
+      let newProject = this.matrixDev.slice(0); // copy the current matrixDev
+      this.projectStore.splice(0, 0, newProject); // Add new project at the end of the projects store
       this.saveProjects();
     },
     removeProject(x) {
