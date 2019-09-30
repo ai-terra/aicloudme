@@ -43,12 +43,15 @@ export default {
   align-items: center;
   /* background-image: url("./../assets/img/innovators-200.jpg"); */
   background-image: url("https://firebasestorage.googleapis.com/v0/b/aiplanet.appspot.com/o/img%2Fworld-200.png?alt=media&token=0f5e2753-4b10-4c8c-a8ea-63f62ab56277");
-  background-color: azure;
+  background-color: rgb(170, 211, 223);
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  background-size: contain;
 }
 
 h2 {
   margin: 1rem;
-  color: white;
+  color: #333;
   text-align: center;
   align-self: center;
 }
