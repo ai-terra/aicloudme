@@ -2,7 +2,7 @@
 node_modules
 /dist
 /.firebase
-/src/db.js
+/src/gcp.js
 
 # local env files
 .env.local

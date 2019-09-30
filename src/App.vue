@@ -115,7 +115,7 @@
                   <button class="next btn btn-primary" @click="nextProject">Projects</button>
                   <button class="next btn btn-primary" @click="addProject">+</button>
                   <input type="text" class="input-add-new" v-model="matrixDev[0][7]" size="20" maxlength="40">
-                  <button class="next btn btn-warning" @click="runOneOps">+</button>
+                  <button class="next btn btn-warning" @click="uploadProject">u</button>
                 </div>
                 <ul class="list-group">
                   <transition-group name="slide-up" type="animation" appear>
@@ -368,7 +368,9 @@
 <script>
 import axios from 'axios';  // for connecting to Frirebase RTDB
 
-import fb from './fb.js';
+import fb from './gcp.js';
+const fs = fb.firestore();
+const storage = fb.storage(); //  Firebase / GCP Storage
 
 import aiteam from './ai-config.json';
 
@@ -537,7 +539,7 @@ github.com/ai-accelerator`,
   },
 
   firestore: {
-    projects: fb.collection('projects')
+    projects: fs.collection('projects')
   },
 
   mounted() {
@@ -551,7 +553,21 @@ github.com/ai-accelerator`,
   },
 
   methods: {
+    uploadProject() {
 
+      let storageRef = storage.ref();
+      // let dataRef = storageRef.child('data');
+      let projectDataRef = storageRef.child('data/project.json');
+
+      let projectName = this.matrixDev[0][7] + '.json';
+      let newProjectData = this.matrixDev.slice(0);
+      let file = new File(newProjectData, projectName, 
+      {type:"text/plain", lastModified: new Date().getTime()});
+
+      projectDataRef.put(file).then(function(snapshot) {
+      console.log('Uploaded a blob or file!');
+      });
+    },
     addProject() {
       // ensure they actually typed something as new Project Title
       if (!this.matrixDev[0][7]) {
@@ -835,7 +851,7 @@ github.com/ai-accelerator`,
 
       const lines = { ...this.matrixDev }
 
-      fb.collection('projects').add({
+      fs.collection('projects').add({
           tablelines: lines
         });
       // axios.post('https://aiplanet.firebaseio.com/projects.json', this.matrixDev)
