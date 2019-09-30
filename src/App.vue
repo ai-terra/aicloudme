@@ -444,11 +444,11 @@ export default {
       textEdit: `
 Hello World!
 
-Just another market app.
-Add a check list to trigger market players.
-Or add your ai services to compete on world's projects.
+Just another ai world app.
+Add a check list to trigger world players.
+Or add your services to contribute to world's projects.
 
-clone free ai web markets:
+clone free ai world apps:
 github.com/ai-accelerator`,
       matrixBiz: [
         ['a','STATUS',':','OK?','','','','','','','','','','','','','','','','','','','','','','',''],
