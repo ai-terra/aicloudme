@@ -113,8 +113,8 @@
               <div id="ai-jobs">
                 <div class="buttons">
                   <button class="next btn btn-primary" @click="nextProject">Projects</button>
-                  <button class="next btn btn-primary" @click="show = !show">+</button>
-                  <input type="text" class="input-add-new" name="new-job" value="eg: Add Job Request to Job News" size="40" maxlength="40">
+                  <button class="next btn btn-primary" @click="addProject">+</button>
+                  <input type="text" class="input-add-new" v-model="newProject" size="20" maxlength="40">
                   <button class="next btn btn-warning" @click="runOneOps">+</button>
                 </div>
                 <ul class="list-group">
@@ -416,6 +416,8 @@ export default {
       noView: 'noview',
       viewProjects: [24],
       projects: [],
+      projectStore: [],
+      newProject: 'New Project Title',
       projectIcon: '◼◼◼◼◼◼◼◼◼',
       serviceIcon: '◼◼◼◼◼◼◼◼◼',
       branch: 1,
@@ -538,7 +540,37 @@ github.com/ai-accelerator`,
     projects: fb.collection('projects')
   },
 
+  mounted() {
+    if (localStorage.getItem('projects')) {
+      try {
+        this.projects = JSON.parse(localStorage.getItem('projects'));
+      } catch(e) {
+        localStorage.removeItem('projects');
+      }
+    }
+  },
+
   methods: {
+
+    addProject() {
+      // ensure they actually typed something as new Project Title
+      if (!this.newProject) {
+        return;
+      }
+
+      this.projectStore.push(this.newProject);
+      this.newProject = 'Project Idea';
+      this.saveProjects();
+    },
+    removeProject(x) {
+      this.projectStore.splice(x, 1);
+      this.saveProjects();
+    },
+    saveProjects() {
+      const parsed = JSON.stringify(this.projectStore);
+      localStorage.setItem('projects', parsed);
+    },
+
     start() {
       this.pause = false;
       this.interval = setInterval(this.play, this.speed);
