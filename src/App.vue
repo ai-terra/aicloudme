@@ -557,7 +557,9 @@ github.com/ai-accelerator`,
 
       let storageRef = storage.ref();
       // let dataRef = storageRef.child('data');
-      let projectDataRef = storageRef.child('data/project.json');
+      let pathname = 'data/projects/';
+      pathname = pathname + this.matrixDev[0][7];
+      let projectDataRef = storageRef.child(pathname);
 
       let projectName = this.matrixDev[0][7] + '.json';
       let newProjectData = this.matrixDev.slice(0);
