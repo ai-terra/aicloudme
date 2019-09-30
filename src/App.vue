@@ -368,7 +368,7 @@
 <script>
 import axios from 'axios';  // for connecting to Frirebase RTDB
 
-import db from './db.js';
+import fb from './fb.js';
 
 import aiteam from './ai-config.json';
 
@@ -535,7 +535,7 @@ github.com/ai-accelerator`,
   },
 
   firestore: {
-    projects: db.collection('projects')
+    projects: fb.collection('projects')
   },
 
   methods: {
@@ -803,7 +803,7 @@ github.com/ai-accelerator`,
 
       const lines = { ...this.matrixDev }
 
-      db.collection('projects').add({
+      fb.collection('projects').add({
           tablelines: lines
         });
       // axios.post('https://aiplanet.firebaseio.com/projects.json', this.matrixDev)
