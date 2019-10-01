@@ -75,7 +75,7 @@
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in viewProjects" v-bind:key="project">
                     <h3 title="AI FairBook Blockchain - Public market ledger for the project">
-                      &nbsp;&nbsp;deal (
+                      &nbsp;&nbsp;manage (
                         lead
                       <!-- {{ project }} -->
                       <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')">
@@ -418,13 +418,13 @@ export default {
       postNameId: 0,
       opsName: ["ads" , "app", "ops", "srv", "offr", "ask", "rRNA"],
       opsNameId: 1,
-      backgroundText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;web &nbsp; app
+      backgroundText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;mgr &nbsp; app
             <br><br>
             &nbsp;ai accelerator`,
-      liveText: `&nbsp; live&nbsp; &nbsp;web &nbsp; app
+      liveText: `&nbsp; live&nbsp; &nbsp;mgr &nbsp; app
             <br><br>
             market &nbsp;engine`,
-      devText: `&nbsp; dev&nbsp; &nbsp;ops &nbsp; app
+      devText: `&nbsp; dev&nbsp; &nbsp;mgr &nbsp; app
       <br><br>
       match8 &nbsp;engine`,
       visibleRows: 1,
@@ -464,7 +464,7 @@ export default {
       textEdit: `
 Hello World!
 
-Just another ai world app.
+Just another ai manager app.
 Add a check list to trigger world players.
 Or add your services to contribute to world's projects.
 
