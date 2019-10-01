@@ -81,7 +81,7 @@
                       <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')">
                       <img class="owner" :src="require('./assets/img/users/2'+ services[0] + '.png')">
                       <!-- {{ services[0] }} -->
-                      serve, {{ branch }}/{{ branches[0] }}, ROI)
+                      ops, {{ branch }}/{{ branches[0] }}, ROI)
                       </h3>
 
                     <div class="scrollable">
@@ -494,7 +494,7 @@ github.com/ai-accelerator`,
       matrixDev: [
         ['a','SOCIAL',':','project','','title',':','AI World','','priority','=','1','','votes','=','247','','comments','=','144','','clones','=','24','','','\n'],
         ['1','Post',':','Hello World!','','subtitle',':','welcome to ai web','','body',':',
-        `The super productivity ai apps.
+        `The super productivity manager apps.
 Add a check list to trigger world players.
 Or add your services to contribute to world's projects.`,'','signature',':',`clone free ai world apps:
 github.com/ai-accelerator`,'','','','','','','','','','','\n'],
