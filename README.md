@@ -1,8 +1,8 @@
-# ai mart web app
+# ai worlds web app
 
-ai market engine / live social innovation protocol
+ai world engine / live social innovation protocol
 
-## ai market engine install
+## ai world engine install
 
 ```
 npm install
