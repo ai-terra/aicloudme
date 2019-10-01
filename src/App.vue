@@ -75,8 +75,13 @@
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in viewProjects" v-bind:key="project">
                     <h3 title="AI FairBook Blockchain - Public market ledger for the project">
-                      &nbsp;&nbsp;deal (lead{{ project }}
-                      {{ services[0] }}serve, {{ branch }}/{{ branches[0] }}, ROI)
+                      &nbsp;&nbsp;deal (
+                        lead
+                      <!-- {{ project }} -->
+                      <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')">
+                      <img class="owner" :src="require('./assets/img/users/2'+ services[0] + '.png')">
+                      <!-- {{ services[0] }} -->
+                      serve, {{ branch }}/{{ branches[0] }}, ROI)
                       </h3>
 
                     <div class="scrollable">
@@ -130,8 +135,10 @@
                           </h3>
                         <h3 class="short" title="Dev FairBook - Project & Job Demand in your social network">
                           &nbsp;&nbsp; <div class="icon3x3prj">{{ projectIcon }}</div>&nbsp;title[{{ project }}] 
+                          
                           <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')"> 
                           <img class="icon" :src="require('./assets/icons/share.png')">[{{ project }}]
+                          
                           </h3>
                         <div class="fork" title="fork (copy) project" @click="onProjectFork">f</div>
                       </div>
