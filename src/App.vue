@@ -124,9 +124,14 @@
                       <div class="table-title">
                         <h3 class="long" title="Dev FairBook - Project & Job Demand in your social network">
                           &nbsp;&nbsp; <div class="icon3x3prj">{{ projectIcon }}</div>&nbsp;title[{{ project }}]  
-                          <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')"> [shares]</h3>
+                          <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')"> 
+                          <img class="icon" :src="require('./assets/icons/share.png')">[{{ project }}]
+                          </h3>
                         <h3 class="short" title="Dev FairBook - Project & Job Demand in your social network">
-                          &nbsp;&nbsp; <div class="icon3x3prj">{{ projectIcon }}</div>&nbsp;title[{{ project }}] - owner[{{ project }}] - [shares]</h3>
+                          &nbsp;&nbsp; <div class="icon3x3prj">{{ projectIcon }}</div>&nbsp;title[{{ project }}] 
+                          <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')"> 
+                          <img class="icon" :src="require('./assets/icons/share.png')">[{{ project }}]
+                          </h3>
                         <div class="fork" title="fork (copy) project" @click="onProjectFork">f</div>
                       </div>
 
@@ -212,9 +217,15 @@
 
                       <div class="table-title">
                         <h3 class="long" title="Ops FairBook - Service & Skills Offer in your social network">
-                          &nbsp;&nbsp;title[{{ service }}] - owner[{{ service }}] - [shares]</h3>
+                          &nbsp;&nbsp;<div class="icon3x3srv">{{ serviceIcon }}</div>&nbsp;title[{{ service }}] 
+                          <img class="owner" :src="require('./assets/img/users/2'+ service + '.png')"> 
+                          <img class="icon" :src="require('./assets/icons/share.png')">[{{ service }}]
+                          </h3>
                         <h3 class="short" title="Ops FairBook - Service & Skills Offer in your social network">
-                          &nbsp;&nbsp;<div class="icon3x3srv">{{ serviceIcon }}</div>&nbsp;title[{{ service }}] - owner[{{ service }}] - [shares]</h3>
+                          &nbsp;&nbsp;<div class="icon3x3srv">{{ serviceIcon }}</div>&nbsp;title[{{ service }}]
+                          <img class="owner" :src="require('./assets/img/users/2'+ service + '.png')"> 
+                          <img class="icon" :src="require('./assets/icons/share.png')">[{{ service }}]
+                          </h3>
                         <div class="fork" title="fork (copy) service" @click="onServiceFork">f</div>
                       </div>
 
@@ -425,7 +436,7 @@ export default {
       serviceIcon: '◼◼◼◼◼◼◼◼◼',
       branch: 1,
       branches: [8],
-      services: [7],
+      services: [10],
       blockchains: [365],
       tabClass: 'tabline',
       tabTitle: 'tabname',
@@ -1027,6 +1038,12 @@ h5.long {
   height: 30px;
   margin: 0 15px;
   border-radius: 15px 15px 15px 15px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 3px;
 }
 
 .fork {
