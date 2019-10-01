@@ -123,7 +123,8 @@
                       
                       <div class="table-title">
                         <h3 class="long" title="Dev FairBook - Project & Job Demand in your social network">
-                          &nbsp;&nbsp; <div class="icon3x3prj">{{ projectIcon }}</div>&nbsp;title[{{ project }}] - owner[{{ project }}] - [shares]</h3>
+                          &nbsp;&nbsp; <div class="icon3x3prj">{{ projectIcon }}</div>&nbsp;title[{{ project }}]  
+                          <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')"> [shares]</h3>
                         <h3 class="short" title="Dev FairBook - Project & Job Demand in your social network">
                           &nbsp;&nbsp; <div class="icon3x3prj">{{ projectIcon }}</div>&nbsp;title[{{ project }}] - owner[{{ project }}] - [shares]</h3>
                         <div class="fork" title="fork (copy) project" @click="onProjectFork">f</div>
@@ -1019,6 +1020,13 @@ h5.long {
 
 .tbl-head {
   background-color: rgba(100, 100, 100, .2);
+}
+
+.owner {
+  width: 30px;
+  height: 30px;
+  margin: 0 15px;
+  border-radius: 15px 15px 15px 15px;
 }
 
 .fork {
