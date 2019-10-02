@@ -76,7 +76,7 @@
                   <li class="list-group-item" v-for="project in viewProjects" v-bind:key="project">
                     <h3 title="AI FairBook Blockchain - Public market ledger for the project">
                       &nbsp;&nbsp;manage (
-                        lead
+                        prj
                       <!-- {{ project }} -->
                       <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')">
                       <img class="owner" :src="require('./assets/img/users/2'+ services[0] + '.png')">

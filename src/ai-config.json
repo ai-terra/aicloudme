@@ -3,10 +3,10 @@
   "titleShort": "ai",
   "subtitle": "mgr",
   "subtitleShort": "mgr",
-  "newDevTitle": "new jobs",
-  "newDevTitleShort": "job",
+  "newDevTitle": "new prj",
+  "newDevTitleShort": "prj",
   "newOpsTitle": "new ops",
-  "newOpsTitleShort": "app",
+  "newOpsTitleShort": "ops",
   "flags": [
     "bd",
     "br",
