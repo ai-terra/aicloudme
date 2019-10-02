@@ -372,8 +372,8 @@
                 <h4>© Ianta Labs | MIT License</h4>
                 <h4 class="long"><a href="https://github.com/ai-accelerator">
                 innovation engines @ github</a></h4>
-                <h4 class="short"><a href="https://github.com/ai-accelerator/aimart">
-                ai market @ github</a></h4>
+                <h4 class="short"><a href="https://github.com/ai-accelerator/ai-mgr">
+                ai manager @ github</a></h4>
                 <h4 class="long" contenteditable="true">Innovation Engine / W3AI SNN Protocol</h4>
               </div>            
             </div>             
@@ -495,8 +495,8 @@ github.com/ai-accelerator`,
         ['a','SOCIAL',':','project','','title',':','AI World','','priority','=','1','','votes','=','247','','comments','=','144','','clones','=','24','','','\n'],
         ['1','Post',':','Hello World!','','subtitle',':','welcome to ai web','','body',':',
         `The super productivity manager apps.
-Add a check list to trigger world players.
-Or add your services to contribute to world's projects.`,'','signature',':',`clone free ai world apps:
+Add a check list to trigger team players.
+Or add services to contribute to team projects.`,'','signature',':',`clone free ai world apps:
 github.com/ai-accelerator`,'','','','','','','','','','','\n'],
         ['b','RATES',':','money','','','','','','','','','','','','','','','','','','','','','','','\n'],
         ['1','Click',':','= if ( oa-Market == "ready" ) { da-State = "Ok" } else { da-State = "Quit" }','','','','','','','','','','','','','','','','','','','','','','','\n'],

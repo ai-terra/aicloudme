@@ -1,6 +1,6 @@
-# ai worlds web app
+# ai manager web app
 
-ai world engine / live social innovation protocol
+ai manager engine / live social innovation protocol
 
 ## ai world engine install
 
