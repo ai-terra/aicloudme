@@ -1,10 +1,48 @@
 <template>
     <div class="icon">
-        <div v-for="(bit, id) in bits" v-bind:key="id">
-            <div class="square" 
-            :class="[(bit == '1') ? 'full' : 'blank']">
+
+        <div class="bits-col1">
+            <div v-for="(bit, id) in bits" v-bind:key="id">
+                <div class="square" 
+                :class="[(bit == '1') ? 'full' : 'blank']">
+                </div>
             </div>
         </div>
+
+        <div class="bits-col1">
+            <div v-for="(bit, id) in bits" v-bind:key="id">
+                <div class="square" 
+                :class="[(bit == '1') ? 'full' : 'blank']">
+                </div>
+            </div>
+        </div>
+
+        <div class="bits-middle">
+            <div v-for="(bit, id) in bits" v-bind:key="id">
+                <div class="square" 
+                :class="[(bit == '1') ? 'full' : 'blank']">
+                </div>
+            </div>
+        </div>
+
+        <div class="bits-col1">
+            <div v-for="(bit, id) in bits" v-bind:key="id">
+                <div class="square" 
+                :class="[(bit == '1') ? 'full' : 'blank']">
+                </div>
+            </div>
+        </div>
+
+        <div class="bits-col1">
+            <div v-for="(bit, id) in bits" v-bind:key="id">
+                <div class="square" 
+                :class="[(bit == '1') ? 'full' : 'blank']">
+                </div>
+            </div>
+        </div>
+
+
+
     </div>
 </template>
 
@@ -26,9 +64,34 @@ export default {
     width: 2.5rem;
     height: 2.5rem; 
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     overflow-y: hidden;
     cursor: pointer;
+}
+
+.bits-col1 {
+    width: 1rem;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.bits-col2 {
+    width: .5rem;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.bits-middle {
+    width: .5rem;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .square {

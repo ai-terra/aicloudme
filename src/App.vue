@@ -447,7 +447,7 @@ export default {
       projects: [],
       projectStore: [],
       // newProjectTitle: 'New Project Title',
-      projectIconBits: '1010101110101010111011011',
+      projectIconBits: '10111',
       projectIcon: '◼◼◼◼◼◼◼◼◼',
       serviceIcon: '■■■■■■■■■',
       branch: 1,
