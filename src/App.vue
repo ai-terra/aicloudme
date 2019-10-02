@@ -129,13 +129,18 @@
                       
                       <div class="table-title">
                         <h3 class="long" title="Dev FairBook - Project & Job Demand in your social network">
-                          &nbsp;&nbsp; <div class="icon3x3prj">{{ projectIcon }}</div>&nbsp;title[{{ project }}]  
+                           
+                          <!-- <div class="icon3x3prj">{{ projectIcon }}</div>&nbsp;  -->
+                          <ai-icon :bits="projectIconBits"></ai-icon> 
+                          title[{{ project }}] 
                           <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')"> 
                           <img class="icon" :src="require('./assets/icons/share.png')">[{{ project }}]
                           </h3>
                         <h3 class="short" title="Dev FairBook - Project & Job Demand in your social network">
-                          &nbsp;&nbsp; <div class="icon3x3prj">{{ projectIcon }}</div>&nbsp;title[{{ project }}] 
                           
+                          <!-- <div class="icon3x3prj">{{ projectIcon }}</div>&nbsp; -->
+                          <ai-icon :bits="projectIconBits"></ai-icon>
+                          title[{{ project }}] 
                           <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')"> 
                           <img class="icon" :src="require('./assets/icons/share.png')">[{{ project }}]
                           
@@ -395,11 +400,13 @@ const storage = fb.storage(); //  Firebase / GCP Storage
 import aiteam from './ai-config.json';
 
 import Post from './views/Post.vue';
+import Icon from './util/Icon.vue';
 
 export default {
   name: "app",
   components: {
     'ai-post': Post,
+    'ai-icon': Icon,
   },
   data() {
     return {
@@ -440,6 +447,7 @@ export default {
       projects: [],
       projectStore: [],
       // newProjectTitle: 'New Project Title',
+      projectIconBits: '101010111',
       projectIcon: '◼◼◼◼◼◼◼◼◼',
       serviceIcon: '■■■■■■■■■',
       branch: 1,
