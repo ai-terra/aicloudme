@@ -441,7 +441,7 @@ export default {
       projectStore: [],
       // newProjectTitle: 'New Project Title',
       projectIcon: '◼◼◼◼◼◼◼◼◼',
-      serviceIcon: '◼◼◼◼◼◼◼◼◼',
+      serviceIcon: '■■■■■■■■■',
       branch: 1,
       branches: [8],
       services: [10],
@@ -912,7 +912,7 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
       // let servicesNo = this.services.length;
       this.services.unshift(Math.floor(Math.random()*100)); // add service to top
       this.services.pop();  // removes the last service
-      this.serviceIcon = this.generateIcon3x3(this.services[0], '◼');
+      this.serviceIcon = this.generateIcon3x3(this.services[0], '■');
     },
     // ToDo - To include in Processor / Eval workflow
     addTableRow(tableId, contextId, array) {
@@ -1585,19 +1585,23 @@ h4 {
   margin: 0rem;
   padding: 0rem;
   color: #f1453d;
+  cursor: pointer;
 }
 
 .icon3x3srv {
   font-family: monospace;
-  width: 2.35rem;
-  height: 2.35rem;
+  width: 2.4rem;
+  height: 2.4rem;
   font-size: .8rem;
   overflow-y: hidden;
   overflow-wrap: break-word; 
   /* border: 1px solid lightgray; */
   margin: 0rem;
+  border: 0rem;
   padding: 0rem;
   color: #1eaaf1;
+  /* background-color: yellowgreen; */
+  cursor: pointer;
 }
 
 .noview {
