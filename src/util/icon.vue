@@ -23,10 +23,11 @@ export default {
 <style scoped>
 .icon {
     margin: 0 1rem;
-    width: 1.5rem;
-    height: 1.5rem; 
+    width: 2.5rem;
+    height: 2.5rem; 
     display: flex;
     flex-wrap: wrap;
+    overflow-y: hidden;
     cursor: pointer;
 }
 
