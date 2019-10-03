@@ -131,11 +131,12 @@
                         <h3 class="long" title="Dev FairBook - Project & Job Demand in your social network">
                            
                           <!-- <div class="icon3x3prj">{{ projectIcon }}</div>&nbsp;  -->
-                          <ai-icon :bits="projectIcon"></ai-icon> 
+                          <ai-icon :bits="projectIconBits"></ai-icon> 
                           title[{{ project }}] 
                           <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')"> 
                           <img class="icon" :src="require('./assets/icons/share.png')">[{{ project }}]
                           </h3>
+
                         <h3 class="short" title="Dev FairBook - Project & Job Demand in your social network">
                           
                           <!-- <div class="icon3x3prj">{{ projectIcon }}</div>&nbsp; -->
@@ -143,8 +144,8 @@
                           title[{{ project }}] 
                           <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')"> 
                           <img class="icon" :src="require('./assets/icons/share.png')">[{{ project }}]
-                          
                           </h3>
+
                         <div class="fork" title="fork (copy) project" @click="onProjectFork">f</div>
                       </div>
 
@@ -230,15 +231,23 @@
 
                       <div class="table-title">
                         <h3 class="long" title="Ops FairBook - Service & Skills Offer in your social network">
-                          &nbsp;&nbsp;<div class="icon3x3srv">{{ serviceIcon }}</div>&nbsp;title[{{ service }}] 
+                          
+                          <!-- <div class="icon3x3srv">{{ serviceIcon }}</div>&nbsp; -->
+                          <ai-icon :bits="serviceIconBits"></ai-icon> 
+                          title[{{ service }}] 
                           <img class="owner" :src="require('./assets/img/users/2'+ service + '.png')"> 
                           <img class="icon" :src="require('./assets/icons/share.png')">[{{ service }}]
                           </h3>
+
                         <h3 class="short" title="Ops FairBook - Service & Skills Offer in your social network">
-                          &nbsp;&nbsp;<div class="icon3x3srv">{{ serviceIcon }}</div>&nbsp;title[{{ service }}]
+                          
+                          <!-- <div class="icon3x3srv">{{ serviceIcon }}</div>&nbsp; -->
+                          <ai-icon :bits="serviceIconBits"></ai-icon> 
+                          title[{{ service }}]
                           <img class="owner" :src="require('./assets/img/users/2'+ service + '.png')"> 
                           <img class="icon" :src="require('./assets/icons/share.png')">[{{ service }}]
                           </h3>
+
                         <div class="fork" title="fork (copy) service" @click="onServiceFork">f</div>
                       </div>
 
@@ -447,9 +456,10 @@ export default {
       projects: [],
       projectStore: [],
       // newProjectTitle: 'New Project Title',
-      projectIconBits: '11111',
-      projectIcon: '11111',
-      serviceIcon: '11111',
+      projectIconBits: '11010',
+      serviceIconBits: '10110',
+      // projectIcon: '11100',
+      // serviceIcon: '10111',
       branch: 1,
       branches: [8],
       services: [10],
@@ -899,7 +909,7 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
         .then(res => console.log(res))
         .catch(err => console.log(err));
     },
-    generateIcon3x3(index, symbol) {
+    generateIconBits(index, symbol) {
       let hex = (200 + index).toString(2);
       hex = hex.substr(-5);
       // hex = hex + hex;
@@ -911,7 +921,7 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
       // let projectsNo = this.viewProjects.length;
       this.viewProjects.push(Math.floor(Math.random()*100)); // add project to end/bottom
       this.viewProjects.shift();  // removes the first project
-      this.projectIcon = this.generateIcon3x3(this.viewProjects[0], '1');
+      this.projectIconBits = this.generateIconBits(this.viewProjects[0], '1');
       // ToDo: add branches and results structures to project data structure - Code below is just demo/dummy
       this.branches.push(Math.floor(Math.random()*100));
       this.branches.shift();
@@ -921,7 +931,7 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
       // let servicesNo = this.services.length;
       this.services.unshift(Math.floor(Math.random()*100)); // add service to top
       this.services.pop();  // removes the last service
-      this.serviceIcon = this.generateIcon3x3(this.services[0], '1');
+      this.serviceIconBits = this.generateIconBits(this.services[0], '1');
     },
     // ToDo - To include in Processor / Eval workflow
     addTableRow(tableId, contextId, array) {
