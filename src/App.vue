@@ -74,7 +74,7 @@
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in viewProjects" v-bind:key="project">
-                    <h3 class="line" title="AI FairBook Blockchain - Public market ledger for the project">
+                    <h3 class="line" title="Patent blockchain status - % tests passed">
                       &nbsp;&nbsp;patent (
                       <!-- prj {{ project }} -->
                       <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')">-
@@ -86,7 +86,8 @@
 
                       , {{ branch }}/{{ branches[0] }}, ROI) 
                       
-                      ~ 67%
+                      <!-- ~ {{ services[0] % project }}% -->
+                      ~ {{ randomInt(1, 100) }}%
 
                       </h3>
 
@@ -134,7 +135,7 @@
                     <li class="list-group-item" v-for="project in viewProjects" v-bind:key="project">
                       
                       <div class="table-title">
-                        <h3 class="long" title="Dev FairBook - Project & Job Demand in your social network">
+                        <h3 class="long" title="Dev Patents - Project & Job Demand in your social network">
                            
                           <!-- <div class="icon3x3prj">{{ projectIcon }}</div>&nbsp;  -->
                           <ai-icon :bits="projectIconBits"></ai-icon> 
@@ -236,7 +237,7 @@
                     <li class="list-group-item" v-for="service in services" v-bind:key="service">
 
                       <div class="table-title">
-                        <h3 class="long" title="Ops FairBook - Service & Skills Offer in your social network">
+                        <h3 class="long" title="Ops Patents - Service & Skills Offer in your social network">
                           
                           <!-- <div class="icon3x3srv">{{ serviceIcon }}</div>&nbsp; -->
                           <ai-icon :bits="serviceIconBits"></ai-icon> 
@@ -456,6 +457,7 @@ export default {
       load: true,
       rules: ['FAST'],
       results: [8],
+      patentState: 10,
       fbview: false,
       noView: 'noview',
       viewProjects: [24],
@@ -601,6 +603,9 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
   },
 
   methods: {
+    randomInt(min, max) { // min and max included 
+      return Math.floor(Math.random() * (max - min + 1) + min);
+    },
     uploadProject() {
 
       let storageRef = storage.ref();
