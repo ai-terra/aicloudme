@@ -75,7 +75,7 @@
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in viewProjects" v-bind:key="project">
                     <h3 class="line" title="Patent blockchain status - % tests passed">
-                      &nbsp;&nbsp;patent(
+                      &nbsp;&nbsp;lotto(
                       <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')">-
                       <ai-icon :bits="projectIconBits"></ai-icon>
                       	&#65121;
