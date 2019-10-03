@@ -74,14 +74,20 @@
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in viewProjects" v-bind:key="project">
-                    <h3 title="AI FairBook Blockchain - Public market ledger for the project">
-                      &nbsp;&nbsp;manage (
-                        prj
-                      <!-- {{ project }} -->
-                      <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')">
+                    <h3 class="line" title="AI FairBook Blockchain - Public market ledger for the project">
+                      &nbsp;&nbsp;patent (
+                      <!-- prj {{ project }} -->
+                      <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')">-
+                      <ai-icon :bits="projectIconBits"></ai-icon>
+                      	&#65121;
+                      <ai-icon :bits="serviceIconBits"></ai-icon>-
                       <img class="owner" :src="require('./assets/img/users/2'+ services[0] + '.png')">
-                      <!-- {{ services[0] }} -->
-                      ops, {{ branch }}/{{ branches[0] }}, ROI)
+                      <!-- {{ services[0] ops }} -->
+
+                      , {{ branch }}/{{ branches[0] }}, ROI) 
+                      
+                      ~ 67%
+
                       </h3>
 
                     <div class="scrollable">
@@ -1058,6 +1064,10 @@ h5.long {
 
 .tbl-head {
   background-color: rgba(100, 100, 100, .2);
+}
+
+.line {
+  display: flex;
 }
 
 .owner {
