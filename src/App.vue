@@ -385,16 +385,16 @@
             <div class="title-container">
               <div class="footer-items">
                 <h4 class="long">W3AI Social Neural Network</h4>
-                <h4 class="long">W3AI Meetups 
-                  <a href="https://www.meetup.com/SocialAI/">Toronto </a> 
-                  <a href="https://www.meetup.com/Manhattan-AIR/">NYC </a> 
+                <h4 class="long">W3AI Meetups&nbsp;
+                  <a href="https://www.meetup.com/SocialAI/">Toronto </a>&nbsp;
+                  <a href="https://www.meetup.com/Manhattan-AIR/">NYC </a>&nbsp;
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax </a>
                 </h4>
                 <h4>© Ianta Labs | MIT License</h4>
                 <h4 class="long"><a href="https://github.com/ai-accelerator">
                 innovation engines @ github</a></h4>
-                <h4 class="short"><a href="https://github.com/ai-accelerator/ai-mgr">
-                ai manager @ github</a></h4>
+                <h4 class="short"><a href="https://github.com/ai-accelerator/aipatenter">
+                ai patenter @ github</a></h4>
                 <h4 class="long" contenteditable="true">Innovation Engine / W3AI SNN Protocol</h4>
               </div>            
             </div>             
