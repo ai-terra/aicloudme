@@ -131,7 +131,7 @@
                         <h3 class="long" title="Dev FairBook - Project & Job Demand in your social network">
                            
                           <!-- <div class="icon3x3prj">{{ projectIcon }}</div>&nbsp;  -->
-                          <ai-icon :bits="projectIconBits"></ai-icon> 
+                          <ai-icon :bits="projectIcon"></ai-icon> 
                           title[{{ project }}] 
                           <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')"> 
                           <img class="icon" :src="require('./assets/icons/share.png')">[{{ project }}]
@@ -447,9 +447,9 @@ export default {
       projects: [],
       projectStore: [],
       // newProjectTitle: 'New Project Title',
-      projectIconBits: '10111',
-      projectIcon: '◼◼◼◼◼◼◼◼◼',
-      serviceIcon: '■■■■■■■■■',
+      projectIconBits: '11111',
+      projectIcon: '11111',
+      serviceIcon: '11111',
       branch: 1,
       branches: [8],
       services: [10],
@@ -900,9 +900,10 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
         .catch(err => console.log(err));
     },
     generateIcon3x3(index, symbol) {
-      let hex = index.toString(2);
-      hex = hex + hex;
-      hex = hex.replace(/[0]/g, ' ');
+      let hex = (200 + index).toString(2);
+      hex = hex.substr(-5);
+      // hex = hex + hex;
+      hex = hex.replace(/[0]/g, '8');
       hex = hex.replace(/[1]/g, symbol);
       return hex;
     },
@@ -910,7 +911,7 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
       // let projectsNo = this.viewProjects.length;
       this.viewProjects.push(Math.floor(Math.random()*100)); // add project to end/bottom
       this.viewProjects.shift();  // removes the first project
-      this.projectIcon = this.generateIcon3x3(this.viewProjects[0], '◼');
+      this.projectIcon = this.generateIcon3x3(this.viewProjects[0], '1');
       // ToDo: add branches and results structures to project data structure - Code below is just demo/dummy
       this.branches.push(Math.floor(Math.random()*100));
       this.branches.shift();
@@ -920,7 +921,7 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
       // let servicesNo = this.services.length;
       this.services.unshift(Math.floor(Math.random()*100)); // add service to top
       this.services.pop();  // removes the last service
-      this.serviceIcon = this.generateIcon3x3(this.services[0], '■');
+      this.serviceIcon = this.generateIcon3x3(this.services[0], '1');
     },
     // ToDo - To include in Processor / Eval workflow
     addTableRow(tableId, contextId, array) {

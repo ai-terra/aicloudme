@@ -9,7 +9,7 @@
             </div>
         </div>
 
-        <div class="bits-col1">
+        <div class="bits-col2">
             <div v-for="(bit, id) in bits" v-bind:key="id">
                 <div class="square" 
                 :class="[(bit == '1') ? 'full' : 'blank']">
@@ -25,7 +25,7 @@
             </div>
         </div>
 
-        <div class="bits-col1">
+        <div class="bits-col2">
             <div v-for="(bit, id) in bits" v-bind:key="id">
                 <div class="square" 
                 :class="[(bit == '1') ? 'full' : 'blank']">
@@ -68,10 +68,11 @@ export default {
     flex-wrap: wrap;
     overflow-y: hidden;
     cursor: pointer;
+    background-color: yellowgreen;
 }
 
 .bits-col1 {
-    width: 1rem;
+    width: .5rem;
     height: 2.5rem;
     display: flex;
     flex-direction: column;
@@ -82,7 +83,7 @@ export default {
     width: .5rem;
     height: 2.5rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
 }
 
