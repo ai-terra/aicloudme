@@ -440,13 +440,13 @@ export default {
       postNameId: 0,
       opsName: ["ads" , "app", "ops", "srv", "offr", "ask", "rRNA"],
       opsNameId: 1,
-      backgroundText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;mgr &nbsp; app
+      backgroundText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;ptntr &nbsp; app
             <br><br>
             &nbsp;ai accelerator`,
-      liveText: `&nbsp; live&nbsp; &nbsp;mgr &nbsp; app
+      liveText: `&nbsp; live&nbsp; &nbsp;ptntr &nbsp; app
             <br><br>
             market &nbsp;engine`,
-      devText: `&nbsp; dev&nbsp; &nbsp;mgr &nbsp; app
+      devText: `&nbsp; dev&nbsp; &nbsp;ptntr &nbsp; app
       <br><br>
       match8 &nbsp;engine`,
       visibleRows: 1,
