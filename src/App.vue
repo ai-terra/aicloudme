@@ -75,16 +75,16 @@
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in viewProjects" v-bind:key="project">
                     <h3 class="line" title="Patent blockchain status - % tests passed">
-                      &nbsp;&nbsp;patent (
-                      <!-- prj {{ project }} -->
+                      &nbsp;&nbsp;patent(
                       <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')">-
                       <ai-icon :bits="projectIconBits"></ai-icon>
                       	&#65121;
                       <ai-icon :bits="serviceIconBits"></ai-icon>-
                       <img class="owner" :src="require('./assets/img/users/2'+ services[0] + '.png')">
                       <!-- {{ services[0] ops }} -->
-
-                      , {{ branch }}/{{ branches[0] }}, ROI) 
+                      , {{ branch }}/{{ branches[0] }}, 
+                      
+                      {{ policyRule[randomInt(0, policyRule.length - 1)] }}) 
                       
                       <!-- ~ {{ services[0] % project }}% -->
                       ~ {{ randomInt(1, 100) }}%
@@ -437,6 +437,7 @@ export default {
       viewId: 0,
       mode: ['CEO', 'DEV', 'OPS', 'EDU', 'QA', 'UA'],
       modeId: 0,
+      policyRule: ['ROI', 'FAM', 'SOC', 'ECO', 'BIZ', 'POL', 'LOC', 'PWR', 'CTRL', 'TEAM', 'FUN', 'ATTN', 'MED', 'GAME', 'LIFE'],
       postName: ["job", "post", "dev", "repo", "prj", "bid", "rDNA"],
       postNameId: 0,
       opsName: ["ads" , "app", "ops", "srv", "offr", "ask", "rRNA"],
@@ -520,9 +521,9 @@ github.com/ai-accelerator`,
       matrixDev: [
         ['a','SOCIAL',':','project','','title',':','AI World','','priority','=','1','','votes','=','247','','comments','=','144','','clones','=','24','','','\n'],
         ['1','Post',':','Hello World!','','subtitle',':','welcome to ai web','','body',':',
-        `The super productivity manager apps.
-Add a check list to trigger team players.
-Or add services to contribute to team projects.`,'','signature',':',`clone free ai world apps:
+        `AI super productivity app.
+Add incentive check lists to trigger ai innovators worldwide.
+Or add your services to contribute to world's innovation projects.`,'','signature',':',`clone free ai world apps:
 github.com/ai-accelerator`,'','','','','','','','','','','\n'],
         ['b','RATES',':','money','','','','','','','','','','','','','','','','','','','','','','','\n'],
         ['1','Click',':','= if ( oa-Market == "ready" ) { da-State = "Ok" } else { da-State = "Quit" }','','','','','','','','','','','','','','','','','','','','','','','\n'],
