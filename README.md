@@ -1,8 +1,8 @@
-# ai manager web app
+# ai patenter web app
 
-ai manager engine / live social innovation protocol
+ai patenter engine / live social innovation protocol
 
-## ai world engine install
+## ai patenter engine install
 
 ```
 npm install
