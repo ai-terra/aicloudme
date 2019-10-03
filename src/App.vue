@@ -75,7 +75,7 @@
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in viewProjects" v-bind:key="project">
                     <h3 class="line" title="Patent blockchain status - % tests passed">
-                      &nbsp;&nbsp;lotto(
+                      &nbsp;&nbsp;path(
                       <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')">-
                       <ai-icon :bits="projectIconBits"></ai-icon>
                       	&#65121;
@@ -393,8 +393,8 @@
                 <h4>© Ianta Labs | MIT License</h4>
                 <h4 class="long"><a href="https://github.com/ai-accelerator">
                 innovation engines @ github</a></h4>
-                <h4 class="short"><a href="https://github.com/ai-accelerator/ailottery">
-                ai lottery @ github</a></h4>
+                <h4 class="short"><a href="https://github.com/ai-accelerator/aiuber">
+                ai uber @ github</a></h4>
                 <h4 class="long" contenteditable="true">Innovation Engine / W3AI SNN Protocol</h4>
               </div>            
             </div>             

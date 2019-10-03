@@ -1,11 +1,11 @@
-# ai lottery web app
+# ai uber web app
 
-ai lottery engine / live social innovation protocol
+ai uber engine / live social innovation protocol
 
-## ai lottery engine install
+## ai uber engine install
 
 - download and install node & npm @ https://nodejs.org/
-- clone ailottery app @ https://github.com/ai-accelerator/
+- clone aiuber app @ https://github.com/ai-accelerator/
 - open a free basic AWS | Azure | GCP cloud account
 - (coming soon run your own local ai engine server)
 
