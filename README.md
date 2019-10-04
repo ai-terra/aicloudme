@@ -1,13 +1,15 @@
-# ai uber web app
+# ai open web app
 
-ai uber engine / live social innovation protocol
+ai open engine / live social innovation protocol
 
-## ai uber engine install
+## ai open engine install
 
 - download and install node & npm @ https://nodejs.org/
-- clone aiuber app @ https://github.com/ai-accelerator/
+- clone ai open app @ https://github.com/ai-accelerator/aiopen/
 - open a free basic AWS | Azure | GCP cloud account
-- (coming soon run your own local ai engine server)
+- create a realtime NoSQL database for users (RTDB/Firebase)
+- create a realtime NoSQL database for data (Firestore/Firebase)
+- (coming soon: run your own local ai engine & git server)
 
 ```
 npm install
