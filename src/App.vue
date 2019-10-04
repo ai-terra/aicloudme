@@ -1,5 +1,10 @@
 <template>
   <div id="app">
+
+    <app-header />
+
+    <router-view></router-view>
+
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
@@ -415,12 +420,15 @@ const storage = fb.storage(); //  Firebase / GCP Storage
 
 import aiteam from './ai-config.json';
 
+import Header from './components/header.vue';
+
 import Post from './views/Post.vue';
 import Icon from './util/Icon.vue';
 
 export default {
   name: "app",
   components: {
+    'app-header': Header,
     'ai-post': Post,
     'ai-icon': Icon,
   },
@@ -1033,6 +1041,7 @@ h5.long {
   line-height: 90%;
   word-break: break-word; 
   color: rgba(108, 167, 84, 1);
+  /* background-color: #6aa84f; */
   overflow-y: auto;
 }
 
