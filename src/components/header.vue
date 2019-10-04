@@ -69,6 +69,6 @@
   li a:hover,
   li a:active,
   li a.router-link-active {
-    color: #fa923f;
+    color: #333;
   }
 </style>
