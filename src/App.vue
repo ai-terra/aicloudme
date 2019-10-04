@@ -442,13 +442,13 @@ export default {
       postNameId: 0,
       opsName: ["ads" , "app", "ops", "srv", "offr", "ask", "rRNA"],
       opsNameId: 1,
-      backgroundText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;uber &nbsp; app
+      backgroundText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;open &nbsp;&nbsp; app
             <br><br>
-            &nbsp;ai accelerator`,
-      liveText: `&nbsp; live&nbsp; &nbsp;uber &nbsp; app
+            &nbsp;ai &nbsp; accelerator`,
+      liveText: `&nbsp; live&nbsp; &nbsp;open &nbsp; app
             <br><br>
             market &nbsp;engine`,
-      devText: `&nbsp; dev&nbsp; &nbsp;uber &nbsp; app
+      devText: `&nbsp; dev&nbsp; &nbsp;open &nbsp; app
       <br><br>
       match8 &nbsp;engine`,
       visibleRows: 1,
@@ -491,11 +491,11 @@ export default {
       textEdit: `
 Hello World!
 
-Just another ai manager app.
-Add a check list to trigger world players.
+Just another super productivity app.
+Add incentive check lists to trigger innovators worldwide.
 Or add your services to contribute to world's projects.
 
-clone free ai world apps:
+clone free ai open apps:
 github.com/ai-accelerator`,
       matrixBiz: [
         ['a','STATUS',':','OK?','','','','','','','','','','','','','','','','','','','','','','',''],
