@@ -12,7 +12,7 @@
           <router-link to="/signin">Sign In</router-link>
         </li>
         <li>
-          <router-link to="/dashboard">Dashboard</router-link>
+          <router-link to="/dashboard">Innovate</router-link>
         </li>
       </ul>
     </nav>

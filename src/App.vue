@@ -80,7 +80,7 @@
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in viewProjects" v-bind:key="project">
                     <h3 class="line" title="Patent blockchain status - % tests passed">
-                      &nbsp;&nbsp;path(
+                      &nbsp;&nbsp;tx(
                       <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')">-
                       <ai-icon :bits="projectIconBits"></ai-icon>
                       	&#65121;
@@ -450,13 +450,13 @@ export default {
       postNameId: 0,
       opsName: ["ads" , "app", "ops", "srv", "offr", "ask", "rRNA"],
       opsNameId: 1,
-      backgroundText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;open &nbsp;&nbsp; app
+      backgroundText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;base &nbsp;&nbsp; app
             <br><br>
             &nbsp;ai &nbsp; accelerator`,
-      liveText: `&nbsp; live&nbsp; &nbsp;open &nbsp; app
+      liveText: `&nbsp; live&nbsp; &nbsp;base &nbsp; app
             <br><br>
             market &nbsp;engine`,
-      devText: `&nbsp; dev&nbsp; &nbsp;open &nbsp; app
+      devText: `&nbsp; dev&nbsp; &nbsp;base &nbsp; app
       <br><br>
       match8 &nbsp;engine`,
       visibleRows: 1,
