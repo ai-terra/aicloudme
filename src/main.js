@@ -15,15 +15,18 @@ axios.defaults.baseURL = 'https://aiplanet.firebaseio.com'
 axios.defaults.headers.common['Authorization'] = 'aibase'
 axios.defaults.headers.get['Accepts'] = 'application/json'
 
-axios.interceptors.request.use(config => {
+const reqInterceptor = axios.interceptors.request.use(config => {
   console.log('Request interceptor', config)
   // config.headers. ... = '...'
   return config
 })
-axios.interceptors.response.use(res => {
+const resInterceptor = axios.interceptors.response.use(res => {
   console.log('Response interceptor', res)
   return res
 })
+
+axios.interceptors.request.eject(reqInterceptor)
+axios.interceptors.response.eject(resInterceptor)
 
 new Vue({
   router,
