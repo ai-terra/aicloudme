@@ -104,8 +104,8 @@
           hobbies: this.hobbyInputs.map(hobby => hobby.value),
           terms: this.terms
         }
-        console.log(formData)
-        axios.post('https://aiplanet.firebaseio.com/users.json', formData)
+        // console.log(formData)
+        axios.post('/users.json', formData)
           .then(res => console.log(res))
           .catch(error => console.log(error));
       }

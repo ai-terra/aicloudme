@@ -16,9 +16,9 @@ export default {
     }
   },
   created () {
-    axios.get('https://aiplanet.firebaseio.com/users.json')
+    axios.get('/users.json')
       .then(res => {
-        console.log(res);
+        // console.log(res);
         const data = res.data
         const users = []
         for (let key in data) {
@@ -26,7 +26,7 @@ export default {
           user.id = key
           users.push(user)
         }
-        console.log(users)
+        // console.log(users)
         this.email = users[0].email
       })
       .catch(error => console.log(error))
