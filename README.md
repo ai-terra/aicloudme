@@ -1,15 +1,15 @@
-# ai open web app
+# aibase db web app
 
-ai open engine / live social innovation protocol
+aibase engine / live social innovation protocol
 
-## ai open engine install
+## aibase engine install
 
 - download and install node & npm @ https://nodejs.org/
-- clone ai open app @ https://github.com/ai-accelerator/aiopen/
+- clone aibase app @ https://github.com/aibase/aibase/
 - open a free basic AWS | Azure | GCP cloud account
 - create a realtime NoSQL database for users (RTDB/Firebase)
 - create a realtime NoSQL database for data (Firestore/Firebase)
-- (coming soon: run your own local ai engine & git server)
+- (coming soon: run your own local aibase engine & git server)
 
 ```
 npm install
