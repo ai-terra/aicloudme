@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">ai</router-link>
+      <router-link to="/">aibase</router-link>
     </div>
     <nav>
       <ul>

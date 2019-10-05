@@ -1,6 +1,6 @@
-# aibase db web app
+# aibase web app
 
-aibase engine / live social innovation protocol
+evolutionary blockchain db for data and code / web social innovation protocol
 
 ## aibase engine install
 
