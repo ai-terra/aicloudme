@@ -30,10 +30,10 @@
                 <div class="config-btn" title="Switch views: web | edit" 
                   @click="fbview = !fbview">&nbsp; {{ fbview ? 'web' : 'edit' }} &nbsp;</div>
               </div>
-              <div class="title" contenteditable="true">
+              <!-- <div class="title" contenteditable="true">
                 <div class="config-btn">&nbsp;Sign Up&nbsp;</div>
                 <div class="config-btn">&nbsp;Sign In&nbsp;</div>
-              </div>
+              </div> -->
             </div>
             
             <div class="header-group devNews">
@@ -1681,6 +1681,11 @@ h4 {
 @media screen and (max-width: 1200px) {
 
   .long {
+    display: none;
+  }
+
+  .devNews,
+  .opsNews {
     display: none;
   }
 
