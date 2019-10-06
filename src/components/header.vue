@@ -6,13 +6,13 @@
     <nav>
       <ul>
         <li>
-          <router-link to="/signup">Sign Up</router-link>
+          <router-link to="/signup">sign up</router-link>
         </li>
         <li>
-          <router-link to="/signin">Sign In</router-link>
+          <router-link to="/signin">sign in</router-link>
         </li>
         <li>
-          <router-link to="/dashboard">Innovate</router-link>
+          <router-link to="/dashboard">ai</router-link>
         </li>
       </ul>
     </nav>
@@ -31,7 +31,7 @@
   }
 
   .logo {
-    font-size: 80px;
+    font-size: 70px;
     font-weight: bold;
     color: white;
     cursor: pointer;
