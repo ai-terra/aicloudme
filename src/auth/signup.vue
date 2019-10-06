@@ -33,10 +33,10 @@
         <div class="input">
           <label for="country">Country</label>
           <select id="country" v-model="country">
-            <option value="usa">Canada</option>
-            <option value="india">China</option>
-            <option value="uk">India</option>
-            <option value="germany">USA</option>
+            <option value="canada">Canada</option>
+            <option value="china">China</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
           </select>
         </div>
         <div class="interests">
