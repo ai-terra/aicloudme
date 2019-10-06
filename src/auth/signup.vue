@@ -33,26 +33,26 @@
         <div class="input">
           <label for="country">Country</label>
           <select id="country" v-model="country">
-            <option value="usa">USA</option>
-            <option value="india">India</option>
-            <option value="uk">UK</option>
-            <option value="germany">Germany</option>
+            <option value="usa">Canada</option>
+            <option value="india">China</option>
+            <option value="uk">India</option>
+            <option value="germany">USA</option>
           </select>
         </div>
-        <div class="hobbies">
-          <h3>Add some Hobbies</h3>
-          <button @click="onAddHobby" type="button">Add Hobby</button>
-          <div class="hobby-list">
+        <div class="interests">
+          <h3>Add some Interests</h3>
+          <button @click="onAddInterest" type="button">Add Interest</button>
+          <div class="interest-list">
             <div
                     class="input"
-                    v-for="(hobbyInput, index) in hobbyInputs"
-                    :key="hobbyInput.id">
-              <label :for="hobbyInput.id">Hobby #{{ index }}</label>
+                    v-for="(interestInput, index) in interestInputs"
+                    :key="interestInput.id">
+              <label :for="interestInput.id">Interest #{{ index }}</label>
               <input
                       type="text"
-                      :id="hobbyInput.id"
-                      v-model="hobbyInput.value">
-              <button @click="onDeleteHobby(hobbyInput.id)" type="button">X</button>
+                      :id="interestInput.id"
+                      v-model="interestInput.value">
+              <button @click="onDeleteInterest(interestInput.id)" type="button">X</button>
             </div>
           </div>
         </div>
@@ -79,20 +79,20 @@
         password: '',
         confirmPassword: '',
         country: 'usa',
-        hobbyInputs: [],
+        interestInputs: [],
         terms: false
       }
     },
     methods: {
-      onAddHobby () {
-        const newHobby = {
+      onAddInterest () {
+        const newInterest = {
           id: Math.random() * Math.random() * 1000,
           value: ''
         }
-        this.hobbyInputs.push(newHobby)
+        this.interestInputs.push(newInterest)
       },
-      onDeleteHobby (id) {
-        this.hobbyInputs = this.hobbyInputs.filter(hobby => hobby.id !== id)
+      onDeleteInterest (id) {
+        this.interestInputs = this.interestInputs.filter(interest => interest.id !== id)
       },
       onSubmit () {
         const formData = {
@@ -101,7 +101,7 @@
           password: this.password,
           confirmPassword: this.confirmPassword,
           country: this.country,
-          hobbies: this.hobbyInputs.map(hobby => hobby.value),
+          interests: this.interestInputs.map(interest => interest.value),
           terms: this.terms
         }
         // console.log(formData)
@@ -150,7 +150,7 @@
 
   .input input:focus {
     outline: none;
-    border: 1px solid #521751;
+    border: 1px solid #6aa84f;
     background-color: #eee;
   }
 
@@ -159,27 +159,27 @@
     font: inherit;
   }
 
-  .hobbies button {
-    border: 1px solid #521751;
-    background: #521751;
+  .interests button {
+    border: 1px solid #6aa84f;
+    background: #6aa84f;
     color: white;
     padding: 6px;
     font: inherit;
     cursor: pointer;
   }
 
-  .hobbies button:hover,
-  .hobbies button:active {
-    background-color: #8d4288;
+  .interests button:hover,
+  .interests button:active {
+    background-color: rgba(108, 167, 84, 0.8);
   }
 
-  .hobbies input {
+  .interests input {
     width: 90%;
   }
 
   .submit button {
-    border: 1px solid #521751;
-    color: #521751;
+    border: 1px solid #6aa84f;
+    color: #6aa84f;
     padding: 10px 20px;
     font: inherit;
     cursor: pointer;
@@ -187,7 +187,7 @@
 
   .submit button:hover,
   .submit button:active {
-    background-color: #521751;
+    background-color: #6aa84f;
     color: white;
   }
 

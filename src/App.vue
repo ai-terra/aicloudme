@@ -919,13 +919,13 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
           tablelines: lines
         });
       // axios.post('https://aiplanet.firebaseio.com/projects.json', this.matrixDev)
-      // axios.post('https://firestore.googleapis.com/v1/projects/aiplanet/databases/(default)/documents/projects', this.matrixDev)
+      // axios.post('https://firestore.googleapis.com/v1/projects/aibase/databases/(default)/documents/projects', this.matrixDev)
       //   .then(res => console.log(res))
       //   .catch(err => console.log(err));
     },
     onServiceFork() {
       this.newOpsPosts.unshift('New service idea');
-      axios.post('https://aiplanet.firebaseio.com/services.json', this.matrixOps)
+      axios.post('https://aibase.firebaseio.com/services.json', this.matrixOps)
         .then(res => console.log(res))
         .catch(err => console.log(err));
     },
