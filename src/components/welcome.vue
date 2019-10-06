@@ -1,7 +1,7 @@
 <template>
   <div id="welcome">
     <h1>Innovate at ai speed!</h1>
-    <p>evolving blockchain database to boost your ai business</p>
+    <p>augumented intelligence database for top performance</p>
     <div class="cta">
       <router-link to="/signup">Sign Up</router-link>
       <router-link to="/signin">Sign In</router-link>
