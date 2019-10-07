@@ -15,7 +15,7 @@
           <router-link to="/dashboard">ai</router-link>
         </li>
         <li>
-          <button class="logout">logout</button>
+          <button @click="onLogout" class="logout">logout</button>
         </li>
       </ul>
     </nav>
@@ -27,6 +27,11 @@ export default {
   computed: {
     auth () {
       return this.$store.getters.isAuthenticated
+    }
+  },
+  methods: {
+    onLogout() {
+      this.$store.dispatch('logout')
     }
   }
 }
