@@ -14,6 +14,9 @@
         <li v-if="auth">
           <router-link to="/dashboard">ai</router-link>
         </li>
+        <li>
+          <button class="logout">logout</button>
+        </li>
       </ul>
     </nav>
   </header>
@@ -80,5 +83,13 @@ export default {
   li a:active,
   li a.router-link-active {
     color: #333;
+  }
+
+  .logout {
+    background-color: transparent;
+    border: none;
+    font: inherit;
+    color: white;
+    cursor: pointer;
   }
 </style>
