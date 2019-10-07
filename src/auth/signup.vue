@@ -49,7 +49,7 @@
           </select>
         </div>
         <div class="interests">
-          <h3>Add some Interests</h3>
+          <h3>Add your Interests</h3>
           <button @click="onAddInterest" type="button">Add Interest</button>
           <div class="interest-list">
             <div
@@ -111,7 +111,9 @@
           interests: this.interestInputs.map(interest => interest.value),
           terms: this.terms
         }
-        // console.log(formData)
+        console.log(formData)
+        this.$store.dispatch('signup', 
+        {email: formData.email, password: formData.password})
       }
     }
   }
