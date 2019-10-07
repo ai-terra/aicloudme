@@ -12,7 +12,7 @@ Vue.config.productionTip = false
 Vue.use(firestorePlugin)
 
 axios.defaults.baseURL = 'https://aibase.firebaseio.com'
-axios.defaults.headers.common['Authorization'] = 'aibase'
+// axios.defaults.headers.common['Authorization'] = 'aibase'
 axios.defaults.headers.get['Accepts'] = 'application/json'
 
 const reqInterceptor = axios.interceptors.request.use(config => {

@@ -33,9 +33,18 @@
         <div class="input">
           <label for="country">Country</label>
           <select id="country" v-model="country">
+            <option value="austria">Austria</option>
+            <option value="australia">Australia</option>
             <option value="canada">Canada</option>
             <option value="china">China</option>
+            <option value="czech">Czech Republic</option>
+            <option value="finland">Finland</option>
+            <option value="france">France</option>
+            <option value="germany">Germany</option>
             <option value="india">India</option>
+            <option value="russia">Russia</option>
+            <option value="romania">Romania</option>
+            <option value="uk">UK</option>
             <option value="usa">USA</option>
           </select>
         </div>
@@ -71,6 +80,8 @@
 <script>
   import axios from '../axios-auth';
 
+  import firebaseConfig from '../gcp.js';
+
   export default {
     data () {
       return {
@@ -78,7 +89,7 @@
         age: null,
         password: '',
         confirmPassword: '',
-        country: 'usa',
+        country: 'china',
         interestInputs: [],
         terms: false
       }
@@ -105,7 +116,14 @@
           terms: this.terms
         }
         // console.log(formData)
-        axios.post('/users.json', formData)
+        // build signUp string for GCP/Firebase REST API
+        const signUpString = '/accounts:signUp?key=' 
+        + firebaseConfig.options_.apiKey;
+        axios.post(signUpString, {
+          email: formData.email,
+          password: formData.password,
+          returnSecureToken: true
+        })
           .then(res => console.log(res))
           .catch(error => console.log(error));
       }
