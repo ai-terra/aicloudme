@@ -78,10 +78,6 @@
 </template>
 
 <script>
-  import axios from '../axios-auth';
-
-  import firebaseConfig from '../gcp.js';
-
   export default {
     data () {
       return {
@@ -116,16 +112,6 @@
           terms: this.terms
         }
         // console.log(formData)
-        // build signUp string for GCP/Firebase REST API
-        const signUpString = '/accounts:signUp?key=' 
-        + firebaseConfig.options_.apiKey;
-        axios.post(signUpString, {
-          email: formData.email,
-          password: formData.password,
-          returnSecureToken: true
-        })
-          .then(res => console.log(res))
-          .catch(error => console.log(error));
       }
     }
   }
