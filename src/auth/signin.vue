@@ -25,6 +25,10 @@
 </template>
 
 <script>
+import axios from '../axios-auth';
+
+import firebaseConfig from '../gcp.js';
+
   export default {
     data () {
       return {
@@ -38,7 +42,17 @@
           email: this.email,
           password: this.password,
         }
-        // console.log(formData)
+        console.log(formData)
+        // build signIn string for GCP/Firebase REST API
+        const signInString = '/accounts:signInWithPassword?key=' 
+        + firebaseConfig.options_.apiKey;
+        axios.post(signInString, {
+          email: formData.email,
+          password: formData.password,
+          returnSecureToken: true
+        })
+          .then(res => console.log(res))
+          .catch(error => console.log(error));
       }
     }
   }
