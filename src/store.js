@@ -29,6 +29,12 @@ export default new Vuex.Store({
     }
   },
   actions: {
+    setLogoutTimer ({commit}, expirationTime) {
+      setTimeout(() => {
+        commit('clearAuthData')
+        router.replace('/signin')
+      }, expirationTime * 1000) // * 1000 for milliseconds
+    },
     signup ({commit, dispatch}, authData) {
       // build signUp string for GCP/Firebase REST API
       const signUpString = '/accounts:signUp?key=' 
@@ -48,10 +54,11 @@ export default new Vuex.Store({
           // store User in Firebase RTDB
           dispatch('storeUser', authData)
           router.replace('/dashboard')
+          dispatch('setLogoutTimer', res.data.expiresIn)
         })
         .catch(error => console.log(error));
     },
-    login ({commit}, authData) {
+    login ({commit, dispatch}, authData) {
       // build signIn string for GCP/Firebase REST API
       const signInString = '/accounts:signInWithPassword?key=' 
       + firebaseConfig.options_.apiKey;
@@ -67,6 +74,7 @@ export default new Vuex.Store({
           userId: res.data.localId
         })
         router.replace('/dashboard')
+        dispatch('setLogoutTimer', res.data.expiresIn)
       })
       .catch(error => console.log(error));
     },
