@@ -47,6 +47,7 @@ export default new Vuex.Store({
           })
           // store User in Firebase RTDB
           dispatch('storeUser', authData)
+          router.replace('/dashboard')
         })
         .catch(error => console.log(error));
     },
@@ -65,6 +66,7 @@ export default new Vuex.Store({
           token: res.data.idToken,
           userId: res.data.localId
         })
+        router.replace('/dashboard')
       })
       .catch(error => console.log(error));
     },
