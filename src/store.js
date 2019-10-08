@@ -51,6 +51,11 @@ export default new Vuex.Store({
             token: res.data.idToken,
             userId: res.data.localId
           })
+          // store session details in local Storage for Auto Login if token is not expired
+          const now = new Date()
+          const expirationDate = new Date(now.getTime() + res.data.expiresIn * 1000)
+          localStorage.setItem('token', res.data.idToken)
+          localStorage.setItem('expiresIn', expirationDate)
           // store User in Firebase RTDB
           dispatch('storeUser', authData)
           router.replace('/dashboard')
@@ -69,6 +74,11 @@ export default new Vuex.Store({
       })
       .then(res => {
         console.log(res)
+        // store session details in local Storage for Auto Login if token is not expired
+        const now = new Date()
+        const expirationDate = new Date(now.getTime() + res.data.expiresIn * 1000)
+        localStorage.setItem('token', res.data.idToken)
+        localStorage.setItem('expiresIn', expirationDate)
         commit('authUser', {
           token: res.data.idToken,
           userId: res.data.localId
