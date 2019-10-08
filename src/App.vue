@@ -432,6 +432,9 @@ export default {
     'ai-post': Post,
     'ai-icon': Icon,
   },
+  created () {
+    this.$store.dispatch('tryAutoLogin')
+  },
   data() {
     return {
       team: aiteam,
