@@ -3,6 +3,8 @@ import Vuex from 'vuex'
 import axios from './axios-auth'  // for REST into Firebase auth
 import globalAxios from 'axios'   // for REST into Firebase RTDB
 
+import router from './router'
+
 import firebaseConfig from './gcp.js';
 
 Vue.use(Vuex)
@@ -68,6 +70,7 @@ export default new Vuex.Store({
     },
     logout ({commit}) {
       commit('clearAuthData')
+      router.replace('/signin')
     },
     // store user in Firebase RTDB
     storeUser ({commit, state}, userData) {
