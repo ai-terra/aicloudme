@@ -14,7 +14,7 @@
         <li v-if="auth">
           <router-link to="/dashboard">ai</router-link>
         </li>
-        <li>
+        <li v-if="auth">
           <button @click="onLogout" class="logout">logout</button>
         </li>
       </ul>
