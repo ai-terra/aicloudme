@@ -73,13 +73,14 @@
             </div>
           </div>
         </div>
-        <div class="input inline" :class="{invalid: $v.terms.$invalid}">
+        <div class="inline input" :class="{invalid: !$v.terms.$model}">
           <input 
                   type="checkbox" 
                   id="terms" 
                   @change="$v.terms.$touch()" 
                   v-model="terms">
           <label for="terms"> Accept Terms of Use</label>
+          <!-- <div>{{ $v.terms }}</div> -->
         </div>
         <div class="submit">
           <button type="submit">Submit</button>
@@ -121,9 +122,10 @@
         sameAs: sameAs('password')
       },
       terms: {
-        required: requiredUnless(vm => {
-          return vm.country === 'china'
-        })
+        required
+        // required: requiredUnless(vm => {
+        //   return vm.country === 'china'
+        // })
       }
     },
     methods: {
