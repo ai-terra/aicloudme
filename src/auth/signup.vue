@@ -111,7 +111,10 @@
     validations: {
       email: {
         required,
-        email
+        email,
+        unique: val => {
+          return val !== 'test@test.com'
+        }
       },
       age: {
         required,
