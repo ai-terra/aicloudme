@@ -73,9 +73,13 @@
             </div>
           </div>
         </div>
-        <div class="input inline">
-          <input type="checkbox" id="terms" v-model="terms">
-          <label for="terms">Accept Terms of Use</label>
+        <div class="input inline" :class="{invalid: $v.terms.$invalid}">
+          <input 
+                  type="checkbox" 
+                  id="terms" 
+                  @change="$v.terms.$touch()" 
+                  v-model="terms">
+          <label for="terms"> Accept Terms of Use</label>
         </div>
         <div class="submit">
           <button type="submit">Submit</button>
@@ -86,7 +90,7 @@
 </template>
 
 <script>
-  import { required, email, numeric, minValue, minLength, sameAs } from 'vuelidate/lib/validators'
+  import { required, email, numeric, minValue, minLength, sameAs, requiredUnless } from 'vuelidate/lib/validators'
   export default {
     data () {
       return {
@@ -115,6 +119,11 @@
       },
       confirmPassword: {
         sameAs: sameAs('password')
+      },
+      terms: {
+        required: requiredUnless(vm => {
+          return vm.country === 'china'
+        })
       }
     },
     methods: {
