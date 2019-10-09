@@ -63,14 +63,18 @@
             <div
                     class="input"
                     v-for="(interestInput, index) in interestInputs"
+                    :class="{invalid: $v.interestInputs.$each[index].$error}"
                     :key="interestInput.id">
               <label :for="interestInput.id">Interest #{{ index }}</label>
               <input
                       type="text"
                       :id="interestInput.id"
+                      @blur="$v.interestInputs.$each[index].value.$touch()"
                       v-model="interestInput.value">
               <button @click="onDeleteInterest(interestInput.id)" type="button">X</button>
             </div>
+            <p v-if="!$v.interestInputs.minLen">You have to specify at least {{ $v.interestInputs.$params.minLen.min }} interests.</p>
+            <p v-if="!$v.interestInputs.requred">Please add your interests.</p>
           </div>
         </div>
         <div class="inline input" :class="{invalid: !$v.terms.$model}">
@@ -126,6 +130,16 @@
         // required: requiredUnless(vm => {
         //   return vm.country === 'china'
         // })
+      },
+      interestInputs: {
+        required,
+        minLen: minLength(2),
+        $each: {
+          value: {
+            required,
+            minlen: minLength(5)
+          }
+        }
       }
     },
     methods: {

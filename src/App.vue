@@ -1687,6 +1687,10 @@ h4 {
     display: none;
   }
 
+  .titles {
+    width: 100%;
+  }
+
   .devNews,
   .opsNews {
     display: none;
