@@ -1,9 +1,12 @@
 import Vue from 'vue'
 import { firestorePlugin } from 'vuefire'
 import axios from 'axios'
+import Vuelidate from 'vuelidate'
 
 import router from './router'
 import store from './store'
+
+Vue.use(Vuelidate)
 
 import App from './App.vue'
 
