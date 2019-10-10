@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">aibase</router-link>
+      <router-link to="/">aibest</router-link>
     </div>
     <nav>
       <ul>
@@ -12,7 +12,7 @@
           <router-link to="/signin">sign in</router-link>
         </li>
         <li v-if="auth">
-          <router-link to="/dashboard">ai</router-link>
+          <router-link to="/dashboard">web</router-link>
         </li>
         <li v-if="auth">
           <button @click="onLogout" class="logout">logout</button>
