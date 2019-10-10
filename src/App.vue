@@ -1301,7 +1301,7 @@ li.list-group-item {
 
 .postclass {
   /* background-image: url("./assets/amp-logo.png"); */
-  background-color: lightblue;
+  /* background-color: lightblue; */
   color: darkblue;
   text-align: center;
   font-weight: bold;
