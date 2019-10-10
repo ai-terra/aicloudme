@@ -115,35 +115,61 @@ export default new Vuex.Store({
       router.replace('/signin')
     },
     // store user in Firebase RTDB
-    storeUser ({commit, state}, userData) {
+    storeUser ({commit, state}, payload) {
       if (!state.idToken) {
         return
       }
-      globalAxios.post('/users.json' + '?auth=' + state.idToken, userData)
+
+      // Milan's Answer to storing/fetching user data - Safer with no Pass storing! 
+      const userData = {
+        age: payload.age,
+        country: payload.country,
+        email: payload.email,
+        interests: payload.interests
+      }
+
+      // globalAxios.post('/users.json' + '?auth=' + state.idToken, userData) // Max course code
+      // Bellow Milan's Answer to storing/fetching user data
+      globalAxios.put(`users/${state.userId}.json?auth=${state.idToken}`, userData)
         .then(res => console.log(res))
         .catch(error => console.log(error))
     },
     // fetch user data from Firebase RTDB
-    fetchUser ({commit, state}) {
+    // Milan's Answer to storing/fetching user data
+    fetchUser: ({ commit, state }) => {
       if (!state.idToken) {
         return
       }
-      globalAxios.get('/users.json' + '?auth=' + state.idToken)
-      .then(res => {
-        // console.log(res);
-        const data = res.data
-        const users = []
-        for (let key in data) {
-          const user = data[key]
-          user.id = key
-          users.push(user)
-        }
-        // console.log(users)
-        // this.email = users[0].email
-        commit('storeUser', users[0])
-      })
-      .catch(error => console.log(error))
+ 
+      globalAxios
+        .get(`users/${state.userId}.json?auth=${state.idToken}`)
+        .then(({ data }) => {
+          commit("storeUser", data)
+        })
+        .catch(error => console.error(error))
     }
+
+    // Max Vue Code 361 - 363
+    // fetchUser ({commit, state}) {
+    //   if (!state.idToken) {
+    //     return
+    //   }
+    //   globalAxios.get('/users.json' + '?auth=' + state.idToken)
+    //   .then(res => {
+    //     // console.log(res);
+    //     const data = res.data
+    //     const users = []
+    //     for (let key in data) {
+    //       const user = data[key]
+    //       user.id = key
+    //       users.push(user)
+    //     }
+    //     // console.log(users)
+    //     // this.email = users[0].email
+    //     commit('storeUser', users[0])
+    //   })
+    //   .catch(error => console.log(error))
+    // }
   },
   getters: {
     user (state) {
