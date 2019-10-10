@@ -1,7 +1,7 @@
 <template>
   <div id="welcome">
     <h1>Innovate at AI speed!</h1>
-    <p>Market driven AI database for world's social innovators</p>
+    <p>Market driven AI database for innovators</p>
     <div class="cta">
       <router-link to="/signup">Sign Up</router-link>
       <router-link to="/signin">Sign In</router-link>
