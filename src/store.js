@@ -45,7 +45,7 @@ export default new Vuex.Store({
         returnSecureToken: true
       })
         .then(res => {
-          console.log(res)
+          // console.log(res)
           // commit to Vuex store
           commit('authUser', {
             token: res.data.idToken,
@@ -74,7 +74,7 @@ export default new Vuex.Store({
         returnSecureToken: true
       })
       .then(res => {
-        console.log(res)
+        // console.log(res)
         // store session details in local Storage for Auto Login if token is not expired
         const now = new Date()
         const expirationDate = new Date(now.getTime() + res.data.expiresIn * 1000)

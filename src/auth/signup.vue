@@ -173,7 +173,7 @@
           interests: this.interestInputs.map(interest => interest.value),
           terms: this.terms
         }
-        console.log(formData)
+        // console.log(formData)
         this.$store.dispatch('signup', formData)
       }
     }
