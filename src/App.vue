@@ -1282,8 +1282,10 @@ li.list-group-item {
 }
 
 .config-btn {
+  margin: 3px 0px;
+  box-shadow: 1px 1px #888888;
   border-radius: 8px 8px 8px 8px;
-  background-color: lightgrey;
+  background-color: lightsteelblue;
   color: black;
   text-align: center;
   font-weight: bold;
@@ -1291,6 +1293,8 @@ li.list-group-item {
 }
 
 .checkbtn {
+  margin: 3px 0px;
+  /* box-shadow: 1px 1px #888888; */
   border-radius: 8px 8px 8px 8px;
   background-color: lightsteelblue;
   color: black;
