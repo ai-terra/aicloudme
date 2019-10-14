@@ -593,8 +593,8 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
         'Idea: Add Job & Help Requests'
       ],
       newOpsPosts: [
-        'COM: Governance Banks',
-        'ORG: Party Campaign Ops',
+        'COM: meta AI/ML/Kubrnetes',
+        'ORG: Free Market Learning',
         'EDU: Research priorities'
       ]
     };
