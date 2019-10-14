@@ -595,7 +595,7 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
       newOpsPosts: [
         'COM: meta AI/ML/Kubrnetes',
         'ORG: Free Market Learning',
-        'EDU: Research priorities'
+        'EDU: Evolutionary Research'
       ]
     };
   },
