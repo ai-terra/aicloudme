@@ -593,9 +593,9 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
         'Idea: Add Job & Help Requests'
       ],
       newOpsPosts: [
-        'COM: meta AI/ML/Kubrnetes',
+        'COM: meta AI/ML/Kubernetes',
         'ORG: Free Market Learning',
-        'EDU: Evolutionary Research'
+        'R&D: Evolutionary Kubernetes'
       ]
     };
   },
