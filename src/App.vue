@@ -588,9 +588,9 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
         ['1','','','','','','','','','','','','','','','','','','','','','','','','','','']
       ],
       newDevPosts: [
-        'Funded: 5min ai engine install',
-        'Voting: Chinese, Hindi, Spanish',
-        'Idea: Add Job & Help Requests'
+        'Funded: 5min ai m8 engine install',
+        'Voting: Chinese & Hindi mitochondria8',
+        'Idea: Job posts as ai/m8 colab demand'
       ],
       newOpsPosts: [
         'COM: meta AI/ML/Kubernetes',
