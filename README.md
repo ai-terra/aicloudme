@@ -1,6 +1,8 @@
 # ai colab web app
 
-web collaboration engine / social & enterprise innovation protocol
+office collaboration engine / social & enterprise innovation protocol
+
+![Web colab PoC](ai-colab-engine-PoC-animated.gif)
 
 ## collaboration engine install
 

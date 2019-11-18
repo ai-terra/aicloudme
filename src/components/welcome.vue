@@ -1,7 +1,7 @@
 <template>
   <div id="welcome">
-    <h1>web @ ai speed</h1>
-    <p>Colab driven AI database for innovators</p>
+    <h1>innovate @ ai speed</h1>
+    <p>Colaboration driven AI spreadsheets for office professional</p>
     <div class="cta">
       <router-link to="/signup">Sign Up</router-link>
       <router-link to="/signin">Sign In</router-link>

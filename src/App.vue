@@ -399,7 +399,7 @@
                 <h4 class="long"><a href="https://github.com/aibase">
                 innovation engines @ github</a></h4>
                 <h4 class="short"><a href="https://github.com/aibase/aicolab">
-                aicolab app @ github</a></h4>
+                ai colab PoC @ github</a></h4>
                 <h4 class="long" contenteditable="true">Collaboration Engine / W3AI SNN Protocol</h4>
               </div>            
             </div>             
@@ -453,13 +453,13 @@ export default {
       postNameId: 0,
       opsName: ["ads" , "app", "ops", "srv", "offr", "ask", "rRNA"],
       opsNameId: 1,
-      backgroundText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;base &nbsp;&nbsp; app
+      backgroundText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;colab &nbsp;&nbsp; app
             <br><br>
             &nbsp;ai &nbsp; accelerator`,
-      liveText: `&nbsp; live&nbsp; &nbsp;base &nbsp; app
+      liveText: `&nbsp; live&nbsp; &nbsp;colab &nbsp; app
             <br><br>
             market &nbsp;engine`,
-      devText: `&nbsp; dev&nbsp; &nbsp;base &nbsp; app
+      devText: `&nbsp; dev&nbsp; &nbsp;colab &nbsp; app
       <br><br>
       match8 &nbsp;engine`,
       visibleRows: 1,
