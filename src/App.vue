@@ -395,12 +395,12 @@
                   <a href="https://www.meetup.com/Manhattan-AIR/">NYC </a>&nbsp;
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax </a>
                 </h4>
-                <h4>© Ianta Labs | MIT License</h4>
+                <h4>Stefan Ianta @ Pythian</h4>
                 <h4 class="long"><a href="https://github.com/aibase">
                 innovation engines @ github</a></h4>
-                <h4 class="short"><a href="https://github.com/aibase/aibase">
-                aibase app @ github</a></h4>
-                <h4 class="long" contenteditable="true">Innovation Engine / W3AI SNN Protocol</h4>
+                <h4 class="short"><a href="https://github.com/aibase/aicolab">
+                aicolab app @ github</a></h4>
+                <h4 class="long" contenteditable="true">Collaboration Engine / W3AI SNN Protocol</h4>
               </div>            
             </div>             
           </div>

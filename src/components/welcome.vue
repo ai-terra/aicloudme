@@ -1,7 +1,7 @@
 <template>
   <div id="welcome">
     <h1>web @ ai speed</h1>
-    <p>Market driven AI database for innovators</p>
+    <p>Colab driven AI database for innovators</p>
     <div class="cta">
       <router-link to="/signup">Sign Up</router-link>
       <router-link to="/signin">Sign In</router-link>
@@ -10,40 +10,40 @@
 </template>
 
 <style scoped>
-  #welcome {
-    width: 80%;
-    margin: auto;
-  }
+#welcome {
+  width: 80%;
+  margin: auto;
+}
 
-  h1 {
-    text-align: center;
-  }
+h1 {
+  text-align: center;
+}
 
-  p {
-    text-align: center;
-  }
+p {
+  text-align: center;
+}
 
-  .cta {
-    width: 300px;
-    margin: auto;
-    text-align: center;
-  }
+.cta {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+}
 
-  .cta a {
-    margin: 10px;
-    text-decoration: none;
-    display: inline-block;
-    border: 1px solid #6aa84f;
-    border-radius: 3px;
-    width: 100px;
-    padding: 10px;
-    box-sizing: border-box;
-    color: #6aa84f;
-  }
+.cta a {
+  margin: 10px;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #6aa84f;
+  border-radius: 3px;
+  width: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #6aa84f;
+}
 
-  .cta a:hover,
-  .cta a:active {
-    background-color: #6aa84f;
-    color: white;
-  }
+.cta a:hover,
+.cta a:active {
+  background-color: #6aa84f;
+  color: white;
+}
 </style>
