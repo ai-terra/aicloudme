@@ -1,6 +1,6 @@
 # ai colab web app
 
-web collaboration engine / social or enterprise innovation protocol
+web collaboration engine / social & enterprise innovation protocol
 
 ## collaboration engine install
 
