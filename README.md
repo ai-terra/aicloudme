@@ -1,6 +1,6 @@
 # ai colab web app
 
-office collaboration engine / social & enterprise innovation protocol
+office collaboration engine / social & enterprise innovation protocol - PoC
 
 ![Web colab PoC](ai-colab-engine-PoC-animated.gif)
 
