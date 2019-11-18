@@ -1,15 +1,15 @@
 # ai colab web app
 
-evolutionary blockchain db for data and code / web social innovation protocol
+web collaboration engine / social innovation protocol
 
-## aibase engine install
+## collaboration engine install
 
 - download and install node & npm @ https://nodejs.org/
-- clone aibase app @ https://github.com/aibase/aibase/
+- clone ai colab app @ https://github.com/aibase/aicolab/
 - open a free basic GCP | Azure | AWS cloud account
-- create a realtime NoSQL database for users (RTDB/Firebase)
-- create a realtime NoSQL database for data (Firestore/Firebase)
-- (coming soon: run your own local aibase engine & git server)
+- create a realtime db or spreadsheet for users (eg: Firebase or Google Sheets)
+- create a realtime db or spreadsheet for data (eg: Firestore or Google Sheets)
+- (coming soon: run your own local colab engine & git server)
 
 ```
 npm install
