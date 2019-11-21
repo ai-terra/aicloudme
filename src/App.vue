@@ -596,8 +596,8 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
       ],
       newOpsPosts: [
         'COM: meta AI/ML/Kubernetes',
-        'ORG: Free Market Learning',
-        'R&D: Evolutionary Kubernetes'
+        'ORG: Innovation/Project Rendering',
+        'R&D: Code/Branch Ranking Blockchain'
       ]
     };
   },
