@@ -71,7 +71,7 @@
             <div id="ai-prog">
               <div class="buttons">
                 <button class="next btn btn-warning" @click="setCell('b-table', 2, 3, 'Ok')">Rank</button>
-                <button class="next btn btn-primary" title="Next Option" @click="nextBranch">Options</button>
+                <button class="next btn btn-primary" title="Next Option" @click="nextBranch">Branches</button>
                 <button class="next btn btn-primary" @click="addNewRule">Rule:</button>
                 <input type="text" class="input-add-new" name="new-rule" value="ECO - use ECO first services" size="40" maxlength="40">
                 <!-- <button contenteditable="true" class="next btn btn-primary" @click="addTableRow('b-table', 8, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Pay</button> -->
@@ -530,7 +530,7 @@ github.com/ai-accelerator`,
         {title: 'Toronto W3AI News', post: 'bla bla, bla', author: 'SI'}
       ],  
       matrixDev: [
-        ['a','SOCIAL',':','project','','title',':','AI World','','priority','=','1','','votes','=','247','','comments','=','144','','clones','=','24','','','\n'],
+        ['a','SOCIAL',':','project','','title',':','AI Economy','','priority','=','1','','votes','=','247','','comments','=','144','','clones','=','24','','','\n'],
         ['1','Post',':','Hello World!','','subtitle',':','welcome to ai web','','body',':',
         `AI super productivity app.
 Add incentive check lists to trigger ai innovators worldwide.
@@ -591,7 +591,7 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
       ],
       newDevPosts: [
         'Funded: 5min ai m8 engine install',
-        'Voting: Chinese & Hindi mitochondria8',
+        'Voting: Chinese & Hindi colab engine',
         'Idea: Job posts as ai/m8 colab demand'
       ],
       newOpsPosts: [
