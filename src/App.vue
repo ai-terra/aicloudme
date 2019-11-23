@@ -680,11 +680,11 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
       this.readService();
 
       // dev dummy animation
-      // this.setCell('d-table', 2, 2, 'ok');
-      // this.setCell('o-table', 2, 2, 'ok');
-      // this.setCell('b-table', 2, 3, 'ok');
-      // this.setCell('b-table', 2, 7, 'ok');
-      // this.setCell('b-table', 1, 3, 'OK');
+      this.setCell('d-table', 2, 2, 'ok');
+      this.setCell('o-table', 2, 2, 'ok');
+      this.setCell('b-table', 2, 3, 'ok');
+      this.setCell('b-table', 2, 7, 'ok');
+      this.setCell('b-table', 1, 3, 'OK');
 
       // this.setCell('d-table', 4, 2, 'ok');
       // this.setCell('o-table', 4, 2, 'ok');
@@ -974,14 +974,18 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
     },
     // TODO - check table/rows/cells length, etc
     // TODO - setCell in the matrices linked to Firestore / not in tables
-    // setCell(tableId, row, col, value) {
-    //   let table = document.getElementById(tableId);
-    //   let x = table.rows[row].cells;
+    
+    // TODO - add color param (related to status GYR or prj/srv, etc)
+    // TODO - add delay/async param (related to local processing or external/API)
+    // Todo - experiment with dual color for processing and result etc
+    setCell(tableId, row, col, value) {
+      let table = document.getElementById(tableId);
+      let x = table.rows[row].cells;
 
-    //   x[col].innerHTML = value;
+      x[col].innerHTML = value;
 
-    //   x[col].classList.add('fade-on-change');
-    // }
+      x[col].classList.add('fade-on-change');
+    }
   }
 };
 </script>
