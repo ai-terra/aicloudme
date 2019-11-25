@@ -1,7 +1,7 @@
 <template>
   <div id="welcome">
-    <h1>innovate @ ai speed</h1>
-    <p>ai collaboration spreadsheets for office professionals</p>
+    <h1>teamplay @ ai speed</h1>
+    <p>ai collaboration engine for team players</p>
     <div class="cta">
       <router-link to="/signup">Sign Up</router-link>
       <router-link to="/signin">Sign In</router-link>

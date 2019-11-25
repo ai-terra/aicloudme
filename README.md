@@ -1,13 +1,13 @@
-# ai colab web app
+# ai player web app
 
-office collaboration engine / social & enterprise innovation protocol - PoC
+collaboration engine / social & enterprise innovation protocol - PoC
 
 ![Web colab PoC](ai-colab-engine-PoC-animated.gif)
 
 ## collaboration engine install
 
 - download and install node & npm @ https://nodejs.org/
-- clone ai colab app @ https://github.com/aibase/aicolab/
+- clone ai player app @ https://github.com/aibase/ai-player/
 - open a free basic GCP | Azure | AWS cloud account
 - create a realtime db or spreadsheet for users (eg: Firebase or Google Sheets)
 - create a realtime db or spreadsheet for data (eg: Firestore or Google Sheets)
