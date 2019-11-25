@@ -682,51 +682,59 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
       // dev dummy animation
       this.setCell('d-table', 2, 2, 'ok');
       this.setCell('o-table', 2, 2, 'ok');
-      this.setCell('b-table', 2, 3, 'ok');
+      this.setCell('b-table', 2, 11, 'ok');
       this.setCell('b-table', 2, 7, 'ok');
+      this.setCell('b-table', 2, 3, 'ok');
       this.setCell('b-table', 1, 3, 'OK');
 
-      // this.setCell('d-table', 4, 2, 'ok');
-      // this.setCell('o-table', 4, 2, 'ok');
-      // this.setCell('b-table', 4, 3, 'ok');
-      // this.setCell('b-table', 4, 7, 'ok');
-      // this.setCell('b-table', 3, 3, 'OK');
+      this.setCell('d-table', 4, 2, 'ok');
+      this.setCell('o-table', 4, 2, 'ok');
+      this.setCell('b-table', 4, 11, 'ok');
+      this.setCell('b-table', 4, 7, 'ok');
+      this.setCell('b-table', 4, 3, 'ok');
+      this.setCell('b-table', 3, 3, 'OK');
 
-      // this.setCell('d-table', 6, 2, 'ok');
-      // this.setCell('o-table', 6, 2, 'ok');
-      // this.setCell('b-table', 6, 3, 'ok');
-      // this.setCell('b-table', 6, 7, 'ok');
-      // this.setCell('b-table', 5, 3, 'OK');
+      this.setCell('d-table', 6, 2, 'ok');
+      this.setCell('o-table', 6, 2, 'ok');
+      this.setCell('b-table', 6, 11, 'ok');
+      this.setCell('b-table', 6, 7, 'ok');
+      this.setCell('b-table', 6, 3, 'ok');
+      this.setCell('b-table', 5, 3, 'OK');
 
-      // this.setCell('d-table', 8, 2, 'ok');
-      // this.setCell('o-table', 8, 2, 'ok');
-      // this.setCell('b-table', 8, 3, 'ok');
-      // this.setCell('b-table', 8, 7, 'ok');
-      // this.setCell('b-table', 7, 3, 'OK');
+      this.setCell('d-table', 8, 2, 'ok');
+      this.setCell('o-table', 8, 2, 'ok');
+      this.setCell('b-table', 8, 11, 'ok');
+      this.setCell('b-table', 8, 7, 'ok');
+      this.setCell('b-table', 8, 3, 'ok');
+      this.setCell('b-table', 7, 3, 'OK');
 
-      // this.setCell('d-table', 10, 2, 'ok');
-      // this.setCell('o-table', 10, 2, 'ok');
-      // this.setCell('b-table', 10, 3, 'ok');
-      // this.setCell('b-table', 10, 7, 'ok');
-      // this.setCell('b-table', 9, 3, 'OK');
+      this.setCell('d-table', 10, 2, 'ok');
+      this.setCell('o-table', 10, 2, 'ok');
+      this.setCell('b-table', 10, 11, 'ok');
+      this.setCell('b-table', 10, 7, 'ok');
+      this.setCell('b-table', 10, 3, 'ok');
+      this.setCell('b-table', 9, 3, 'OK');
 
-      // this.setCell('d-table', 12, 2, 'ok');
-      // this.setCell('o-table', 12, 2, 'ok');
-      // this.setCell('b-table', 12, 3, 'ok');
-      // this.setCell('b-table', 12, 7, 'ok');
-      // this.setCell('b-table', 11, 3, 'OK');
+      this.setCell('d-table', 12, 2, 'ok');
+      this.setCell('o-table', 12, 2, 'ok');
+      this.setCell('b-table', 12, 11, 'ok');
+      this.setCell('b-table', 12, 7, 'ok');
+      this.setCell('b-table', 12, 3, 'ok');
+      this.setCell('b-table', 11, 3, 'OK');
 
-      // this.setCell('d-table', 14, 2, 'ok');
-      // this.setCell('o-table', 14, 2, 'ok');
-      // this.setCell('b-table', 14, 3, 'ok');
-      // this.setCell('b-table', 14, 7, 'ok');
-      // this.setCell('b-table', 13, 3, 'OK');
+      this.setCell('d-table', 14, 2, 'ok');
+      this.setCell('o-table', 14, 2, 'ok');
+      this.setCell('b-table', 14, 11, 'ok');
+      this.setCell('b-table', 14, 7, 'ok');
+      this.setCell('b-table', 14, 3, 'ok');
+      this.setCell('b-table', 13, 3, 'OK');
 
-      // this.setCell('d-table', 16, 2, 'ok');
-      // this.setCell('o-table', 16, 2, 'ok');
-      // this.setCell('b-table', 16, 3, 'ok');
-      // this.setCell('b-table', 16, 7, 'ok');
-      // this.setCell('b-table', 15, 3, 'OK');      
+      this.setCell('d-table', 16, 2, 'ok');
+      this.setCell('o-table', 16, 2, 'ok');
+      this.setCell('b-table', 16, 11, 'ok');
+      this.setCell('b-table', 16, 7, 'ok');
+      this.setCell('b-table', 16, 3, 'ok');
+      this.setCell('b-table', 15, 3, 'OK');      
 
       // Run/Eval Service Input queries on Project data and add/update results as step[0]
 
