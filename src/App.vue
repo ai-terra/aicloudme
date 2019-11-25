@@ -398,8 +398,8 @@
                 <h4>Stefan Ianta @ Pythian</h4>
                 <h4 class="long"><a href="https://github.com/aibase">
                 innovation engines @ github</a></h4>
-                <h4 class="short"><a href="https://github.com/aibase/aicolab">
-                ai colab PoC @ github</a></h4>
+                <h4 class="short"><a href="https://github.com/aibase/ai-player">
+                ai player PoC @ github</a></h4>
                 <h4 class="long" contenteditable="true">Collaboration Engine / W3AI SNN Protocol</h4>
               </div>            
             </div>             
@@ -453,13 +453,13 @@ export default {
       postNameId: 0,
       opsName: ["ads" , "app", "ops", "srv", "offr", "ask", "rRNA"],
       opsNameId: 1,
-      backgroundText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;colab &nbsp;&nbsp; app
+      backgroundText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;player &nbsp;&nbsp; app
             <br><br>
             &nbsp;ai &nbsp; accelerator`,
-      liveText: `&nbsp; live&nbsp; &nbsp;colab &nbsp; app
+      liveText: `&nbsp; live&nbsp; &nbsp;play &nbsp; app
             <br><br>
             market &nbsp;engine`,
-      devText: `&nbsp; dev&nbsp; &nbsp;colab &nbsp; app
+      devText: `&nbsp; dev&nbsp; &nbsp;player &nbsp; app
       <br><br>
       match8 &nbsp;engine`,
       visibleRows: 1,
@@ -591,7 +591,7 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
       ],
       newDevPosts: [
         'Funded: 5min ai m8 engine install',
-        'Voting: Chinese & Hindi colab engine',
+        'Voting: Chinese & Hindi play engine',
         'Idea: Job posts as ai/m8 colab demand'
       ],
       newOpsPosts: [
