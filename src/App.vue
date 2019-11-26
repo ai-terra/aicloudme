@@ -685,28 +685,28 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
       this.setCellAndColor('b-table', 2, 11, 'ok', 'service-color');
       this.setCellAndColor('b-table', 2, 7, 'ok', 'project-color');
       this.setCellAndColor('b-table', 2, 3, 'ok', 'blockchain-color');
-      this.setCellAndColor('b-table', 1, 3, 'OK', 'blockchain-color');
+      this.setCellAndColor('b-table', 1, 3, 'OK', 'blockchain-green');
 
-      this.setCell('d-table', 4, 2, 'ok');
-      this.setCell('o-table', 4, 2, 'ok');
-      this.setCell('b-table', 4, 11, 'ok');
-      this.setCell('b-table', 4, 7, 'ok');
-      this.setCell('b-table', 4, 3, 'ok');
-      this.setCell('b-table', 3, 3, 'OK');
+      this.setCellAndColor('d-table', 4, 2, 'ok', 'project-color');
+      this.setCellAndColor('o-table', 4, 2, 'ok', 'service-color');
+      this.setCellAndColor('b-table', 4, 11, 'ok', 'service-color');
+      this.setCellAndColor('b-table', 4, 7, 'ok', 'project-color');
+      this.setCellAndColor('b-table', 4, 3, 'ok', 'blockchain-color');
+      this.setCellAndColor('b-table', 3, 3, 'OK', 'blockchain-green');
 
-      this.setCell('d-table', 6, 2, 'ok');
-      this.setCell('o-table', 6, 2, 'ok');
-      this.setCell('b-table', 6, 11, 'ok');
-      this.setCell('b-table', 6, 7, 'ok');
-      this.setCell('b-table', 6, 3, 'ok');
-      this.setCell('b-table', 5, 3, 'OK');
+      this.setCellAndColor('d-table', 6, 2, 'ok', 'project-color');
+      this.setCellAndColor('o-table', 6, 2, 'ok', 'service-color');
+      this.setCellAndColor('b-table', 6, 11, 'ok', 'service-color');
+      this.setCellAndColor('b-table', 6, 7, 'ok', 'project-color');
+      this.setCellAndColor('b-table', 6, 3, 'ok', 'blockchain-color');
+      this.setCellAndColor('b-table', 5, 3, 'OK', 'blockchain-green');
 
-      this.setCell('d-table', 8, 2, 'ok');
-      this.setCell('o-table', 8, 2, 'ok');
-      this.setCell('b-table', 8, 11, 'ok');
-      this.setCell('b-table', 8, 7, 'ok');
-      this.setCell('b-table', 8, 3, 'ok');
-      this.setCell('b-table', 7, 3, 'OK');
+      this.setCellAndColor('d-table', 8, 2, 'ok', 'project-color');
+      this.setCellAndColor('o-table', 8, 2, 'ok', 'service-color');
+      this.setCellAndColor('b-table', 8, 11, 'ok', 'service-color');
+      this.setCellAndColor('b-table', 8, 7, 'ok', 'project-color');
+      this.setCellAndColor('b-table', 8, 3, 'ok', 'blockchain-color');
+      this.setCellAndColor('b-table', 7, 3, 'OK', 'blockchain-green');
 
       this.setCell('d-table', 10, 2, 'ok');
       this.setCell('o-table', 10, 2, 'ok');
@@ -1490,6 +1490,10 @@ td:hover {
 
 .blockchain-color {
   color: violet;
+}
+
+.blockchain-green {
+  color: green;
 }
 
 .col0-head,
