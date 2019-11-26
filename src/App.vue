@@ -708,33 +708,33 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
       this.setCellAndColor('b-table', 8, 3, 'ok', 'blockchain-color');
       this.setCellAndColor('b-table', 7, 3, 'OK', 'blockchain-green');
 
-      this.setCell('d-table', 10, 2, 'ok');
-      this.setCell('o-table', 10, 2, 'ok');
-      this.setCell('b-table', 10, 11, 'ok');
-      this.setCell('b-table', 10, 7, 'ok');
-      this.setCell('b-table', 10, 3, 'ok');
-      this.setCell('b-table', 9, 3, 'OK');
+      this.setCellAndColor('d-table', 10, 2, 'ok', 'project-color');
+      this.setCellAndColor('o-table', 10, 2, 'ok', 'service-color');
+      this.setCellAndColor('b-table', 10, 11, 'ok', 'service-color');
+      this.setCellAndColor('b-table', 10, 7, 'ok', 'project-color');
+      this.setCellAndColor('b-table', 10, 3, 'ok', 'blockchain-color');
+      this.setCellAndColor('b-table', 9, 3, 'OK', 'blockchain-green');
 
-      this.setCell('d-table', 12, 2, 'ok');
-      this.setCell('o-table', 12, 2, 'ok');
-      this.setCell('b-table', 12, 11, 'ok');
-      this.setCell('b-table', 12, 7, 'ok');
-      this.setCell('b-table', 12, 3, 'ok');
-      this.setCell('b-table', 11, 3, 'OK');
+      this.setCellAndColor('d-table', 12, 2, 'ok', 'project-color');
+      this.setCellAndColor('o-table', 12, 2, 'ok', 'service-color');
+      this.setCellAndColor('b-table', 12, 11, 'ok', 'service-color');
+      this.setCellAndColor('b-table', 12, 7, 'ok', 'project-color');
+      this.setCellAndColor('b-table', 12, 3, 'ok', 'blockchain-color');
+      this.setCellAndColor('b-table', 11, 3, 'OK', 'blockchain-green');
 
-      this.setCell('d-table', 14, 2, 'ok');
-      this.setCell('o-table', 14, 2, 'ok');
-      this.setCell('b-table', 14, 11, 'ok');
-      this.setCell('b-table', 14, 7, 'ok');
-      this.setCell('b-table', 14, 3, 'ok');
-      this.setCell('b-table', 13, 3, 'OK');
+      this.setCellAndColor('d-table', 14, 2, 'ok', 'project-color');
+      this.setCellAndColor('o-table', 14, 2, 'ok', 'service-color');
+      this.setCellAndColor('b-table', 14, 11, 'ok', 'service-color');
+      this.setCellAndColor('b-table', 14, 7, 'ok', 'project-color');
+      this.setCellAndColor('b-table', 14, 3, 'ok', 'blockchain-color');
+      this.setCellAndColor('b-table', 13, 3, 'OK', 'blockchain-green');
 
-      this.setCell('d-table', 16, 2, 'ok');
-      this.setCell('o-table', 16, 2, 'ok');
-      this.setCell('b-table', 16, 11, 'ok');
-      this.setCell('b-table', 16, 7, 'ok');
-      this.setCell('b-table', 16, 3, 'ok');
-      this.setCell('b-table', 15, 3, 'OK');      
+      this.setCellAndColor('d-table', 16, 2, 'ok', 'project-color');
+      this.setCellAndColor('o-table', 16, 2, 'ok', 'service-color');
+      this.setCellAndColor('b-table', 16, 11, 'ok', 'service-color');
+      this.setCellAndColor('b-table', 16, 7, 'ok', 'project-color');
+      this.setCellAndColor('b-table', 16, 3, 'ok', 'blockchain-color');
+      this.setCellAndColor('b-table', 15, 3, 'OK', 'blockchain-green');  
 
       // Run/Eval Service Input queries on Project data and add/update results as step[0]
 
