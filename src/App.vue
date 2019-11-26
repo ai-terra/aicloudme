@@ -680,12 +680,12 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
       this.readService();
 
       // dev dummy animation
-      this.setCell('d-table', 2, 2, 'ok');
-      this.setCell('o-table', 2, 2, 'ok');
-      this.setCell('b-table', 2, 11, 'ok');
-      this.setCell('b-table', 2, 7, 'ok');
-      this.setCell('b-table', 2, 3, 'ok');
-      this.setCell('b-table', 1, 3, 'OK');
+      this.setCellAndColor('d-table', 2, 2, 'ok', 'project-color');
+      this.setCellAndColor('o-table', 2, 2, 'ok', 'service-color');
+      this.setCellAndColor('b-table', 2, 11, 'ok', 'service-color');
+      this.setCellAndColor('b-table', 2, 7, 'ok', 'project-color');
+      this.setCellAndColor('b-table', 2, 3, 'ok', 'blockchain-color');
+      this.setCellAndColor('b-table', 1, 3, 'OK', 'blockchain-color');
 
       this.setCell('d-table', 4, 2, 'ok');
       this.setCell('o-table', 4, 2, 'ok');
@@ -992,6 +992,15 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
 
       x[col].innerHTML = value;
 
+      x[col].classList.add('fade-on-change');
+    },
+    setCellAndColor(tableId, row, col, value, color) {
+      let table = document.getElementById(tableId);
+      let x = table.rows[row].cells;
+
+      x[col].innerHTML = value;
+
+      x[col].classList.add(color);
       x[col].classList.add('fade-on-change');
     }
   }
@@ -1469,6 +1478,18 @@ td:hover {
 .fade-on-done {
   background-color: transparent;
   animation: fade-in .125s 1;
+}
+
+.project-color {
+  color: orange;
+}
+
+.service-color {
+  color: blue;
+}
+
+.blockchain-color {
+  color: violet;
 }
 
 .col0-head,
