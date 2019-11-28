@@ -99,7 +99,7 @@
                     <!-- <section class="views"> -->
 
                     <div v-if="fbview">
-                      <ai-post :matrix="matrixDev[1]"></ai-post>
+                      <ai-post :matrix="listBiz[0]"></ai-post>
                     </div>
 
                     <!-- </section> -->
@@ -274,7 +274,7 @@
                       <!-- <section class="views"> -->
 
                       <div v-if="fbview">
-                        <ai-post :matrix="matrixDev[1]"></ai-post>
+                        <ai-post :matrix="listOps[0]"></ai-post>
                       </div>
 
                       <!-- </section> -->
@@ -524,6 +524,9 @@ Or add your services to contribute to world's projects.
 
 clone free ai open apps:
 github.com/ai-accelerator`,
+      listBiz: [
+        ['1','Post',':','Hello Deals World!','','subtitle',':','welcome to ai web']
+      ],
       matrixBiz: [
         ['a','STATUS',':','OK?','','','','','','','','','','','','','','','','','','','','','','',''],
         ['1','tx-State',':','-','','pa-State',':','-','','sa-State',':','-','','','','','','','','','','','','','','',''],
@@ -568,6 +571,9 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
         ['1','Click',':','= if ( sg-Output == "created" ) { pg-State = "Ok" } else { pg-State = "Quit" }','','','','','','','','','','','','','','','','','','','','','','','\n'],
         ['h','PAY',':','paid','','','','','','','','','','','','','','','','','','','','','','','\n'],
         ['1','Click',':','= if ( sh-Pay == "cashed" ) { ph-State = "Done" } else { ph-State = "Back" }','','','','','','','','','','','','','','','','','','','','','','','\n'],
+      ],
+      listOps: [
+        ['1','Post',':','Hello Service World!','','subtitle',':','welcome to ai web']
       ],
       matrixOps: [
         ['a','MARKET',':','ready','','title',':','Skill 37','','usage','=','247k','','','','','','','','','','','','','','',''],
