@@ -1,7 +1,7 @@
 <template>
   <div id="welcome">
     <h1>teamplay @ ai speed</h1>
-    <p>universal collaboration engine for team players</p>
+    <p>universal market engine for team players</p>
     <div class="cta">
       <router-link to="/signup">Sign Up</router-link>
       <router-link to="/signin">Sign In</router-link>

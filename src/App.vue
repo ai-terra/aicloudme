@@ -531,7 +531,7 @@ github.com/ai-accelerator`,
       ],  
       matrixDev: [
         ['a','SOCIAL',':','project','','title',':','AI Economy','','priority','=','1','','votes','=','247','','comments','=','144','','clones','=','24','','','\n'],
-        ['1','Post',':','Hello World!','','subtitle',':','welcome to ai web','','body',':',
+        ['1','Post',':','Hello Project World!','','subtitle',':','welcome to ai web','','body',':',
         `AI super productivity app.
 Add incentive check lists to trigger ai innovators worldwide.
 Or add your services to contribute to world's innovation projects.`,'','signature',':',`clone free ai world apps:
