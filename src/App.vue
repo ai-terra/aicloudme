@@ -470,7 +470,7 @@ export default {
       rules: ['FAST'],
       results: [8],
       patentState: 10,
-      fbview: false,
+      fbview: true,
       noView: 'noview',
       viewProjects: [24],
       projects: [],
