@@ -96,6 +96,14 @@
 
                       </h3>
 
+                    <!-- <section class="views"> -->
+
+                    <div v-if="fbview">
+                      <ai-post :matrix="matrixDev[1]"></ai-post>
+                    </div>
+
+                    <!-- </section> -->
+
                     <div class="scrollable">
                       <table id="b-table" class="matrix">
                         <tr class="row">
@@ -262,6 +270,14 @@
 
                         <div class="fork" title="fork (copy) service" @click="onServiceFork">f</div>
                       </div>
+
+                      <!-- <section class="views"> -->
+
+                      <div v-if="fbview">
+                        <ai-post :matrix="matrixDev[1]"></ai-post>
+                      </div>
+
+                      <!-- </section> -->
 
                       <div class="scrollable">
                         <table id="o-table" class="matrix">
