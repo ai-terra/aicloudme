@@ -1,7 +1,7 @@
 <template>
   <div id="welcome">
     <h1>teamplay @ ai speed</h1>
-    <p>universal market engine for team players</p>
+    <p>genetic intelligence terraform PoC</p>
     <div class="cta">
       <router-link to="/signup">Sign Up</router-link>
       <router-link to="/signin">Sign In</router-link>

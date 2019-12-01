@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">ai player</router-link>
+      <router-link to="/">ai git</router-link>
     </div>
     <nav>
       <ul>

@@ -1,4 +1,4 @@
-# ai player web app
+# ai git colab web app
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
@@ -7,11 +7,11 @@ collaboration engine / social & enterprise innovation protocol - PoC
 ## collaboration engine install
 
 - download and install node & npm @ https://nodejs.org/
-- clone ai player app @ https://github.com/aibase/ai-player/
+- clone ai player app @ https://github.com/aibase/ai-git/
 - open a free basic GCP | Azure | AWS cloud account
 - create a realtime db or spreadsheet for users (eg: Firebase or Google Sheets)
 - create a realtime db or spreadsheet for data (eg: Firestore or Google Sheets)
-- (coming soon: run your own local colab engine & git server)
+- (coming soon: run your own local or cloud colab ai engine)
 
 ```
 npm install
@@ -33,12 +33,6 @@ npm run build
 
 ```
 npm run test
-```
-
-### Lints and fixes files
-
-```
-npm run lint
 ```
 
 ### Customize ai engine
