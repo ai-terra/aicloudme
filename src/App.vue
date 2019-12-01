@@ -79,22 +79,24 @@
               <ul class="list-group">
                 <transition-group name="slide-down" type="animation" appear>
                   <li class="list-group-item" v-for="project in viewProjects" v-bind:key="project">
-                    <h3 class="line" title="Patent blockchain status - % tests passed">
-                      &nbsp;&nbsp;commit(
-                      <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')">-
-                      <ai-icon :bits="projectIconBits"></ai-icon>
-                      	&#65121;
-                      <ai-icon :bits="serviceIconBits"></ai-icon>-
-                      <img class="owner" :src="require('./assets/img/users/2'+ services[0] + '.png')">
-                      <!-- {{ services[0] ops }} -->
-                      , {{ branch }}/{{ branches[0] }}, 
-                      
-                      {{ policyRule[randomInt(0, policyRule.length - 1)] }}) 
-                      
-                      <!-- ~ {{ services[0] % project }}% -->
-                      ~ {{ randomInt(1, 100) }}%
 
+                    <div class="table-title">
+                      <h3 class="line" title="Patent blockchain status - % tests passed">
+                        &nbsp;&nbsp;commit(
+                        <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')">-
+                        <ai-icon :bits="projectIconBits"></ai-icon>
+                          &#65121;
+                        <ai-icon :bits="serviceIconBits"></ai-icon>-
+                        <img class="owner" :src="require('./assets/img/users/2'+ services[0] + '.png')">
+                        <!-- {{ services[0] ops }} -->
+                        , {{ branch }}/{{ branches[0] }}, 
+                        
+                        {{ policyRule[randomInt(0, policyRule.length - 1)] }}) 
+                        
+                        <!-- ~ {{ services[0] % project }}% -->
+                        ~ {{ randomInt(1, 100) }}%
                       </h3>
+                    </div>
 
                     <!-- <section class="views"> -->
 
