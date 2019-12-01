@@ -471,10 +471,10 @@ export default {
       postNameId: 0,
       opsName: ["ads" , "app", "ops", "srv", "offr", "ask", "rRNA"],
       opsNameId: 1,
-      backgroundText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;dev &nbsp;&nbsp; app
+      backgroundText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;git &nbsp;&nbsp; npm
             <br><br>
             &nbsp;ai &nbsp; accelerator`,
-      liveText: `&nbsp; ai&nbsp; &nbsp;DNA &nbsp; RNA
+      liveText: `&nbsp; ai&nbsp; &nbsp;dna &nbsp; rna
             <br><br>
             market &nbsp;engine`,
       devText: `&nbsp; ai&nbsp; &nbsp;dev &nbsp; ops
