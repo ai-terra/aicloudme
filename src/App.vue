@@ -71,7 +71,7 @@
             <div id="ai-prog">
               <div class="buttons">
                 <button class="next btn btn-warning" @click="setCell('b-table', 2, 3, 'Ok')">Rank</button>
-                <button class="next btn btn-primary" title="Next Option" @click="nextBranch">Options</button>
+                <button class="next btn btn-primary" title="Next Option" @click="nextBranch">Branches</button>
                 <button class="next btn btn-primary" @click="addNewRule">Rule:</button>
                 <input type="text" class="input-add-new" name="new-rule" value="ECO - use ECO first services" size="40" maxlength="40">
                 <!-- <button contenteditable="true" class="next btn btn-primary" @click="addTableRow('b-table', 8, [1, 'type', 'value', 'name','value', 'name1', 'value1'])">Next Pay</button> -->
@@ -469,13 +469,13 @@ export default {
       postNameId: 0,
       opsName: ["ads" , "app", "ops", "srv", "offr", "ask", "rRNA"],
       opsNameId: 1,
-      backgroundText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;player &nbsp;&nbsp; app
+      backgroundText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;dev &nbsp;&nbsp; app
             <br><br>
             &nbsp;ai &nbsp; accelerator`,
-      liveText: `&nbsp; live&nbsp; &nbsp;play &nbsp; app
+      liveText: `&nbsp; ai&nbsp; &nbsp;DNA &nbsp; RNA
             <br><br>
             market &nbsp;engine`,
-      devText: `&nbsp; dev&nbsp; &nbsp;player &nbsp; app
+      devText: `&nbsp; ai&nbsp; &nbsp;dev &nbsp; ops
       <br><br>
       match8 &nbsp;engine`,
       visibleRows: 1,
@@ -525,7 +525,7 @@ Or add your services to contribute to world's projects.
 clone free ai open apps:
 github.com/ai-accelerator`,
       listBiz: [
-        ['1','Post',':','Hello Deals World!','','subtitle',':','welcome to ai web']
+        ['1','Post',':','Hello AI World!','','subtitle',':','welcome to ai web']
       ],
       matrixBiz: [
         ['a','STATUS',':','OK?','','','','','','','','','','','','','','','','','','','','','','',''],
