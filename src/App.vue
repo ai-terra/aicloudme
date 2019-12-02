@@ -83,10 +83,10 @@
                     <div class="table-title">
                       <h3 class="line" title="Patent blockchain status - % tests passed">
                         &nbsp;&nbsp;commit(
-                        <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')">-
+                        <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')">
                         <ai-icon :bits="projectIconBits"></ai-icon>
                           &#65121;
-                        <ai-icon :bits="serviceIconBits"></ai-icon>-
+                        <ai-icon :bits="serviceIconBits"></ai-icon>
                         <img class="owner" :src="require('./assets/img/users/2'+ services[0] + '.png')">
                         <!-- {{ services[0] ops }} -->
                         , {{ branch }}/{{ branches[0] }}, 
