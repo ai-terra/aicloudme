@@ -1,7 +1,7 @@
 <template>
   <div id="welcome">
     <h1>git @ ai speed</h1>
-    <p>Genetic Intelligence Terraform PoC</p>
+    <p>Projects & Services as Code / ai PMO</p>
     <div class="cta">
       <router-link to="/signup">Sign Up</router-link>
       <router-link to="/signin">Sign In</router-link>
