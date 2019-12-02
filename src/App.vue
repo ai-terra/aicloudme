@@ -150,20 +150,22 @@
                     <li class="list-group-item" v-for="project in viewProjects" v-bind:key="project">
                       
                       <div class="table-title">
-                        <h3 class="long" title="Dev Patents - Project & Job Demand in your social network">
+                        <h3 class="long" title="Dev Project & Job Demand in your social network">
                            
                           <!-- <div class="icon3x3prj">{{ projectIcon }}</div>&nbsp;  -->
                           <ai-icon :bits="projectIconBits"></ai-icon> 
-                          title[{{ project }}] 
+                          <!-- title[{{ project }}]  -->
+                          {{ team.demoProjects[project] }}
                           <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')"> 
                           <img class="icon" :src="require('./assets/icons/share.png')">[{{ project }}]
                           </h3>
 
-                        <h3 class="short" title="Dev FairBook - Project & Job Demand in your social network">
+                        <h3 class="short" title="Dev Project & Job Demand in your social network">
                           
                           <!-- <div class="icon3x3prj">{{ projectIcon }}</div>&nbsp; -->
                           <ai-icon :bits="projectIconBits"></ai-icon>
-                          title[{{ project }}] 
+                          <!-- title[{{ project }}]  -->
+                          {{ team.demoProjects[project] }}
                           <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')"> 
                           <img class="icon" :src="require('./assets/icons/share.png')">[{{ project }}]
                           </h3>
@@ -256,7 +258,8 @@
                           
                           <!-- <div class="icon3x3srv">{{ serviceIcon }}</div>&nbsp; -->
                           <ai-icon :bits="serviceIconBits"></ai-icon> 
-                          title[{{ service }}] 
+                          <!-- title[{{ service }}]  -->
+                          {{ team.demoServices[service] }}
                           <img class="owner" :src="require('./assets/img/users/2'+ service + '.png')"> 
                           <img class="icon" :src="require('./assets/icons/share.png')">[{{ service }}]
                           </h3>
@@ -265,7 +268,8 @@
                           
                           <!-- <div class="icon3x3srv">{{ serviceIcon }}</div>&nbsp; -->
                           <ai-icon :bits="serviceIconBits"></ai-icon> 
-                          title[{{ service }}]
+                          <!-- title[{{ service }}] -->
+                          {{ team.demoServices[service] }}
                           <img class="owner" :src="require('./assets/img/users/2'+ service + '.png')"> 
                           <img class="icon" :src="require('./assets/icons/share.png')">[{{ service }}]
                           </h3>
