@@ -420,7 +420,7 @@
                 <h4>Stefan Ianta @ Pythian</h4>
                 <h4 class="long"><a href="https://github.com/aibase">
                 innovation engines @ github</a></h4>
-                <h4 class="short"><a href="https://github.com/aibase/ai-player">
+                <h4 class="short"><a href="https://github.com/aibase/ai-git">
                 ai player PoC @ github</a></h4>
                 <h4 class="long" contenteditable="true">Collaboration Engine / W3AI SNN Protocol</h4>
               </div>            
