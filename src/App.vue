@@ -708,62 +708,63 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
       this.readService();
 
       // dev dummy animation
+      
       this.setCellAndColor('d-table', 2, 2, 'ok', 'project-color');
       this.setCellAndColor('o-table', 2, 2, 'ok', 'service-color');
       this.setCellAndColor('b-table', 2, 11, 'ok', 'service-color');
       this.setCellAndColor('b-table', 2, 7, 'ok', 'project-color');
       this.setCellAndColor('b-table', 2, 3, 'ok', 'blockchain-color');
       this.setCellAndColor('b-table', 1, 3, 'OK', 'blockchain-green');
-
+      
       this.setCellAndColor('d-table', 4, 2, 'ok', 'project-color');
       this.setCellAndColor('o-table', 4, 2, 'ok', 'service-color');
       this.setCellAndColor('b-table', 4, 11, 'ok', 'service-color');
       this.setCellAndColor('b-table', 4, 7, 'ok', 'project-color');
       this.setCellAndColor('b-table', 4, 3, 'ok', 'blockchain-color');
       this.setCellAndColor('b-table', 3, 3, 'OK', 'blockchain-green');
-
+      
       this.setCellAndColor('d-table', 6, 2, 'ok', 'project-color');
       this.setCellAndColor('o-table', 6, 2, 'ok', 'service-color');
       this.setCellAndColor('b-table', 6, 11, 'ok', 'service-color');
       this.setCellAndColor('b-table', 6, 7, 'ok', 'project-color');
       this.setCellAndColor('b-table', 6, 3, 'ok', 'blockchain-color');
       this.setCellAndColor('b-table', 5, 3, 'OK', 'blockchain-green');
-
+      
       this.setCellAndColor('d-table', 8, 2, 'ok', 'project-color');
       this.setCellAndColor('o-table', 8, 2, 'ok', 'service-color');
       this.setCellAndColor('b-table', 8, 11, 'ok', 'service-color');
       this.setCellAndColor('b-table', 8, 7, 'ok', 'project-color');
       this.setCellAndColor('b-table', 8, 3, 'ok', 'blockchain-color');
       this.setCellAndColor('b-table', 7, 3, 'OK', 'blockchain-green');
-
+      
       this.setCellAndColor('d-table', 10, 2, 'ok', 'project-color');
       this.setCellAndColor('o-table', 10, 2, 'ok', 'service-color');
       this.setCellAndColor('b-table', 10, 11, 'ok', 'service-color');
       this.setCellAndColor('b-table', 10, 7, 'ok', 'project-color');
       this.setCellAndColor('b-table', 10, 3, 'ok', 'blockchain-color');
       this.setCellAndColor('b-table', 9, 3, 'OK', 'blockchain-green');
-
+      
       this.setCellAndColor('d-table', 12, 2, 'ok', 'project-color');
       this.setCellAndColor('o-table', 12, 2, 'ok', 'service-color');
       this.setCellAndColor('b-table', 12, 11, 'ok', 'service-color');
       this.setCellAndColor('b-table', 12, 7, 'ok', 'project-color');
       this.setCellAndColor('b-table', 12, 3, 'ok', 'blockchain-color');
       this.setCellAndColor('b-table', 11, 3, 'OK', 'blockchain-green');
-
+      
       this.setCellAndColor('d-table', 14, 2, 'ok', 'project-color');
       this.setCellAndColor('o-table', 14, 2, 'ok', 'service-color');
       this.setCellAndColor('b-table', 14, 11, 'ok', 'service-color');
       this.setCellAndColor('b-table', 14, 7, 'ok', 'project-color');
       this.setCellAndColor('b-table', 14, 3, 'ok', 'blockchain-color');
       this.setCellAndColor('b-table', 13, 3, 'OK', 'blockchain-green');
-
+      
       this.setCellAndColor('d-table', 16, 2, 'ok', 'project-color');
       this.setCellAndColor('o-table', 16, 2, 'ok', 'service-color');
       this.setCellAndColor('b-table', 16, 11, 'ok', 'service-color');
       this.setCellAndColor('b-table', 16, 7, 'ok', 'project-color');
       this.setCellAndColor('b-table', 16, 3, 'ok', 'blockchain-color');
       this.setCellAndColor('b-table', 15, 3, 'OK', 'blockchain-green');  
-
+     
       // Run/Eval Service Input queries on Project data and add/update results as step[0]
 
       // Run/Eval Service Steps/Functions/Commands and update Service results
@@ -1030,6 +1031,7 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
 
       x[col].classList.add(color);
       x[col].classList.add('fade-on-change');
+      // setTimeout(250);
     }
   }
 };
@@ -1500,7 +1502,7 @@ td:hover {
 
 .fade-on-change {
   background-color: rgba(108, 167, 84, 0);
-  animation: fade-in .125s 1;
+  animation: fade-in .125s .125s 1;
 }
 
 .fade-on-done {
