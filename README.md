@@ -1,4 +1,4 @@
-# ai git/npm colab web app
+# ai sprint web app
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
