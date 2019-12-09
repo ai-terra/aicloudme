@@ -1,7 +1,7 @@
 <template>
   <div id="welcome">
-    <h1>git @ ai speed</h1>
-    <p>Projects & Services as Code / ai PMO</p>
+    <h1>sprint @ ai speed</h1>
+    <p>projects & services market engine</p>
     <div class="cta">
       <router-link to="/signup">Sign Up</router-link>
       <router-link to="/signin">Sign In</router-link>

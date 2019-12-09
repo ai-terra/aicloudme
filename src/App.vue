@@ -14,7 +14,7 @@
               <!-- <div><img id="logo" src="./assets/amp-logo.png"></div> -->
               <div contenteditable="true">
                   <h1 class="long">{{ team.title }}&nbsp;</h1><h1 class="short">{{ team.titleShort }}&nbsp;</h1>
-                  <h5 class="long">{{ team.subtitle }}&nbsp;</h5><h5 class="short">{{ team.subtitleShort }}&nbsp;</h5>
+                  <h5 class="long" contenteditable="true">{{ team.subtitle }}&nbsp;</h5><h5 class="short" contenteditable="true">{{ team.subtitleShort }}&nbsp;</h5>
               </div>
 
               <div class="title" title="Start / Stop Engine"><button class="btn btn-success player" 
