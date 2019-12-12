@@ -1,7 +1,7 @@
 <template>
   <div id="welcome">
     <h1>gitops @ ai speed</h1>
-    <p>projects & services market engine</p>
+    <p>projects & services market8 engine</p>
     <div class="cta">
       <router-link to="/signup">Sign Up</router-link>
       <router-link to="/signin">Sign In</router-link>
