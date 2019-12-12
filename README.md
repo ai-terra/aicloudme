@@ -1,4 +1,4 @@
-# ai gitops web app
+# ai dna\*rna web app
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
