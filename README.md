@@ -1,4 +1,4 @@
-# ai sprint web app
+# ai gitops web app
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
