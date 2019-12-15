@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">ai dna*rna</router-link>
+      <router-link to="/">ai robin hub</router-link>
     </div>
     <nav>
       <ul>
