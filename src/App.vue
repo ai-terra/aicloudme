@@ -82,7 +82,7 @@
 
                     <div class="table-title">
                       <h3 class="line" title="Patent blockchain status - % tests passed">
-                        &nbsp;&nbsp;commit(
+                        &nbsp;&nbsp;merge(
                         <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')">
                         <ai-icon :bits="projectIconBits"></ai-icon>
                           &#65121;
@@ -661,9 +661,11 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
       let file = new File(newProjectData, projectName, 
       {type:"text/plain", lastModified: new Date().getTime()});
 
+      /* eslint-disable no-unused-vars */
       projectDataRef.put(file).then(function(snapshot) {
-      console.log('Uploaded a blob or file!');
+        // console.log('Uploaded a blob or file!');
       });
+      /* eslint-enable no-unused-vars */
     },
     addProject() {
       // ensure they actually typed something as new Project Title
@@ -870,7 +872,7 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
       // let r = tabrow;
 
       let cellId = matrix + ':' + row + ':' + col;
-      console.log(cellId);
+      // console.log(cellId);
 
       let cellToUpdate = document.getElementById(cellId);
 
@@ -878,6 +880,7 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
       cellToUpdate.innerHTML = this.matrixDev[row][col];
     },
     onCellClick(el) {
+      /* eslint-disable no-unused-vars */
       let mat = this.currentTable = el.target.getAttribute('matrix');   // mat - matrix/table: Biz | Dev | Ops | Edit
       let m = mat[0].toUpperCase();                                     // m - matrix/table: B | D | O | E
 
@@ -897,11 +900,12 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
       // let val = this.currentCellVal = el.target.getAttribute('valueini');      // val - cell value - string
       let v = this.matrixDev[row][col];
       this.currentCellVal = v;
+      /* eslint-enable no-unused-vars */
 
       let cellId = mat + ':' + row + ':' + col;
 
-      console.log('test onCellClick')
-      console.log(m, c, t, r, cellId);
+      // console.log('test onCellClick')
+      // console.log(m, c, t, r, cellId);
 
       let cellToUpdate = document.getElementById(cellId);
       cellToUpdate.innerHTML = v;
@@ -968,8 +972,8 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
     onServiceFork() {
       this.newOpsPosts.unshift('New service idea');
       axios.post('https://aibase.firebaseio.com/services.json', this.matrixOps)
-        .then(res => console.log(res))
-        .catch(err => console.log(err));
+        // .then(res => console.log(res))
+        // .catch(err => console.log(err));
     },
     generateIconBits(index, symbol) {
       let hex = (200 + index).toString(2);

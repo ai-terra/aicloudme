@@ -7,26 +7,27 @@
 </template>
 
 <script>
-import axios from 'axios';
+// import axios from 'axios';
 
 export default {
   computed: {
-    email () {
-      return !this.$store.getters.user ? false : this.$store.getters.user.email
+    email() {
+      return !this.$store.getters.user ? false : this.$store.getters.user.email;
     }
   },
-  created () {
-    this.$store.dispatch('fetchUser')
+  created() {
+    this.$store.dispatch("fetchUser");
   }
-}
+};
 </script>
 
 <style scoped>
-  h1, p {
-    text-align: center;
-  }
+h1,
+p {
+  text-align: center;
+}
 
-  p {
-    color: red;
-  }
+p {
+  color: red;
+}
 </style>
