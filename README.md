@@ -1,4 +1,4 @@
-# ai dna\*rna web app
+# ai robin hub web app
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
