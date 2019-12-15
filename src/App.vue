@@ -27,8 +27,8 @@
               <div class="title">
                 <div class="config-btn" title="run > com > edu > soc > dev > ops > test > bank" 
                   @click="viewId++">&nbsp; {{ view[viewId%view.length] }} &nbsp;</div>
-                <div class="config-btn" title="Switch views: web | edit" 
-                  @click="fbview = !fbview">&nbsp; {{ fbview ? 'web' : 'edit' }} &nbsp;</div>
+                <div class="config-btn" title="Switch views: fb | xls | yml | d3" 
+                  @click="fbview = !fbview">&nbsp; {{ fbview ? 'fb' : 'xls' }} &nbsp;</div>
               </div>
               <!-- <div class="title" contenteditable="true">
                 <div class="config-btn">&nbsp;Sign Up&nbsp;</div>
