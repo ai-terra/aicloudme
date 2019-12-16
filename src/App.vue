@@ -1141,6 +1141,10 @@ h5.long {
   background-color: rgba(100, 100, 100, .2);
 }
 
+textarea {
+  padding: 0;
+}
+
 .line {
   display: flex;
 }
@@ -1339,7 +1343,7 @@ li.list-group-item {
 }
 
 .config-btn {
-  margin: 3px 0px;
+  margin: 0px 0px;
   box-shadow: 1px 1px #888888;
   border-radius: 8px 8px 8px 8px;
   background-color: lightsteelblue;
@@ -1350,7 +1354,7 @@ li.list-group-item {
 }
 
 .checkbtn {
-  margin: 3px 0px;
+  margin: 0px 0px;
   /* box-shadow: 1px 1px #888888; */
   border-radius: 8px 8px 8px 8px;
   background-color: lightsteelblue;
