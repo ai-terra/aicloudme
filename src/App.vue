@@ -212,7 +212,7 @@
                               style="text-align: inherit; visibility: visible; width: inherit; background: transparent; position: relative; z-index: 40; left: 0; top: 0;" -->
 
                               <textarea :id="'DevInput:' + rowIndex + ':' + colIndex" rows="1"
-                              style="text-align: inherit; visibility: visible; resize: none; width: inherit; background: transparent; position: relative; z-index: 40; left: 0; top: 0;"
+                              style="text-align: inherit; overflow-x: visible; visibility: visible; resize: none; width: inherit; background: transparent; position: relative; z-index: 40; left: 0; top: 0;"
                               class="cell-input" type="text" v-model="matrixDev[rowIndex][colIndex]"
                                 matrix="Dev" 
                                 :row="rowIndex" :col="colIndex"
@@ -1143,6 +1143,7 @@ h5.long {
 
 textarea {
   padding: 0;
+  overflow-x: visible;
 }
 
 .line {
@@ -1751,11 +1752,11 @@ h4 {
   }
 
   #editor {
-    transform: translate(0, -80rem);
+    transform: translate(0, -79rem);
   }
 
   #footer {
-    transform: translate(0, -80rem);
+    transform: translate(0, -79rem);
   }
 
   .footer-items {
