@@ -1393,7 +1393,7 @@ li.list-group-item {
 
 .cell,
 .cell-edit {
-  padding: 0 0.5rem;
+  padding: 0;
   min-width: 3rem;
   max-width: 10rem;
   overflow-x: visible;
@@ -1413,7 +1413,7 @@ li.list-group-item {
   text-overflow: visible;
   margin: 0px;
   border: 0px;
-  padding: 0 0.5rem;
+  padding: 0;
   background: transparent;
 }
 
@@ -1451,7 +1451,7 @@ th {
 
 th,
 td {
-  padding: 0 0.5rem;
+  padding: 0;
   border-left: 1px solid grey;
 }
 
