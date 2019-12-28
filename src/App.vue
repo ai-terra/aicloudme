@@ -212,7 +212,7 @@
                               style="text-align: inherit; visibility: visible; width: inherit; background: transparent; position: relative; z-index: 40; left: 0; top: 0;" -->
 
                               <textarea :id="'DevInput:' + rowIndex + ':' + colIndex" rows="1"
-                              style="text-align: inherit; overflow-x: visible; visibility: visible; resize: none; width: inherit; background: transparent; position: relative; z-index: 40; left: 0; top: 0;"
+                              style="text-align: inherit; overflow-x: visible; overflow-wrap: normal; white-space: nowrap; visibility: visible; resize: none; width: inherit; background: transparent; position: relative; z-index: 40; left: 0; top: 0;"
                               class="cell-input" type="text" v-model="matrixDev[rowIndex][colIndex]"
                                 matrix="Dev" 
                                 :row="rowIndex" :col="colIndex"
@@ -224,9 +224,7 @@
                                           (matrixDev[rowIndex][colIndex] == 'Post') ? postClass : ''
                                         ]"
                                 v-on:keyup="fx = $event.target.value"
-                              >
-                              </textarea>
-
+                              />
                             </td>
                           </tr>
 
@@ -1290,7 +1288,7 @@ h2.title {
   margin: 0rem 1rem 0 1rem;
   width: 75rem;
   height: 3rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .matrix {
