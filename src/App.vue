@@ -82,7 +82,7 @@
 
                     <div class="table-title">
                       <h3 class="line" title="Patent blockchain status - % tests passed">
-                        &nbsp;&nbsp;merge(
+                        &nbsp;&nbsp;deal(
                         <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')">
                         <ai-icon :bits="projectIconBits"></ai-icon>
                           &#65121;
