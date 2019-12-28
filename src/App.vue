@@ -1750,11 +1750,11 @@ h4 {
   }
 
   #editor {
-    transform: translate(0, -92.5rem);
+    transform: translate(0, -80rem);
   }
 
   #footer {
-    transform: translate(0, -92rem);
+    transform: translate(0, -80rem);
   }
 
   .footer-items {
