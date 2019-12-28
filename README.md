@@ -1,4 +1,4 @@
-# ai robin hub merge engine
+# ai edux web app
 
 collaboration engine / social & enterprise innovation protocol - PoC
 

@@ -1,7 +1,7 @@
 <template>
   <div id="welcome">
-    <h1>merge @ ai speed</h1>
-    <p>completely fair project&services market engine</p>
+    <h1>education @ ai speed</h1>
+    <p>fair education and monetary rewards engine</p>
     <div class="cta">
       <router-link to="/signup">Sign Up</router-link>
       <router-link to="/signin">Sign In</router-link>

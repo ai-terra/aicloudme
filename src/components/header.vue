@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">ai robin hub</router-link>
+      <router-link to="/">ai edux</router-link>
     </div>
     <nav>
       <ul>
