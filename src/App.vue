@@ -1394,6 +1394,7 @@ li.list-group-item {
 .cell,
 .cell-edit {
   padding: 0;
+  max-height: 20px;
   min-width: 3rem;
   max-width: 10rem;
   overflow-x: visible;
