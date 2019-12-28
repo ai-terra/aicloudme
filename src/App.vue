@@ -82,7 +82,7 @@
 
                     <div class="table-title">
                       <h3 class="line" title="Patent blockchain status - % tests passed">
-                        &nbsp;&nbsp;deal(
+                        &nbsp;&nbsp;do(
                         <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')">
                         <ai-icon :bits="projectIconBits"></ai-icon>
                           &#65121;
@@ -211,8 +211,8 @@
                               <!-- <input :id="'DevInput:' + rowIndex + ':' + colIndex"
                               style="text-align: inherit; visibility: visible; width: inherit; background: transparent; position: relative; z-index: 40; left: 0; top: 0;" -->
 
-                              <textarea :id="'DevInput:' + rowIndex + ':' + colIndex" rows="1"
-                              style="text-align: inherit; overflow-x: visible; overflow-wrap: normal; white-space: nowrap; visibility: visible; resize: none; width: inherit; background: transparent; position: relative; z-index: 40; left: 0; top: 0;"
+                              <textarea :id="'DevInput:' + rowIndex + ':' + colIndex" rows="1" cols="60"
+                              style="text-align: inherit; overflow-x: auto; overflow-wrap: normal; white-space: nowrap; visibility: visible; resize: none; width: inherit; background: transparent; position: relative; z-index: 40; left: 0; top: 0;"
                               class="cell-input" type="text" v-model="matrixDev[rowIndex][colIndex]"
                                 matrix="Dev" 
                                 :row="rowIndex" :col="colIndex"
