@@ -179,6 +179,10 @@
                         <ai-post :matrix="matrixDev[1]"></ai-post>
                       </div>
 
+                      <div>
+                        <!--<Table :matrix="matrixDev"></Table> -->
+                      </div>
+
                       <!-- </section> -->
 
                       <div class="scrollable">
@@ -186,7 +190,8 @@
                           <tr class="row">
                             <td class="cell config-btn" title="Click to expand visible rows" @click="expandRows">{{ corner }}</td>
                             <td class="cell tbl-head" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
-                          </tr>                      
+                          </tr>
+                          <Table :matrix="matrixDev"></Table>                      
                           <tr class="row" v-for="(row, rowIndex) in matrixDev" v-bind:key="rowIndex">    
 
                             <td class="cell" style="position: relative;"
@@ -444,6 +449,7 @@ import Header from './components/header.vue';
 
 import Post from './views/Post.vue';
 import Icon from './util/Icon.vue';
+import Table from './views/Table'
 
 export default {
   name: "app",
@@ -451,6 +457,7 @@ export default {
     'app-header': Header,
     'ai-post': Post,
     'ai-icon': Icon,
+    Table
   },
   created () {
     this.$store.dispatch('tryAutoLogin')
