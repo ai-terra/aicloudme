@@ -24,6 +24,7 @@ export default {
   }
 };
 </script>
+
 <style>
 .flex-item {
   max-height: 20px;
@@ -32,7 +33,7 @@ export default {
 }
 
 .flex-item :hover {
-  background-color: teal;
+  background-color: rgba(108, 167, 84, 0.5);
 }
 
 .flex-item:nth-child(odd) {

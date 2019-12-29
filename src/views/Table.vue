@@ -17,6 +17,7 @@ export default {
   props: ["matrix"]
 };
 </script>
+
 <style scoped>
 .container {
   display: flex;
