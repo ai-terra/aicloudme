@@ -634,6 +634,11 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
       ]
     };
   },
+  computed: {
+    posts: function(){
+      return this.matrixDev.filter(row => row[1] === 'Post')
+    }
+  },
 
   firestore: {
     projects: fs.collection('projects')
