@@ -1,4 +1,4 @@
-# ai edux web app
+# ai revo engine web app
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
