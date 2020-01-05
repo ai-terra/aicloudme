@@ -25,32 +25,42 @@ export default {
   },
   computed: {
     titleMatrix: function() {
-      var result = [];
-
-      for (var i in this.matrix) {
-        var row = this.matrix[i];
-        var resultRow = [];
+      let result = [];
+      // first run to read the original matrix
+      for (let i in this.matrix) {
+        let row = this.matrix[i];
+        let resultRow = [];
         for (var j in row) {
-          var col = row[j];
+          let col = row[j];
           resultRow.push(col);
         }
         result.push(resultRow);
       }
+      // second run to set the help text for hovering over buttons
+      for (let i in result) {
+        let row = result[i];
+        for (let j in row) {
+          let helpText = result[i][j];
+          if (helpText == "Click") {
+            result[i][j] = "Run code and log in tx blockchain";
+          }
+        }
+      }
 
       return result;
     }
-  },
-  mounted() {
-    let helpIndex = this.matrix[this.row].indexOf("help");
-    this.rowHelp = this.matrix[this.row][helpIndex + 2];
-  },
-  watch: {
-    // eslint-disable-next-line no-unused-vars
-    rowHelp: function(newRowHelp) {
-      // eslint-disable-next-line no-console
-      //console.log("Value changed to " + newValue);
-    }
   }
+  // mounted() {
+  //   let helpIndex = this.matrix[this.row].indexOf("help");
+  //   this.rowHelp = this.matrix[this.row][helpIndex + 2];
+  // },
+  // watch: {
+  //   // eslint-disable-next-line no-unused-vars
+  //   rowHelp: function(newRowHelp) {
+  //     // eslint-disable-next-line no-console
+  //     //console.log("Value changed to " + newValue);
+  //   }
+  // }
 };
 </script>
 
