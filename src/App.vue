@@ -193,7 +193,7 @@
                           </tr>
 
                           <Table :matrix="matrixDev"></Table>   
-                                             
+
                           <tr class="row" v-for="(row, rowIndex) in matrixDev" v-bind:key="rowIndex">    
 
                             <td class="cell" style="position: relative;"
@@ -570,7 +570,7 @@ Add incentive check lists to trigger ai innovators worldwide.
 Or add your services to contribute to world's innovation projects.`,'','signature',':',`clone free ai world apps:
 github.com/ai-accelerator`,'','','','','','','','','','','\n'],
         ['b','RATES',':','money','','','','','','','','','','','','','','','','','','','','','','','\n'],
-        ['1','Click',':','= if ( sb-Rates == "range" ) { pb-State = "Ok" } else { pb-State = "Quit" }','','','','','','','','','','','','','','','','','','','','','','','\n'],
+        ['1','Click',':','= if ( sb-Rates == "range" ) { pb-State = "Ok" } else { pb-State = "Quit" }','','help',':','Check if service rate is in project range','','','','','','','','','','','','','','','','','','','\n'],
         ['c','DOCS',':','terms','','','','','','','','','','','','','','','','','','','','','','','\n'],
         ['1','Click',':','= if ( sc-Docs == "ready" ) { pc-State = "Ok" } else { pc-State = "Quit" }','','','','','','','','','','','','','','','','','','','','','','','\n'],
         // ['1','Post',':','Toronto W3AI News','','posts',':','24','','comments',':','36','','','','','','','','','','','','','','','\n'],
