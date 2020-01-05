@@ -206,6 +206,9 @@
                                         (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
                                         ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
                                         (matrixDev[rowIndex][colIndex] == 'Click') ? checkBtn : '',
+                                        (matrixDev[rowIndex][colIndex] == 'Command') ? cmdBtn : '',
+                                        (matrixDev[rowIndex][colIndex] == 'Order') ? orderBtn : '',
+                                        (matrixDev[rowIndex][colIndex] == 'Verbal') ? verbalBtn : '',
                                         (matrixDev[rowIndex][colIndex] == 'Post') ? postClass : ''
                                       ]"
                               
@@ -517,6 +520,9 @@ export default {
       tabClass: 'tabline',
       tabTitle: 'tabname',
       checkBtn: 'checkbtn',
+      cmdBtn: 'cmdbtn',
+      orderBtn: 'orderbtn',
+      verbalBtn: 'verbalbtn',
       postClass: 'postclass',
       currentTable: '',
       currentRow: '',
@@ -580,11 +586,11 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
         ['e','INPUT',':','create','','','','','','','','','','','','','','','','','','','','','','','\n'],
         ['1','Click',':','= if ( se-Input == "match" ) { pe-State = "Ok" } else { pe-State = "Quit" }','','','','','','','','','','','','','','','','','','','','','','','\n'],
         ['f','STEPS',':','plan','','','','','','','','','','','','','','','','','','','','','','','\n'],
-        ['1','Click',':','= if ( sf-Steps == "ok" ) { pf-State = "Ok" } else { pf-State = "Quit" }','','','','','','','','','','','','','','','','','','','','','','','\n'],
+        ['1','Command',':','= if ( sf-Steps == "ok" ) { pf-State = "Ok" } else { pf-State = "Quit" }','','','','','','','','','','','','','','','','','','','','','','','\n'],
         ['g','OUTPUT',':','test','','','','','','','','','','','','','','','','','','','','','','','\n'],
-        ['1','Click',':','= if ( sg-Output == "created" ) { pg-State = "Ok" } else { pg-State = "Quit" }','','','','','','','','','','','','','','','','','','','','','','','\n'],
+        ['1','Order',':','= if ( sg-Output == "created" ) { pg-State = "Ok" } else { pg-State = "Quit" }','','','','','','','','','','','','','','','','','','','','','','','\n'],
         ['h','PAY',':','paid','','','','','','','','','','','','','','','','','','','','','','','\n'],
-        ['1','Click',':','= if ( sh-Pay == "cashed" ) { ph-State = "Done" } else { ph-State = "Back" }','','','','','','','','','','','','','','','','','','','','','','','\n'],
+        ['1','Verbal',':','= if ( sh-Pay == "cashed" ) { ph-State = "Done" } else { ph-State = "Back" }','','','','','','','','','','','','','','','','','','','','','','','\n'],
       ],
       listOps: [
         ['1','Post',':','Hello Service World!','','subtitle',':','welcome to ai web']
@@ -1372,6 +1378,39 @@ li.list-group-item {
   /* box-shadow: 1px 1px #888888; */
   border-radius: 8px 8px 8px 8px;
   background-color: lightsteelblue;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cmdbtn {
+  margin: 0px 0px;
+  /* box-shadow: 1px 1px #888888; */
+  border-radius: 8px 8px 8px 8px;
+  background-color: lightgoldenrodyellow;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.orderbtn {
+  margin: 0px 0px;
+  /* box-shadow: 1px 1px #888888; */
+  border-radius: 8px 8px 8px 8px;
+  background-color: lightsalmon;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.verbalbtn {
+  margin: 0px 0px;
+  /* box-shadow: 1px 1px #888888; */
+  border-radius: 8px 8px 8px 8px;
+  background-color: lightcoral;
   color: black;
   text-align: center;
   font-weight: bold;
