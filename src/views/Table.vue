@@ -42,7 +42,17 @@ export default {
         for (let j in row) {
           let helpText = result[i][j];
           if (helpText == "Click") {
-            result[i][j] = "Run code and log result in tx blockchain";
+            result[i][j] =
+              "Run code and log result in tx blockchain\nmilliseconds";
+          } else if (helpText == "Command") {
+            result[i][j] =
+              "Execute command and log result in tx blockchain\nseconds";
+          } else if (helpText == "Order") {
+            result[i][j] =
+              "Place order and log details in tx blockchain\nhours";
+          } else if (helpText == "Verbal") {
+            result[i][j] =
+              "Verbal promise and log details in tx blockchain\ndays";
           }
         }
       }
