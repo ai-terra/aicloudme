@@ -5,12 +5,15 @@
         v-for="(col, colIndex) in row"
         :key="'col-' + colIndex"
         :initialValue="matrix[rowIndex][colIndex]"
+        :title="matrix[rowIndex][colIndex]"
       ></Cell>
     </div>
   </div>
 </template>
+
 <script>
 import Cell from "./Cell";
+
 export default {
   name: "Table",
   components: { Cell },
