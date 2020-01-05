@@ -42,7 +42,7 @@ export default {
         for (let j in row) {
           let helpText = result[i][j];
           if (helpText == "Click") {
-            result[i][j] = "Run code and log in tx blockchain";
+            result[i][j] = "Run code and log result in tx blockchain";
           }
         }
       }
