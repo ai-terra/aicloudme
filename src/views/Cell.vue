@@ -3,6 +3,7 @@
     <textarea v-model="value"></textarea>
   </div>
 </template>
+
 <script>
 export default {
   name: "Cell",
