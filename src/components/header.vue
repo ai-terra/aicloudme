@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">ai revo</router-link>
+      <router-link to="/">ai cli x</router-link>
     </div>
     <nav>
       <ul>
