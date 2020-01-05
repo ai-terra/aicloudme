@@ -5,7 +5,7 @@
         v-for="(col, colIndex) in row"
         :key="'col-' + colIndex"
         :initialValue="matrix[rowIndex][colIndex]"
-        :title="rowHelp + matrix[rowIndex][colIndex]"
+        :title="titleMatrix[rowIndex][colIndex]"
       ></Cell>
     </div>
   </div>
@@ -22,6 +22,23 @@ export default {
     return {
       rowHelp: "Help text for "
     };
+  },
+  computed: {
+    titleMatrix: function() {
+      var result = [];
+
+      for (var i in this.matrix) {
+        var row = this.matrix[i];
+        var resultRow = [];
+        for (var j in row) {
+          var col = row[j];
+          resultRow.push(col);
+        }
+        result.push(resultRow);
+      }
+
+      return result;
+    }
   },
   mounted() {
     let helpIndex = this.matrix[this.row].indexOf("help");
