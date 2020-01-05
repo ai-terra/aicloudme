@@ -191,7 +191,9 @@
                             <td class="cell config-btn" title="Click to expand visible rows" @click="expandRows">{{ corner }}</td>
                             <td class="cell tbl-head" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                           </tr>
-                          <Table :matrix="matrixDev"></Table>                      
+
+                          <Table :matrix="matrixDev"></Table>   
+                                             
                           <tr class="row" v-for="(row, rowIndex) in matrixDev" v-bind:key="rowIndex">    
 
                             <td class="cell" style="position: relative;"

@@ -5,7 +5,7 @@
         v-for="(col, colIndex) in row"
         :key="'col-' + colIndex"
         :initialValue="matrix[rowIndex][colIndex]"
-        :title="matrix[rowIndex][colIndex]"
+        :title="helpText + matrix[rowIndex][colIndex]"
       ></Cell>
     </div>
   </div>
@@ -17,7 +17,12 @@ import Cell from "./Cell";
 export default {
   name: "Table",
   components: { Cell },
-  props: ["matrix"]
+  props: ["matrix"],
+  data() {
+    return {
+      helpText: "Help text for "
+    };
+  }
 };
 </script>
 
