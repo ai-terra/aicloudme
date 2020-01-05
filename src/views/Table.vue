@@ -5,7 +5,7 @@
         v-for="(col, colIndex) in row"
         :key="'col-' + colIndex"
         :initialValue="matrix[rowIndex][colIndex]"
-        :title="helpText + matrix[rowIndex][colIndex]"
+        :title="rowHelp + matrix[rowIndex][colIndex]"
       ></Cell>
     </div>
   </div>
@@ -20,8 +20,19 @@ export default {
   props: ["matrix"],
   data() {
     return {
-      helpText: "Help text for "
+      rowHelp: "Help text for "
     };
+  },
+  mounted() {
+    let helpIndex = this.matrix[this.row].indexOf("help");
+    this.rowHelp = this.matrix[this.row][helpIndex + 2];
+  },
+  watch: {
+    // eslint-disable-next-line no-unused-vars
+    rowHelp: function(newRowHelp) {
+      // eslint-disable-next-line no-console
+      //console.log("Value changed to " + newValue);
+    }
   }
 };
 </script>
