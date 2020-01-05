@@ -199,6 +199,7 @@
                               matrix="Dev" 
                               :row="rowIndex" :col="colIndex" :valueini="matrixDev[rowIndex][colIndex]"
                               :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
+                              :title="matrixDev[rowIndex][colIndex]"
                               :class="[
                                         (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
                                         ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
