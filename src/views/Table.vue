@@ -43,16 +43,16 @@ export default {
           let helpText = result[i][j];
           if (helpText == "Click") {
             result[i][j] =
-              "Run code and log result in tx blockchain\nmilliseconds";
+              "Run code and log result in tx blockchain\nEstimated time: milliseconds";
           } else if (helpText == "Command") {
             result[i][j] =
-              "Execute command and log result in tx blockchain\nseconds";
+              "Execute command and log result in tx blockchain\nEstimated time: seconds";
           } else if (helpText == "Order") {
             result[i][j] =
-              "Place order and log details in tx blockchain\nhours";
+              "Place order and log details in tx blockchain\nEstimated time: hours";
           } else if (helpText == "Verbal") {
             result[i][j] =
-              "Verbal promise and log details in tx blockchain\ndays";
+              "Verbal promise and log details in tx blockchain\nEstimated time: days";
           }
         }
       }
