@@ -81,7 +81,8 @@ export default {
   padding: 0px;
 }
 .container {
-  margin: 0;
+  margin-left: -1.3rem;
+  /* border-right: 1px solid grey; */
   display: flex;
   padding-left: 0;
 }

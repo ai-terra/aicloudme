@@ -35,6 +35,7 @@ textarea {
 
 .flex-item {
   margin: 0px;
+  /* padding-left: 0.5rem; */
   max-height: 20px;
   overflow: visible;
   border-top: solid 1px grey;
@@ -46,11 +47,12 @@ textarea {
 }
 
 .flex-item:nth-child(odd) {
-  max-width: 1.8rem;
+  /* max-width: 1.8rem; */
+  max-width: 2.8rem;
 }
 
 .flex-item:nth-child(even) {
-  max-width: 8.8rem;
+  max-width: 7rem;
 }
 
 .flex-item textarea {

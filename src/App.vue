@@ -1314,7 +1314,8 @@ h2.title {
 
 .matrix {
   margin-left: 1.3rem;
-}
+  /* margin-left: 0rem; */
+  }
 
 .row {
   display: flex;
@@ -1335,6 +1336,7 @@ li.list-group-item {
 }
 
 .scrollable {
+  margin: 0px;
   overflow-x: auto;
   overflow-y: auto;
 }
