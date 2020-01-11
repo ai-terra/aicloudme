@@ -192,7 +192,9 @@
                             <td class="cell tbl-head" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                           </tr>
 
-                          <Table :matrix="matrixDev"></Table>   
+                          <div v-if="tableView['text']"> 
+                            <Table :matrix="matrixDev"></Table>   
+                          </div>
 
                           <tr class="row" v-for="(row, rowIndex) in matrixDev" v-bind:key="rowIndex">    
 
@@ -206,7 +208,7 @@
                                         (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
                                         ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
                                         (matrixDev[rowIndex][colIndex] == 'Click') ? checkBtn : '',
-                                        (matrixDev[rowIndex][colIndex] == 'Command') ? cmdBtn : '',
+                                        (matrixDev[rowIndex][colIndex] == 'Cmd') ? cmdBtn : '',
                                         (matrixDev[rowIndex][colIndex] == 'Order') ? orderBtn : '',
                                         (matrixDev[rowIndex][colIndex] == 'Verbal') ? verbalBtn : '',
                                         (matrixDev[rowIndex][colIndex] == 'Post') ? postClass : ''
@@ -479,6 +481,7 @@ export default {
       timeUnitId: 0,
       view: ['run', 'com', 'edu', 'soc', 'dev', 'ops', 'test', 'bank'],
       viewId: 0,
+      tableView: {'text': false},
       mode: ['CEO', 'DEV', 'OPS', 'EDU', 'QA', 'UA'],
       modeId: 0,
       policyRule: ['ROI', 'FAM', 'SOC', 'ECO', 'BIZ', 'POL', 'LOC', 'PWR', 'CTRL', 'TEAM', 'FUN', 'ATTN', 'MED', 'GAME', 'LIFE'],
@@ -586,7 +589,7 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
         ['e','INPUT',':','create','','','','','','','','','','','','','','','','','','','','','','','\n'],
         ['1','Click',':','= if ( se-Input == "match" ) { pe-State = "Ok" } else { pe-State = "Quit" }','','','','','','','','','','','','','','','','','','','','','','','\n'],
         ['f','STEPS',':','plan','','','','','','','','','','','','','','','','','','','','','','','\n'],
-        ['1','Command',':','= if ( sf-Steps == "ok" ) { pf-State = "Ok" } else { pf-State = "Quit" }','','','','','','','','','','','','','','','','','','','','','','','\n'],
+        ['1','Cmd',':','= if ( sf-Steps == "ok" ) { pf-State = "Ok" } else { pf-State = "Quit" }','','','','','','','','','','','','','','','','','','','','','','','\n'],
         ['g','OUTPUT',':','test','','','','','','','','','','','','','','','','','','','','','','','\n'],
         ['1','Order',':','= if ( sg-Output == "created" ) { pg-State = "Ok" } else { pg-State = "Quit" }','','','','','','','','','','','','','','','','','','','','','','','\n'],
         ['h','PAY',':','paid','','','','','','','','','','','','','','','','','','','','','','','\n'],
