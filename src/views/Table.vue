@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="table">
     <div v-for="(row, rowIndex) in matrix" :key="'row-' + rowIndex" class="container">
       <Cell
         v-for="(col, colIndex) in row"
@@ -75,7 +75,13 @@ export default {
 </script>
 
 <style scoped>
+.table {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
 .container {
+  margin: 0;
   display: flex;
   padding-left: 0;
 }

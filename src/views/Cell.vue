@@ -27,10 +27,18 @@ export default {
 </script>
 
 <style>
+textarea {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+
 .flex-item {
+  margin: 0px;
   max-height: 20px;
   overflow: visible;
-  border: solid 1px #000;
+  border-top: solid 1px grey;
+  border-left: solid 1px grey;
 }
 
 .flex-item :hover {

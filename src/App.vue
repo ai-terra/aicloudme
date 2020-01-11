@@ -179,9 +179,9 @@
                         <ai-post :matrix="matrixDev[1]"></ai-post>
                       </div>
 
-                      <div>
-                        <!--<Table :matrix="matrixDev"></Table> -->
-                      </div>
+                      <!-- <div>
+                        <Table :matrix="matrixDev"></Table>
+                      </div> -->
 
                       <!-- </section> -->
 
