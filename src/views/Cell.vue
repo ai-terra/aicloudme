@@ -48,11 +48,11 @@ textarea {
 
 .flex-item:nth-child(odd) {
   /* max-width: 1.8rem; */
-  max-width: 2.8rem;
+  max-width: 30px;
 }
 
 .flex-item:nth-child(even) {
-  max-width: 7rem;
+  max-width: 70px;
 }
 
 .flex-item textarea {
