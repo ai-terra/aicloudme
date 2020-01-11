@@ -1,6 +1,6 @@
 <template>
   <div id="welcome">
-    <h1>clicks @ ai speed</h1>
+    <h1>work @ ai speed</h1>
     <p>evolutionary learning & fair monetary engine</p>
     <div class="cta">
       <router-link to="/signup">Sign Up</router-link>
