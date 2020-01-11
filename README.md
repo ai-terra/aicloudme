@@ -1,4 +1,4 @@
-# ai cli x engine web app
+# ai workx engine web app
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
