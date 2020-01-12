@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">ai workx</router-link>
+      <router-link to="/">ai workx for students</router-link>
     </div>
     <nav>
       <ul>
