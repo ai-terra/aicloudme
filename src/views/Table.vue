@@ -8,7 +8,10 @@
         :title="titleMatrix[rowIndex][colIndex]"
         :class="[
           (matrix[rowIndex][colIndex] == 'Click') ? 'click-btn' : '',
-          (matrix[rowIndex][colIndex] == 'Cmd') ? 'cmd-btn' : ''
+          (matrix[rowIndex][colIndex] == 'Cmd') ? 'cmd-btn' : '',
+          (matrix[rowIndex][colIndex] == 'Order') ? 'order-btn' : '',
+          (matrix[rowIndex][colIndex] == 'Verbal') ? 'verbal-btn' : '',
+          (matrix[rowIndex][colIndex] == 'Post') ? 'post' : ''
         ]"
       ></Cell>
     </div>
@@ -106,6 +109,35 @@ export default {
   border-radius: 8px 8px 8px 8px;
   background-color: orange;
   color: black;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.order-btn {
+  margin: 0px 0px;
+  /* box-shadow: 1px 1px #888888; */
+  border-radius: 8px 8px 8px 8px;
+  background-color: lightsalmon;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.verbal-btn {
+  margin: 0px 0px;
+  /* box-shadow: 1px 1px #888888; */
+  border-radius: 8px 8px 8px 8px;
+  background-color: lightcoral;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.post {
+  /* background-image: url("./assets/amp-logo.png"); */
+  /* background-color: lightblue; */
+  color: darkblue;
   text-align: center;
   font-weight: bold;
   cursor: pointer;
