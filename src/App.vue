@@ -144,7 +144,7 @@
                   <button class="next btn btn-primary" @click="addProject">+</button>
                   <input type="text" class="input-add-new" v-model="matrixDev[0][7]" size="20" maxlength="40">
                   <button class="next btn btn-warning" @click="uploadProject" title="Update project to ai store">u</button>
-                  <button class="next btn btn-warning" @click="cycleSheetView" title="Switch Tabs/Folder direction: Vertical/Horizontal">|</button>
+                  <button class="next btn btn-warning" @click="sheetView = !sheetView" title="Switch Tabs/Folder direction: Vertical/Horizontal">{{ sheetView ? '-' : '|' }}</button>
                 </div>
                 <ul class="list-group">
                   <transition-group name="slide-up" type="animation" appear>
@@ -193,7 +193,7 @@
                             <td class="cell tbl-head" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                           </tr>
 
-                          <div v-if="tableView['text']"> 
+                          <div v-if="sheetView"> 
                             <Table :matrix="matrixDev"></Table>   
                           </div>
 
@@ -482,7 +482,7 @@ export default {
       timeUnitId: 0,
       view: ['run', 'com', 'edu', 'soc', 'dev', 'ops', 'test', 'bank'],
       viewId: 0,
-      tableView: {'text': false},
+      sheetView: false,
       mode: ['CEO', 'DEV', 'OPS', 'EDU', 'QA', 'UA'],
       modeId: 0,
       policyRule: ['ROI', 'FAM', 'SOC', 'ECO', 'BIZ', 'POL', 'LOC', 'PWR', 'CTRL', 'TEAM', 'FUN', 'ATTN', 'MED', 'GAME', 'LIFE'],
