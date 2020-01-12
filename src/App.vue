@@ -1639,7 +1639,8 @@ td:hover {
   font-size: 18rem;
   text-align: center;
   position: relative;
-  transform: translate(0rem, -51.5rem);
+  transform: translate(0rem, -31rem);
+  /* transform: translate(0rem, -51.5rem); */
   color: lightgrey;
   z-index: -1;
 }
