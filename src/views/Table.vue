@@ -6,6 +6,9 @@
         :key="'col-' + colIndex"
         :initialValue="matrix[rowIndex][colIndex]"
         :title="titleMatrix[rowIndex][colIndex]"
+        :class="[
+          (matrix[rowIndex][colIndex] == 'Click') ? 'click-btn' : ''
+        ]"
       ></Cell>
     </div>
   </div>
@@ -85,5 +88,15 @@ export default {
   /* border-right: 1px solid grey; */
   display: flex;
   padding-left: 0;
+}
+.click-btn {
+  margin: 0px 0px;
+  /* box-shadow: 1px 1px #888888; */
+  border-radius: 8px 8px 8px 8px;
+  background-color: lightsteelblue;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
 }
 </style>
