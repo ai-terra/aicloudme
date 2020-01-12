@@ -7,7 +7,8 @@
         :initialValue="matrix[rowIndex][colIndex]"
         :title="titleMatrix[rowIndex][colIndex]"
         :class="[
-          (matrix[rowIndex][colIndex] == 'Click') ? 'click-btn' : ''
+          (matrix[rowIndex][colIndex] == 'Click') ? 'click-btn' : '',
+          (matrix[rowIndex][colIndex] == 'Cmd') ? 'cmd-btn' : ''
         ]"
       ></Cell>
     </div>
@@ -47,7 +48,7 @@ export default {
           if (helpText == "Click") {
             result[i][j] =
               "Run code and log result in tx blockchain\nEstimated time: milliseconds";
-          } else if (helpText == "Command") {
+          } else if (helpText == "Cmd") {
             result[i][j] =
               "Execute command and log result in tx blockchain\nEstimated time: seconds";
           } else if (helpText == "Order") {
@@ -94,6 +95,16 @@ export default {
   /* box-shadow: 1px 1px #888888; */
   border-radius: 8px 8px 8px 8px;
   background-color: lightsteelblue;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.cmd-btn {
+  margin: 0px 0px;
+  /* box-shadow: 1px 1px #888888; */
+  border-radius: 8px 8px 8px 8px;
+  background-color: orange;
   color: black;
   text-align: center;
   font-weight: bold;
