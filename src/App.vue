@@ -144,6 +144,7 @@
                   <button class="next btn btn-primary" @click="addProject">+</button>
                   <input type="text" class="input-add-new" v-model="matrixDev[0][7]" size="20" maxlength="40">
                   <button class="next btn btn-warning" @click="uploadProject" title="Update project to ai store">u</button>
+                  <button class="next btn btn-warning" @click="cycleSheetView" title="Switch Tabs/Folder direction: Vertical/Horizontal">|</button>
                 </div>
                 <ul class="list-group">
                   <transition-group name="slide-up" type="animation" appear>
