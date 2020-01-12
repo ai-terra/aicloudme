@@ -601,11 +601,11 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
       matrixOps: [
         ['a','MARKET',':','ready','','title',':','Skill 37','','usage','=','247k','','','','','','','','','','','','','','',''],
         ['1','Click',':','= if ( pa-Social == "project" ) { sa-State = "Ok" } else { sa-State = "Quit" }','','','','','','','','','','','','','','','','','','','','','','',''],
-        ['2','Post',':','Hello Service World!','','subtitle',':','welcome to ai web','','body',':',
-        `AI super productivity services.
-Add incentive check lists to trigger ai innovators worldwide.
-Or add your services to contribute to world's innovation projects.`,'','signature',':',`clone free ai world apps:
-github.com/ai-accelerator`,'','','','','','','','','','','\n'],
+//         ['2','Post',':','Hello Service World!','','subtitle',':','welcome to ai web','','body',':',
+//         `AI super productivity services.
+// Add incentive check lists to trigger ai innovators worldwide.
+// Or add your services to contribute to world's innovation projects.`,'','signature',':',`clone free ai world apps:
+// github.com/ai-accelerator`,'','','','','','','','','','','\n'],
         ['b','RATES',':','money','','','','','','','','','','','','','','','','','','','','','','',''],
         ['1','Click',':','= if ( pb-Rates == "range" ) { sb-State = "Ok" } else { sb-State = "Quit" }','','','','','','','','','','','','','','','','','','','','','','',''],
         ['c','DOCS',':','terms','','','','','','','','','','','','','','','','','','','','','','',''],
