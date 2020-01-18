@@ -1,4 +1,4 @@
-# ai workx engine web app
+# education database engine web app
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
