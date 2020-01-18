@@ -24,7 +24,7 @@ import Cell from "./Cell";
 export default {
   name: "Table",
   components: { Cell },
-  props: ["matrix"],
+  props: ["matrix", "sheetView"],
   data() {
     return {
       rowHelp: "Help text for "

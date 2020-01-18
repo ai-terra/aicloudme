@@ -194,7 +194,7 @@
                           </tr>
 
                           <div v-if="sheetView"> 
-                            <Table :matrix="matrixDev"></Table>   
+                            <Spreadsheet :sheet="matrixDev" :tabs="sheetView"></Spreadsheet>   
                           </div>
 
                           <tr class="row" v-for="(row, rowIndex) in matrixDev" v-bind:key="rowIndex">    
@@ -458,7 +458,7 @@ import Header from './components/header.vue';
 
 import Post from './views/Post.vue';
 import Icon from './util/Icon.vue';
-import Table from './views/Table'
+import Spreadsheet from './views/Spreadsheet'
 
 export default {
   name: "app",
@@ -466,7 +466,7 @@ export default {
     'app-header': Header,
     'ai-post': Post,
     'ai-icon': Icon,
-    Table
+    Spreadsheet
   },
   created () {
     this.$store.dispatch('tryAutoLogin')
