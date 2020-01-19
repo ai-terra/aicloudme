@@ -1,7 +1,7 @@
 <template>
   <div id="welcome">
     <h1>learn @ ai speed</h1>
-    <p>fair, distributed, recombinant learning engine</p>
+    <p>fair, distributed, market learning engine</p>
     <!-- <p>evolutionary learning & fair monetary engine</p> -->
     <div class="cta">
       <router-link to="/signup">Sign Up</router-link>

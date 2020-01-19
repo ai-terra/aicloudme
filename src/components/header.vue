@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">edu base</router-link>
+      <router-link to="/">xlbase</router-link>
     </div>
     <nav>
       <ul>
