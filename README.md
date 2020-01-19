@@ -1,4 +1,4 @@
-# education database engine web app
+# evoultionary learning engine web app
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
