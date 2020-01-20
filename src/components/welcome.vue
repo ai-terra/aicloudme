@@ -1,7 +1,7 @@
 <template>
   <div id="welcome">
-    <h1>done @ ai speed</h1>
-    <p>fair, distributed, task market engine - PoC</p>
+    <h1>tasks @ ai speed</h1>
+    <p>fair, decentralized, task market engine - PoC</p>
     <!-- <p>evolutionary learning & fair monetary engine</p> -->
     <div class="cta">
       <router-link to="/signup">Sign Up</router-link>
