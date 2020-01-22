@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">xltask</router-link>
+      <router-link to="/">aibonus</router-link>
     </div>
     <nav>
       <ul>
