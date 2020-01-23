@@ -490,7 +490,7 @@ export default {
       postNameId: 0,
       opsName: ["ads" , "app", "ops", "srv", "offr", "ask", "rRNA"],
       opsNameId: 1,
-      backgroundText: `&nbsp;&nbsp; ai &nbsp;&nbsp; &nbsp;git &nbsp;&nbsp; npm
+      backgroundText: `bonus = project * service
             <br><br>
             &nbsp;ai &nbsp; accelerator`,
       liveText: `&nbsp; ai&nbsp; &nbsp;dna &nbsp; rna
