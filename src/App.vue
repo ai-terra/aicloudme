@@ -248,6 +248,9 @@
                     </li>
                   </transition-group>
                 </ul>
+
+                <Tabs />
+
                 <div class="background-text">
                   <p>&nbsp;</p>
                   <!-- <p>REQ</p> -->
@@ -455,6 +458,7 @@ const storage = fb.storage(); //  Firebase / GCP Storage
 import aiteam from './ai-config.json';
 
 import Header from './components/header.vue';
+import Tabs from './components/tabs.vue';
 
 import Post from './views/Post.vue';
 import Icon from './util/Icon.vue';
@@ -466,7 +470,8 @@ export default {
     'app-header': Header,
     'ai-post': Post,
     'ai-icon': Icon,
-    Spreadsheet
+    Spreadsheet,
+    Tabs
   },
   created () {
     this.$store.dispatch('tryAutoLogin')
@@ -490,7 +495,7 @@ export default {
       postNameId: 0,
       opsName: ["ads" , "app", "ops", "srv", "offr", "ask", "rRNA"],
       opsNameId: 1,
-      backgroundText: `bonus = project * service
+      backgroundText: `bonus = tasks&nbsp;*&nbsp; skills
             <br><br>
             &nbsp;ai &nbsp; accelerator`,
       liveText: `&nbsp; ai&nbsp; &nbsp;dna &nbsp; rna
