@@ -1,4 +1,4 @@
-# ai wallet & bonus engine web app
+# ai wallet & bonus engine
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
