@@ -82,7 +82,7 @@
 
                     <div class="table-title">
                       <h3 class="line" title="Patent blockchain status - % tests passed">
-                        &nbsp;&nbsp;do(
+                        &nbsp;&nbsp;tx(
                         <img class="owner" :src="require('./assets/img/users/2'+ project + '.png')">
                         <ai-icon :bits="projectIconBits"></ai-icon>
                           &#65121;
@@ -549,7 +549,7 @@ Or add your services to contribute to world's projects.
 clone free ai open apps:
 github.com/ai-accelerator`,
       listBiz: [
-        ['1','Post',':','Hello AI World!','','subtitle',':','welcome to ai web']
+        ['1','Post',':','Hello Blockchain World!','','subtitle',':','welcome to ai web']
       ],
       matrixBiz: [
         ['a','STATUS',':','OK?','','','','','','','','','','','','','','','','','','','','','','',''],
