@@ -1,4 +1,4 @@
-# blockchain xls db & task market engine web app
+# ai wallet & bonus engine web app
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
