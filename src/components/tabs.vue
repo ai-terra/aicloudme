@@ -1,6 +1,6 @@
 <template>
   <div class="tabs">
-    <div class="tab" title="Status">a</div>
+    <div class="tab" title="Status">> a ></div>
     <div class="tab" title="Rates">b</div>
     <div class="tab" title="Docs">c</div>
     <div class="tab" title="Book">d</div>
