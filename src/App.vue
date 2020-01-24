@@ -132,6 +132,9 @@
                   </li>
                 </transition-group>
               </ul>
+
+              <Tabs />
+              
               <div class="background-text">
                 <p>&nbsp;</p>
                 <!-- <p>RES</p> -->
@@ -329,6 +332,9 @@
                     </li>
                   </transition-group>
                 </ul>
+
+                <Tabs />
+
                 <div class="background-text">
                   <p>&nbsp;</p>
                   <!-- <p>OPS</p> -->
