@@ -509,7 +509,7 @@ export default {
             market &nbsp;engine`,
       devText: `&nbsp; cash = &nbsp;project &nbsp;&#x2731 ops
       <br><br>
-      match8 &nbsp;engine`,
+      eXchange &nbsp;engine`,
       visibleRows: 1,
       visibleTab: 1,
       pause: true,
@@ -652,12 +652,12 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
         ['1','','','','','','','','','','','','','','','','','','','','','','','','','','']
       ],
       newDevPosts: [
-        'Funded: 5min M8 engine install',
-        'Voting: Chinese & Hindi M8 engine',
-        'Idea: Job posts as M8 help demand'
+        'Funded: 5min XL engine install',
+        'Voting: Chinese & Hindi XL engine',
+        'Idea: Job posts as XL help demand'
       ],
       newOpsPosts: [
-        'COM: meta AI/ML/Kubernetes',
+        'COM: XL = meta AI/ML/Kubernetes',
         'ORG: Innovation/Project Rendering',
         'R&D: Code/Branch Ranking Blockchain'
       ]
