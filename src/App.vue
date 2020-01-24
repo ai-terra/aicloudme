@@ -134,7 +134,7 @@
               </ul>
 
               <Tabs />
-              
+
               <div class="background-text">
                 <p>&nbsp;</p>
                 <!-- <p>RES</p> -->
@@ -504,10 +504,10 @@ export default {
       backgroundText: `cash = $(tasks&nbsp;&#x2731 skills)
             <br><br>
             &nbsp;ai &nbsp; accelerator`,
-      liveText: `&nbsp; ai&nbsp; &nbsp;dna &nbsp; rna
+      liveText: `&nbsp; ATP &nbsp; &nbsp;rDNA &nbsp; rRNA
             <br><br>
             market &nbsp;engine`,
-      devText: `&nbsp; ai&nbsp; &nbsp;dev &nbsp; ops
+      devText: `&nbsp; cash = &nbsp;project &nbsp;&#x2731 ops
       <br><br>
       match8 &nbsp;engine`,
       visibleRows: 1,
