@@ -1,13 +1,13 @@
 <template>
   <div class="tabs">
-    <div class="tab" title="Status">> a ></div>
-    <div class="tab" title="Rates">b</div>
-    <div class="tab" title="Docs">c</div>
-    <div class="tab" title="Book">d</div>
-    <div class="tab" title="Input">e</div>
-    <div class="tab" title="Steps">f</div>
-    <div class="tab" title="Output">g</div>
-    <div class="tab" title="Pay">h</div>
+    <div class="tab" title="Status">STATUS</div>
+    <div class="tab" title="Rates">RATES</div>
+    <div class="tab" title="Docs">DOCS</div>
+    <div class="tab" title="Book">BOOK</div>
+    <div class="tab" title="Input">INPUT</div>
+    <div class="tab" title="Steps">STEPS</div>
+    <div class="tab" title="Output">OUTPUT</div>
+    <div class="tab" title="Pay">PAY</div>
   </div>
 </template>
 
