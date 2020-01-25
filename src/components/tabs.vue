@@ -1,6 +1,6 @@
 <template>
   <div class="tabs">
-    <div class="tab" title="Status">STATUS</div>
+    <div class="tab" title="Status" @click="tab[1] = 'a'">STATUS</div>
     <div class="tab" title="Rates">RATES</div>
     <div class="tab" title="Docs">DOCS</div>
     <div class="tab" title="Book">BOOK</div>
@@ -10,6 +10,16 @@
     <div class="tab" title="Pay">PAY</div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    tab: {
+      type: Array
+    }
+  }
+};
+</script>
 
 <style scoped>
 .tabs {
@@ -29,6 +39,7 @@
   color: white;
   text-align: center;
   font-weight: bold;
+  cursor: pointer;
 }
 </style>
 

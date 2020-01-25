@@ -252,7 +252,7 @@
                   </transition-group>
                 </ul>
 
-                <Tabs />
+                <Tabs :tab="tab"/>
 
                 <div class="background-text">
                   <p>&nbsp;</p>
@@ -511,7 +511,7 @@ export default {
       <br><br>
       eXchange &nbsp;engine`,
       visibleRows: 1,
-      visibleTab: 1,
+      tab: ['0', '0', '0'],
       pause: true,
       show: true,
       load: true,
