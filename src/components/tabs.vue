@@ -1,13 +1,13 @@
 <template>
   <div class="tabs">
     <div class="tab" title="Status" @click="tab[matrixId] = 'a'">STATUS</div>
-    <div class="tab" title="Rates">RATES</div>
-    <div class="tab" title="Docs">DOCS</div>
-    <div class="tab" title="Book">BOOK</div>
-    <div class="tab" title="Input">INPUT</div>
-    <div class="tab" title="Steps">STEPS</div>
-    <div class="tab" title="Output">OUTPUT</div>
-    <div class="tab" title="Pay">PAY</div>
+    <div class="tab" title="Rates" @click="tab[matrixId] = 'b'">RATES</div>
+    <div class="tab" title="Docs" @click="tab[matrixId] = 'c'">DOCS</div>
+    <div class="tab" title="Book" @click="tab[matrixId] = 'd'">BOOK</div>
+    <div class="tab" title="Input" @click="tab[matrixId] = 'e'">INPUT</div>
+    <div class="tab" title="Steps" @click="tab[matrixId] = 'f'">STEPS</div>
+    <div class="tab" title="Output" @click="tab[matrixId] = 'g'">OUTPUT</div>
+    <div class="tab" title="Pay" @click="tab[matrixId] = 'h'">PAY</div>
   </div>
 </template>
 
