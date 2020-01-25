@@ -1,5 +1,6 @@
 <template>
   <div class="tabs">
+    <div class="tab" title="Status" @click="tab[matrixId] = '0'">CEO</div>
     <div class="tab" title="Status" @click="tab[matrixId] = 'a'">STATUS</div>
     <div class="tab" title="Rates" @click="tab[matrixId] = 'b'">RATES</div>
     <div class="tab" title="Docs" @click="tab[matrixId] = 'c'">DOCS</div>
@@ -34,7 +35,7 @@ export default {
 }
 
 .tab {
-  width: 12.5%;
+  width: 11.11%;
   border-radius: 0px 0px 10px 10px;
   margin-left: 1px;
   margin-right: 1px;
