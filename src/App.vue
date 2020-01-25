@@ -133,7 +133,7 @@
                 </transition-group>
               </ul>
 
-              <Tabs />
+              <Tabs :tab="tab" :matrixId="0"/>
 
               <div class="background-text">
                 <p>&nbsp;</p>
@@ -333,7 +333,7 @@
                   </transition-group>
                 </ul>
 
-                <Tabs />
+                <Tabs :tab="tab" :matrixId="2"/>
 
                 <div class="background-text">
                   <p>&nbsp;</p>
