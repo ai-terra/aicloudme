@@ -1,6 +1,6 @@
 <template>
   <div class="tabs">
-    <div class="tab" title="Status" @click="tab[1] = 'a'">STATUS</div>
+    <div class="tab" title="Status" @click="tab[matrixId] = 'a'">STATUS</div>
     <div class="tab" title="Rates">RATES</div>
     <div class="tab" title="Docs">DOCS</div>
     <div class="tab" title="Book">BOOK</div>
@@ -16,6 +16,9 @@ export default {
   props: {
     tab: {
       type: Array
+    },
+    matrixId: {
+      type: Number
     }
   }
 };

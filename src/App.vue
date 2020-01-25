@@ -252,7 +252,7 @@
                   </transition-group>
                 </ul>
 
-                <Tabs :tab="tab"/>
+                <Tabs :tab="tab" :matrixId="1"/>
 
                 <div class="background-text">
                   <p>&nbsp;</p>
