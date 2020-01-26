@@ -591,7 +591,8 @@ Or add your services to contribute to world's projects.
 clone free ai open apps:
 github.com/ai-accelerator`,
       listBiz: [
-        ['1','Post',':','Hello Blockchain World!','','subtitle',':','welcome to ai web']
+        ['1','Post',':','Universal Blockchain Cash','','subtitle',':','welcome to ai web'],
+        ['1','Post',':','Ranked Solution Blockchains','','subtitle',':','welcome to ai web']
       ],
       matrixBiz: [
         ['a','STATUS',':','OK?','','','','','','','','','','','','','','','','','','','','','','',''],
@@ -622,7 +623,7 @@ Add incentive check lists to trigger ai innovators worldwide.
 Or add your services to contribute to world's innovation projects.`,'','signature',':',`clone free ai world apps:
 github.com/ai-accelerator`,'','','','','','','','','','','\n'],
         ['b','RATES',':','money','','','','','','','','','','','','','','','','','','','','','','','\n'],
-        ['1','Post',':','Project Rates','','help',':','Check if service rate is in project range','','','','','','','','','','','','','','','','','','','\n'],
+        ['1','Post',':','Recombinant Project Templates','','help',':','Check if service rate is in project range','','','','','','','','','','','','','','','','','','','\n'],
         ['c','DOCS',':','terms','','','','','','','','','','','','','','','','','','','','','','','\n'],
         ['1','Click',':','= if ( sc-Docs == "ready" ) { pc-State = "Ok" } else { pc-State = "Quit" }','','','','','','','','','','','','','','','','','','','','','','','\n'],
         // ['1','Post',':','Toronto W3AI News','','posts',':','24','','comments',':','36','','','','','','','','','','','','','','','\n'],
@@ -639,7 +640,8 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
         ['1','Verbal',':','= if ( sh-Pay == "cashed" ) { ph-State = "Done" && verbal = "Thanks!"} else { ph-State = "Feedback" }','','','','','','','','','','','','','','','','','','','','','','','\n'],
       ],
       listOps: [
-        ['1','Post',':','Hello Service World!','','subtitle',':','welcome to ai web']
+        ['1','Post',':','Hello Service World!','','subtitle',':','welcome to ai web'],
+        ['1','Post',':','Recombinant Service APIs','','subtitle',':','realtime recombinant services']
       ],
       matrixOps: [
         ['a','MARKET',':','ready','','title',':','Skill 37','','usage','=','247k','','','','','','','','','','','','','','',''],
