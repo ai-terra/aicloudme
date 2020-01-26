@@ -683,14 +683,14 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
         ['1','','','','','','','','','','','','','','','','','','','','','','','','','','']
       ],
       newDevPosts: [
-        'Funded: 5min XL engine install',
-        'Voting: Chinese & Hindi XL engine',
-        'Idea: Job posts as XL help demand'
+        'Funded: 5min cash engine install',
+        'Voting: Chinese & Hindi cash engine',
+        'Idea: Job posts as cash help demand'
       ],
       newOpsPosts: [
-        'COM: XL = meta AI/ML/Kubernetes',
+        'COM: xl cash = meta AI/ML/Kubernetes',
         'ORG: Innovation/Project Rendering',
-        'R&D: Code/Branch Ranking Blockchain'
+        'R&D: Code/Branch Ranking Blockchains'
       ]
     };
   },
