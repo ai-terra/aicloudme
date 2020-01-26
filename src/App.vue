@@ -535,7 +535,7 @@ export default {
       backgroundText: `cash = $(tasks&nbsp;&#x2731 skills)
             <br><br>
             &nbsp;ai &nbsp; accelerator`,
-      liveText: `&nbsp; ATP &nbsp; &nbsp; rDNA &nbsp;&nbsp; rRNA
+      liveText: `&nbsp; ATP &nbsp; &nbsp; DNA &nbsp;&nbsp; RNA
             <br><br>
             market &nbsp;engine`,
       devText: `&nbsp; cash = &nbsp;project &nbsp;&#x2731 ops
