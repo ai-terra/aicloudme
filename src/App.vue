@@ -103,7 +103,7 @@
                     <!-- <section class="views"> -->
 
                     <div v-if="fbview">
-                      <ai-post :matrix="listBiz[0]"></ai-post>
+                      <ai-post :matrix="listBiz"></ai-post>
                     </div>
 
                     <!-- </section> -->
@@ -300,7 +300,7 @@
                       <!-- <section class="views"> -->
 
                       <div v-if="fbview">
-                        <ai-post :matrix="listOps[0]"></ai-post>
+                        <ai-post :matrix="listOps"></ai-post>
                       </div>
 
                       <!-- </section> -->
