@@ -591,7 +591,7 @@ Or add your services to contribute to world's projects.
 clone free ai open apps:
 github.com/ai-accelerator`,
       listBiz: [
-        ['1','Post',':','Universal Blockchain Cash','','subtitle',':','welcome to ai web'],
+        ['1','Post',':','Universal Cash Blockchains / ATP','','subtitle',':','welcome to ai web'],
         ['1','Post',':','Ranked Solution Blockchains','','subtitle',':','welcome to ai web']
       ],
       matrixBiz: [
