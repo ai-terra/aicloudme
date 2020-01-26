@@ -617,7 +617,7 @@ github.com/ai-accelerator`,
       ],  
       matrixDev: [
         ['a','SOCIAL',':','project','','title',':','AI Economy','','priority','=','1','','votes','=','247','','comments','=','144','','clones','=','24','','','\n'],
-        ['1','Post',':','Project Data & Scripts DNA db','','subtitle',':','welcome to ai web','','body',':',
+        ['1','Post',':','Project Data & Scripts db / DNA','','subtitle',':','welcome to ai web','','body',':',
         `AI super productivity app.
 Add incentive check lists to trigger ai innovators worldwide.
 Or add your services to contribute to world's innovation projects.`,'','signature',':',`clone free ai world apps:
@@ -640,7 +640,7 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
         ['1','Verbal',':','= if ( sh-Pay == "cashed" ) { ph-State = "Done" && verbal = "Thanks!"} else { ph-State = "Feedback" }','','','','','','','','','','','','','','','','','','','','','','','\n'],
       ],
       listOps: [
-        ['1','Post',':','Service Data & Scripts RNA db','','subtitle',':','welcome to ai web'],
+        ['1','Post',':','Service Data & Scripts db / RNA','','subtitle',':','welcome to ai web'],
         ['1','Post',':','Recombinant Service APIs','','subtitle',':','realtime recombinant services']
       ],
       matrixOps: [
