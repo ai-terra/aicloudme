@@ -1347,6 +1347,7 @@ textarea {
 #text-editor {
   width: 50%;
   overflow-x: auto;
+  border-left: 1px solid  #888888;
 }
 
 #textEdit {
