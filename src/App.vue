@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable no-console */
 <template>
   <div id="app">
 
@@ -180,7 +182,7 @@
                       <!-- <section class="views"> -->
 
                       <div v-if="fbview">
-                        <ai-post :matrix="matrixDev[1]"></ai-post>
+                        <ai-post :matrix="devPosts"></ai-post>
                       </div>
 
                       <!-- <div>
@@ -305,27 +307,56 @@
 
                       <div class="scrollable">
                         <table id="o-table" class="matrix">
+
                           <tr class="row">
                             <td class="cell config-btn" title="Click to expand visible rows" @click="expandRows">{{ corner }}</td>
                             <td class="cell tbl-head" v-for="(h, index) in header" v-bind:key="index">{{ h }}</td>                       
                           </tr>
-                          <tr class="row" v-for="(row, rowIndex) in matrixOps" v-bind:key="rowIndex">                          
-                            <td contenteditable="true" class="cell" 
-                            matrix="Ops" 
-                            v-for="(cell, colIndex) in row" v-bind:key="colIndex"
-                            :row="rowIndex" :col="colIndex" 
-                            :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
-                            :class="[
-                                      (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
-                                      ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
-                                      (matrixOps[rowIndex][colIndex] == 'Click') ? checkBtn : '',
-                                      (matrixOps[rowIndex][colIndex] == 'Post') ? postClass : ''
-                                    ]"
-                            @click="onCellClick"
-                            >
-                              {{ cell }}
-                            </td>
-                          </tr>
+
+                          <template v-if="tab[2] === '0'">
+
+                            <tr class="row" v-for="(row, rowIndex) in matrixOps" v-bind:key="rowIndex">                          
+                              <td contenteditable="true" class="cell" 
+                              matrix="Ops" 
+                              v-for="(cell, colIndex) in row" v-bind:key="colIndex"
+                              :row="rowIndex" :col="colIndex" 
+                              :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
+                              :class="[
+                                        (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
+                                        ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
+                                        (matrixOps[rowIndex][colIndex] == 'Click') ? checkBtn : '',
+                                        (matrixOps[rowIndex][colIndex] == 'Post') ? postClass : ''
+                                      ]"
+                              @click="onCellClick"
+                              >
+                                {{ cell }}
+                              </td>
+                            </tr>
+
+                          </template>
+
+                          <template v-else>
+
+                            <tr class="row" v-for="(row, rowIndex) in filteredMatrixOps" v-bind:key="rowIndex">                          
+                              <td contenteditable="true" class="cell" 
+                              matrix="Ops" 
+                              v-for="(cell, colIndex) in row" v-bind:key="colIndex"
+                              :row="rowIndex" :col="colIndex" 
+                              :tab="Math.floor(rowIndex/(visibleRows+1) + 1)" :tabrow="rowIndex%(visibleRows+1)"
+                              :class="[
+                                        (rowIndex%(visibleRows+1) == 0) ? tabClass : '',
+                                        ((rowIndex%(visibleRows+1) == 0) && (colIndex == 1)) ? tabTitle : '',
+                                        (matrixOps[rowIndex][colIndex] == 'Click') ? checkBtn : '',
+                                        (matrixOps[rowIndex][colIndex] == 'Post') ? postClass : ''
+                                      ]"
+                              @click="onCellClick"
+                              >
+                                {{ cell }}
+                              </td>
+                            </tr>
+
+                          </template>
+
                         </table>
                       </div>
 
@@ -591,7 +622,7 @@ Add incentive check lists to trigger ai innovators worldwide.
 Or add your services to contribute to world's innovation projects.`,'','signature',':',`clone free ai world apps:
 github.com/ai-accelerator`,'','','','','','','','','','','\n'],
         ['b','RATES',':','money','','','','','','','','','','','','','','','','','','','','','','','\n'],
-        ['1','Click',':','= if ( sb-Rates == "range" ) { pb-State = "Ok" } else { pb-State = "Quit" }','','help',':','Check if service rate is in project range','','','','','','','','','','','','','','','','','','','\n'],
+        ['1','Post',':','Project Rates','','help',':','Check if service rate is in project range','','','','','','','','','','','','','','','','','','','\n'],
         ['c','DOCS',':','terms','','','','','','','','','','','','','','','','','','','','','','','\n'],
         ['1','Click',':','= if ( sc-Docs == "ready" ) { pc-State = "Ok" } else { pc-State = "Quit" }','','','','','','','','','','','','','','','','','','','','','','','\n'],
         // ['1','Post',':','Toronto W3AI News','','posts',':','24','','comments',':','36','','','','','','','','','','','','','','','\n'],
@@ -664,8 +695,36 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
     };
   },
   computed: {
-    posts: function(){
+    devPosts: function(){
       return this.matrixDev.filter(row => row[1] === 'Post')
+    },
+    filteredMatrixOps: function(){
+      let result = []
+      let tabLine = false
+
+      for(let i in this.matrixOps){
+        let element = this.matrixOps[i]
+        // eslint-disable-next-line no-console
+        console.log(this.tab[2])
+
+        if(this.tab[2] === '0'){
+          result.push(element)
+        }
+        
+        if(element[0] === this.tab[2]){
+          result.push(element)
+          tabLine = true
+        }
+
+        if(!isNaN(element[0]) && tabLine){
+          result.push(element)
+        } else {
+          break
+        }
+
+      }
+
+      return result
     }
   },
 
@@ -681,6 +740,12 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
         localStorage.removeItem('projects');
       }
     }
+  },
+
+  filters: {
+    //tabView: function (matrix) {
+    //  if (matrix[0])
+    //}
   },
 
   methods: {
