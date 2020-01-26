@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="card" v-for="(ele,i) in matrix" :key="i">
+    <div class="card" v-for="(post,i) in matrix" :key="i">
       <div class="poster">
         <div class="title">
-          <h2 v-html="ele[3]"></h2>
+          <h2 v-html="post[3]"></h2>
         </div>
       </div>
       <ul class="controls">
@@ -13,7 +13,7 @@
         <li class="react">Share</li>
         <li class="react" @click="showEdit = !showEdit">Edit</li>
       </ul>
-      <textarea class="edit" v-if="showEdit" v-model="ele[3]" placeholder="edit post"></textarea>
+      <textarea class="edit" v-if="showEdit" v-model="post[3]" placeholder="edit post"></textarea>
     </div>
   </div>
 </template>
