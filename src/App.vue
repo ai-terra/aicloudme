@@ -702,7 +702,7 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
       let result = []
       let tabLine = false
 
-      for(let i in this.matrixOps){
+      for(let i =0; i < this.matrixOps.length; i++){
         let element = this.matrixOps[i]
         // eslint-disable-next-line no-console
         console.log(this.tab[2])
@@ -713,6 +713,42 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
         
         if(element[0] === this.tab[2]){
           result.push(element)
+          let cursorIndex = i+1
+
+          // eslint-disable-next-line no-console
+          console.log(cursorIndex)
+
+          if(cursorIndex < this.matrixOps.length){
+            
+            var regex = /[0-9]+/
+            let cursor
+            let char
+
+            do{
+              cursor = this.matrixOps[cursorIndex]
+              char = cursor[0]
+              // eslint-disable-next-line no-console
+              console.log("char is: " + char)
+              if(regex.test(char)){
+                // eslint-disable-next-line no-console
+                console.log("test passed")
+                result.push(cursor)
+              }else{
+                // eslint-disable-next-line no-console
+                console.log("test failed")
+                return result
+              }
+              cursorIndex++
+              
+            }while( cursorIndex <= this.matrixOps.length)
+
+
+            return result
+
+          }
+
+
+
           tabLine = true
         }
 

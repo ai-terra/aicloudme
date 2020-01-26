@@ -1,18 +1,20 @@
 <template>
-  <div class="card">
-    <div class="poster">
-      <div class="title">
-        <h2 v-html="matrix[3]"></h2>
+  <div>
+    <div class="card" v-for="(ele,i) in matrix" :key="i">
+      <div class="poster">
+        <div class="title">
+          <h2 v-html="ele[3]"></h2>
+        </div>
       </div>
+      <ul class="controls">
+        <li class="react">Views</li>
+        <li class="react">Like</li>
+        <li class="react">Comment</li>
+        <li class="react">Share</li>
+        <li class="react" @click="showEdit = !showEdit">Edit</li>
+      </ul>
+      <textarea class="edit" v-if="showEdit" v-model="ele[3]" placeholder="edit post"></textarea>
     </div>
-    <ul class="controls">
-      <li class="react">Views</li>
-      <li class="react">Like</li>
-      <li class="react">Comment</li>
-      <li class="react">Share</li>
-      <li class="react" @click="showEdit = !showEdit">Edit</li>
-    </ul>
-    <textarea class="edit" v-if="showEdit" v-model="matrix[3]" placeholder="edit post"></textarea>
   </div>
 </template>
 
