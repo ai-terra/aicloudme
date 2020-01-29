@@ -1,10 +1,10 @@
-# ai cash engine
+# ai innovator engine
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
 ![Web colab PoC](ai-colab-engine-PoC-animated.gif)
 
-## collaboration engine install
+## innovation engine install
 
 - download and install node & npm @ https://nodejs.org/
 - clone ai player app @ https://github.com/aibase/ai-git/

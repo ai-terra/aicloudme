@@ -1,7 +1,7 @@
 <template>
   <div id="welcome">
-    <h1>cash @ ai speed</h1>
-    <p>fair, realtime, in memory cash engine PoC</p>
+    <h1>innovate @ ai speed</h1>
+    <p>free, realtime, innovation game engine PoC</p>
     <!-- <p>evolutionary learning & fair monetary engine</p> -->
     <div class="cta">
       <router-link to="/signup">Sign Up</router-link>
