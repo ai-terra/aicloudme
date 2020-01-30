@@ -1,14 +1,59 @@
 <template>
   <div class="tabs">
-    <div class="tab" title="Status" @click="tab[matrixId] = '0'">CEO</div>
-    <div class="tab" title="Status" @click="tab[matrixId] = 'a'">STATUS</div>
-    <div class="tab" title="Rates" @click="tab[matrixId] = 'b'">RATES</div>
-    <div class="tab" title="Docs" @click="tab[matrixId] = 'c'">DOCS</div>
-    <div class="tab" title="Book" @click="tab[matrixId] = 'd'">BOOK</div>
-    <div class="tab" title="Input" @click="tab[matrixId] = 'e'">INPUT</div>
-    <div class="tab" title="Steps" @click="tab[matrixId] = 'f'">STEPS</div>
-    <div class="tab" title="Output" @click="tab[matrixId] = 'g'">OUTPUT</div>
-    <div class="tab" title="Pay" @click="tab[matrixId] = 'h'">PAY</div>
+    <div
+      class="tab"
+      :class="matrixId == 0 ? 'logo-red':matrixId == 1 ? 'logo-yellow':'logo-blue'"
+      title="Status"
+      @click="tab[matrixId] = '0'"
+    >CEO</div>
+    <div
+      class="tab"
+      :class="matrixId == 0 ? 'logo-red':matrixId == 1 ? 'logo-yellow':'logo-blue'"
+      title="Status"
+      @click="tab[matrixId] = 'a'"
+    >STATUS</div>
+    <div
+      class="tab"
+      :class="matrixId == 0 ? 'logo-red':matrixId == 1 ? 'logo-yellow':'logo-blue'"
+      title="Rates"
+      @click="tab[matrixId] = 'b'"
+    >RATES</div>
+    <div
+      class="tab"
+      :class="matrixId == 0 ? 'logo-red':matrixId == 1 ? 'logo-yellow':'logo-blue'"
+      title="Docs"
+      @click="tab[matrixId] = 'c'"
+    >DOCS</div>
+    <div
+      class="tab"
+      :class="matrixId == 0 ? 'logo-red':matrixId == 1 ? 'logo-yellow':'logo-blue'"
+      title="Book"
+      @click="tab[matrixId] = 'd'"
+    >BOOK</div>
+    <div
+      class="tab"
+      :class="matrixId == 0 ? 'logo-red':matrixId == 1 ? 'logo-yellow':'logo-blue'"
+      title="Input"
+      @click="tab[matrixId] = 'e'"
+    >INPUT</div>
+    <div
+      class="tab"
+      :class="matrixId == 0 ? 'logo-red':matrixId == 1 ? 'logo-yellow':'logo-blue'"
+      title="Steps"
+      @click="tab[matrixId] = 'f'"
+    >STEPS</div>
+    <div
+      class="tab"
+      :class="matrixId == 0 ? 'logo-red':matrixId == 1 ? 'logo-yellow':'logo-blue'"
+      title="Output"
+      @click="tab[matrixId] = 'g'"
+    >OUTPUT</div>
+    <div
+      class="tab"
+      :class="matrixId == 0 ? 'logo-red':matrixId == 1 ? 'logo-yellow':'logo-blue'"
+      title="Pay"
+      @click="tab[matrixId] = 'h'"
+    >PAY</div>
   </div>
 </template>
 
@@ -44,6 +89,18 @@ export default {
   text-align: center;
   font-weight: bold;
   cursor: pointer;
+}
+
+.logo-red {
+  background-color: rgba(238, 71, 67, 0.7);
+}
+
+.logo-yellow {
+  background-color: rgba(254, 203, 47, 0.7);
+}
+
+.logo-blue {
+  background-color: rgba(43, 171, 238, 0.7);
 }
 </style>
 
