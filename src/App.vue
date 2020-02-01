@@ -1699,15 +1699,15 @@ td:hover {
 }
 
 .project-color {
-  color: orange;
+  color: rgba(254, 203, 47, 0.7);
 }
 
 .service-color {
-  color: blue;
+  color: rgba(43, 171, 238, 0.7);
 }
 
 .blockchain-color {
-  color: violet;
+  color: rgba(238, 71, 67, 0.7);
 }
 
 .blockchain-green {
