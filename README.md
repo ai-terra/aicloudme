@@ -1,4 +1,4 @@
-# ai partner web engine
+# ai family web engine
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
