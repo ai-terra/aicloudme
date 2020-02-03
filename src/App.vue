@@ -487,6 +487,7 @@
 
 <script>
 import axios from 'axios';  // for connecting to Frirebase RTDB
+import redisAxios from 'axios';  // for connecting to local Redis db
 
 import fb from './gcp.js';
 const fs = fb.firestore();
@@ -1106,6 +1107,10 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
       fs.collection('projects').add({
           tablelines: lines
         });
+
+      // experimenting with adding task to local Redis database
+      redisAxios.post('/task/add', 'TEST adding task from redisAxios');
+
       // axios.post('https://aiplanet.firebaseio.com/projects.json', this.matrixDev)
       // axios.post('https://firestore.googleapis.com/v1/projects/aibase/databases/(default)/documents/projects', this.matrixDev)
       //   .then(res => console.log(res))

@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import { firestorePlugin } from 'vuefire'
 import axios from 'axios'
+import redisAxios from 'axios'
 import Vuelidate from 'vuelidate'
 
 import router from './router'
@@ -15,8 +16,10 @@ Vue.config.productionTip = false
 Vue.use(firestorePlugin)
 
 axios.defaults.baseURL = 'https://aibase.firebaseio.com'
+redisAxios.defaults.baseURL = 'http://localhost:3000'
 // axios.defaults.headers.common['Authorization'] = 'aibase'
 axios.defaults.headers.get['Accepts'] = 'application/json'
+redisAxios.defaults.headers.get['Accepts'] = 'application/json'
 
 const reqInterceptor = axios.interceptors.request.use(config => {
   // console.log('Request interceptor', config)
