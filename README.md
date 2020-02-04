@@ -1,4 +1,4 @@
-# ai family web engine
+# ai realtime projects database engine
 
 collaboration engine / social & enterprise innovation protocol - PoC
 

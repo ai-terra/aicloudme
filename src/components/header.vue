@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">ai family</router-link>
+      <router-link to="/">ai xldb</router-link>
     </div>
     <nav>
       <ul>
