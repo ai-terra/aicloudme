@@ -1,4 +1,4 @@
-# ai realtime projects database engine
+# ai realtime projects db engine
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
