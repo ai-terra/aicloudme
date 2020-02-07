@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">ai gitops</router-link>
+      <router-link to="/">ai repo</router-link>
     </div>
     <nav>
       <ul>

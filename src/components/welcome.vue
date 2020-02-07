@@ -1,7 +1,7 @@
 <template>
   <div id="welcome">
-    <h1>gitops @ ai speed</h1>
-    <p>free, realtime, in memory projects engine PoC</p>
+    <h1>projects @ ai speed</h1>
+    <p>free, realtime, in memory project engine PoC</p>
     <!-- <p>evolutionary learning & fair monetary engine</p> -->
     <div class="cta">
       <router-link to="/signup">Sign Up</router-link>
