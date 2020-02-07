@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">ai repo</router-link>
+      <router-link to="/">ai memory</router-link>
     </div>
     <nav>
       <ul>
