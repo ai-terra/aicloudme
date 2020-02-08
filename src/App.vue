@@ -499,7 +499,7 @@ import Header from './components/header.vue';
 import Tabs from './components/tabs.vue';
 
 import Post from './views/Post.vue';
-import Icon from './util/Icon.vue';
+import Icon from './util/icon.vue';
 import Spreadsheet from './views/Spreadsheet'
 
 export default {
@@ -1109,7 +1109,7 @@ github.com/ai-accelerator`,'','','','','','','','','','','\n'],
         });
 
       // experimenting with adding task to local Redis database
-      redisAxios.post('/task/add', 'TEST adding task from redisAxios');
+      redisAxios.post('/task/add', {"task":"Test task sent form Vue app"});
 
       // axios.post('https://aiplanet.firebaseio.com/projects.json', this.matrixDev)
       // axios.post('https://firestore.googleapis.com/v1/projects/aibase/databases/(default)/documents/projects', this.matrixDev)
