@@ -500,7 +500,8 @@ import Tabs from './components/tabs.vue';
 
 import Post from './views/Post.vue';
 import Icon from './util/icon.vue';
-import Spreadsheet from './views/Spreadsheet'
+import Spreadsheet from './views/Spreadsheet';
+import gcp from './gcp.js';
 
 export default {
   name: "app",
