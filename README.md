@@ -1,4 +1,4 @@
-# realtime tab colab engine
+# realtime collaboration engine web app
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
