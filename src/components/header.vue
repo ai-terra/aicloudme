@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">tab colab</router-link>
+      <router-link to="/">ai colab</router-link>
     </div>
     <nav>
       <ul>
