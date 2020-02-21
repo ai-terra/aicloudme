@@ -5,7 +5,7 @@
       :class="matrixId == 0 ? 'logo-red':matrixId == 1 ? 'logo-yellow':'logo-blue'"
       title="Status"
       @click="tab[matrixId] = '0'"
-    >CEO</div>
+    >BANK</div>
     <div
       class="tab"
       :class="matrixId == 0 ? 'logo-red':matrixId == 1 ? 'logo-yellow':'logo-blue'"
