@@ -1,7 +1,7 @@
 <template>
   <div id="welcome">
     <h1>colab @ ai speed</h1>
-    <p>fair, realtime, universal banknotes web app</p>
+    <p>fair, realtime, universal banknotes database</p>
     <!-- <p>evolutionary learning & fair monetary engine</p> -->
     <div class="cta">
       <router-link to="/signup">Sign Up</router-link>
