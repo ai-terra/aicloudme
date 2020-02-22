@@ -137,7 +137,6 @@
                           :src="require('./assets/img/users/2'+ services[0] + '.png')"
                         />
                         <!-- {{ services[0] ops }} -->
-
                         , {{ branch }}/{{ branches[0] }},
                         {{ policyRule[randomInt(0, policyRule.length - 1)] }})
                         <!-- ~ {{ services[0] % project }}% -->
@@ -897,7 +896,7 @@ github.com/ai-accelerator`,
           "1",
           "Post",
           ":",
-          "Universal Bank Blockchains",
+          "Universal Tensor Blockchains",
           "",
           "subtitle",
           ":",
