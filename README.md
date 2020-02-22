@@ -1,4 +1,4 @@
-# realtime collaboration engine web app
+# Universal CI best practices app
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
