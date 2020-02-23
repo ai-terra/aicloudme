@@ -3,7 +3,7 @@
     <div class="card" v-for="(post,i) in matrix" :key="i">
       <div
         class="poster"
-        :style="{backgroundImage: 'url(' + require('./../assets/img/'+'01'+'.svg')+')'}"
+        :style="{backgroundImage: 'url(' + require('./../assets/img/gcp/'+'01'+'.svg')+')'}"
       >
         <div class="title">
           <h2 v-html="post[3]"></h2>
