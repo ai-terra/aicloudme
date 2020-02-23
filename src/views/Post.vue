@@ -1,9 +1,11 @@
+/* eslint-disable vue/valid-v-bind */
 <template>
   <div>
     <div class="card" v-for="(post,i) in matrix" :key="i">
       <div
         class="poster"
-        :style="{backgroundImage: 'url(' + require('./../assets/img/gcp/'+'01'+'.svg')+')'}"
+        :style="{ backgroundImage: 'url(' + require('./../assets/img/gcp/' + '01' + '.svg') + ')', 
+                  backgroundColor: 'rgba(150, 50, 50,' + '0.9' + ')'}"
       >
         <div class="title">
           <h2 v-html="post[3]"></h2>
@@ -48,10 +50,11 @@ export default {
   align-items: center;
   /* background-image: url("./../assets/img/01.svg"); */
   /* background-image: url("https://firebasestorage.googleapis.com/v0/b/aibase.appspot.com/o/img%2Fworld-200.png?alt=media&token=0f5e2753-4b10-4c8c-a8ea-63f62ab56277"); */
-  background-color: rgb(170, 211, 223);
+  background-color: rgba(170, 211, 223, 0.9);
   /* background-repeat: no-repeat; */
   background-position: center;
   background-size: contain;
+  background-blend-mode: multiply;
 }
 
 h2 {
