@@ -1,7 +1,10 @@
 <template>
   <div>
     <div class="card" v-for="(post,i) in matrix" :key="i">
-      <div class="poster">
+      <div
+        class="poster"
+        :style="{backgroundImage: 'url(' + require('./../assets/img/'+'01'+'.svg')+')'}"
+      >
         <div class="title">
           <h2 v-html="post[3]"></h2>
         </div>
@@ -43,7 +46,7 @@ export default {
   height: 100px;
   display: flex;
   align-items: center;
-  background-image: url("./../assets/img/01.svg");
+  /* background-image: url("./../assets/img/01.svg"); */
   /* background-image: url("https://firebasestorage.googleapis.com/v0/b/aibase.appspot.com/o/img%2Fworld-200.png?alt=media&token=0f5e2753-4b10-4c8c-a8ea-63f62ab56277"); */
   background-color: rgb(170, 211, 223);
   /* background-repeat: no-repeat; */
