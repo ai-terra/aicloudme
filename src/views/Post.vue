@@ -5,7 +5,12 @@
       <div
         class="poster"
         :style="{ backgroundImage: 'url(' + require('./../assets/img/gcp/' + randomInt(10,99) + '.svg') + ')', 
-                  backgroundColor: 'rgba(150, 50, 50,' + '0.9' + ')'}"
+                  backgroundColor: 'rgba(' 
+                    + randomInt(10,250) + ','
+                    + randomInt(10,250) + ',' 
+                    + randomInt(10,250) + ',' 
+                    + '0.' + randomInt(20,90)
+                    + ')'}"
       >
         <div class="title">
           <h2 v-html="post[3]"></h2>
