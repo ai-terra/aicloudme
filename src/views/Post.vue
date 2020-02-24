@@ -4,7 +4,7 @@
     <div class="card" v-for="(post,i) in matrix" :key="i">
       <div
         class="poster"
-        :style="{ backgroundImage: 'url(' + require('./../assets/img/gcp/' + '01' + '.svg') + ')', 
+        :style="{ backgroundImage: 'url(' + require('./../assets/img/gcp/' + randomInt(10,99) + '.svg') + ')', 
                   backgroundColor: 'rgba(150, 50, 50,' + '0.9' + ')'}"
       >
         <div class="title">
@@ -30,6 +30,12 @@ export default {
     return {
       showEdit: false
     };
+  },
+  methods: {
+    randomInt(min, max) {
+      // min and max included
+      return Math.floor(Math.random() * (max - min + 1) + min);
+    }
   }
 };
 </script>
