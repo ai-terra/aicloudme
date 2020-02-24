@@ -125,7 +125,7 @@
                   <li class="list-group-item" v-for="project in viewProjects" v-bind:key="project">
                     <div class="table-title">
                       <h3 class="line" title="Patent blockchain status - % tests passed">
-                        &nbsp;&nbsp;tx(
+                        &nbsp;&nbsp;KPI(
                         <img
                           class="owner"
                           :src="require('./assets/img/users/2'+ project + '.png')"
