@@ -1,6 +1,6 @@
 <template>
   <div id="welcome">
-    <h1>lead @ ai speed</h1>
+    <h1 contenteditable="true">lead @ ai speed</h1>
     <p>realtime universal best practices database</p>
     <!-- <p>evolutionary learning & fair monetary engine</p> -->
     <div class="cta">
