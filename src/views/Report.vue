@@ -2,19 +2,22 @@
 <template>
   <div>
     <div class="card" v-for="(post,i) in matrix" :key="i">
-      <div
-        class="poster"
-        :style="{ backgroundImage: 'url(' + require('./../assets/img/gcp/' + randomInt(10,99) + '.svg') + ')', 
-                  backgroundColor: 'rgba(' 
-                    + randomInt(10,250) + ','
-                    + randomInt(10,250) + ',' 
-                    + randomInt(10,250) + ',' 
-                    + '0.' + randomInt(20,90)
-                    + ')'}"
-      >
-        <div class="title">
-          <h2 v-html="post[3]"></h2>
-        </div>
+      <div class="list">
+        <div
+          v-for="item in 10"
+          :key="item"
+          class="poster"
+          :style="{ backgroundImage: 'url(' + require('./../assets/img/gcp/' + randomInt(10,99) + '.svg') + ')', 
+                      backgroundColor: 'rgba(' 
+                        + randomInt(10,250) + ','
+                        + randomInt(10,250) + ',' 
+                        + randomInt(10,250) + ',' 
+                        + '0.' + randomInt(20,90)
+                        + ')'}"
+        ></div>
+      </div>
+      <div class="title">
+        <h2 v-html="post[3]"></h2>
       </div>
       <ul class="controls">
         <li class="react">Views</li>
@@ -47,6 +50,7 @@ export default {
 
 <style scoped>
 .card {
+  /* height: 140px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,21 +58,33 @@ export default {
   align-items: center;
 }
 
-.poster {
+.list {
+  background-color: rgba(170, 211, 223, 0.9);
   width: 100%;
+  max-height: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.poster {
+  width: 100px;
   height: 100px;
   display: flex;
   align-items: center;
   /* background-image: url("./../assets/img/01.svg"); */
   /* background-image: url("https://firebasestorage.googleapis.com/v0/b/aibase.appspot.com/o/img%2Fworld-200.png?alt=media&token=0f5e2753-4b10-4c8c-a8ea-63f62ab56277"); */
   background-color: rgba(170, 211, 223, 0.9);
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   background-blend-mode: multiply;
 }
 
 h2 {
+  position: relative;
+  top: 0px;
+  z-index: 10;
   margin: 1rem;
   color: #666;
   background-color: rgba(200, 200, 200, 0.8);
@@ -77,6 +93,8 @@ h2 {
 }
 
 .controls {
+  position: relative;
+  top: -72px;
   width: 95%;
   margin: 1rem;
   display: flex;
@@ -91,6 +109,8 @@ h2 {
 }
 
 .title {
+  position: relative;
+  top: -85px;
   margin: 1rem;
   width: 95%;
 }
