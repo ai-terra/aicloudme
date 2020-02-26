@@ -147,7 +147,7 @@
                     <!-- <section class="views"> -->
 
                     <div v-if="fbview">
-                      <ai-post :matrix="listBiz"></ai-post>
+                      <ai-report :matrix="listBiz"></ai-report>
                     </div>
 
                     <!-- </section> -->
@@ -697,6 +697,8 @@ import Header from "./components/header.vue";
 import Tabs from "./components/tabs.vue";
 
 import Post from "./views/Post.vue";
+import Report from "./views/Report.vue";
+
 import Icon from "./util/icon.vue";
 import Spreadsheet from "./views/Spreadsheet";
 import gcp from "./gcp.js";
@@ -706,6 +708,7 @@ export default {
   components: {
     "app-header": Header,
     "ai-post": Post,
+    "ai-report": Report,
     "ai-icon": Icon,
     Spreadsheet,
     Tabs
