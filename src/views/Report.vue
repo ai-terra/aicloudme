@@ -50,7 +50,8 @@ export default {
 
 <style scoped>
 .card {
-  /* max-height: 140px; */
+  position: relative;
+  max-height: 140px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,9 +83,6 @@ export default {
 }
 
 h2 {
-  /* position: relative;
-  top: 0px;
-  z-index: 10; */
   margin: 1rem;
   color: #666;
   background-color: rgba(200, 200, 200, 0.8);
@@ -93,8 +91,8 @@ h2 {
 }
 
 .controls {
-  /* position: relative;
-  top: -72px; */
+  position: relative;
+  top: 0px;
   width: 95%;
   margin: 1rem;
   display: flex;
@@ -109,8 +107,8 @@ h2 {
 }
 
 .title {
-  position: relative;
-  top: -85px;
+  position: absolute;
+  top: 15px;
   margin: 1rem;
   width: 95%;
 }
