@@ -1,4 +1,4 @@
-# Universal CI best practices app
+# nRich social network app
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
