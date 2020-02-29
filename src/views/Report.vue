@@ -14,6 +14,7 @@
                         + randomInt(10,250) + ',' 
                         + '0.' + randomInt(20,90)
                         + ')'}"
+          :title="'ECO-µService-' + randomInt(100,250) + '-v.' + randomInt(100,250)"
         ></div>
       </div>
       <div class="title">
