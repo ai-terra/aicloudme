@@ -661,7 +661,7 @@
               <div class="footer-items">
                 <h4 class="long">W3AI Social Neural Network</h4>
                 <h4 class="long">
-                  W3AI Meetups&nbsp;
+                  W3AI Meetups&nbsp
                   <a href="https://www.meetup.com/SocialAI/">Toronto</a>&nbsp;
                   <a href="https://www.meetup.com/Manhattan-AIR/">NYC</a>&nbsp;
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax</a>
@@ -751,13 +751,13 @@ export default {
       postNameId: 0,
       opsName: ["ads", "app", "ops", "srv", "offr", "ask", "rRNA"],
       opsNameId: 1,
-      backgroundText: `ai &nbsp;&nbsp;= &nbsp; &nbsp;git&nbsp; &nbsp;&#x2731 &nbsp; ops
+      backgroundText: `&nbsp; cash = &nbsp;project &nbsp;&#x2731 ops
             <br><br>
             &nbsp;ai &nbsp; accelerator`,
       liveText: `&nbsp; ATP &nbsp; &nbsp; DNA &nbsp;&nbsp; RNA
             <br><br>
             market &nbsp;engine`,
-      devText: `&nbsp; cash = &nbsp;project &nbsp;&#x2731 ops
+      devText: `ai &nbsp;&nbsp;= &nbsp; &nbsp;git&nbsp; &nbsp;&#x2731 &nbsp; ops
       <br><br>
       eXchange &nbsp;engine`,
       visibleRows: 1,
