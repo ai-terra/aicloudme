@@ -1,4 +1,4 @@
-# nRich social memory app
+# enriched social memory app
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
