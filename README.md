@@ -1,4 +1,4 @@
-# enriched social memory app
+# enriched social KPIs app
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
