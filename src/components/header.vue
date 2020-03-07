@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">nRich KPIs</router-link>
+      <router-link to="/">nRich 37T</router-link>
     </div>
     <nav>
       <ul>

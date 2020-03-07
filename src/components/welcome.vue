@@ -1,6 +1,6 @@
 <template>
   <div id="welcome">
-    <h1 contenteditable="true">nRich @ ai speed</h1>
+    <h1 contenteditable="true">you @ ai speed</h1>
     <p>realtime distributed social enrichment engine</p>
     <!-- <p>evolutionary learning & fair monetary engine</p> -->
     <div class="cta">

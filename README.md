@@ -1,4 +1,4 @@
-# enriched social KPIs app
+# nrich social app
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
