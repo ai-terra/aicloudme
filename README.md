@@ -1,4 +1,4 @@
-# nrich social app - Mobile Edition
+# enriched ops social app
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
