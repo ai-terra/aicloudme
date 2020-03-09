@@ -3,6 +3,7 @@ const functions = require('firebase-functions');
 const { Storage } = require('@google-cloud/storage');
 const os = require('os');
 const path = require('path');
+const spawn = require('child-process-promise').spawn;
 
 // Creates a client
 const storage = new Storage({
