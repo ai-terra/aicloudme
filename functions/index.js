@@ -20,7 +20,7 @@ exports.onFileChange = functions.storage.object().onFinalize(event => {
   const filePath = event.name;
   console.log('File uploaded, function execution started');
 
-  if (path.basename(filePath).startsWith('renamed-')) {
+  if (path.basename(filePath).startsWith('resized-')) {
     console.log('We already renamed that file!');
     return;
   }
@@ -31,8 +31,11 @@ exports.onFileChange = functions.storage.object().onFinalize(event => {
   return destBucket.file(filePath).download({
     destination: tmpFilePath
   }).then(() => {
-    return destBucket.upload(tmpFilePath, {
-      destination: 'renamed-' + path.basename(filePath),
+    // running 'convert' command from imageMagic on Cloud Function environment
+    return spawn('convert', [tmpFilePath, '-resize', '100x100', tmpFilePath]);
+  }).then(() => {
+      return destBucket.upload(tmpFilePath, {
+      destination: 'resized-' + path.basename(filePath),
       metadata: metadata
     })
   });
