@@ -4,6 +4,7 @@ const { Storage } = require('@google-cloud/storage');
 const os = require('os');
 const path = require('path');
 const spawn = require('child-process-promise').spawn;
+const cors = require('cors')({origin: true});
 
 // Creates a client
 const storage = new Storage({
@@ -42,12 +43,14 @@ exports.onFileChange = functions.storage.object().onFinalize(event => {
 });
 
 exports.uploadFile = functions.https.onRequest((req, res) => {
-  if (req.method !== 'POST') {
-    return res.status(500).json({
-      message: 'Not allowed'
+  cors(req, res, (request, response) => {
+    if (req.method !== 'POST') {
+      return response.status(500).json({
+        message: 'Not allowed'
+      })
+    }
+    response.status(200).json({
+      message: 'It worked!'
     })
-  }
-  res.status(200).json({
-    message: 'It worked!'
   })
 });
