@@ -40,3 +40,5 @@ exports.onFileChange = functions.storage.object().onFinalize(event => {
     })
   });
 });
+
+exports.uploadFile = functions.https.onRequest(() => {});
