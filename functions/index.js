@@ -42,6 +42,11 @@ exports.onFileChange = functions.storage.object().onFinalize(event => {
 });
 
 exports.uploadFile = functions.https.onRequest((req, res) => {
+  if (req.method !== 'POST') {
+    return res.status(500).json({
+      message: 'Not allowed'
+    })
+  }
   res.status(200).json({
     message: 'It worked!'
   })
