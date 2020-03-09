@@ -41,4 +41,8 @@ exports.onFileChange = functions.storage.object().onFinalize(event => {
   });
 });
 
-exports.uploadFile = functions.https.onRequest(() => {});
+exports.uploadFile = functions.https.onRequest((req, res) => {
+  res.status(200).json({
+    message: 'It worked!'
+  })
+});
