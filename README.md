@@ -1,4 +1,4 @@
-# enriched ops social app
+# ai lead social app
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
