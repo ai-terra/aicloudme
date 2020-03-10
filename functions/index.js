@@ -90,10 +90,9 @@ exports.uploadFile = functions.https.onRequest((req, res) => {
 });
 
 // cloud function to run on data added to the Firebase realtime database
-exports.onDataAdded = functions.database.ref('/message/{id}').onCreate(event => {
-  const data = event.params.val();
-  const newData = {
-    msg: data.msg.toUpperCase()
-  };
-  return event.data.ref.child('copiedData').set(newData);
+exports.onDataAdded = functions.database.ref('/message/{id}').onCreate((snapshot, context) => {
+  const original = snapshot.val();
+  console.log('Uppercasing', context.params.id, original)
+  const uppercase = original.msg.toUpperCase();
+  return snapshot.ref.child('uppercase').set(uppercase);
 });
