@@ -1,4 +1,4 @@
-# ai lead social app
+# ai leadership app
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
