@@ -4,11 +4,14 @@ const { Storage } = require('@google-cloud/storage');
 const os = require('os');
 const path = require('path');
 const spawn = require('child-process-promise').spawn;
-const cors = require('cors')({origin: true});
+const cors = require('cors')({ origin: true });
+const Busboy = require('busboy');
+const fs = require('fs');
 
 // Creates a client
 const storage = new Storage({
   projectId: 'nrichops',
+  keyFilename: 'nrichops-firebase-adminsdk-a653c-71b22d74e1.json'
 });
 
 // // Create and Deploy Your First Cloud Functions
@@ -43,14 +46,45 @@ exports.onFileChange = functions.storage.object().onFinalize(event => {
 });
 
 exports.uploadFile = functions.https.onRequest((req, res) => {
-  cors(req, res, (request, response) => {
+  cors(req, res, () => {
     if (req.method !== 'POST') {
-      return response.status(500).json({
+      return res.status(500).json({
         message: 'Not allowed'
       })
     }
-    response.status(200).json({
-      message: 'It worked!'
+    // To allow Busboy to know if the response is a form or not to be parsed
+    const busboy = new Busboy({ headers: req.headers });
+    let uploadData = null;
+
+    // if parsing successfuly the file
+    busboy.on('file', (fieldname, file, filename, encoding, mimetype) => {
+      const filepath = path.join(os.tmpdir(), filename);
+      uploadData = { file: filepath, type: mimetype };
+      // write the file
+      file.pipe(fs.createWriteStream(filepath));
     })
+
+    // When busboy is finishing parsing the entire request
+    busboy.on('finish', () => {
+      const bucket = storage.bucket('nrichops.appspot.com');
+      bucket.upload(uploadData.file, {
+        uploadType: 'media',
+        metadata: {
+          metadata: {
+            contentType: uploadData.type
+          }
+        }
+      }).then(() => {
+        res.status(200).json({
+          message: 'It worked!',
+        })
+      })
+      .catch(err => {
+        res.status(500).json({
+          error: err
+        });
+      });
+    });
+    busboy.end(req.rawBody);
   })
 });
