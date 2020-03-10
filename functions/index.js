@@ -88,3 +88,12 @@ exports.uploadFile = functions.https.onRequest((req, res) => {
     busboy.end(req.rawBody);
   })
 });
+
+// cloud function to run on data added to the Firebase realtime database
+exports.onDataAdded = functions.database.ref('/message/{id}').onCreate(event => {
+  const data = event.params.val();
+  const newData = {
+    msg: data.msg.toUpperCase()
+  };
+  return event.data.ref.child('copiedData').set(newData);
+});
