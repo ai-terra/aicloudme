@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">ai lead</router-link>
+      <router-link to="/">ai capital</router-link>
     </div>
     <nav>
       <ul>

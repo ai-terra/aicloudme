@@ -1,7 +1,7 @@
 <template>
   <div id="welcome">
-    <h1 contenteditable="true">lead @ ai speed</h1>
-    <p>realtime decentralized leadership engine</p>
+    <h1 contenteditable="true">capital @ ai speed</h1>
+    <p>realtime decentralized capital growth engine</p>
     <!-- <p>evolutionary learning & fair monetary engine</p> -->
     <div class="cta">
       <router-link to="/signup">Sign Up</router-link>
