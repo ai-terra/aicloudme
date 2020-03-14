@@ -4,7 +4,7 @@
     <div class="card" v-for="(post,i) in matrix" :key="i">
       <div
         class="poster"
-        :style="{ backgroundImage: 'url(' + require('./../assets/img/gcp/' + randomInt(10,99) + '.svg') + ')', 
+        :style="{ backgroundImage: 'url(' + require('./../assets/img/cloud/' + randomInt(100,199) + '.png') + ')', 
                   backgroundColor: 'rgba(' 
                     + randomInt(10,250) + ','
                     + randomInt(10,250) + ',' 
