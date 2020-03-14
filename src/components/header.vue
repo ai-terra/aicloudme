@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">ai monetix</router-link>
+      <router-link to="/">ai card</router-link>
     </div>
     <nav>
       <ul>

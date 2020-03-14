@@ -1,4 +1,4 @@
-# realtime ai monetary engine
+# realtime ai card engine
 
 collaboration engine / social & enterprise innovation protocol - PoC
 

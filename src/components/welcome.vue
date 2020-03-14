@@ -1,6 +1,6 @@
 <template>
   <div id="welcome">
-    <h1 contenteditable="true">money @ ai speed</h1>
+    <h1 contenteditable="true">cards @ ai speed</h1>
     <p>realtime decentralized social & monetary system</p>
     <!-- <p>evolutionary learning & fair monetary engine</p> -->
     <div class="cta">

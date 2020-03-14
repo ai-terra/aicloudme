@@ -1,6 +1,6 @@
 <template>
   <div id="dashboard">
-    <h1>aibase dashboard</h1>
+    <h1>ai card dashboard</h1>
     <p>You should only get here if you're authenticated!</p>
     <p v-if="email">Your email address: {{ email }}</p>
   </div>
