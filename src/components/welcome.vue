@@ -1,7 +1,7 @@
 <template>
   <div id="welcome">
     <h1 contenteditable="true">cards @ ai speed</h1>
-    <p>realtime decentralized social & monetary system</p>
+    <p>fair realtime social and monetary system</p>
     <!-- <p>evolutionary learning & fair monetary engine</p> -->
     <div class="cta">
       <router-link to="/signup">Sign Up</router-link>

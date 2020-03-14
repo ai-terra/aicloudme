@@ -125,7 +125,7 @@
                   <li class="list-group-item" v-for="project in viewProjects" v-bind:key="project">
                     <div class="table-title">
                       <h3 class="line" title="Patent blockchain status - % tests passed">
-                        &nbsp;&nbsp;KPI(
+                        &nbsp;&nbsp;tx(
                         <img
                           class="owner"
                           :src="require('./assets/img/users/2'+ project + '.png')"
@@ -661,7 +661,7 @@
               <div class="footer-items">
                 <h4 class="long">W3AI Social Neural Network</h4>
                 <h4 class="long">
-                  W3AI Meetups&nbsp
+                  W3AI Meetups&nbsp;
                   <a href="https://www.meetup.com/SocialAI/">Toronto</a>&nbsp;
                   <a href="https://www.meetup.com/Manhattan-AIR/">NYC</a>&nbsp;
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax</a>
@@ -701,7 +701,7 @@ import Report from "./views/Report.vue";
 
 import Icon from "./util/icon.vue";
 import Spreadsheet from "./views/Spreadsheet";
-import gcp from "./gcp.js";
+// import gcp from "./gcp.js";
 
 export default {
   name: "app",
