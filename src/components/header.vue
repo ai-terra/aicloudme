@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">ai corona</router-link>
+      <router-link to="/">same page</router-link>
     </div>
     <nav>
       <ul>
