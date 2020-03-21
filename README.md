@@ -1,4 +1,4 @@
-# realtime work from home ai engine
+# realtime command app
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
