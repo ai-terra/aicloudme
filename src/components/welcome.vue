@@ -1,6 +1,6 @@
 <template>
   <div id="welcome">
-    <h1 contenteditable="true">command @ ai speed</h1>
+    <h1 contenteditable="true">cmd @ ai speed</h1>
     <p>fair realtime social and monetary system</p>
     <!-- <p>evolutionary learning & fair monetary engine</p> -->
     <div class="cta">
