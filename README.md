@@ -1,4 +1,4 @@
-# realtime command app
+# ai organization clone app
 
 collaboration engine / social & enterprise innovation protocol - PoC
 

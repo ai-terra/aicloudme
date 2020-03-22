@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">command</router-link>
+      <router-link to="/">ai clone</router-link>
     </div>
     <nav>
       <ul>
