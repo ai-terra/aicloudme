@@ -1,4 +1,4 @@
-# ai organization clone app
+# ai work from home engine
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
