@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">work from home</router-link>
+      <router-link to="/">projects xl</router-link>
     </div>
     <nav>
       <ul>
