@@ -666,7 +666,7 @@
                   <a href="https://www.meetup.com/Manhattan-AIR/">NYC</a>&nbsp;
                   <a href="https://www.meetup.com/HalifaxAIG/">Halifax</a>
                 </h4>
-                <h4>Stefan Ianta @ Pythian</h4>
+                <h4>iantas @ w3ai</h4>
                 <h4 class="long">
                   <a href="https://github.com/aibase">innovation engines @ github</a>
                 </h4>
