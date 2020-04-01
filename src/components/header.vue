@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">project</router-link>
+      <router-link to="/">project lead</router-link>
     </div>
     <nav>
       <ul>
