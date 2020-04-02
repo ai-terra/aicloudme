@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">project lead</router-link>
+      <router-link to="/">earth 2.0</router-link>
     </div>
     <nav>
       <ul>

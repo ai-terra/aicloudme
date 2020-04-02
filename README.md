@@ -1,4 +1,4 @@
-# realtime distributed projects app
+# realtime work from home project network
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
