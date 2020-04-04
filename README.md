@@ -1,4 +1,4 @@
-# realtime work from home self help network
+# realtime work from home self help web app
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
