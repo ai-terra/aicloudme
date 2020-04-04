@@ -753,7 +753,7 @@ export default {
       postNameId: 0,
       opsName: ["ads", "app", "ops", "srv", "offr", "ask", "rRNA"],
       opsNameId: 1,
-      backgroundText: `&nbsp; cash = &nbsp;task &nbsp;&#x2731 ops
+      backgroundText: `&nbsp; help = &nbsp;task &nbsp;&#x2731 ops
             <br><br>
             &nbsp;ai &nbsp; accelerator`,
       liveText: `&nbsp; ATP &nbsp; &nbsp; DNA &nbsp;&nbsp; RNA
