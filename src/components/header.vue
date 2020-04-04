@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">Self Help Web</router-link>
+      <router-link to="/">Help Web</router-link>
     </div>
     <nav>
       <ul>
