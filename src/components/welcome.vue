@@ -1,7 +1,7 @@
 <template>
   <div id="welcome">
-    <h1 contenteditable="true">earth @ ai speed</h1>
-    <p>realtime work from home project network</p>
+    <h1 contenteditable="true">self help @ ai speed</h1>
+    <p>realtime work from home self help network</p>
     <!-- <p>evolutionary learning & fair monetary engine</p> -->
     <div class="cta">
       <router-link to="/signup">Sign Up</router-link>

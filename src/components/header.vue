@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">earth 2.0</router-link>
+      <router-link to="/">Work From Home OS</router-link>
     </div>
     <nav>
       <ul>
