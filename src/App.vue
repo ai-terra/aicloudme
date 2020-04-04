@@ -668,10 +668,10 @@
                 </h4>
                 <h4>iantas @ w3ai</h4>
                 <h4 class="long">
-                  <a href="https://github.com/aibase">innovation engines @ github</a>
+                  <a href="https://github.com/allcmds">innovation engines @ github</a>
                 </h4>
                 <h4 class="short">
-                  <a href="https://github.com/aibase/ai-git">ai git PoC @ github</a>
+                  <a href="https://github.com/allcmds/aiwfhos">ai self help @ github</a>
                 </h4>
                 <h4 class="long" contenteditable="true">Collaboration Engine / W3AI SNN Protocol</h4>
               </div>
