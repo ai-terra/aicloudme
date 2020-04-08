@@ -1,4 +1,4 @@
-# realtime help network
+# ai distributed business and monetary network
 
 collaboration engine / social & enterprise innovation protocol - PoC
 

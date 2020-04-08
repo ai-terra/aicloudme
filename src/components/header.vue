@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">we help each other</router-link>
+      <router-link to="/">ai speed</router-link>
     </div>
     <nav>
       <ul>
