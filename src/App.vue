@@ -756,10 +756,10 @@ export default {
       backgroundText: `&nbsp; value = &nbsp;task &nbsp;&#x2731 ops
             <br><br>
             &nbsp;ai &nbsp; accelerator`,
-      liveText: `&nbsp; ATP &nbsp; &nbsp; DNA &nbsp;&nbsp; RNA
+      liveText: `&nbsp; cash = &nbsp;cmds &nbsp;&#x2731 ops
             <br><br>
             market &nbsp;engine`,
-      devText: `ai &nbsp;&nbsp;= &nbsp; &nbsp;git&nbsp; &nbsp;&#x2731 &nbsp; ops
+      devText: `&nbsp; ATP &nbsp; &nbsp; DNA &nbsp;&nbsp; RNA
       <br><br>
       eXchange &nbsp;engine`,
       visibleRows: 1,
