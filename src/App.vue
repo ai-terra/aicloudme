@@ -671,7 +671,7 @@
                   <a href="https://github.com/allcmds">innovation engines @ github</a>
                 </h4>
                 <h4 class="short">
-                  <a href="https://github.com/allcmds/aiwfhos">ai self help @ github</a>
+                  <a href="https://github.com/allcmds/aiwfhos">ai help @ github</a>
                 </h4>
                 <h4 class="long" contenteditable="true">Collaboration Engine / W3AI SNN Protocol</h4>
               </div>
@@ -753,7 +753,7 @@ export default {
       postNameId: 0,
       opsName: ["ads", "app", "ops", "srv", "offr", "ask", "rRNA"],
       opsNameId: 1,
-      backgroundText: `&nbsp; help = &nbsp;task &nbsp;&#x2731 ops
+      backgroundText: `&nbsp; value = &nbsp;task &nbsp;&#x2731 ops
             <br><br>
             &nbsp;ai &nbsp; accelerator`,
       liveText: `&nbsp; ATP &nbsp; &nbsp; DNA &nbsp;&nbsp; RNA
