@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">AI speed OS</router-link>
+      <router-link to="/">AI Force OS</router-link>
     </div>
     <nav>
       <ul>

@@ -1,4 +1,4 @@
-# ai distributed business and monetary network
+# ai distributed business accelerator and monetary system
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
