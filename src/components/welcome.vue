@@ -1,6 +1,6 @@
 <template>
   <div id="welcome">
-    <h1 contenteditable="true">business @ AI speed</h1>
+    <h1 contenteditable="true">Business @ AI Power</h1>
     <p>fairly distributed realtime business & monetary system</p>
     <!-- <p>evolutionary learning & fair monetary engine</p> -->
     <div class="cta">
