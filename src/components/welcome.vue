@@ -1,7 +1,7 @@
 <template>
   <div id="welcome">
     <h1 contenteditable="true">Business @ AI Power</h1>
-    <p>fairly distributed realtime business & monetary system</p>
+    <p>realtime ai business accelerator & monetization engine</p>
     <!-- <p>evolutionary learning & fair monetary engine</p> -->
     <div class="cta">
       <router-link to="/signup">Sign Up</router-link>
