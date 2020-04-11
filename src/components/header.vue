@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">AI Power VM</router-link>
+      <router-link to="/">AI Monetizer</router-link>
     </div>
     <nav>
       <ul>
