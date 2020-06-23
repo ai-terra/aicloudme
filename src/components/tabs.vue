@@ -41,13 +41,13 @@
       :class="matrixId == 0 ? 'logo-red':matrixId == 1 ? 'logo-yellow':'logo-blue'"
       title="Steps"
       @click="tab[matrixId] = 'f'"
-    >STEPS</div>
+    >TESTS</div>
     <div
       class="tab"
       :class="matrixId == 0 ? 'logo-red':matrixId == 1 ? 'logo-yellow':'logo-blue'"
       title="Output"
       @click="tab[matrixId] = 'g'"
-    >OUTPUT</div>
+    >RESULT</div>
     <div
       class="tab"
       :class="matrixId == 0 ? 'logo-red':matrixId == 1 ? 'logo-yellow':'logo-blue'"
