@@ -1,4 +1,4 @@
-# realtime distributed ai monetizer
+# realtime distributed qa monetizer
 
 collaboration engine / social & enterprise innovation protocol - PoC
 

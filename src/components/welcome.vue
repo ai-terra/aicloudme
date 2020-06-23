@@ -1,6 +1,6 @@
 <template>
   <div id="welcome">
-    <h1 contenteditable="true">monetize @ AI speed</h1>
+    <h1 contenteditable="true">testing @ AI speed</h1>
     <p>open source business accelerator & monetization engine</p>
     <!-- <p>evolutionary learning & fair monetary engine</p> -->
     <div class="cta">
