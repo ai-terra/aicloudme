@@ -1,4 +1,4 @@
-# realtime distributed qa monetizer
+# realtime distributed rewards
 
 collaboration engine / social & enterprise innovation protocol - PoC
 

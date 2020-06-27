@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">QA Monetizer</router-link>
+      <router-link to="/">AI Rewards</router-link>
     </div>
     <nav>
       <ul>
