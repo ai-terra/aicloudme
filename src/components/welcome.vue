@@ -1,7 +1,7 @@
 <template>
   <div id="welcome">
     <h1 contenteditable="true">rewards @ AI speed</h1>
-    <p>open source live rewards & monetizer engine</p>
+    <p>open source live rewards and monetization engine</p>
     <!-- <p>evolutionary learning & fair monetary engine</p> -->
     <div class="cta">
       <router-link to="/signup">Sign Up</router-link>
