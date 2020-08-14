@@ -1,4 +1,4 @@
-# realtime ai wallet
+# social ai cloud console
 
 collaboration engine / social & enterprise innovation protocol - PoC
 

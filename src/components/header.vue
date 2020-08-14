@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">AI wallet</router-link>
+      <router-link to="/">AI console</router-link>
     </div>
     <nav>
       <ul>
