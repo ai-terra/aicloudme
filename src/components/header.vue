@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">AI Rewards</router-link>
+      <router-link to="/">AI wallet</router-link>
     </div>
     <nav>
       <ul>
@@ -27,13 +27,13 @@ export default {
   computed: {
     auth() {
       return this.$store.getters.isAuthenticated;
-    }
+    },
   },
   methods: {
     onLogout() {
       this.$store.dispatch("logout");
-    }
-  }
+    },
+  },
 };
 </script>
 

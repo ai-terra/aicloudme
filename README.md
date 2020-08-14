@@ -1,4 +1,4 @@
-# realtime distributed rewards
+# realtime ai wallet
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
