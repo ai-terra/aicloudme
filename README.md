@@ -1,4 +1,4 @@
-# social ai cloud console
+# ai cloud monetization engine
 
 collaboration engine / social & enterprise innovation protocol - PoC
 
