@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="logo">
-      <router-link to="/">AI console</router-link>
+      <router-link to="/">AI Cloud ME</router-link>
     </div>
     <nav>
       <ul>
